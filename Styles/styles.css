@@ -1,0 +1,36 @@
+body {
+    background-color: #1d1d1d
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-family: Consolas;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Garamond;
+}
+
+/* =========== */
+/* Link Styles */
+/* =========== */
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: #1d1d1d;
+    text-align: center;
+    padding: 14px 25px;
+}
+
+a:hover, a:active {
+    color: white;
+    text-decoration: underline;
+    background-color: #1d1d1d;
+    text-align: center;
+    padding: 14px 25px;
+}
