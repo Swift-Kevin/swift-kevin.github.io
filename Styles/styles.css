@@ -1,36 +1,59 @@
-body {
-    background-color: #1d1d1d
-}
-
-p {
-    color: white;
-    text-align: center;
-    font-size: 24px;
-    font-family: Consolas;
-}
-
-h1 {
-    color: white;
-    text-align: center;
-    font-family: Garamond;
-}
 
 /* =========== */
 /* Link Styles */
 /* =========== */
 
-a:link, a:visited {
-    color: white;
-    text-decoration: none;
-    background-color: #1d1d1d;
-    text-align: center;
-    padding: 14px 25px;
+.bdy {
+    background-color: black;
 }
 
-a:hover, a:active {
-    color: white;
-    text-decoration: underline;
+.header {
+    overflow: hidden;
+    border-radius: 10px;
     background-color: #1d1d1d;
+    padding: 30px 20px;
+    text-decoration: none;
+}
+
+.header a:link, a:visited {
+    text-decoration: none;
     text-align: center;
-    padding: 14px 25px;
+    color: white;
+    background-color: #1d1d1d;
+    padding: 18px 15px;
+}
+
+.header a:hover, a:active {
+    border-radius: 5px;
+    background-color: #ededed;
+    color: #212121;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+.header-right {
+    /*Font Settings*/
+    font-family: Consolas;
+    font-size: 18px;
+    color: white;
+    text-decoration: none; 
+    
+    /*Block Settings*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+.header-center {
+    /*Font Settings*/
+    font-family: Garamond;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    
+    /*Block Settings*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
 }
