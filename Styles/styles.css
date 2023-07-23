@@ -11,25 +11,26 @@
     overflow: hidden;
     border-radius: 10px;
     background-color: #1d1d1d;
-    padding: 30px 20px;
+    padding: 20px 20px;
+    margin: auto;
     text-decoration: none;
 }
 
-.header a:link, a:visited {
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    background-color: #1d1d1d;
-    padding: 18px 15px;
-}
+    .header a:link, a:visited {
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        background-color: #1d1d1d;
+        padding: 10px 10px;
+    }
 
-.header a:hover, a:active {
-    border-radius: 5px;
-    background-color: #ededed;
-    color: #212121;
-    text-decoration: underline;
-    text-align: center;
-}
+    .header a:hover, a:active {
+        border-radius: 5px;
+        background-color: #ededed;
+        color: #212121;
+        text-decoration: underline;
+        text-align: center;
+    }
 
 
 .header-right {
@@ -37,8 +38,7 @@
     font-family: Consolas;
     font-size: 18px;
     color: white;
-    text-decoration: none; 
-    
+    text-decoration: none;
     /*Block Settings*/
     margin-left: auto;
     margin-right: auto;
@@ -51,9 +51,78 @@
     font-size: 32px;
     color: white;
     text-decoration: none;
-    
     /*Block Settings*/
     margin-left: auto;
     margin-right: auto;
     width: 150px;
+    display: flex;
+}
+
+.header-buttons {
+    /*Font Settings*/
+    font-family: Consolas;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    /*Block Settings*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    display: flex;
+}
+
+.menu-buttons {
+    flex: 1;
+}
+
+h1 {
+    font-family: Consolas;
+    font-size: 18px;
+    color: white;
+}
+
+p {
+    font-family: Consolas;
+    font-size: 18px;
+    color: white;
+}
+
+.clickable {
+    font-family: Consolas;
+    font-size: 18px;
+    color: white;
+    flex: 1;
+}
+
+    .clickable a:link, a:visited {
+        font-family: Consolas;
+        font-size: 18px;
+        color: white;
+    }
+
+    .clickable a:hover, a:active {
+        font-family: Consolas;
+        font-size: 18px;
+        color: white;
+    }
+
+.connections {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    flex: 1;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: flex;
+}
+
+.title-centered {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    flex: 1;
 }
