@@ -45,7 +45,7 @@
     width: 150px;
 }
 
-.header-center {
+.header-title {
     /*Font Settings*/
     font-family: Garamond;
     font-size: 32px;
@@ -54,36 +54,38 @@
     /*Block Settings*/
     margin-left: auto;
     margin-right: auto;
-    width: 150px;
+    width: fit-content;
+    padding: 0px 0px 10px 0px;
     display: flex;
 }
 
-.header-buttons {
-    /*Font Settings*/
-    font-family: Consolas;
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
+.header-buttons-container {
     /*Block Settings*/
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    height: 25%;
+    max-width: 75%;
+    min-width: 0%;
     display: flex;
 }
 
 .menu-buttons {
     flex: 1;
-}
-
-h1 {
+    margin: 0px 15px 0px 15px;
     font-family: Consolas;
     font-size: 18px;
     color: white;
 }
 
+h1 {
+    font-family: Consolas;
+    font-size: 1.5vw;
+    color: white;
+}
+
 p {
     font-family: Consolas;
-    font-size: 18px;
+    font-size: 100%;
     color: white;
 }
 
@@ -125,9 +127,4 @@ p {
     margin-right: auto;
     width: fit-content;
     flex: 1;
-}
-@media only screen and (max-width: 300px) {
-    #media-fit {
-        font-size: 20px;
-    }
 }
