@@ -35,7 +35,7 @@
 
 .header-right {
     /*Font Settings*/
-    font-family: Consolas,monaco,monospace;
+    font-family: "Custom-Consolas";
     font-size: 18px;
     color: white;
     text-decoration: none;
@@ -47,7 +47,7 @@
 
 .header-title {
     /*Font Settings*/
-    font-family: 'EB Garamond', serif;
+    font-family: "Custom-Garamond";
     font-size: 5vmin;
     color: white;
     text-decoration: none;
@@ -72,25 +72,25 @@
 .menu-buttons {
     flex: 1;
     margin: 0px 15px 0px 15px;
-    font-family: Consolas,monaco,monospace;
+    font-family: "Custom-Consolas";
     font-size: 3vmin;
     color: white;
 }
 
 h1 {
-    font-family: Consolas,monaco,monospace;
+    font-family: "Custom-Consolas";
     font-size: 5vmin;
     color: white;
 }
 
 p {
-    font-family: Consolas,monaco,monospace;
+    font-family: "Custom-Consolas";
     font-size: 3vmin;
     color: white;
 }
 
 .para-center {
-    font-family: Consolas,monaco,monospace;
+    font-family: "Custom-Consolas";
     font-size: 3vmin;
     color: white;
     flex: 1;
@@ -100,20 +100,20 @@ p {
 }
 
 .clickable {
-    font-family: Consolas,monaco,monospace;
-    font-size: 18px;
+    font-family: "Custom-Consolas";
+    font-size: 3vmin;
     color: white;
     flex: 1;
 }
 
     .clickable a:link, a:visited {
-        font-family: Consolas,monaco,monospace;
+        font-family: "Custom-Consolas";
         font-size: 3vmin;
         color: white;
     }
 
     .clickable a:hover, a:active {
-        font-family: Consolas;
+        font-family: "Custom-Consolas";
         font-size: 3vmin;
         color: white;
     }
@@ -137,4 +137,14 @@ p {
     margin-right: auto;
     width: fit-content;
     flex: 1;
+}
+
+@font-face{
+    font-family: "Custom-Garamond";
+    src: url('../SiteFonts/EBGaramond.ttf');
+}
+
+@font-face{
+    font-family: "Custom-Consolas";
+    src: url('../SiteFonts/Consolas.ttf');
 }
