@@ -16,26 +16,26 @@
     text-decoration: none;
 }
 
-    .header a:link, a:visited {
-        text-decoration: none;
-        text-align: center;
-        color: white;
-        background-color: #1d1d1d;
-        padding: 10px 10px;
-    }
-
-    .header a:hover, a:active {
-        border-radius: 5px;
-        background-color: #ededed;
-        color: #212121;
-        text-decoration: underline;
-        text-align: center;
-    }
+   .header a:link, a:visited {
+       text-decoration: none;
+       text-align: center;
+       color: white;
+       background-color: #1d1d1d;
+       padding: 10px 10px;
+   }
+  
+   .header a:hover, a:active {
+       border-radius: 5px;
+       background-color: #ededed;
+       color: #212121;
+       text-decoration: underline;
+       text-align: center;
+   }
 
 
 .header-right {
     /*Font Settings*/
-    font-family: Consolas;
+    font-family: Consolas,monaco,monospace;
     font-size: 18px;
     color: white;
     text-decoration: none;
@@ -47,7 +47,7 @@
 
 .header-title {
     /*Font Settings*/
-    font-family: Garamond;
+    font-family: 'EB Garamond', serif;
     font-size: 5vmin;
     color: white;
     text-decoration: none;
@@ -72,25 +72,25 @@
 .menu-buttons {
     flex: 1;
     margin: 0px 15px 0px 15px;
-    font-family: Consolas;
+    font-family: Consolas,monaco,monospace;
     font-size: 3vmin;
     color: white;
 }
 
 h1 {
-    font-family: Consolas;
+    font-family: Consolas,monaco,monospace;
     font-size: 5vmin;
     color: white;
 }
 
 p {
-    font-family: Consolas;
+    font-family: Consolas,monaco,monospace;
     font-size: 3vmin;
     color: white;
 }
 
 .para-center {
-    font-family: Consolas;
+    font-family: Consolas,monaco,monospace;
     font-size: 3vmin;
     color: white;
     flex: 1;
@@ -100,21 +100,21 @@ p {
 }
 
 .clickable {
-    font-family: Consolas;
+    font-family: Consolas,monaco,monospace;
     font-size: 18px;
     color: white;
     flex: 1;
 }
 
     .clickable a:link, a:visited {
-        font-family: Consolas;
-        font-size: 18px;
+        font-family: Consolas,monaco,monospace;
+        font-size: 3vmin;
         color: white;
     }
 
     .clickable a:hover, a:active {
         font-family: Consolas;
-        font-size: 18px;
+        font-size: 3vmin;
         color: white;
     }
 
