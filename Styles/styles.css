@@ -126,3 +126,8 @@ p {
     width: fit-content;
     flex: 1;
 }
+@media only screen and (max-width: 300px) {
+    #media-fit {
+        font-size: 20px;
+    }
+}
