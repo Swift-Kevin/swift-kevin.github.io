@@ -48,7 +48,7 @@
 .header-title {
     /*Font Settings*/
     font-family: Garamond;
-    font-size: 32px;
+    font-size: 5vmin;
     color: white;
     text-decoration: none;
     /*Block Settings*/
@@ -73,20 +73,30 @@
     flex: 1;
     margin: 0px 15px 0px 15px;
     font-family: Consolas;
-    font-size: 18px;
+    font-size: 3vmin;
     color: white;
 }
 
 h1 {
     font-family: Consolas;
-    font-size: 1.5vw;
+    font-size: 5vmin;
     color: white;
 }
 
 p {
     font-family: Consolas;
-    font-size: 100%;
+    font-size: 3vmin;
     color: white;
+}
+
+.para-center {
+    font-family: Consolas;
+    font-size: 3vmin;
+    color: white;
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px 10px 10px 10px;
 }
 
 .clickable {
