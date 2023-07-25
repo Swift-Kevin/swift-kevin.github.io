@@ -164,25 +164,24 @@ p {
     margin: 1% 1% 1% 1%;
     float: left;
     width: 48%;
+    height: auto;
 }
 
 .project-right {
     margin: 1% 1% 1% 1%;
     float: right;
     width: 48%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.project-psychic {
+.project-holder {
     padding: 10px 10px 10px 10px;
     margin: 1% 1% 1% 1%;
     width: 95%;
-    height: 500px;
-}
-
-.project-gol {
-    background-color: dimgrey;
-    height: 100%;
-    width: 100%;
+    min-height: 10px;
+    overflow: hidden;
+    display: flex;
 }
 
 .project-description {
@@ -201,14 +200,7 @@ a.colorfix{
     background-color: transparent;
 }
 
-img.git {
-    margin-right: 25%;
-    margin-left: 25%;
-    width: 5vw;
-    height: 5vw;
-}
-
-img.itch {
+img.placement {
     margin-right: 25%;
     margin-left: 25%;
     width: 5vw;
@@ -217,7 +209,7 @@ img.itch {
 
 img.spacer-hori{
     width: 100%;
-    opacity: 75%;
+    opacity: 10%;
 }
 
 .spacer-width {
