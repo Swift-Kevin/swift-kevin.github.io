@@ -8,30 +8,27 @@
 }
 
 .header {
-    overflow: hidden;
-    border-radius: 10px;
     background-color: #1d1d1d;
-    padding: 20px 20px;
-    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
     text-decoration: none;
 }
 
-   .header a:link, a:visited {
-       text-decoration: none;
-       text-align: center;
-       color: white;
-       background-color: #1d1d1d;
-       padding: 10px 10px;
-   }
-  
-   .header a:hover, a:active {
-       border-radius: 5px;
-       background-color: #ededed;
-       color: #212121;
-       text-decoration: underline;
-       text-align: center;
-   }
+    .header a:link, a:visited {
+        transition: color 0.5s, background-color 0.5s;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: #1d1d1d;
+        border-radius: 5px;
+    }
 
+    .header a:hover, a:active {
+        text-align: center;
+        color: #212121;
+        border-radius: 5px;
+        background-color: #ededed;
+    }
 
 .header-right {
     /*Font Settings*/
@@ -48,30 +45,30 @@
 .header-title {
     /*Font Settings*/
     font-family: "Custom-Garamond";
-    font-size: 5vmin;
+    font-size: 5.5vmin;
     color: white;
     text-decoration: none;
     /*Block Settings*/
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-    padding: 0px 0px 10px 0px;
     display: flex;
 }
 
 .header-buttons-container {
     /*Block Settings*/
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 25%;
+    margin-right: 25%;
     height: 25%;
     max-width: 75%;
     min-width: 0%;
+    padding: 5px 1% 1% 1%;
     display: flex;
 }
 
 .menu-buttons {
     flex: 1;
-    margin: 0px 15px 0px 15px;
+    margin: 0% 5% 0% 5%;
     font-family: "Custom-Consolas";
     font-size: 3vmin;
     color: white;
@@ -83,9 +80,21 @@ h1 {
     color: white;
 }
 
-p {
+h2 {
+    font-family: "Custom-Consolas";
+    font-size: 3.5vmin;
+    color: white;
+}
+
+h3 {
     font-family: "Custom-Consolas";
     font-size: 3vmin;
+    color: white;
+}
+
+p {
+    font-family: "Custom-Consolas";
+    font-size: 2.5vmin;
     color: white;
 }
 
@@ -139,12 +148,101 @@ p {
     flex: 1;
 }
 
-@font-face{
+.project-title {
+    /*Font Settings*/
     font-family: "Custom-Garamond";
-    src: url('../SiteFonts/EBGaramond.ttf');
+    color: white;
+    text-decoration: none;
+    /*Block Settings*/
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: flex;
 }
 
-@font-face{
+.project-left {
+    margin: 1% 1% 1% 1%;
+    float: left;
+    width: 48%;
+}
+
+.project-right {
+    margin: 1% 1% 1% 1%;
+    float: right;
+    width: 48%;
+}
+
+.project-psychic {
+    padding: 10px 10px 10px 10px;
+    margin: 1% 1% 1% 1%;
+    width: 95%;
+    height: 500px;
+}
+
+.project-gol {
+    background-color: dimgrey;
+    height: 100%;
+    width: 100%;
+}
+
+.project-description {
+    margin: 2% 2% 2% 2%;
+    font-size: 2vmin;
+}
+
+.project-connections {
+    padding: 5% 25% 0% 25%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+a.colorfix{
+    background-color: transparent;
+}
+
+img.git {
+    margin-right: 25%;
+    margin-left: 25%;
+    width: 5vw;
+    height: 5vw;
+}
+
+img.itch {
+    margin-right: 25%;
+    margin-left: 25%;
+    width: 5vw;
+    height: 5vw;
+}
+
+img.spacer-hori{
+    width: 100%;
+    opacity: 75%;
+}
+
+.spacer-width {
+    width: 20%;
+    height: 100%;
+}
+
+.screenshots img {
+    width: 100%;
+    border-radius: 15px;
+    filter: grayscale(100%);
+    transition: filter 0.25s;
+}
+
+    .screenshots img:hover {
+        filter: grayscale(0%);
+        transition: filter 0.25s;
+    }
+
+@font-face {
+    font-family: "Custom-Garamond";
+    src: url('../SiteFonts/EBGaramond-Regular.ttf');
+}
+
+@font-face {
     font-family: "Custom-Consolas";
     src: url('../SiteFonts/Consolas.ttf');
 }
