@@ -5,12 +5,12 @@
 
 .bdy {
     background-color: black;
-    overflow: hidden;
 }
 
 .header {
     background-color: #1d1d1d;
     border-radius: 10px;
+    border-width: 5px;
     overflow: hidden;
     text-decoration: none;
 }
@@ -53,6 +53,10 @@
     margin-right: auto;
     width: 50%;
     text-align: center;
+}
+
+spectitle {
+    color: white;
 }
 
 .header-buttons-container {
@@ -241,6 +245,24 @@ img.calcdemo {
         filter: grayscale(0%);
         transition: filter 0.25s;
     }
+
+.homepage-latest {
+    margin-top: 2%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.homepage-latest-title{
+    margin-left: 10%;
+    width: contain;
+    float: left;
+}
+
+.homepage-latest-image {
+    margin-right: 10%;
+    width: 50%;
+    float: right;
+}
 
 @font-face {
     font-family: "Custom-Garamond";
