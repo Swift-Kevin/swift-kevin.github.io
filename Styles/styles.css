@@ -5,6 +5,7 @@
 
 .bdy {
     background-color: black;
+    overflow: hidden;
 }
 
 .header {
@@ -47,12 +48,11 @@
     font-family: "Custom-Garamond";
     font-size: 5.5vmin;
     color: white;
-    text-decoration: none;
     /*Block Settings*/
     margin-left: auto;
     margin-right: auto;
-    width: fit-content;
-    display: flex;
+    width: 50%;
+    text-align: center;
 }
 
 .header-buttons-container {
@@ -196,7 +196,7 @@ p {
     justify-content: center;
 }
 
-a.colorfix{
+a.colorfix {
     background-color: transparent;
 }
 
@@ -207,7 +207,7 @@ img.placement {
     height: 5vw;
 }
 
-img.spacer-hori{
+img.spacer-hori {
     width: 100%;
     opacity: 10%;
 }
@@ -215,6 +215,19 @@ img.spacer-hori{
 .spacer-width {
     width: 20%;
     height: 100%;
+}
+
+img.calcdemo {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    filter: grayscale(100%);
+}
+
+.calcdemo:hover {
+    filter: grayscale(0%);
+    transition: filter 0.25s;
 }
 
 .screenshots img {
