@@ -96,20 +96,30 @@ h3 {
     color: white;
 }
 
-p {
+.p275 {
+    font-family: "Custom-Consolas";
+    font-size: 2.75vmin;
+    color: white;
+}
+
+.p25 {
     font-family: "Custom-Consolas";
     font-size: 2.5vmin;
     color: white;
 }
 
+.p225 {
+    font-family: "Custom-Consolas";
+    font-size: 2.25vmin;
+    color: white;
+}
 .para-center {
     font-family: "Custom-Consolas";
-    font-size: 3vmin;
     color: white;
     flex: 1;
     margin-left: auto;
     margin-right: auto;
-    margin: 10px 10px 10px 10px;
+    margin: 1% 10% 1% 5%;
 }
 
 .clickable {
@@ -215,7 +225,12 @@ p {
 a.colorfix {
     background-color: transparent;
 }
-
+img.placement {
+    margin-right: 25%;
+    margin-left: 25%;
+    width: 5vw;
+    height: 5vw;
+}
 img.spacer-hori {
     width: 100%;
     opacity: 10%;
@@ -252,21 +267,29 @@ img.calcdemo {
     }
 
 .homepage-latest {
-    margin-top: 2%;
-    width: 100%;
-    overflow: hidden;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    place-items: center;
+    border-collapse: separate;
 }
 
-.homepage-latest-title{
-    margin-left: 10%;
-    width: contain;
-    float: left;
+.homepage-latest-title {
 }
 
 .homepage-latest-image {
-    margin-right: 10%;
-    width: 50%;
-    float: right;
+    width: 100%;
+}
+
+.welcome-message{
+    width: 60%;
+    height: 25%;
+    margin: 5% auto 5% auto;
+    vertical-align:central;
+    text-align: center;
 }
 
 @font-face {
