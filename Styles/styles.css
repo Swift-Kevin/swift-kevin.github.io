@@ -132,10 +132,22 @@ p {
     }
 
 .connections {
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 20%;
     flex: 1;
+}
+
+.cnct-left{
+    float: left;
+    width: 25%;
+    height: 25%;
+}
+
+.cnct-right {
+    float: right;
+    width: 25%;
+    height: 25%;
 }
 
 .center {
@@ -202,13 +214,6 @@ p {
 
 a.colorfix {
     background-color: transparent;
-}
-
-img.placement {
-    margin-right: 25%;
-    margin-left: 25%;
-    width: 5vw;
-    height: 5vw;
 }
 
 img.spacer-hori {
