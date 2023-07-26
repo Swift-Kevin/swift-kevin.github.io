@@ -7,6 +7,36 @@
     background-color: black;
 }
 
+.idxgrid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    border-collapse: separate;
+    grid-column-gap: 10%;
+    overflow: hidden;
+}
+
+    .idxgrid h1 {
+        font-family: "Custom-Garamond";
+        font-size: 10vmax;
+    }
+
+.idxcellleft {
+    place-content: center;
+    text-align: right;
+}
+
+.idxcellright {
+    place-content: center;
+    text-align: left;
+}
+
+.idxredirect {
+    text-align: center;
+}
+
 .header {
     background-color: #1d1d1d;
     border-radius: 10px;
@@ -113,6 +143,7 @@ h3 {
     font-size: 2.25vmin;
     color: white;
 }
+
 .para-center {
     font-family: "Custom-Consolas";
     color: white;
@@ -148,7 +179,7 @@ h3 {
     flex: 1;
 }
 
-.cnct-left{
+.cnct-left {
     float: left;
     width: 25%;
     height: 25%;
@@ -225,12 +256,14 @@ h3 {
 a.colorfix {
     background-color: transparent;
 }
+
 img.placement {
     margin-right: 25%;
     margin-left: 25%;
     width: 5vw;
     height: 5vw;
 }
+
 img.spacer-hori {
     width: 100%;
     opacity: 10%;
@@ -267,7 +300,7 @@ img.calcdemo {
     }
 
 .homepage-latest {
-    width: 80%;
+    width: 75%;
     margin-top: 10%;
     margin-left: 10%;
     display: grid;
@@ -284,11 +317,10 @@ img.calcdemo {
     width: 100%;
 }
 
-.welcome-message{
-    width: 60%;
-    height: 25%;
+.welcome-message {
+    width: 75%;
     margin: 5% auto 5% auto;
-    vertical-align:central;
+    vertical-align: central;
     text-align: center;
 }
 
