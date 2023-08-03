@@ -241,10 +241,29 @@ h3 {
     display: flex;
 }
 
+.video-right {
+    margin: 1% 1% 1% 1%;
+    float: right;
+    width: 48%;
+}
+
 .project-description {
     margin: 2% 2% 2% 2%;
     font-size: 2vmin;
 }
+
+.vidwrap {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+    .vidwrap iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 
 .project-connections {
     padding: 5% 25% 0% 25%;
