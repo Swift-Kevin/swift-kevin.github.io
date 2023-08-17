@@ -195,6 +195,15 @@ h3 {
     margin: 2% 33.33% 2% 33.33%;
 }
 
+.resume-holder{
+    align-content: center;
+    margin: 2% 33% 2% 33%;
+}
+
+.resume{
+    overflow: hidden;
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;
