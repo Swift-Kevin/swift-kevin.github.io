@@ -355,7 +355,6 @@ img.calcdemo {
         height: 100%;
         overflow: hidden;
         scrollbar-width: thin;
-        scrollbar-color: #888;
         border: none;
     }
 
