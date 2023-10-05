@@ -348,34 +348,45 @@ img.calcdemo {
 
 .grid-resume {
     grid-area: res;
+    width: 100%;
 }
 
-    .grid-resume iframe {
-        width: 95%;
+    .grid-resume img {
+        width: 80%;
         height: 100%;
         overflow: hidden;
         scrollbar-width: thin;
-        border: none;
+        border: 0px solid black;
     }
 
-        .grid-resume iframe::-webkit-scrollbar-thumb {
-            background-color: #888;
-        }
+    .grid-resume iframe::-webkit-scrollbar-thumb {
+    }
 
-        .grid-resume iframe::-webkit-scrollbar {
-            width: 0.5em;
-        }
+    .grid-resume iframe::-webkit-scrollbar {
+        width: 0.5em;
+    }
 
 .grid-aboutme {
     grid-area: abt;
-    }
-
-.grid-aboutme div {
-    text-align: center;
 }
+
+    .grid-aboutme div {
+        text-align: center;
+    }
 
 .grid-gif {
     grid-area: gif;
+    grid-template-areas:
+        'img';
+}
+
+.grid-projimg img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.grid-projimg {
+    grid-area: img;
 }
 
 .grid-empty {
@@ -388,28 +399,27 @@ img.calcdemo {
 
 .grid-connect {
     grid-area: lnk;
-
 }
 
-.grid-connect img {
-    padding: 1% 1% 1% 1%;
-    width: 7vh;
-}
+    .grid-connect img {
+        padding: 1% 1% 1% 1%;
+        width: 7vh;
+    }
 
 .grid-container {
     margin-top: 2%;
     display: grid;
     grid-template-areas:
-        'abt gif'
-        'abt res'
-        'abt res'
-        'pj1 res'
-        'pj2 res'
-        'pj3 res'
-        'lnk lnk';
+        'emp abt emp2'
+        'emp gif emp2'
+        'emp pj1 emp2'
+        'emp pj2 emp2'
+        'emp pj3 emp2'
+        'emp res emp2'
+        'emp lnk emp2';
     gap: 1vh;
-    grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: fit-content() 1fr 50px 0fr 0fr 1.5fr 30px;
+    grid-template-columns: 15fr 70fr 15fr;
     padding: 1vh;
     /*border: groove;*/
 }
@@ -418,9 +428,10 @@ img.calcdemo {
         color: white;
         text-align: center;
         padding: 20px 0;
-        font-size: 12px;
+        font-size: 24px;
         /*border: groove;*/
     }
+
 
 
 @font-face {
