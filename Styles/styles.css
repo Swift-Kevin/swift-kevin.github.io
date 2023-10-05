@@ -402,6 +402,8 @@ img.calcdemo {
     display: grid;
     grid-template-areas:
         'abt gif'
+        'abt res'
+        'abt res'
         'pj1 res'
         'pj2 res'
         'pj3 res'
