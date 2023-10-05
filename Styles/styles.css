@@ -325,7 +325,8 @@ img.calcdemo {
 }
 
     .grid-proj1 img {
-        width: 30vw;
+        width: 40vw;
+        text-decoration: none;
     }
 
 .grid-proj2 {
@@ -352,7 +353,7 @@ img.calcdemo {
 }
 
     .grid-resume img {
-        width: 80%;
+        max-width: 50vw;
         height: 100%;
         overflow: hidden;
         scrollbar-width: thin;
@@ -374,20 +375,89 @@ img.calcdemo {
         text-align: center;
     }
 
+    .grid-aboutme p {
+        font-size: 24px;
+        width: 50%;
+        height: 50%;
+        margin: 0% 25% 0% 25%;
+        text-align: center;
+    }
+
 .grid-gif {
     grid-area: gif;
+    display: grid;
+    gap: 2vh 3vw;
+    align-items: center;
     grid-template-areas:
-        'img';
+        'img0 img1 img2'
+        'img4 img5 img6'
+        'img8 img9 img10'
+        'img3 img7 img11';
 }
 
-.grid-projimg img {
-    max-width: 100%;
-    max-height: 100%;
+    .grid-gif img {
+        max-width: 100%;
+        max-height: 100%;
+        transition: linear 0.1s;
+    }
+
+        .grid-gif img:hover {
+            transform: scale(1.1);
+            transition: linear 0.1s;
+        }
+
+
+/* REGION FOR GRID IMAGE GIFS*/
+
+.grid-projimg0 {
+    grid-area: img0;
 }
 
-.grid-projimg {
-    grid-area: img;
+.grid-projimg1 {
+    grid-area: img1;
 }
+
+.grid-projimg2 {
+    grid-area: img2;
+}
+
+.grid-projimg3 {
+    grid-area: img3;
+}
+
+.grid-projimg4 {
+    grid-area: img4;
+}
+
+.grid-projimg5 {
+    grid-area: img5;
+}
+
+.grid-projimg6 {
+    grid-area: img6;
+}
+
+.grid-projimg7 {
+    grid-area: img7;
+}
+
+.grid-projimg8 {
+    grid-area: img8;
+}
+
+.grid-projimg9 {
+    grid-area: img9;
+}
+
+.grid-projimg10 {
+    grid-area: img10;
+}
+
+.grid-projimg11 {
+    grid-area: img11;
+}
+
+/* END OF REGION */
 
 .grid-empty {
     grid-area: emp;
@@ -411,8 +481,8 @@ img.calcdemo {
     display: grid;
     grid-template-areas:
         'emp abt emp2'
-        'emp gif emp2'
         'emp pj1 emp2'
+        'emp gif emp2'
         'emp pj2 emp2'
         'emp pj3 emp2'
         'emp res emp2'
@@ -428,7 +498,6 @@ img.calcdemo {
         color: white;
         text-align: center;
         padding: 20px 0;
-        font-size: 24px;
         /*border: groove;*/
     }
 
