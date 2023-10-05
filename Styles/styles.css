@@ -5,7 +5,14 @@
 
 .bdy {
     background-color: black;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+    .bdy::-webkit-scrollbar {
+        display: none;
+    }
+
 
 .idxgrid {
     width: 100%;
@@ -91,18 +98,16 @@ spectitle {
 
 .header-buttons-container {
     /*Block Settings*/
-    margin-left: 25%;
-    margin-right: 25%;
     height: 25%;
-    max-width: 75%;
-    min-width: 0%;
-    padding: 5px 1% 1% 1%;
     display: flex;
+    justify-content: center;
+    gap: 5vw;
+    margin-bottom: 1vh;
 }
 
 .menu-buttons {
+    max-width: 10vw;
     flex: 1;
-    margin: 0% 5% 0% 5%;
     font-family: "Custom-Consolas";
     font-size: 3vmin;
     color: white;
@@ -172,34 +177,7 @@ h3 {
         color: white;
     }
 
-.connections {
-    margin-left: 40%;
-    margin-right: 40%;
-    width: 20%;
-    flex: 1;
-}
-
-.cnct-left {
-    float: left;
-    width: 25%;
-    height: 25%;
-}
-
-.cnct-right {
-    float: right;
-    width: 25%;
-    height: 25%;
-}
-
-.center-resume{
-    margin: 2% 33.33% 2% 33.33%;
-}
-
-.resume-holder{
-    margin: 2% 0% 2% 0%;
-}
-
-.resume{
+.resume-holder {
     overflow: hidden;
 }
 
@@ -330,30 +308,119 @@ img.calcdemo {
         transition: filter 0.25s;
     }
 
-.homepage-latest {
-    width: 75%;
-    margin-top: 10%;
-    margin-left: 10%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    place-items: center;
-    border-collapse: separate;
-}
-
-.homepage-latest-title {
-}
-
-.homepage-latest-image {
-    width: 100%;
-}
-
 .welcome-message {
     width: 75%;
     margin: 5% auto 5% auto;
     vertical-align: central;
     text-align: center;
 }
+
+/*
+    Homepage CSS Below
+*/
+
+.grid-proj1 {
+    grid-area: pj1;
+    align-self: center;
+}
+
+    .grid-proj1 img {
+        width: 30vw;
+    }
+
+.grid-proj2 {
+    grid-area: pj2;
+    align-self: center;
+}
+
+    .grid-proj2 img {
+        width: 40vw;
+    }
+
+.grid-proj3 {
+    grid-area: pj3;
+    align-self: center;
+}
+
+    .grid-proj3 img {
+        width: 40vw;
+    }
+
+.grid-resume {
+    grid-area: res;
+}
+
+    .grid-resume iframe {
+        width: 95%;
+        height: 100%;
+        overflow: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: #888;
+        border: none;
+    }
+
+        .grid-resume iframe::-webkit-scrollbar-thumb {
+            background-color: #888;
+        }
+
+        .grid-resume iframe::-webkit-scrollbar {
+            width: 0.5em;
+        }
+
+.grid-aboutme {
+    grid-area: abt;
+    }
+
+.grid-aboutme div {
+    text-align: center;
+}
+
+.grid-gif {
+    grid-area: gif;
+}
+
+.grid-empty {
+    grid-area: emp;
+}
+
+.grid-empty2 {
+    grid-area: emp2;
+}
+
+.grid-connect {
+    grid-area: lnk;
+
+}
+
+.grid-connect img {
+    padding: 1% 1% 1% 1%;
+    width: 7vh;
+}
+
+.grid-container {
+    margin-top: 2%;
+    display: grid;
+    grid-template-areas:
+        'abt gif'
+        'pj1 res'
+        'pj2 res'
+        'pj3 res'
+        'lnk lnk';
+    gap: 1vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 1vh;
+    /*border: groove;*/
+}
+
+    .grid-container div {
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 12px;
+        /*border: groove;*/
+    }
+
 
 @font-face {
     font-family: "Custom-Garamond";
