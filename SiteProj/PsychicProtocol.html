@@ -88,6 +88,29 @@
                     <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol_GIF_RadialWheel.gif" />
                 </center>
             </div>
+            <div class="grid-psyContr-sum3 sum-text">
+                <h2>
+                    Hit indications:
+                </h2>
+                <p>
+                    Along with the health bar, players were having trouble telling where they were being attacked from.
+                    This led to them having increasing frustration with the game and made them quit playing.
+                    This would prove to be an easy fix by adding a directional hit indicator to the player's interface.
+                    While I was at it I decided to add a hit effect on the UI to
+                </p>
+                <p>
+                    In order to display where the attack came from I needed an angle of some kind.
+                    I originally had some trouble coming up with an idea on how to solve this so I asked a teammate about it.
+                    They proposed I get the direction between the attack’s (melee or bullet) current position and the player’s position.
+                    Then take the angle between the player’s forward and the direction and send that to the damage indicator script.
+                    With the angle, we can display the image rotated around the center of the screen and gradually lower the alpha after some time to fade the images in and out.
+                </p>
+            </div>
+            <div class="grid-psyContr-gif3">
+                <center>
+                    <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol_GIF_HitIndication.gif" />
+                </center>
+            </div>
         </div>
     </div>
 </body>
