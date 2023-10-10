@@ -25,12 +25,12 @@
             Psychic Protocol
         </div>
         <div class="grid-psy-itch">
-            <a class="project-connections" href="https://mrcowface.itch.io/psychic-protocol" target="_blank">
+            <a class="project-connections colorfix" href="https://mrcowface.itch.io/psychic-protocol" target="_blank">
                 <img src="../SiteImages/itchio-textless-white.svg" />
             </a> Download on Itch!
         </div>
         <div class="grid-psy-git">
-            <a class="project-connections" href="https://github.com/tomOrourke1/Midterm_FPS_Project" target="_blank">
+            <a class="project-connections colorfix" href="https://github.com/tomOrourke1/Midterm_FPS_Project" target="_blank">
                 <img src="../SiteImages/github-mark-white.png" />
             </a> View on Github!
         </div>
@@ -42,7 +42,7 @@
         <div class="grid-psy-emp3"></div>
         <div class="grid-psy-foot"></div>
         <div class="grid-container-psy-contr">
-            <div class="grid-psyContr-sum">
+            <div class="grid-psyContr-sum1 sum-text">
                 <h2>
                     Stat Bars:
                 </h2>
@@ -59,16 +59,34 @@
                     While the change itself wasn't complex, it allowed players to more accurately gauge the difficulty of an enemy by the damage they dealt.
                 </p>
             </div>
-            <div class="grid-psyContr-gif">
+            <div class="grid-psyContr-gif1 sum-gif">
                 <center>
                     <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol_GIF_StatBars.gif" />
                 </center>
             </div>
-            <div class="grid-psyContr-pre clickable">
-                <!--<a> Prev </a>-->
+            <div class="grid-psyContr-sum2 sum-text">
+                <h2>
+                    The Radial Wheel:
+                </h2>
+                <p>
+                    In the early stages of developing Psychic Protocol, switching abilities would be crucial to our combat mechanics.
+                    Players should have an easy and fast time switching abilities back and forth if they need to beat some challenging enemies.
+                    Five abilities were created for the player to use and potential for more to come.
+                    There needed to be a way for the player to access them quickly, and for designers to keep adding more in case they were developed.
+                </p>
+                <p>
+                    I created the radial wheel system featured in our game to help address this issue.
+                    Displaying the menu would be solved by using the degrees of a circle and dividing it up between the number of abilities.
+                    Then by calculating the signed angle between the cursor and the center of the screen,
+                    I could find which ability was being hovered over and have that ability highlight and display the name of the power in the middle.
+                    In order to promote a better user experience I used images instead of text for the ability segments, and the segments never changed positions.
+                    This way when the player became fluent in the game they could easily open the wheel and close it by only moving the mouse slightly.
+                </p>
             </div>
-            <div class="grid-psyContr-nex clickable">
-                <!--<a> Next </a>-->
+            <div class="grid-psyContr-gif2">
+                <center>
+                    <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol_GIF_RadialWheel.gif" />
+                </center>
             </div>
         </div>
     </div>
