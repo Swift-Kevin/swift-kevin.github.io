@@ -260,10 +260,10 @@ h3 {
     justify-content: center;
 }
 
-.project-connections img{
-    width: 30%;
-    height: 30%;
-}
+    .project-connections img {
+        width: 30%;
+        height: 30%;
+    }
 
 a .colorfix {
     background-color: transparent;
@@ -469,12 +469,13 @@ img.calcdemo {
 }
 
 .grid-connect {
+    font-size: 200%;
     grid-area: lnk;
 }
 
     .grid-connect img {
         padding: 1% 1% 1% 1%;
-        width: 7vh;
+        width: 10vh;
     }
 
 .grid-psy-title {
@@ -503,6 +504,7 @@ img.calcdemo {
     margin-top: 5%;
     align-content: center;
 }
+
 
 .grid-psy-vid {
     grid-area: psyVid;
@@ -573,32 +575,52 @@ img.calcdemo {
     grid-template-columns: 15% 27.5% 15% 27.5% 15%;
 }
 
-.grid-psyContr-sum {
+.grid-psyContr-sum1 {
     margin: 5vh 5vw 0% 5vw;
-    grid-area: psySum;
+    grid-area: psySum1;
     font-size: 1.2vw;
     text-align: center;
 }
 
-.grid-psyContr-sum h2{
+.grid-psyContr-sum2 {
+    margin: 5vh 5vw 0% 5vw;
+    grid-area: psySum2;
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+
+.sum-text h2 {
     font-family: "Custom-Consolas";
     font-size: 3.5vmin;
     color: white;
     text-decoration: underline;
 }
 
-.grid-psyContr-gif {
-    grid-area: psyGif;
+
+.grid-psyContr-gif2 {
+    grid-area: psyGif1;
 }
 
-.grid-psyContr-gif img{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    height: 70%;
-    max-width: 70%;
-    min-width: 30%;
-
+.grid-psyContr-gif2 {
+    grid-area: psyGif2;
+    padding-top: 30%;
+    padding-bottom: 30%;
 }
+
+    .grid-psyContr-gif2 img {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 75%;
+        height: 75%;
+    }
+
+    .sum-gif img {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 50%;
+        height: 50%;
+    }
 
 .grid-psyContr-pre {
     font-size: 200%;
@@ -615,16 +637,18 @@ img.calcdemo {
 }
 
 .grid-container-psy-contr {
-    border: white 2px solid;
+    /*border: white 2px solid;*/
     grid-area: psyContr;
     display: grid;
     grid-template-areas:
-        'psySum psyGif'
-        'psyPre psyNex';
-    height: 100vh;
+        'psySum1 psyGif1'
+        'psyGif2 psySum2';
+    height: fit-content;
     margin-top: 2%;
-    grid-template-rows: 80vh 20vh;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: fit-content(stretch) fit-content(stretch);
+    row-gap: 2vh;
+    column-gap: 1vw;
+    grid-template-columns: fit-content(stretch) fit-content(stretch);
 }
 
 @font-face {
