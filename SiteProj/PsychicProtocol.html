@@ -3,7 +3,6 @@
 <html>
 <head>
     <link rel="stylesheet" href="../Styles/styles.css" />
-    <script source="../SiteJava/CustomElement.js"></script>
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png" />
     <title>Kevin W.</title>
     <meta charset="utf-8">
@@ -14,6 +13,63 @@
     <div class="header">
         <div class="header-title">
             <header>Kevin Wall</header>
+            <div class="header-buttons-container">
+                <a class="menu-buttons" href="../SitePages/Homepage.html">Home</a>
+                <a class="menu-buttons" href="../SitePages/ProjectsPage.html">Projects</a>
+                <a class="menu-buttons" href="../SiteProj/PsychicProtocol.html">Psychic Protocol</a>
+            </div>
+        </div>
+    </div>
+    <div class="grid-container-proj">
+        <div class="grid-psy-title">
+            Psychic Protocol
+        </div>
+        <div class="grid-psy-itch">
+            <a class="project-connections" href="https://mrcowface.itch.io/psychic-protocol" target="_blank">
+                <img src="../SiteImages/itchio-textless-white.svg" />
+            </a> Download on Itch!
+        </div>
+        <div class="grid-psy-git">
+            <a class="project-connections" href="https://github.com/tomOrourke1/Midterm_FPS_Project" target="_blank">
+                <img src="../SiteImages/github-mark-white.png" />
+            </a> View on Github!
+        </div>
+        <div class="grid-psy-vid">
+            <iframe src="https://www.youtube.com/embed/YduLyepEffI?si=0bQkEH12bWTp4j0l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="grid-psy-emp1"></div>
+        <div class="grid-psy-emp2"></div>
+        <div class="grid-psy-emp3"></div>
+        <div class="grid-psy-foot"></div>
+        <div class="grid-container-psy-contr">
+            <div class="grid-psyContr-sum">
+                <h2>
+                    Stat Bars:
+                </h2>
+                <p>
+                    After hitting our third milestone, the team noticed a problem with the game's health, shield, and focus bars during testing.
+                    The issue was that these bars didn't give clear feedback about the player's status.
+                    They just lost chunks without showing a gradual change.
+                </p>
+                <p>
+                    Instead of having a single bar for each stat, I added a second one behind it.
+                    When a resource is used, the live bar is updated to reflect the current value.
+                    The back bar is then decreased slowly until it equals the live bar's value.
+                    This tweak made a big difference by allowing players to see how much health, shield, or focus they had left without any confusion.
+                    While the change itself wasn't complex, it allowed players to more accurately gauge the difficulty of an enemy by the damage they dealt.
+                </p>
+            </div>
+            <div class="grid-psyContr-gif">
+                <center>
+                    <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol_GIF_StatBars.gif" />
+                </center>
+            </div>
+            <div class="grid-psyContr-pre clickable">
+                <!--<a> Prev </a>-->
+            </div>
+            <div class="grid-psyContr-nex clickable">
+                <!--<a> Next </a>-->
+            </div>
         </div>
     </div>
 </body>
