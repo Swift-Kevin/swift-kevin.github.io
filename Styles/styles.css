@@ -468,6 +468,10 @@ img.calcdemo {
     grid-area: emp2;
 }
 
+.grid-psy-foot {
+    grid-area: psyFoot;
+}
+
 .grid-connect {
     font-size: 200%;
     grid-area: lnk;
@@ -571,22 +575,20 @@ img.calcdemo {
         'psyEmp1  psyVid    psyVid   psyVid   psyEmp3'
         'psyEmp1  psyItch   psyEmp2  psyGit   psyEmp3'
         'psyEmp1 psyContr  psyContr psyContr psyEmp3';
-    grid-template-rows: 10vh 80vh 25vh 40vh;
+    grid-template-rows: 2fr 10fr 5fr 40fr;
     grid-template-columns: 15% 27.5% 15% 27.5% 15%;
 }
 
 .grid-psyContr-sum1 {
-    margin: 5vh 5vw 0% 5vw;
     grid-area: psySum1;
-    font-size: 1.2vw;
-    text-align: center;
 }
 
 .grid-psyContr-sum2 {
-    margin: 5vh 5vw 0% 5vw;
     grid-area: psySum2;
-    font-size: 1.2vw;
-    text-align: center;
+}
+
+.grid-psyContr-sum3 {
+    grid-area: psySum3;
 }
 
 
@@ -595,8 +597,14 @@ img.calcdemo {
     font-size: 3.5vmin;
     color: white;
     text-decoration: underline;
+    text-align: center;
 }
 
+.sum-text p {
+    margin: 5vh 5vw 0% 5vw;
+    font-size: 1.2vw;
+    text-align: center;
+}
 
 .grid-psyContr-gif2 {
     grid-area: psyGif1;
@@ -615,12 +623,23 @@ img.calcdemo {
         height: 75%;
     }
 
-    .sum-gif img {
-        padding-top: 5%;
-        padding-bottom: 5%;
-        width: 50%;
-        height: 50%;
-    }
+.grid-psyContr-gif3 {
+    grid-area: psyGif3;
+
+}
+.grid-psyContr-gif3 img {
+    padding-top: 25%;
+    padding-bottom: 25%;
+    width: 100%;
+    height: 100%;
+}
+
+.sum-gif img {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+    height: 50%;
+}
 
 .grid-psyContr-pre {
     font-size: 200%;
@@ -642,9 +661,11 @@ img.calcdemo {
     display: grid;
     grid-template-areas:
         'psySum1 psyGif1'
-        'psyGif2 psySum2';
+        'psyGif2 psySum2'
+        'psySum3 psyGif3';
     height: fit-content;
     margin-top: 2%;
+    padding-bottom: 2%;
     grid-template-rows: fit-content(stretch) fit-content(stretch);
     row-gap: 2vh;
     column-gap: 1vw;
