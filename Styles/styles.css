@@ -392,8 +392,7 @@ img.calcdemo {
     grid-template-areas:
         'img0 img1 img2'
         'img4 img5 img6'
-        'img8 img9 img10'
-        'img3 img7 img11';
+        'img8 img9 img11';
 }
 
     .grid-gif img {
