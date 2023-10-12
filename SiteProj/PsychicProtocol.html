@@ -24,6 +24,27 @@
         <div class="grid-psy-title">
             Psychic Protocol
         </div>
+        <div class="grid-psyRole">
+            <div class="grid-roleTitle"> <h3>Contributions</h3></div>
+            <div class="grid-roleSec1">
+                <ul>
+                    <li>User Interface Development</li>
+                    <li>Customization on UI elements.</li>
+                    <li>Controller accesibility options.</li>
+                    <li>Optimized UI understanding.</li>
+                    <li>Game Settings persistent throughout gameplay.</li>
+                </ul>
+            </div>
+            <div class="grid-roleSec2">
+                <ul>
+                    <li>Created and managed assets used.</li>
+                    <li>Oversaw quality assurance and bug testing.</li>
+                    <li>Created a dynamic main menu.</li>
+                    <li>Customization features in the credits menu for designers.</li>
+                    <li>Audio management for all sound implementation.</li>
+                </ul>
+            </div>
+        </div>
         <div class="grid-psy-itch">
             <a class="project-connections colorfix" href="https://mrcowface.itch.io/psychic-protocol" target="_blank">
                 <img src="../SiteImages/itchio-textless-white.svg" />
@@ -96,7 +117,7 @@
                     Along with the health bar, players were having trouble telling where they were being attacked from.
                     This led to them having increasing frustration with the game and made them quit playing.
                     This would prove to be an easy fix by adding a directional hit indicator to the player's interface.
-                    While I was at it I decided to add a hit effect on the UI to
+                    While I was at it I decided to add a hit effect on the UI respective of the type damaged (HP/Shield).
                 </p>
                 <p>
                     In order to display where the attack came from I needed an angle of some kind.
@@ -104,6 +125,7 @@
                     They proposed I get the direction between the attack’s (melee or bullet) current position and the player’s position.
                     Then take the angle between the player’s forward and the direction and send that to the damage indicator script.
                     With the angle, we can display the image rotated around the center of the screen and gradually lower the alpha after some time to fade the images in and out.
+                    This little change helped a lot with user experience by increasing accessibility of knowledge in their environment.
                 </p>
             </div>
             <div class="grid-psyContr-gif3">
