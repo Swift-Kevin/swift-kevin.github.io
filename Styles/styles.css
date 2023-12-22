@@ -1,3 +1,18 @@
+/* ============= */
+/* Global Styles */
+/* ============= */
+
+a:link, a:visited {
+    font-family: "Custom-Consolas";
+    color: white;
+}
+
+a:hover, a:active {
+    font-family: "Custom-Consolas";
+    color: white;
+}
+
+
 
 /* =========== */
 /* Link Styles */
@@ -47,135 +62,122 @@
 .header {
     background-color: #1d1d1d;
     border-radius: 10px;
-    border-width: 5px;
     overflow: hidden;
     text-decoration: none;
-}
-
-    .header a:link, a:visited {
-        transition: color 0.5s, background-color 0.5s;
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        background-color: #1d1d1d;
-        border-radius: 5px;
-    }
-
-    .header a:hover, a:active {
-        text-align: center;
-        color: #212121;
-        border-radius: 5px;
-        background-color: #ededed;
-    }
-
-.header-right {
-    /*Font Settings*/
-    font-family: "Custom-Consolas";
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-    /*Block Settings*/
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .header-title {
     /*Font Settings*/
     font-family: "Custom-Garamond";
-    font-size: 5.5vmin;
+    font-size: 5.75vmin;
     color: white;
     /*Block Settings*/
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    width: 100%;
     text-align: center;
 }
 
-spectitle {
-    color: white;
-}
-
 .header-buttons-container {
-    /*Block Settings*/
-    height: 25%;
     display: flex;
     justify-content: center;
-    gap: 1vw;
-    margin-bottom: 1vh;
 }
+
+/* Menu Buttons must adhere to a 512x512 canvas size! */
 
 .menu-buttons {
-    width: 10vw;
-    flex: 1;
+    width: 10%;
     font-family: "Custom-Consolas";
-    font-size: 3vmin;
-    color: white;
+    border: ridge grey 5px;
+    text-align: center;
+    font-size: 170%;
+    position: relative;
+    margin: 0.5% 1.5% 0.5% 1.5%;
 }
 
-h1 {
-    font-family: "Custom-Consolas";
-    font-size: 5vmin;
-    color: white;
-}
-
-h2 {
-    font-family: "Custom-Consolas";
-    font-size: 3.5vmin;
-    color: white;
-}
-
-h3 {
-    font-family: "Custom-Consolas";
-    font-size: 3vmin;
-    color: white;
-}
-
-.p275 {
-    font-family: "Custom-Consolas";
-    font-size: 2.75vmin;
-    color: white;
-}
-
-.p25 {
-    font-family: "Custom-Consolas";
-    font-size: 2.5vmin;
-    color: white;
-}
-
-.p225 {
-    font-family: "Custom-Consolas";
-    font-size: 2.25vmin;
-    color: white;
-}
-
-.para-center {
-    font-family: "Custom-Consolas";
-    color: white;
-    flex: 1;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 1% 10% 1% 5%;
-}
-
-.clickable {
-    font-family: "Custom-Consolas";
-    font-size: 3vmin;
-    color: white;
-    flex: 1;
-}
-
-    .clickable a:link, a:visited {
-        font-family: "Custom-Consolas";
-        font-size: 3vmin;
-        color: white;
+    .menu-buttons img {
+        width: 50%;
+        opacity: 1;
     }
 
-    .clickable a:hover, a:active {
-        font-family: "Custom-Consolas";
-        font-size: 3vmin;
-        color: white;
+    .menu-buttons:hover img {
+        transition: opacity 0.3s;
+        opacity: 0;
     }
+
+    .menu-buttons span {
+        opacity: 0;
+        width: 100%;
+        transition: opacity 0.3s;
+        position: absolute;
+        transform: translate(-75%, 100%);
+    }
+
+    .menu-buttons:hover span {
+        opacity: 1;
+    }
+
+
+.aboutme {
+    /*Text Settings*/
+    text-align: center;
+    font-size: 150%;
+    color: white;
+    /*Box Settings*/
+    width: 50%;
+    height: 50%;
+    margin: 1% 25% 1% 25%;
+}
+
+.homepage-project-title {
+    grid-area: homeTitle;
+    font-size: 250%;
+    font: "Custom-Consolas";
+    text-align: center;
+}
+
+.homepage-project-gif1 {
+    grid-area: homePrG1;
+}
+
+.homepage-project-gif2 {
+    grid-area: homePrG2;
+}
+
+.homepage-project-gif3 {
+    grid-area: homePrG3;
+}
+
+.homepage-project {
+    display: grid;
+    color: white;
+    justify-content: center;
+    grid-template-areas:
+        'homeTitle homeTitle homeTitle'
+        'homePrG1 homePrG2 homePrG3';
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 5vh;
+}
+
+    .homepage-project img {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+.homepage-connect img {
+    /*padding: 1% 1% 1% 1%;*/
+    width: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.homepage-connect {
+    margin-top: 1%;
+    text-align:center;
+}
+
 
 .resume-holder {
     overflow: hidden;
@@ -197,7 +199,8 @@ h3 {
 
 .project-title {
     /*Font Settings*/
-    font-family: "Custom-Garamond";
+    font-family: "Custom-Consolas";
+    font-size: 3.5vmin;
     color: white;
     text-decoration: none;
     /*Block Settings*/
@@ -240,6 +243,8 @@ h3 {
 .project-description {
     margin: 2% 2% 2% 2%;
     font-size: 2vmin;
+    color: white;
+    font-family: "Custom-Consolas";
 }
 
 .vidwrap {
@@ -318,149 +323,6 @@ img.calcdemo {
     text-align: center;
 }
 
-/*
-    Homepage CSS Below
-*/
-
-
-
-.grid-proj1 {
-    grid-area: pj1;
-}
-
-    .grid-proj1 img {
-        width: 40vw;
-    }
-
-.grid-proj2 {
-    grid-area: pj2;
-    align-self: center;
-}
-
-    .grid-proj2 img {
-        width: 40vw;
-    }
-
-.grid-proj3 {
-    grid-area: pj3;
-    align-self: center;
-}
-
-    .grid-proj3 img {
-        width: 40vw;
-    }
-
-.grid-resume {
-    grid-area: res;
-    width: 100%;
-}
-
-    .grid-resume img {
-        max-width: 50vw;
-        height: 100%;
-        overflow: hidden;
-        scrollbar-width: thin;
-        border: 0px solid black;
-    }
-
-    .grid-resume iframe::-webkit-scrollbar-thumb {
-    }
-
-    .grid-resume iframe::-webkit-scrollbar {
-        width: 0.5em;
-    }
-
-.grid-aboutme {
-    grid-area: abt;
-}
-
-    .grid-aboutme div {
-        text-align: center;
-    }
-
-    .grid-aboutme p {
-        font-size: 24px;
-        width: 50%;
-        height: 50%;
-        margin: 0% 25% 0% 25%;
-        text-align: center;
-    }
-
-.grid-gif {
-    grid-area: gif;
-    display: grid;
-    gap: 2vh 3vw;
-    align-items: center;
-    grid-template-areas:
-        'img0 img1 img2'
-        'img4 img5 img6'
-        'img8 img9 img11';
-}
-
-    .grid-gif img {
-        max-width: 100%;
-        max-height: 100%;
-        transition: linear 0.1s;
-    }
-
-        .grid-gif img:hover {
-            transform: scale(1.1);
-            transition: linear 0.1s;
-        }
-
-
-/* REGION FOR GRID IMAGE GIFS*/
-
-.grid-projimg0 {
-    grid-area: img0;
-}
-
-.grid-projimg1 {
-    grid-area: img1;
-}
-
-.grid-projimg2 {
-    grid-area: img2;
-}
-
-.grid-projimg3 {
-    grid-area: img3;
-}
-
-.grid-projimg4 {
-    grid-area: img4;
-}
-
-.grid-projimg5 {
-    grid-area: img5;
-}
-
-.grid-projimg6 {
-    grid-area: img6;
-}
-
-.grid-projimg7 {
-    grid-area: img7;
-}
-
-.grid-projimg8 {
-    grid-area: img8;
-}
-
-.grid-projimg9 {
-    grid-area: img9;
-}
-
-.grid-projimg10 {
-    grid-area: img10;
-}
-
-.grid-projimg11 {
-    grid-area: img11;
-}
-
-/* END OF REGION */
-
 .grid-empty {
     grid-area: emp;
 }
@@ -525,10 +387,6 @@ img.calcdemo {
         min-height: 90%;
     }
 
-/** {
-    border: 1px solid white;
-}*/
-
 .grid-psy-emp1 {
     grid-area: psyEmp1;
 }
@@ -540,31 +398,6 @@ img.calcdemo {
 .grid-psy-emp3 {
     grid-area: psyEmp3;
 }
-
-.grid-container {
-    margin-top: 2%;
-    display: grid;
-    grid-template-areas:
-        'emp abt emp2'
-        'emp pj1 emp2'
-        'emp gif emp2'
-        'emp pj2 emp2'
-        'emp pj3 emp2'
-        'emp res emp2'
-        'emp lnk emp2';
-    gap: 1vh;
-    grid-template-rows: fit-content() 1fr 50px 0fr 0fr 1.5fr 30px;
-    grid-template-columns: 15fr 70fr 15fr;
-    padding: 1vh;
-    /*border: groove;*/
-}
-
-    .grid-container div {
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-        /*border: groove;*/
-    }
 
 .grid-roleTitle {
     text-align: center;
@@ -594,8 +427,6 @@ img.calcdemo {
     grid-template-rows: 1fr 2fr;
     grid-template-columns: 1fr 1fr;
 }
-
-
 
 .grid-container-proj {
     margin-top: 1%;
