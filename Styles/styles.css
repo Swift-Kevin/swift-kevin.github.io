@@ -1,17 +1,10 @@
-/* ============= */
-/* Global Styles */
-/* ============= */
-
-a:link, a:visited {
-    font-family: "Custom-Consolas";
-    color: white;
+a {
+    display: block;
 }
 
-a:hover, a:active {
-    font-family: "Custom-Consolas";
-    color: white;
-}
-
+/** {
+    border: solid white 1px;
+}*/
 
 
 /* =========== */
@@ -19,14 +12,18 @@ a:hover, a:active {
 /* =========== */
 
 .bdy {
-    background-color: black;
+    background-color: #111111;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-    .bdy::-webkit-scrollbar {
-        display: none;
-    }
+html {
+    scroll-padding-top: 20vh;
+}
+
+.bdy::-webkit-scrollbar {
+    display: none;
+}
 
 
 .idxgrid {
@@ -60,8 +57,8 @@ a:hover, a:active {
 }
 
 .header {
-    background-color: #1d1d1d;
-    border-radius: 10px;
+    background-color: #1d1d1ded;
+    /*border:;*/
     overflow: hidden;
     text-decoration: none;
     position: sticky;
@@ -89,6 +86,7 @@ a:hover, a:active {
 .menu-buttons {
     width: 10%;
     font-family: "Custom-Consolas";
+    color: white;
     border: ridge grey 5px;
     text-align: center;
     font-size: 170%;
@@ -103,15 +101,21 @@ a:hover, a:active {
 
     .menu-buttons:hover img {
         transition: opacity 0.3s;
-        opacity: 0;
+        opacity: 0.1;
     }
 
     .menu-buttons span {
         opacity: 0;
         width: 100%;
         transition: opacity 0.3s;
+        font-size: 2vw;
         position: absolute;
-        transform: translate(-75%, 100%);
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
     }
 
     .menu-buttons:hover span {
@@ -122,31 +126,87 @@ a:hover, a:active {
 .aboutme {
     /*Text Settings*/
     text-align: center;
-    font-size: 150%;
+    font-size: min(5vmin, 150%);
     color: white;
     /*Box Settings*/
     width: 50%;
-    height: 50%;
-    margin: 1% 25% 1% 25%;
+    margin: 0 25% 0;
 }
 
 .homepage-project-title {
     grid-area: homeTitle;
-    font-size: 250%;
-    font: "Custom-Consolas";
+    font-size: min(5vmin, 200%);
+    font-family: "Custom-Consolas";
     text-align: center;
+    text-decoration: none;
 }
+
+    .homepage-project-title a {
+        transition: linear 0.1s;
+        color: white;
+        text-decoration: underline;
+    }
+
+        .homepage-project-title a:hover {
+            font-size: 115%;
+            transition: linear 0.1s;
+            color: white;
+        }
 
 .homepage-project-gif1 {
     grid-area: homePrG1;
+    display: flex;
+    align-items: center;
 }
+
+    .homepage-project-gif1 img {
+        transform: scale(1);
+        transition: linear 0.1s;
+    }
+
+        .homepage-project-gif1 img:hover {
+            transform: scale(1.1);
+            transition: linear 0.1s;
+        }
 
 .homepage-project-gif2 {
     grid-area: homePrG2;
+    display: flex;
+    align-items: center;
 }
+
+    .homepage-project-gif2 img {
+        transform: scale(1);
+        transition: linear 0.1s;
+    }
+
+        .homepage-project-gif2 img:hover {
+            transform: scale(1.1);
+            transition: linear 0.1s;
+        }
 
 .homepage-project-gif3 {
     grid-area: homePrG3;
+    display: flex;
+    align-items: center;
+}
+
+    .homepage-project-gif3 img {
+        transform: scale(1);
+        transition: linear 0.1s;
+    }
+
+        .homepage-project-gif3 img:hover {
+            transform: scale(1.1);
+            transition: linear 0.1s;
+        }
+
+.homepage-project-emptyleft {
+    grid-area: hpEL;
+}
+
+.homepage-project-emptyright {
+    grid-area: hpER;
 }
 
 .homepage-project {
@@ -154,33 +214,41 @@ a:hover, a:active {
     color: white;
     justify-content: center;
     grid-template-areas:
-        'homeTitle homeTitle homeTitle'
-        'homePrG1 homePrG2 homePrG3';
-    grid-template-rows: 1fr 2fr;
-    grid-template-columns: 33% 33% 33%;
-    margin-top: 5vh;
+        'hpEL homeTitle homeTitle homeTitle hpER'
+        'hpEL homePrG1 homePrG2 homePrG3 hpER';
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 5fr 30fr 30fr 30fr 5fr;
+    grid-column-gap: 2.5%;
+    padding: 0 0 5% 0;
 }
 
     .homepage-project img {
-        width: 50%;
-        margin-left: 25%;
+        width: 90%;
+        /*margin: 5% 5% 5% 5%;*/
     }
 
 .homepage-connect img {
-    /*padding: 1% 1% 1% 1%;*/
-    width: 5%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    width: max(5vw, 25%);
 }
+
+.homepage-connect a {
+    display: inline-block;
+    width: 25%;
+}
+
+.homepage-resume {
+    text-align: center;
+}
+
+    .homepage-resume img {
+        width: min(55vw, 125%);
+    }
 
 .homepage-connect {
-    margin-top: 1%;
-    text-align:center;
-}
-
-
-.resume-holder {
-    overflow: hidden;
+    /*padding-top: 5vh;*/
+    text-align: center;
+    color: white;
+    font-size: 2vw;
 }
 
 .center {
@@ -286,6 +354,11 @@ img.spacer-hori {
     opacity: 10%;
 }
 
+img.spacer-hori2 {
+    width: 50%;
+    opacity: 10%;
+}
+
 .spacer-width {
     width: 20%;
     height: 100%;
@@ -345,10 +418,10 @@ img.calcdemo {
         width: 10vh;
     }
 
-.grid-psy-title {
+.grid-proj-title {
     grid-area: psyTitle;
     color: white;
-    font: "Custom-Consolas";
+    font-family: "Custom-Consolas";
     text-align: center;
     padding-top: 1%;
     font-size: 300%;
@@ -428,11 +501,12 @@ img.calcdemo {
     grid-template-columns: 1fr 1fr;
 }
 
+
 .grid-container-proj {
     margin-top: 1%;
     display: grid;
     color: white;
-    font: "Custom-Consolas";
+    font-family: "Custom-Consolas";
     grid-template-areas:
         'psyTitle psyTitle  psyTitle psyTitle psyTitle'
         'psyEmp1  psyRole   psyRole  psyRole  psyEmp3'
@@ -440,7 +514,7 @@ img.calcdemo {
         'psyEmp1  psyItch   psyEmp2  psyGit   psyEmp3'
         'psyEmp1 psyContr  psyContr psyContr psyEmp3';
     grid-template-rows: 2fr 5fr 10fr 5fr 40fr;
-    grid-template-columns: 15% 27.5% 15% 27.5% 15%;
+    grid-template-columns: 5fr 25fr 15fr 25fr 5fr;
 }
 
 .grid-psyContr-sum1 {
@@ -531,10 +605,10 @@ img.calcdemo {
     height: fit-content;
     margin-top: 2%;
     padding-bottom: 2%;
-    grid-template-rows: fit-content(stretch) fit-content(stretch);
+    grid-template-rows: 1fr 1fr;
     row-gap: 2vh;
     column-gap: 1vw;
-    grid-template-columns: fit-content(stretch) fit-content(stretch);
+    grid-template-columns: 1fr 1fr;
 }
 
 @font-face {
