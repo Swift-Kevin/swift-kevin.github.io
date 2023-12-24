@@ -1,0 +1,134 @@
+.aboutme {
+    /*Text Settings*/
+    text-align: center;
+    font-size: min(5vmin, 150%);
+    color: white;
+    /*Box Settings*/
+    width: 50%;
+    margin: 0 25% 0;
+}
+
+.welcome-message {
+    width: 75%;
+    margin: 5% auto 5% auto;
+    vertical-align: central;
+    text-align: center;
+}
+
+.homepage-project-title {
+    grid-area: homeTitle;
+    font-size: min(5vmin, 200%);
+    font-family: "Custom-Consolas";
+    text-align: center;
+    text-decoration: none;
+}
+
+    .homepage-project-title a {
+        transition: linear 0.1s;
+        color: white;
+        text-decoration: underline;
+    }
+
+        .homepage-project-title a:hover {
+            font-size: 115%;
+            transition: linear 0.1s;
+            color: white;
+        }
+
+.homepage-project-gif1 {
+    grid-area: homePrG1;
+    display: flex;
+    align-items: center;
+}
+
+    .homepage-project-gif1 img {
+        transform: scale(1);
+        transition: linear 0.1s;
+    }
+
+        .homepage-project-gif1 img:hover {
+            transform: scale(1.1);
+            transition: linear 0.1s;
+        }
+
+.homepage-project-gif2 {
+    grid-area: homePrG2;
+    display: flex;
+    align-items: center;
+}
+
+    .homepage-project-gif2 img {
+        transform: scale(1);
+        transition: linear 0.1s;
+    }
+
+        .homepage-project-gif2 img:hover {
+            transform: scale(1.1);
+            transition: linear 0.1s;
+        }
+
+.homepage-project-gif3 {
+    grid-area: homePrG3;
+    display: flex;
+    align-items: center;
+}
+
+    .homepage-project-gif3 img {
+        transform: scale(1);
+        transition: linear 0.1s;
+    }
+
+        .homepage-project-gif3 img:hover {
+            transform: scale(1.1);
+            transition: linear 0.1s;
+        }
+
+.homepage-project-emptyleft {
+    grid-area: hpEL;
+}
+
+.homepage-project-emptyright {
+    grid-area: hpER;
+}
+
+.homepage-project {
+    display: grid;
+    color: white;
+    justify-content: center;
+    grid-template-areas:
+        'hpEL homeTitle homeTitle homeTitle hpER'
+        'hpEL homePrG1 homePrG2 homePrG3 hpER';
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 5fr 30fr 30fr 30fr 5fr;
+    grid-column-gap: 2.5%;
+    padding: 0 0 5% 0;
+}
+
+    .homepage-project img {
+        width: 90%;
+        /*margin: 5% 5% 5% 5%;*/
+    }
+
+.homepage-connect img {
+    width: max(5vw, 25%);
+}
+
+.homepage-connect a {
+    display: inline-block;
+    width: 25%;
+}
+
+.homepage-resume {
+    text-align: center;
+}
+
+    .homepage-resume img {
+        width: min(55vw, 125%);
+    }
+
+.homepage-connect {
+    /*padding-top: 5vh;*/
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+}
