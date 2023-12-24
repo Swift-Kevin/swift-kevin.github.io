@@ -1,0 +1,73 @@
+
+.bdy {
+    background-color: #111111;
+    -ms-overflow-style: none;
+    height: 60vh;
+}
+
+    .bdy::-webkit-scrollbar {
+        display: none;
+    }
+
+html, body {
+    height: 75%;
+}
+
+/** {
+    border: solid white 1px;
+}*/
+
+.maingrid {
+    padding-top: 20vh;
+    padding-bottom: 19vh;
+    font-family: "Custom-Garamond";
+    font-size: 1000%;
+    color: white;
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        'K W'
+        'R R';
+    grid-column-gap: 5vw;
+    overflow: hidden;
+}
+
+.cellleft {
+    grid-area: K;
+    text-align: right;
+}
+
+.cellright {
+    grid-area: W;
+    text-align: left;
+}
+
+.redirectwording {
+    font-size: 50%;
+    grid-area: R;
+    color: white;
+    text-align: center;
+}
+
+@font-face {
+    font-family: "Custom-Garamond";
+    src: url('../SiteFonts/EBGaramond-Regular.ttf');
+}
+
+@media (max-width: 750px) {
+    .maingrid {
+        font-size: 500%; /* Adjust the font size for mobile devices */
+        grid-template-areas:
+            'K'
+            'W'
+            'R';
+        grid-row-gap: 5vh; /* Add some vertical space between the grid items */
+    }
+
+    .cellleft,
+    .cellright,
+    .redirectwording {
+        text-align: center; /* Center text for mobile devices */
+    }
+}

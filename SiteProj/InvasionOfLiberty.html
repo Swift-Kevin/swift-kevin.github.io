@@ -3,6 +3,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="../Styles/styles.css" />
+    <link rel="stylesheet" href="../Styles/projectMain.css" />
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png">
     <title>Kevin W.</title>
     <meta charset="utf-8">
@@ -32,119 +33,25 @@
     </div>
 
     <!-- End Of Main Header-->
-    <div class="grid-container-proj">
-        <div class="grid-proj-title">
-            Invasion Of Liberty
+    <div class="projtitle">
+        Invasion Of Liberty
+    </div>
+    <div class="grid-contributions">
+        <div class="grid-roleTitle">
+            <h3>Contributions</h3>
         </div>
-        <div class="grid-psyRole">
-            <div class="grid-roleTitle"> <h3>Contributions</h3></div>
-            <div class="grid-roleSec1">
-                <ul>
-                    <li>User Interface Development</li>
-                    <li>Customization on UI elements.</li>
-                    <li>Controller accesibility options.</li>
-                    <li>Optimized UI understanding.</li>
-                    <li>Game Settings persistent throughout gameplay.</li>
-                </ul>
-            </div>
-            <div class="grid-roleSec2">
-                <ul>
-                    <li>Created and managed assets used.</li>
-                    <li>Oversaw quality assurance and bug testing.</li>
-                    <li>Created a dynamic main menu.</li>
-                    <li>Customization features in the credits menu for designers.</li>
-                    <li>Audio management for all sound implementation.</li>
-                </ul>
-            </div>
+        <div class="grid-contributedLeft">
+            <span> Utilizing the Vulkan API. </span> 
+            <span> Managing HLSL Vertex/Fragment Shaders. </span>
+            <span> Debugging Tools. </span>
+            <span> Developer Lighting Toggle. </span>
+            <span> Game Pause State with Enemy/Bullet responiveness. </span>
         </div>
-        <div class="grid-psy-itch">
-            <a class="project-connections colorfix" href="https://mrcowface.itch.io/psychic-protocol" target="_blank">
-                <img src="../SiteImages/itchio-textless-white.svg" />
-            </a> Download on Itch!
-        </div>
-        <div class="grid-psy-git">
-            <a class="project-connections colorfix" href="https://github.com/tomOrourke1/Midterm_FPS_Project" target="_blank">
-                <img src="../SiteImages/github-mark-white.png" />
-            </a> View on Github!
-        </div>
-        <div class="grid-psy-vid">
-            <iframe src="https://www.youtube.com/embed/YduLyepEffI?si=0bQkEH12bWTp4j0l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="grid-psy-emp1"></div>
-        <div class="grid-psy-emp2"></div>
-        <div class="grid-psy-emp3"></div>
-        <div class="grid-psy-foot"></div>
-        <div class="grid-container-psy-contr">
-            <div class="grid-psyContr-sum1 sum-text">
-                <h2>
-                    Stat Bars:
-                </h2>
-                <p>
-                    After hitting our third milestone, the team noticed a problem with the game's health, shield, and focus bars during testing.
-                    The issue was that these bars didn't give clear feedback about the player's status.
-                    They just lost chunks without showing a gradual change.
-                </p>
-                <p>
-                    Instead of having a single bar for each stat, I added a second one behind it.
-                    When a resource is used, the live bar is updated to reflect the current value.
-                    The back bar is then decreased slowly until it equals the live bar's value.
-                    This tweak made a big difference by allowing players to see how much health, shield, or focus they had left without any confusion.
-                    While the change itself wasn't complex, it allowed players to more accurately gauge the difficulty of an enemy by the damage they dealt.
-                </p>
-            </div>
-            <div class="grid-psyContr-gif1 sum-gif">
-                <center>
-                    <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol_GIF_StatBars.gif" />
-                </center>
-            </div>
-            <div class="grid-psyContr-sum2 sum-text">
-                <h2>
-                    The Radial Wheel:
-                </h2>
-                <p>
-                    In the early stages of developing Psychic Protocol, switching abilities would be crucial to our combat mechanics.
-                    Players should have an easy and fast time switching abilities back and forth if they need to beat some challenging enemies.
-                    Five abilities were created for the player to use and potential for more to come.
-                    There needed to be a way for the player to access them quickly, and for designers to keep adding more in case they were developed.
-                </p>
-                <p>
-                    I created the radial wheel system featured in our game to help address this issue.
-                    Displaying the menu would be solved by using the degrees of a circle and dividing it up between the number of abilities.
-                    Then by calculating the signed angle between the cursor and the center of the screen,
-                    I could find which ability was being hovered over and have that ability highlight and display the name of the power in the middle.
-                    In order to promote a better user experience I used images instead of text for the ability segments, and the segments never changed positions.
-                    This way when the player became fluent in the game they could easily open the wheel and close it by only moving the mouse slightly.
-                </p>
-            </div>
-            <div class="grid-psyContr-gif2">
-                <center>
-                    <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol_GIF_RadialWheel.gif" />
-                </center>
-            </div>
-            <div class="grid-psyContr-sum3 sum-text">
-                <h2>
-                    Hit indications:
-                </h2>
-                <p>
-                    Along with the health bar, players were having trouble telling where they were being attacked from.
-                    This led to them having increasing frustration with the game and made them quit playing.
-                    This would prove to be an easy fix by adding a directional hit indicator to the player's interface.
-                    While I was at it I decided to add a hit effect on the UI respective of the type damaged (HP/Shield).
-                </p>
-                <p>
-                    In order to display where the attack came from I needed an angle of some kind.
-                    I originally had some trouble coming up with an idea on how to solve this so I asked a teammate about it.
-                    They proposed I get the direction between the attack’s (melee or bullet) current position and the player’s position.
-                    Then take the angle between the player’s forward and the direction and send that to the damage indicator script.
-                    With the angle, we can display the image rotated around the center of the screen and gradually lower the alpha after some time to fade the images in and out.
-                    This little change helped a lot with user experience by increasing accessibility of knowledge in their environment.
-                </p>
-            </div>
-            <div class="grid-psyContr-gif3">
-                <center>
-                    <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol_GIF_HitIndication.gif" />
-                </center>
-            </div>
+        <div class="grid-contributedRight">
+            <span> Created and implemented assets. </span>
+            <span> Source Control Management with Github. </span>
+            <span> Managing multiple viewports for information (lives/minimap/score). </span>
+            <span> Clarified and Refactored Code during Code Freezes. </span>
         </div>
     </div>
 </body>
