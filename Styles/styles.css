@@ -128,3 +128,21 @@ img.spacer-hori {
     font-family: "Custom-Consolas";
     src: url('../SiteFonts/Consolas.ttf');
 }
+
+@media (max-width: 1080px) {
+    html {
+        scroll-padding-top: 10vh;
+    }
+    
+    .header-title {
+        font-size: 0;
+    }
+
+    .menu-buttons {
+        border: solid grey 3px;
+    }
+
+        .menu-buttons img {
+            width: 90%;
+        }
+}
