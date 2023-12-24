@@ -20,12 +20,37 @@
 .grid-contributedLeft {
     grid-area: roleSec1;
     font-size: 1.2vw;
-    border-right: solid #434343 2px;
+    margin-bottom: 2vh;
 }
 
 .grid-contributedRight {
     grid-area: roleSec2;
     font-size: 1.2vw;
+    margin-bottom: 2vh;
+}
+
+.grid-role {
+    grid-area: projRole;
+    padding-top: 1vh;
+    font-size: 1.2vw;
+    text-align: center;
+    border-right: solid #434343 2px;
+}
+
+.grid-teamsize {
+    grid-area: projSize;
+    padding-top: 1vh;
+    font-size: 1.2vw;
+    text-align: center;
+    border-left: solid #434343 2px;
+    border-right: solid #434343 2px;
+}
+
+.grid-timespan {
+    grid-area: projTime;
+    padding-top: 1vh;
+    font-size: 1.2vw;
+    text-align: center;
     border-left: solid #434343 2px;
 }
 
@@ -36,10 +61,11 @@
     display: grid;
     text-align: center;
     grid-template-areas:
-        'roleTitle roleTitle'
-        'roleSec1 roleSec2';
-    grid-template-rows: 1fr 2fr;
-    grid-template-columns: 1fr 1fr;
+        'roleTitle roleTitle roleTitle roleTitle roleTitle roleTitle'
+        'roleSec1 roleSec1 roleSec1 roleSec2 roleSec2 roleSec2'
+        'projRole projRole projSize projSize projTime projTime';
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr 1fr 2fr 2fr;
 }
 
     .grid-contributions span {
@@ -71,26 +97,52 @@
     }
 
     .grid-contributedLeft {
-        font-size: calc(1vw + 50%);
+        font-size: min(2vw, 125%);
         border-right: none;
     }
 
     .grid-contributedRight {
         font-size: min(2vw, 125%);
         border-left: none;
-        border-bottom: solid #434343 5px;
+        margin-bottom: 2vh;
+        /*border-bottom: solid #434343 5px;*/
     }
 
     .grid-contributions {
         grid-template-areas:
             'roleTitle'
             'roleSec1'
-            'roleSec2';
-        grid-template-rows: 1fr auto auto;
+            'roleSec2'
+            'projRole'
+            'projSize'
+            'projTime';
+        grid-template-rows: 1fr auto auto auto auto auto;
         grid-template-columns: 1fr;
     }
 
         .grid-contributions span {
             line-height: 1.75;
         }
+
+    .grid-role {
+        font-size: min(2vw, 125%);
+        line-height: 0;
+        border-right: none;
+        border-left: none;
+        border-top: solid #434343 1px;
+    }
+
+    .grid-teamsize {
+        font-size: min(2vw, 125%);
+        line-height: 0;
+        border-right: none;
+        border-left: none;
+    }
+
+    .grid-timespan {
+        font-size: min(2vw, 125%);
+        line-height: 0;
+        border-right: none;
+        border-left: none;
+    }
 }
