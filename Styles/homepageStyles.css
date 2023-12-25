@@ -109,14 +109,7 @@
         /*margin: 5% 5% 5% 5%;*/
     }
 
-.homepage-connect img {
-    width: max(5vw, 25%);
-}
 
-.homepage-connect a {
-    display: inline-block;
-    width: 25%;
-}
 
 .homepage-resume {
     text-align: center;
@@ -126,12 +119,6 @@
         width: min(55vw, 125%);
     }
 
-.homepage-connect {
-    /*padding-top: 5vh;*/
-    text-align: center;
-    color: white;
-    font-size: 2vw;
-}
 
 @media (max-width: 1080px) {
 
@@ -184,20 +171,5 @@
 
         .homepage-resume img {
             width: 95%;
-        }
-
-    .homepage-connect {
-        color: white;
-        font-size: 5vw;
-    }
-
-        .homepage-connect a {
-            display: inline-block;
-            width: auto;
-            padding: 2vh 1vh 0vh 1vh;
-        }
-
-        .homepage-connect img {
-            width: 10vw;
         }
 }

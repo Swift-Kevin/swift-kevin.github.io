@@ -45,13 +45,13 @@
             <span> Managing HLSL Vertex/Fragment Shaders. </span>
             <span> Debugging Tools. </span>
             <span> Developer Lighting Toggle. </span>
-            <span> Game Pause State with Enemy/Bullet responiveness. </span>
+            <span> Game Pause State with Enemy/Bullet responsiveness. </span>
         </div>
         <div class="grid-contributedRight">
             <span> Created and implemented assets. </span>
             <span> Source Control Management with Github. </span>
-            <span> Managing multiple viewports for information (lives/minimap/score). </span>
             <span> Clarified and Refactored Code during Code Freezes. </span>
+            <span> Managing multiple viewports for information (lives/minimap/score). </span>
         </div>
         <div class="grid-role">
             <p> <span> Team Role: </span> Graphics Programmer / Secondary Lead </p>
@@ -66,27 +66,150 @@
     <div>
         <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
     </div>
+    <!-- Contributions Section Explained -->
     <div class="showcase-leftFaced">
         <div class="showcase-mainText">
             <div class="showcase-textTitle">
-                Lorem ipsum dolor sit amet
+                Using Vulkan
             </div>
             <div class="showcase-textBody">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Lectus arcu bibendum at varius vel pharetra vel turpis nunc. Sapien faucibus et molestie ac. Amet nisl purus in mollis. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Quisque sagittis purus sit amet volutpat consequat mauris. Aliquam faucibus purus in massa tempor nec feugiat. Quis viverra nibh cras pulvinar mattis nunc sed blandit. Ultrices neque ornare aenean euismod elementum. Ut ornare lectus sit amet est placerat in egestas. Fermentum et sollicitudin ac orci phasellus egestas.
+                    The first problem we faced was what graphics API we wanted to use. Our team ended up picking Vulkan due to my familiarity with it from the previous class (3D Content Creation).
                 </p>
                 <p>
-                    Auctor neque vitae tempus quam pellentesque nec nam aliquam. Auctor eu augue ut lectus. In hac habitasse platea dictumst vestibulum. Non sodales neque sodales ut etiam. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Sed velit dignissim sodales ut. Nunc aliquet bibendum enim facilisis gravida. Semper viverra nam libero justo. In tellus integer feugiat scelerisque varius morbi. Egestas diam in arcu cursus euismod quis viverra nibh. Fames ac turpis egestas maecenas pharetra convallis posuere morbi.
+                    By using my renderer, our team had a head start working on the project and seeing results. My renderer was built with a couple of debugging options that I expanded upon and we used throughout this month (Lighting/Wireframe). The renderer was setup to show my thought process with checking and abstracting functionality into respective headers/classes and how Vulkan's pipeline was laid out.
                 </p>
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjMisc/PsychicProtocol/PsychicProtocol_GIF_RadialWheel.gif" />
+            <img class="projMedia" src="../SiteProjMisc/InvasionOfLiberty/IOLComplete.gif" />
+        </div>
+    </div>
+    <div class="showcase-rightFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Learning/Using Shaders
+            </div>
+            <div class="showcase-textBody">
+                <p>
+                    Before we use the pipeline, lets make sure we have what we need!
+                </p>
+                <p>
+                    When using any graphics rendering API you are going to need Shaders, mainly Vertex and Fragment. I would end up coming back to these often when I needed to create a new viewport and not a new shader.
+                </p>
+                <p>
+                    The decision to not create and implement the switching of shader pipelines for multiple effects (viewports, textures, etc) was my own. I felt it was going to be research and development time that we didn't have for this project due to constraints (time allotted). Though creating and using the shaders I already implemented proved useful as I could pass along an id to flip on a specific case in either shader through the push constants buffer I had.
+                </p>
+                <p>
+                    A lot of the implementation within the Shaders are done because of time constraints that we had to work around. A quick and dirty solution that worked completely was a lot better than a neat and organized solution that was half works.
+                </p>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjMisc/InvasionOfLiberty/CodeSnippets/VertexShaderSnippet.png" />
+        </div>
+    </div>
+    <div class="showcase-leftFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Debugging Tools
+            </div>
+            <div class="showcase-textBody">
+                <p>
+                    Now how are we going to make sure things are rendering properly?
+                </p>
+                <p>
+                    With those earlier mentioned debug tools the team can test to make sure that things are working properly within the rendering pipeline. Commonly done in the development cycle, debugging shortcuts helped my team by narrowing down where issues arose, for example if the player wasn't showing up or if the projectiles didn't properly collide.
+                </p>
+                <p>
+                    Wireframe was added to help debug polygon rendering with instancing/indexed vertcies that were being passed to the GPU. After showing the game to others (classmates and friends), they loved the idea of having it in the game and being able to see the cool design of it. Wireframe multicoloring was added in the first installment of the renderer to allow for visibility testing with colors in the renderer.
+                </p>
+                <p>
+                    Lighting was added to discern directional and ambient light values, making sure that they were being properly calculated within the Fragment Shader without having to use RenderDoc (Graphics API Debugger) prematurely.
+                </p>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjMisc/InvasionOfLiberty/IOLWireframeAndLighting.gif" />
+        </div>
+    </div>
+    <div class="showcase-rightFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Pausing Functionality
+            </div>
+            <div class="showcase-textBody">
+                <p>
+                    Too many enemies, I need a break!
+                </p>
+                <p>
+                    Our inspiration, Defender (1981) was an endless space shooter where you fought for a high score. We wanted the same approach but with the ability to pause the game to calm the momentum of the game.
+                </p>
+                <p>
+                    My teammate Jerry and I worked on pausing the game, he worked on implementing the enemies, bullets, and I worked on rendering the text to the screen. The paused text is a 3D text model that renders where the player is located at and rotate towards the camera which provides a nice depth to the text.
+                </p>
+                <p>
+                    When rendering the model, after adding all the current models to draw there is a check to see if the game is paused or not, if it is then it adds the text model to the back of the drawing pool so it's drawn ontop of everything else.
+                </p>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjMisc/InvasionOfLiberty/IOLPausedGameFunctionality.gif" />
+        </div>
+    </div>
+    <div class="showcase-leftFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Github and Code Refactoring
+            </div>
+            <div class="showcase-textBody">
+                <p>
+                    Like any good project should, use source control!
+                </p>
+                <p>
+                    The source control platform we used was Github. We picked Github because we were all familiar with the basics of Github and how to use it in a group setting thanks to our Midterm Project a couple months prior.
+                </p>
+                <p>
+                    I was a bit more confident in my skills with Github since I had a bit more practice in my spare time dealing with merge conflicts and attempting to resolve them to my best abilities. I was the main person for accepting merge requests into the main branch for our project since I would look over all the changes and verify that they met the requirements given.
+                </p>
+                <p>
+                    With merge requests, our group had a rule where we do not accept our own merges unless approved by the team lead. Since I was the secondary lead this meant that any of the merges the team lead would do, I would have to verify just to ensure that it was approved by a second person and my merges to them.
+                </p>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjMisc/InvasionOfLiberty/CodeSnippets/IOLGithub.gif" />
+        </div>
+    </div>
+    <div class="showcase-rightFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Managing Multiple Viewports
+            </div>
+            <div class="showcase-textBody">
+                <p>
+                    How would you go about displaying different sections of the game?
+                </p>
+                <p>
+                    I decided to use multiple viewports and use a camera matrix for each one to show important information regarding the game such as current HP, the minimap of enemy positions, and the players score.
+                </p>
+                <p>
+                    How each viewport is decided was based off of the design we were going off of. Since each section displayed should be roughly 33% of the windows width space we can use that to calculate the positions and sizes of each section.
+                </p>
+                <p>
+                    The image attached shows with abstraction that each viewport was dealt with individually and had its own functionality tied with itself. All I needed to do was pass along the type to make sure I was using the correct dimensions and then draw all the required objects.
+                </p>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjMisc/InvasionOfLiberty/CodeSnippets/DrawViewports.png" />
         </div>
     </div>
     <div>
         <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
     </div>
+    <!-- Contributions Section Ended -->
+    <!-- Screenshots Area -->
     <div class="gallery-horizontal">
         <img src="../SiteProjMisc/InvasionOfLiberty/Gallery1.png">
         <img src="../SiteProjMisc/InvasionOfLiberty/Gallery2.gif">
@@ -98,9 +221,38 @@
         <img src="../SiteProjMisc/InvasionOfLiberty/Gallery8.png">
         <img src="../SiteProjMisc/InvasionOfLiberty/Gallery9.gif">
         <img src="../SiteProjMisc/InvasionOfLiberty/Gallery10.gif">
+        <img src="../SiteProjMisc/InvasionOfLiberty/IOLCheatMode.gif">
+        <img src="../SiteProjMisc/InvasionOfLiberty/IOLComplete.gif">
+        <img src="../SiteProjMisc/InvasionOfLiberty/IOLDestroyedModels.gif">
+        <img src="../SiteProjMisc/InvasionOfLiberty/IOLFullScreen.gif">
+        <img src="../SiteProjMisc/InvasionOfLiberty/IOLGreyscaleShader.gif">
+        <img src="../SiteProjMisc/InvasionOfLiberty/IOLHearts.gif">
+        <img src="../SiteProjMisc/InvasionOfLiberty/IOLMainMenu.gif">
+        <img src="../SiteProjMisc/InvasionOfLiberty/IOLMilestone.gif">
+        <img src="../SiteProjMisc/InvasionOfLiberty/IOLMinimap.gif">
+        <img src="../SiteProjMisc/InvasionOfLiberty/IOLPausedGameFunctionality.gif">
+        <img src="../SiteProjMisc/InvasionOfLiberty/IOLScoreCounter.gif">
+        <img src="../SiteProjMisc/InvasionOfLiberty/IOLScoreGreyscaledLongVers.gif">
+        <img src="../SiteProjMisc/InvasionOfLiberty/IOLWireframeAndLighting.gif">
     </div>
     <div>
         <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+    </div>
+    <div class="footer-connect clickable">
+        <h2">Connect with me:</h2">
+        <br />
+        <a href="https://www.linkedin.com/in/kevinwall-gamedev/" target="_blank">
+            <img src="../SiteImages/linkedin-logo.png">
+        </a>
+        <a href="https://github.com/swift-kevin" target="_blank">
+            <img src="../SiteImages/github-mark-white.png" />
+            <!-- Removes that annoying little line next to anchor tags. -->
+            <style>
+                a {
+                    text-decoration: none;
+                }
+            </style>
+        </a>
     </div>
 </body>
 </html>
