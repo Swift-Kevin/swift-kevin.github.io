@@ -119,6 +119,22 @@ img.spacer-hori {
     border-radius: 15px;
 }
 
+.footer-connect {
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+}
+
+    .footer-connect a {
+        display: inline-block;
+        width: auto;
+        padding: 2vh 1vh 0vh 1vh;
+    }
+
+    .footer-connect img {
+        width: 5vw;
+    }
+
 @font-face {
     font-family: "Custom-Garamond";
     src: url('../SiteFonts/EBGaramond-Regular.ttf');
@@ -144,5 +160,20 @@ img.spacer-hori {
 
         .menu-buttons img {
             width: 90%;
+        }
+
+    .footer-connect {
+        color: white;
+        font-size: 5vw;
+    }
+
+        .footer-connect a {
+            display: inline-block;
+            width: auto;
+            padding: 2vh 1vh 0vh 1vh;
+        }
+
+        .footer-connect img {
+            width: 10vw;
         }
 }

@@ -116,6 +116,8 @@ html {
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
     padding-left: 5%;
+    margin-bottom: 5%;
+    margin-bottom: 5%;
 }
 
 .showcase-rightFaced {
@@ -124,6 +126,8 @@ html {
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
     padding-right: 5%;
+    margin-bottom: 5%;
+    margin-bottom: 5%;
 }
 
 img.projMedia {
@@ -205,8 +209,6 @@ img.projMedia {
     .grid-contributedRight {
         font-size: min(2vw, 125%);
         border-left: none;
-        margin-bottom: 2vh;
-        /*border-bottom: solid #434343 5px;*/
     }
 
     .grid-contributions {
@@ -251,18 +253,20 @@ img.projMedia {
         grid-template-areas:
             'showcaseText'
             'showcaseMedia';
-        grid-template-columns: 90%;
+        grid-template-columns: 100%;
         grid-template-rows: auto auto;
-        padding-right: 0%;
+        padding-left: 0%;
+        margin-bottom: 0%;
     }
 
     .showcase-rightFaced {
         grid-template-areas:
-            'showcaseMedia'
-            'showcaseText';
-        grid-template-columns: 90%;
+            'showcaseText'
+            'showcaseMedia';
+        grid-template-columns: 100%;
         grid-template-rows: auto auto;
         padding-right: 0%;
+        margin-bottom: 0%;
     }
 
     .showcase-textTitle {
@@ -271,6 +275,11 @@ img.projMedia {
 
     .showcase-textBody {
         font-size: 1.35vw;
+        text-align: center;
+    }
+
+    .showcase-media {
+        border-bottom: solid #434343 2px;
     }
 
     .gallery-horizontal {
