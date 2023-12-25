@@ -1,6 +1,11 @@
 
 /* For all the project in-depth pages */
 
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .projtitle {
     font-family: "Custom-Consolas";
     font-size: max(250%, 24px);
@@ -75,14 +80,87 @@
 
 
 /* Displaying Content Sections */
-/* Left Text Right Media */
+.showcase-textTitle {
+    grid-area: scTT;
+    font-size: 2vw;
+    margin-bottom: 2.5vh;
+    text-align: center;
+}
 
+.showcase-textBody {
+    grid-area: scTB;
+    text-indent: 2vw;
+}
 
-/* Left Media Right Text */
+.showcase-mainText {
+    grid-area: showcaseText;
+    color: white;
+    font-family: 'Custom-Consolas';
+    display: grid;
+    grid-template-areas: 'scTT' 'scTB';
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto auto;
+    padding: 5%;
+}
 
+.showcase-media {
+    grid-area: showcaseMedia;
+    text-align: center;
+    display: block;
+    align-self: center;
+}
 
+.showcase-leftFaced {
+    display: grid;
+    grid-template-areas: 'showcaseText showcaseMedia';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    padding-left: 5%;
+}
 
+.showcase-rightFaced {
+    display: grid;
+    grid-template-areas: 'showcaseMedia showcaseText';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    padding-right: 5%;
+}
 
+img.projMedia {
+    width: 75%;
+    height: 75%;
+}
+
+.gallery-horizontal {
+    display: flex;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scrollbar-face-color: transparent; /* For Internet Explorer and Edge */
+    animation: bannermove 20s linear infinite;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+    .gallery-horizontal img {
+        width: 25%;
+        height: auto;
+        margin-right: 10px;
+    }
+
+        .gallery-horizontal img:hover {
+            animation-play-state: paused;
+        }
+
+@keyframes bannermove {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
 /* Media Queries */
 
 @media (max-width: 1080px) {
@@ -145,4 +223,42 @@
         border-right: none;
         border-left: none;
     }
+
+    .showcase-leftFaced {
+        grid-template-areas:
+            'showcaseText'
+            'showcaseMedia';
+        grid-template-columns: 90%;
+        grid-template-rows: auto auto;
+        padding-right: 0%;
+    }
+
+    .showcase-rightFaced {
+        grid-template-areas:
+            'showcaseMedia'
+            'showcaseText';
+        grid-template-columns: 90%;
+        grid-template-rows: auto auto;
+        padding-right: 0%;
+    }
+
+    .showcase-textTitle {
+        font-size: 3vw;
+    }
+
+    .showcase-textBody {
+        font-size: 1.35vw;
+    }
+
+    .gallery-horizontal {
+        white-space: nowrap;
+        overflow-x: auto;
+        display: flex;
+        animation: none;
+    }
+
+        .gallery-horizontal img {
+            width: 90%;
+            height: auto;
+        }
 }

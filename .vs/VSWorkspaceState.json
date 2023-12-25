@@ -1,9 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\SiteImages",
     "\\SiteMisc",
-    "\\SitePages"
+    "\\SitePages",
+    "\\SiteProj",
+    "\\SiteProjMisc",
+    "\\SiteProjMisc\\InvasionOfLiberty",
+    "\\SiteProjMisc\\PsychicProtocol",
+    "\\Styles"
   ],
-  "SelectedNode": "\\SiteMisc",
+  "SelectedNode": "\\SiteProjMisc\\PsychicProtocol\\PsychicProtocolSwappingInputs.gif",
   "PreviewInSolutionExplorer": false
 }
