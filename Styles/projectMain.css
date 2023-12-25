@@ -131,15 +131,38 @@ img.projMedia {
     height: 75%;
 }
 
+::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    background: gray;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #111111;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #111111;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #111111;
+    }
+
+    ::-webkit-scrollbar-thumb:horizontal {
+        background: #636363;
+        border-radius: 10px;
+    }
+
 .gallery-horizontal {
+    white-space: nowrap;
+    overflow-x: auto;
     display: flex;
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: transparent transparent; /* For Firefox */
-    -ms-overflow-style: none; /* For Internet Explorer and Edge */
-    scrollbar-face-color: transparent; /* For Internet Explorer and Edge */
-    animation: bannermove 20s linear infinite;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
 }
 
     .gallery-horizontal img {
@@ -158,7 +181,7 @@ img.projMedia {
     }
 
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 /* Media Queries */
