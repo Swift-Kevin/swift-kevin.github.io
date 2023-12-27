@@ -1,0 +1,316 @@
+
+/* For all the project in-depth pages */
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.projtitle {
+    font-family: "Custom-Consolas";
+    font-size: max(250%, 24px);
+    text-align: center;
+    color: white;
+    margin-top: 5vh;
+    height: 10vh;
+}
+
+.grid-roleTitle {
+    font-size: 1.5vw;
+    grid-area: roleTitle;
+    margin-bottom: 1%;
+    border-bottom: solid #434343 4px;
+}
+
+.grid-contributedLeft {
+    grid-area: roleSec1;
+    font-size: 1.2vw;
+    margin-bottom: 2vh;
+}
+
+.grid-contributedRight {
+    grid-area: roleSec2;
+    font-size: 1.2vw;
+    margin-bottom: 2vh;
+}
+
+.grid-role {
+    grid-area: projRole;
+    padding-top: 1vh;
+    font-size: 1.2vw;
+    text-align: center;
+    border-right: solid #434343 2px;
+}
+
+.grid-teamsize {
+    grid-area: projSize;
+    padding-top: 1vh;
+    font-size: 1.2vw;
+    text-align: center;
+    border-left: solid #434343 2px;
+    border-right: solid #434343 2px;
+}
+
+.grid-timespan {
+    grid-area: projTime;
+    padding-top: 1vh;
+    font-size: 1.2vw;
+    text-align: center;
+    border-left: solid #434343 2px;
+}
+
+.grid-contributions {
+    margin: 0 auto 0 auto;
+    width: 75%;
+    color: white;
+    display: grid;
+    text-align: center;
+    grid-template-areas:
+        'roleTitle roleTitle roleTitle roleTitle roleTitle roleTitle'
+        'roleSec1 roleSec1 roleSec1 roleSec2 roleSec2 roleSec2'
+        'projRole projRole projSize projSize projTime projTime';
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr 1fr 2fr 2fr;
+}
+
+    .grid-contributions span {
+        display: block;
+        line-height: 1.75;
+    }
+
+
+/* Displaying Content Sections */
+.showcase-textTitle {
+    grid-area: scTT;
+    font-size: 2vw;
+    margin-bottom: 2.5vh;
+    text-align: center;
+}
+
+.showcase-textBody {
+    grid-area: scTB;
+    text-indent: 2vw;
+}
+
+.showcase-mainText {
+    grid-area: showcaseText;
+    color: white;
+    font-family: 'Custom-Consolas';
+    display: grid;
+    grid-template-areas: 'scTT' 'scTB';
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto auto;
+    padding: 5%;
+}
+
+.showcase-media {
+    grid-area: showcaseMedia;
+    text-align: center;
+    display: block;
+    align-self: center;
+}
+
+.showcase-leftFaced {
+    display: grid;
+    grid-template-areas: 'showcaseText showcaseMedia';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    padding-left: 5%;
+    margin-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+.showcase-rightFaced {
+    display: grid;
+    grid-template-areas: 'showcaseMedia showcaseText';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+img.projMedia {
+    width: 75%;
+    height: 75%;
+}
+
+.gallery-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.gallery-media {
+  max-width: 20%;
+  max-height: 10%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1%;
+}
+
+.gallery-media img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery-layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #121212;
+  color: #ffffff;
+  transition: all 0.25s linear;
+}
+
+p {
+  text-align: center;
+}
+
+.gallery-media:hover .gallery-layer {
+  opacity: 0.8;
+}
+
+/*.gallery-horizontal {
+    white-space: nowrap;
+    overflow-x: auto;
+    display: flex;
+    padding: 0 1% 1% 1%;
+}
+
+    .gallery-horizontal img {
+        width: 25%;
+        height: auto;
+        margin-right: 10px;
+        flex: 0 0 auto;
+    }
+
+        .gallery-horizontal img:hover {
+            opacity: 0.5;
+        }*/
+
+@keyframes bannermove {
+    0% {
+        transform: translateX(0);
+    }
+     
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Media Queries */
+
+@media (max-width: 1080px) {
+    .projtitle {
+        font-size: 5vw;
+        margin-top: 2vh;
+        height: 5vh;
+    }
+
+    .grid-roleTitle {
+        font-size: 3vw;
+    }
+
+    .grid-contributedLeft {
+        font-size: min(2vw, 125%);
+        border-right: none;
+    }
+
+    .grid-contributedRight {
+        font-size: min(2vw, 125%);
+        border-left: none;
+    }
+
+    .grid-contributions {
+        grid-template-areas:
+            'roleTitle'
+            'roleSec1'
+            'roleSec2'
+            'projRole'
+            'projSize'
+            'projTime';
+        grid-template-rows: 1fr auto auto auto auto auto;
+        grid-template-columns: 1fr;
+    }
+
+        .grid-contributions span {
+            line-height: 1.75;
+        }
+
+    .grid-role {
+        font-size: min(2vw, 125%);
+        line-height: 0;
+        border-right: none;
+        border-left: none;
+        border-top: solid #434343 1px;
+    }
+
+    .grid-teamsize {
+        font-size: min(2vw, 125%);
+        line-height: 0;
+        border-right: none;
+        border-left: none;
+    }
+
+    .grid-timespan {
+        font-size: min(2vw, 125%);
+        line-height: 0;
+        border-right: none;
+        border-left: none;
+    }
+
+    .showcase-leftFaced {
+        grid-template-areas:
+            'showcaseText'
+            'showcaseMedia';
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        padding-left: 0%;
+        margin-bottom: 0%;
+    }
+
+    .showcase-rightFaced {
+        grid-template-areas:
+            'showcaseText'
+            'showcaseMedia';
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        padding-right: 0%;
+        margin-bottom: 0%;
+    }
+
+    .showcase-textTitle {
+        font-size: 3vw;
+    }
+
+    .showcase-textBody {
+        font-size: 1.35vw;
+        text-align: center;
+    }
+
+    .showcase-media {
+        border-bottom: solid #434343 2px;
+    }
+
+    .gallery-horizontal {
+        white-space: nowrap;
+        overflow-x: auto;
+        display: flex;
+        animation: none;
+    }
+
+        .gallery-horizontal img {
+            width: 90%;
+            height: auto;
+        }
+}
