@@ -145,8 +145,8 @@ img.projMedia {
 }
 
 .gallery-media {
-  max-width: 20%;
-  max-height: 10%;
+  max-width: 25%;
+  max-height: auto;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -175,6 +175,7 @@ img.projMedia {
 
 p {
   text-align: center;
+  padding: 1%;
 }
 
 .gallery-media:hover .gallery-layer {
