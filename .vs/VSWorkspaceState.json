@@ -1,15 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SiteImages",
+    "\\SiteJava",
     "\\SiteMisc",
     "\\SitePages",
     "\\SiteProj",
-    "\\SiteProjMisc",
-    "\\SiteProjMisc\\InvasionOfLiberty",
-    "\\SiteProjMisc\\InvasionOfLiberty\\CodeSnippets",
+    "\\SiteProjResources",
+    "\\SiteProjResources\\InvasionOfLiberty",
     "\\Styles"
   ],
-  "SelectedNode": "\\SiteProjMisc\\InvasionOfLiberty\\IOLWireframeAndLighting.gif",
+  "SelectedNode": "\\SitePages\\Homepage.html",
   "PreviewInSolutionExplorer": false
 }
