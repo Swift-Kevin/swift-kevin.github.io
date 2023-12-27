@@ -37,51 +37,21 @@
 
 .homepage-project-gif1 {
     grid-area: homePrG1;
-    display: flex;
-    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-
-    .homepage-project-gif1 img {
-        transform: scale(1);
-        transition: linear 0.1s;
-    }
-
-        .homepage-project-gif1 img:hover {
-            transform: scale(1.1);
-            transition: linear 0.1s;
-        }
 
 .homepage-project-gif2 {
     grid-area: homePrG2;
-    display: flex;
-    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-
-    .homepage-project-gif2 img {
-        transform: scale(1);
-        transition: linear 0.1s;
-    }
-
-        .homepage-project-gif2 img:hover {
-            transform: scale(1.1);
-            transition: linear 0.1s;
-        }
 
 .homepage-project-gif3 {
     grid-area: homePrG3;
-    display: flex;
-    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-
-    .homepage-project-gif3 img {
-        transform: scale(1);
-        transition: linear 0.1s;
-    }
-
-        .homepage-project-gif3 img:hover {
-            transform: scale(1.1);
-            transition: linear 0.1s;
-        }
 
 .homepage-project-emptyleft {
     grid-area: hpEL;
@@ -94,22 +64,58 @@
 .homepage-project {
     display: grid;
     color: white;
-    justify-content: center;
     grid-template-areas:
         'hpEL homeTitle homeTitle homeTitle hpER'
         'hpEL homePrG1 homePrG2 homePrG3 hpER';
     grid-template-rows: 1fr 3fr;
     grid-template-columns: 5fr 30fr 30fr 30fr 5fr;
     grid-column-gap: 2.5%;
+    text-align: center;
     padding: 0 0 5% 0;
 }
 
     .homepage-project img {
         width: 90%;
-        /*margin: 5% 5% 5% 5%;*/
+        opacity: 1;
     }
 
+.viewMoreText {
+    display: inline-block;
+    font-size: 1vw;
+    transform: scale(1);
+    font-weight: bold;
+    transition: 0.2s linear;
+}
 
+    .viewMoreText img {
+        width: 100%;
+        height: auto;
+    }
+
+    .viewMoreText span {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: 0.2s linear;
+    }
+
+    .viewMoreText:hover {
+        transform: scale(1.1);
+        transition: 0.2s linear;
+        animation-play-state: paused;
+    }
+
+        .viewMoreText:hover img {
+            opacity: 0.25;
+            transition: 0.2s linear;
+        }
+
+        .viewMoreText:hover span {
+            opacity: 1;
+        }
 
 .homepage-resume {
     text-align: center;
@@ -172,4 +178,8 @@
         .homepage-resume img {
             width: 95%;
         }
+
+    .viewMoreText span {
+        font-size: 250%;
+    }
 }
