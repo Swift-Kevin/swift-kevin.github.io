@@ -74,16 +74,29 @@
                 Using Vulkan
             </div>
             <div class="showcase-textBody">
-                <p>
+                <ul>
+                    <li>
+                        Chose Vulkan due to my experience with it from the previous class.
+                    </li>
+                    &nbsp;
+                    <li>
+                        We reused my previous class's renderer which helped speed up production and testing.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Benefitted from having clarity in code structure from my previous renderer with debugging options.
+                    </li>
+                </ul>
+                <!--<p>
                     The first problem we faced was what graphics API we wanted to use. Our team ended up picking Vulkan due to my familiarity with it from the previous class (3D Content Creation).
                 </p>
                 <p>
                     By using my renderer, our team had a head start working on the project and seeing results. My renderer was built with a couple of debugging options that I expanded upon and we used throughout this month (Lighting/Wireframe). The renderer was setup to show my thought process with checking and abstracting functionality into respective headers/classes and how Vulkan's pipeline was laid out.
-                </p>
+                </p>-->
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/InvasionOfLiberty/IOLComplete.gif" />
+            <img class="projMedia" src="../SiteProjResources/InvasionOfLiberty/3DCCRenderer.gif" />
         </div>
     </div>
     <div class="showcase-rightFaced">
@@ -92,18 +105,19 @@
                 Learning/Using Shaders
             </div>
             <div class="showcase-textBody">
-                <p>
-                    Before we use the pipeline, lets make sure we have what we need!
-                </p>
-                <p>
-                    When using any graphics rendering API you are going to need Shaders, mainly Vertex and Fragment. I would end up coming back to these often when I needed to create a new viewport and not a new shader.
-                </p>
-                <p>
-                    The decision to not create and implement the switching of shader pipelines for multiple effects (viewports, textures, etc) was my own. I felt it was going to be research and development time that we didn't have for this project due to constraints (time allotted). Though creating and using the shaders I already implemented proved useful as I could pass along an id to flip on a specific case in either shader through the push constants buffer I had.
-                </p>
-                <p>
-                    A lot of the implementation within the Shaders are done because of time constraints that we had to work around. A quick and dirty solution that worked completely was a lot better than a neat and organized solution that was half works.
-                </p>
+                <ul>
+                    <li>
+                        Using Vertex and Fragment shaders to manipulate data sent to the GPU instead of CPU based unparallel computations.
+                    </li>
+                    &nbsp;
+                    <li>
+                        By having the shaders already setup with descriptor sets, passing any extra needed data could be easily added. This is how I added in 3 additional viewports and toggling lighting in the fragment shader.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Due to time constraints I implemented the multiple viewports pragmatically. Prioritized quick and effective solutions over elaborate, time-consuming ones.
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="showcase-media">
@@ -116,18 +130,19 @@
                 Debugging Tools
             </div>
             <div class="showcase-textBody">
-                <p>
-                    Now how are we going to make sure things are rendering properly?
-                </p>
-                <p>
-                    With those earlier mentioned debug tools the team can test to make sure that things are working properly within the rendering pipeline. Commonly done in the development cycle, debugging shortcuts helped my team by narrowing down where issues arose, for example if the player wasn't showing up or if the projectiles didn't properly collide.
-                </p>
-                <p>
-                    Wireframe was added to help debug polygon rendering with instancing/indexed vertcies that were being passed to the GPU. After showing the game to others (classmates and friends), they loved the idea of having it in the game and being able to see the cool design of it. Wireframe multicoloring was added in the first installment of the renderer to allow for visibility testing with colors in the renderer.
-                </p>
-                <p>
-                    Lighting was added to discern directional and ambient light values, making sure that they were being properly calculated within the Fragment Shader without having to use RenderDoc (Graphics API Debugger) prematurely.
-                </p>
+                <ul>
+                    <li>
+                        Adding in tools like Wireframe mode or Lighting Toggle helped denote problems related to the shaders/rendering pipeline/model materials.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Cycling through colors in wireframe helped discern if objects were being obfuscated or improperly drawn.
+                    </li>
+                    &nbsp;
+                    <li>
+                        We also had console logging for anytime an action was performed. Entity hurt, shoot, death, sounds aswell as player location and score tracking in console.
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="showcase-media">
@@ -140,18 +155,19 @@
                 Pausing Functionality
             </div>
             <div class="showcase-textBody">
-                <p>
-                    Too many enemies, I need a break!
-                </p>
-                <p>
-                    Our inspiration, Defender (1981) was an endless space shooter where you fought for a high score. We wanted the same approach but with the ability to pause the game to calm the momentum of the game.
-                </p>
-                <p>
-                    My teammate Jerry and I worked on pausing the game, he worked on implementing the enemies, bullets, and I worked on rendering the text to the screen. The paused text is a 3D text model that renders where the player is located at and rotate towards the camera which provides a nice depth to the text.
-                </p>
-                <p>
-                    When rendering the model, after adding all the current models to draw there is a check to see if the game is paused or not, if it is then it adds the text model to the back of the drawing pool so it's drawn ontop of everything else.
-                </p>
+                <ul>
+                    <li>
+                        Defender (1981) didn't have a way to pause the game and we wanted to correct that.
+                    </li>
+                    &nbsp;
+                    <li>
+                        The pausing functionality was done, but we didn't have a way to show it to the user. We didn't even plan on adding it in since we were low on time.
+                    </li>
+                    &nbsp;
+                    <li>
+                        I spent a couple hours on the last night crunching away to display the model properly above the player wherever they are because I felt like it wouldn't be right without it.
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="showcase-media">
@@ -164,18 +180,19 @@
                 Github and Code Refactoring
             </div>
             <div class="showcase-textBody">
-                <p>
-                    Like any good project should, use source control!
-                </p>
-                <p>
-                    The source control platform we used was Github. We picked Github because we were all familiar with the basics of Github and how to use it in a group setting thanks to our Midterm Project a couple months prior.
-                </p>
-                <p>
-                    I was a bit more confident in my skills with Github since I had a bit more practice in my spare time dealing with merge conflicts and attempting to resolve them to my best abilities. I was the main person for accepting merge requests into the main branch for our project since I would look over all the changes and verify that they met the requirements given.
-                </p>
-                <p>
-                    With merge requests, our group had a rule where we do not accept our own merges unless approved by the team lead. Since I was the secondary lead this meant that any of the merges the team lead would do, I would have to verify just to ensure that it was approved by a second person and my merges to them.
-                </p>
+                <ul>
+                    <li>
+                        We used Github as our main source control point and worked on separate branches to avoid conflicts.
+                    </li>
+                    &nbsp;
+                    <li>
+                        I was the most proficient at resolving Merge Conflicts so I was in charge of handleing them if they ever arose.
+                    </li>
+                    &nbsp;
+                    <li>
+                        When we were going to merge into the main branch we always did a merge request and had other people view the code and test it to avoid any errors or improper implementations.
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="showcase-media">
@@ -188,18 +205,19 @@
                 Managing Multiple Viewports
             </div>
             <div class="showcase-textBody">
-                <p>
-                    How would you go about displaying different sections of the game?
-                </p>
-                <p>
-                    I decided to use multiple viewports and use a camera matrix for each one to show important information regarding the game such as current HP, the minimap of enemy positions, and the players score.
-                </p>
-                <p>
-                    How each viewport is decided was based off of the design we were going off of. Since each section displayed should be roughly 33% of the windows width space we can use that to calculate the positions and sizes of each section.
-                </p>
-                <p>
-                    The image attached shows with abstraction that each viewport was dealt with individually and had its own functionality tied with itself. All I needed to do was pass along the type to make sure I was using the correct dimensions and then draw all the required objects.
-                </p>
+                <ul>
+                    <li>
+                        I used a viewport for each section of the display I needed. Lives, Minimap, Score, Gameplay were in their own viewport.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Each viewport had their own drawing functionality since they each required something different to them. They all have their own objects needing to be drawn.
+                    </li>
+                    &nbsp;
+                    <li>
+                        I would need to update the pipeline each time to account for where the viewport would start and the dimensions, which meant I didn't need to recreate every aspect of the pipeline each frame.
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="showcase-media">
@@ -211,31 +229,6 @@
     </div>
     <!-- Contributions Section Ended -->
     <!-- Screenshots Area -->
-    <!--<div class="gallery-horizontal">
-        <img src="../SiteProjResources/InvasionOfLiberty/Gallery1.png">
-        <img src="../SiteProjResources/InvasionOfLiberty/Gallery2.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/Gallery3.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/Gallery4.png">
-        <img src="../SiteProjResources/InvasionOfLiberty/Gallery5.png">
-        <img src="../SiteProjResources/InvasionOfLiberty/Gallery6.png">
-        <img src="../SiteProjResources/InvasionOfLiberty/Gallery7.png">
-        <img src="../SiteProjResources/InvasionOfLiberty/Gallery8.png">
-        <img src="../SiteProjResources/InvasionOfLiberty/Gallery9.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/Gallery10.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/IOLCheatMode.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/IOLComplete.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/IOLDestroyedModels.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/IOLFullScreen.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/IOLGreyscaleShader.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/IOLHearts.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/IOLMainMenu.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/IOLMilestone.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/IOLMinimap.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/IOLPausedGameFunctionality.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/IOLScoreCounter.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/IOLScoreGreyscaledLongVers.gif">
-        <img src="../SiteProjResources/InvasionOfLiberty/IOLWireframeAndLighting.gif">
-    </div>-->
     <div class="gallery-wrapper">
         <div class="gallery-media">
             <div class="gallery-layer">
@@ -245,7 +238,7 @@
         </div>
         <div class="gallery-media">
             <div class="gallery-layer">
-                <p>When attempting to get the camera to follow the player, I managed to recreate a GTA V style cinematic camera and recorded it.</p>
+                <p>When attempting to get the camera to follow the player, I managed to recreate a GTA V style cinematic camera which wasn't ideal but was cool nonetheless.</p>
             </div>
             <img src="../SiteProjResources/InvasionOfLiberty/Gallery2.gif" alt="" />
         </div>
@@ -281,13 +274,13 @@
         </div>
         <div class="gallery-media">
             <div class="gallery-layer">
-                <p>The display for hearts was done by checking if the players health is (0 < x < 3) and then update how many hearts I am drawing because each heart has its own matrix since they all rotate.</p>
+                <p>For the health display system, I decided on using custom 3D Heart models that rotated.</p>
             </div>
             <img src="../SiteProjResources/InvasionOfLiberty/IOLHearts.gif" alt="" />
         </div>
         <div class="gallery-media">
             <div class="gallery-layer">
-                <p>When implementing a main menu I used the player ship as a placeholder for displaying the games name and other models needed. Though when loading into the level some unexpected errors occured such as broken model id's and were subsequently fixed.</p>
+                <p>One of the earlier implementations of the main menu that I managed to make, which results in incorrect model id's.</p>
             </div>
             <img src="../SiteProjResources/InvasionOfLiberty/Gallery10.gif" alt="" />
         </div>
@@ -299,19 +292,19 @@
         </div>
         <div class="gallery-media">
             <div class="gallery-layer">
-                <p>You might notice that each enemy and even the player has a destroyed model for when they die. To display I check the health component and display the appropriate model (live/dead) based on their status.</p>
+                <p>Every entity model has a unique destroyed model that displays when they are wiped out.</p>
             </div>
             <img src="../SiteProjResources/InvasionOfLiberty/IOLDestroyedModels.gif" alt="" />
         </div>
         <div class="gallery-media">
             <div class="gallery-layer">
-                <p>The minimap that is placed in the top middle of the game. The player is a small purple square moving around and enemies are colored red since having green/yellow enemies on a green planet proved unhelpful when testing.</p>
+                <p>A close up of the minimap. The player is shown as a purple square and the enemies are red circles to contrast the planet below.</p>
             </div>
             <img src="../SiteProjResources/InvasionOfLiberty/IOLMinimap.gif">
         </div>
         <div class="gallery-media">
             <div class="gallery-layer">
-                <p>The wave counter incrementing the players score and the current wave when all enemies in that wave are defeated. The display was done via 3D text models and breaking down the score into each digit to calculate and display properly.</p>
+                <p>Using 3D models for the text I was able to display the players score accurately each time it was updated.</p>
             </div>
             <img src="../SiteProjResources/InvasionOfLiberty/IOLScoreCounter.gif">
         </div>

@@ -72,6 +72,9 @@ html {
     grid-template-rows: 1fr 2fr 1fr;
     grid-template-columns: 2fr 2fr 1fr 1fr 2fr 2fr;
 }
+    .grid-contributions p {
+        padding: 0;
+    }
 
     .grid-contributions span {
         display: block;
@@ -81,15 +84,17 @@ html {
 
 /* Displaying Content Sections */
 .showcase-textTitle {
+    border-bottom: solid #808080 2px;
     grid-area: scTT;
     font-size: 2vw;
     margin-bottom: 2.5vh;
     text-align: center;
+    height: min-content;
 }
 
 .showcase-textBody {
     grid-area: scTB;
-    text-indent: 2vw;
+    font-size: 110%;
 }
 
 .showcase-mainText {
@@ -152,7 +157,7 @@ img.projMedia {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 1%;
+  padding-bottom: 5%;
 }
 
 .gallery-media img {
@@ -175,7 +180,7 @@ img.projMedia {
 
 p {
   text-align: center;
-  padding: 1%;
+  padding: 25%;
 }
 
 .gallery-media:hover .gallery-layer {
@@ -226,9 +231,9 @@ p {
         grid-template-columns: 1fr;
     }
 
-        .grid-contributions span {
-            line-height: 1.75;
-        }
+    .grid-contributions span {
+        line-height: 1.75;
+    }
 
     .grid-role {
         font-size: min(2vw, 125%);
@@ -277,12 +282,13 @@ p {
     }
 
     .showcase-textBody {
-        font-size: 1.35vw;
+        font-size: 2vw;
         text-align: center;
     }
 
     .showcase-media {
         border-bottom: solid #434343 2px;
+        padding-bottom: 1.5%;
     }
 
     .gallery-media {
