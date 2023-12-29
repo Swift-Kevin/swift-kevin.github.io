@@ -3,7 +3,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="../Styles/styles.css" />
-    <link rel="stylesheet" href="../Styles/homepageProject.css" />
+    <link rel="stylesheet" href="../Styles/projectPage.css" />
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png">
     <title>Kevin W.</title>
     <meta charset="utf-8">
@@ -12,7 +12,6 @@
 </head>
 <body class="bdy">
     <!--Main Header-->
-
     <div class="header">
         <div class="header-title">
             <header>Kevin Wall</header>
@@ -34,120 +33,305 @@
     </div>
 
     <!-- End Of Main Header-->
-    <div class="grid-container-proj">
-        <div class="grid-proj-title">
-            Psychic Protocol
+    <div class="projtitle">
+        Psychic Protocol
+    </div>
+    <div class="grid-contributions">
+        <div class="grid-roleTitle">
+            <h3>Contributions</h3>
         </div>
-        <div class="grid-psyRole">
-            <div class="grid-roleTitle"> <h3>Contributions</h3></div>
-            <div class="grid-roleSec1">
+        <div class="grid-contributedLeft">
+            <span> User Interface Development </span>
+            <span>Customization on UI elements.</span>
+            <span>Controller accesibility options.</span>
+            <span>Optimized UI understanding.</span>
+            <span>Game Settings persistent throughout gameplay.</span>
+        </div>
+        <div class="grid-contributedRight">
+            <span>Created and managed assets used.</span>
+            <span>Oversaw quality assurance and bug testing.</span>
+            <span>Created a dynamic main menu.</span>
+            <span>Customization features in the credits menu for designers.</span>
+            <span>Audio management for all sound implementation.</span>
+        </div>
+        <div class="grid-role">
+            <p> <span> Team Role: </span> UI/Generalist Programmer </p>
+        </div>
+        <div class="grid-teamsize">
+            <p> <span> Team Size: </span> 6</p>
+        </div>
+        <div class="grid-timespan">
+            <p> <span> Development Time: </span> 2 months </p>
+        </div>
+    </div>
+    <div>
+        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+    </div>
+    <div class="showcase-leftFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle"> User Interface (UI) </div>
+            <div class="showcase-textBody">
                 <ul>
-                    <li>User Interface Development</li>
-                    <li>Customization on UI elements.</li>
-                    <li>Controller accesibility options.</li>
-                    <li>Optimized UI understanding.</li>
-                    <li>Game Settings persistent throughout gameplay.</li>
+                    <li> UI was one of the many responsibilities I held during this project where I communicated with other teammates to ensure consistent functionality. </li>
+                    &nbsp;
+                    <li> Inspiration for the player status bars came from Dishonored. Similar to how inspiration for the main menu came from Portal. </li>
+                    &nbsp;
+                    <li> All game menus are controller supported which when reflecting on the project turns out to be more tedious than initially thought. </li>
                 </ul>
             </div>
-            <div class="grid-roleSec2">
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsychicProtocolUIInputChange.gif" />
+        </div>
+    </div>
+    <div class="showcase-rightFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle"> Displaying Credits </div>
+            <div class="showcase-textBody">
                 <ul>
-                    <li>Created and managed assets used.</li>
-                    <li>Oversaw quality assurance and bug testing.</li>
-                    <li>Created a dynamic main menu.</li>
-                    <li>Customization features in the credits menu for designers.</li>
-                    <li>Audio management for all sound implementation.</li>
+                    <li> I wanted to give proper credit to all the people whos assets we used in our game, this was unfortunately uncommon within similar student projects and that was one thing I wanted to address.</li>
+                    &nbsp;
+                    <li> One of the major inspirations for the games credits was movie theater credits, typically the ones scrolling from bottom to top with a fade-in and fade-out.</li>
+                    &nbsp;
+                    <li> In my implementation of the credits menu, I wanted to make it modular so I could keep adding to the list of assets and proper. That and also putting our Git Commit history (skippable) at the very end to show our progress throughout the project.</li>
                 </ul>
             </div>
         </div>
-        <div class="grid-psy-itch">
-            <a class="project-connections" href="https://mrcowface.itch.io/psychic-protocol" target="_blank">
-                <img src="../SiteImages/itchio-textless-white.svg" />
-            </a> Download on Itch!
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProCredits.gif" />
         </div>
-        <div class="grid-psy-git">
-            <a class="project-connections" href="https://github.com/tomOrourke1/Midterm_FPS_Project" target="_blank">
-                <img src="../SiteImages/github-mark-white.png" />
-            </a> View on Github!
-        </div>
-        <div class="grid-psy-vid">
-            <iframe src="https://www.youtube.com/embed/YduLyepEffI?si=0bQkEH12bWTp4j0l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="grid-psy-emp1"></div>
-        <div class="grid-psy-emp2"></div>
-        <div class="grid-psy-emp3"></div>
-        <div class="grid-psy-foot"></div>
-        <div class="grid-container-psy-contr">
-            <div class="grid-psyContr-sum1 sum-text">
-                <h2>
-                    Stat Bars:
-                </h2>
-                <p>
-                    After hitting our third milestone, the team noticed a problem with the game's health, shield, and focus bars during testing.
-                    The issue was that these bars didn't give clear feedback about the player's status.
-                    They just lost chunks without showing a gradual change.
-                </p>
-                <p>
-                    Instead of having a single bar for each stat, I added a second one behind it.
-                    When a resource is used, the live bar is updated to reflect the current value.
-                    The back bar is then decreased slowly until it equals the live bar's value.
-                    This tweak made a big difference by allowing players to see how much health, shield, or focus they had left without any confusion.
-                    While the change itself wasn't complex, it allowed players to more accurately gauge the difficulty of an enemy by the damage they dealt.
-                </p>
-            </div>
-            <div class="grid-psyContr-gif1 sum-gif">
-                <center>
-                    <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol_GIF_StatBars.gif" />
-                </center>
-            </div>
-            <div class="grid-psyContr-sum2 sum-text">
-                <h2>
-                    The Radial Wheel:
-                </h2>
-                <p>
-                    In the early stages of developing Psychic Protocol, switching abilities would be crucial to our combat mechanics.
-                    Players should have an easy and fast time switching abilities back and forth if they need to beat some challenging enemies.
-                    Five abilities were created for the player to use and potential for more to come.
-                    There needed to be a way for the player to access them quickly, and for designers to keep adding more in case they were developed.
-                </p>
-                <p>
-                    I created the radial wheel system featured in our game to help address this issue.
-                    Displaying the menu would be solved by using the degrees of a circle and dividing it up between the number of abilities.
-                    Then by calculating the signed angle between the cursor and the center of the screen,
-                    I could find which ability was being hovered over and have that ability highlight and display the name of the power in the middle.
-                    In order to promote a better user experience I used images instead of text for the ability segments, and the segments never changed positions.
-                    This way when the player became fluent in the game they could easily open the wheel and close it by only moving the mouse slightly.
-                </p>
-            </div>
-            <div class="grid-psyContr-gif2">
-                <center>
-                    <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol_GIF_RadialWheel.gif" />
-                </center>
-            </div>
-            <div class="grid-psyContr-sum3 sum-text">
-                <h2>
-                    Hit indications:
-                </h2>
-                <p>
-                    Along with the health bar, players were having trouble telling where they were being attacked from.
-                    This led to them having increasing frustration with the game and made them quit playing.
-                    This would prove to be an easy fix by adding a directional hit indicator to the player's interface.
-                    While I was at it I decided to add a hit effect on the UI respective of the type damaged (HP/Shield).
-                </p>
-                <p>
-                    In order to display where the attack came from I needed an angle of some kind.
-                    I originally had some trouble coming up with an idea on how to solve this so I asked a teammate about it.
-                    They proposed I get the direction between the attack’s (melee or bullet) current position and the player’s position.
-                    Then take the angle between the player’s forward and the direction and send that to the damage indicator script.
-                    With the angle, we can display the image rotated around the center of the screen and gradually lower the alpha after some time to fade the images in and out.
-                    This little change helped a lot with user experience by increasing accessibility of knowledge in their environment.
-                </p>
-            </div>
-            <div class="grid-psyContr-gif3">
-                <center>
-                    <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol_GIF_HitIndication.gif" />
-                </center>
+    </div>
+    <div class="showcase-leftFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle"> The Main Menu </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li> When creating the Main Menu, the idea given was a "simple live scene". I took that and thought of adding randomly switching rotating security cameras that zoomed in and out as a cool gimick of the scene.</li>
+                    &nbsp;
+                    <li> During our Beta Sprint (2nd Month, 3rd week) I felt like the Main Menu was empty. I asked the Team Lead about it and after some discussions on approaching it, we agreed to have a randomly rotating enemy in the middle.</li>
+                    &nbsp;
+                    <li> Fun Fact: The mysterious being (floating rotating enemy model) soon became known within our game universe's God that was spinning perpetually in place in the main menu, potentially providing the powers given to the player.</li>
+                </ul>
             </div>
         </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProMainMenu.gif" />
+        </div>
+    </div>
+    <div class="showcase-rightFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle"> Checkpoint Notifications </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li> A radial-filled notification displays in the bottom right of the screen to let the player know about a checkpoint being reached.</li>
+                    &nbsp;
+                    <li> When a checkpoint is reached the next room is loaded and the previous is unloaded, similar to object pooling which is a design method used to increase a games performance.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProCheckpoint.gif" />
+        </div>
+    </div>
+    <div class="showcase-leftFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle"> Radial Wheel </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li> One of my most proudest parts of the project, a large majority of my work was spent on the Radial Wheel.</li>
+                    &nbsp;
+                    <li> The radial wheel works by calculating the distance and angle of the mouse's position from the center of the screen and then highlights and updates the corresponding ability.</li>
+                    &nbsp;
+                    <li> When an ability is selected it sends a update to the players current ability and updates the UI accordingly.</li>
+                    &nbsp;
+                    <li> While I was working on the Radial Wheel, a lot of lessons were learned. One of which was overcomplicating a simple feature by going outside of the requirements of said feature. This fell under "What would you do differently" during our post-mortem.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProRadialWheel.gif" />
+        </div>
+    </div>
+    <div class="showcase-rightFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle"> Player Settings </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li> I used scriptable objects to help quickly access data for the player settings within menus aswell as across scenes.</li>
+                    &nbsp;
+                    <li> When changing a setting the player must 'Apply' the changes as to confirm them or they can back out of the menu or press cancel, both resulting in reverting the saved data.</li>
+                    &nbsp;
+                    <li> Since more than just player settings were stored in the scriptable object, getters and setters were commonly used within the functionality associated with the object as to retrieve stored data and update it.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProScriptableObject.png" />
+        </div>
+    </div>
+    <div class="showcase-leftFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle"> Audio Implementation </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li> Almost all entities in the game have an attached audio source customized to its own purpose, an example being the death sound effect of enemies is setup in 3D space.</li>
+                    &nbsp;
+                    <li> The team wanted to have spatial audio due to it avoiding the "flatness" of non-spatial audio. Awareness was important to the player and their decision making.</li>
+                    &nbsp;
+                    <li> A neat effect I learned about when implementing audio was the use of a lowpass filter to create a muffled effect on music when inside of game menus.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProMuffling.png" />
+        </div>
+    </div>
+    <div class="showcase-rightFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle"> Reticle </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li> The color swaps depending on what you are looking at. Red for enemies, Green for telekinetic objects, white for non-tagged objects.</li>
+                    &nbsp;
+                    <li> Priority of color is assigned by distance, whichever object is hit by the reticles raycast is shown.</li>
+                    &nbsp;
+                    <li> One of the features I tried to accomplish with reticles was changing the icon for it, unfortunately this feature never 100% worked.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProReticle.gif" />
+        </div>
+    </div>
+    <div class="showcase-leftFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle"> Directional Hit Indications </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li> Calculated by taking the angle between an incoming projectile and the players forward.</li>
+                    &nbsp;
+                    <li> There are 5 hit-indication images in an array that are cycled through and displayed on a pivot around the reticle.</li>
+                    &nbsp;
+                    <li> When the player is hit, the screen borders also have a vignette effect colored the type of resource being consumed (health is red, shield is blue).</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsychicProtocol_GIF_HitIndication.gif" />
+        </div>
+    </div>
+    <div class="showcase-rightFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle"> Elevators and Scene Transitions </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li> In order to progress within the game, the player must get to the elevator at the end of the level and then activate the elevator proceeding to the next level.</li>
+                    &nbsp;
+                    <li> One challenge that I faced was getting the elevators button to disappear after not hovering over it. After hours of me and a friend attempting to solve it, my friend Tom (Team Lead) walked by and suggested to store the variable. (It worked).</li>
+                    &nbsp;
+                    <li> Timers were used frequently within the elevators as fading the scene in and out to provide a seamless transition between scenes.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProFadeOut.png" />
+        </div>
+    </div>
+    <div>
+        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+    </div>
+    <div class="gallery-wrapper">
+        <div class="gallery-media">
+            <div class="gallery-layer">
+                <p></p>
+            </div>
+            <img src="../SiteProjResources/PsychicProtocol/PsychicProtocolSwappingInputs.gif" alt="" />
+        </div>
+        <div class="gallery-media">
+            <div class="gallery-layer">
+                <p></p>
+            </div>
+            <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol1.png" alt="" />
+        </div>
+        <div class="gallery-media">
+            <div class="gallery-layer">
+                <p></p>
+            </div>
+            <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol11.png" alt="" />
+        </div>
+        <div class="gallery-media">
+            <div class="gallery-layer">
+                <p></p>
+            </div>
+            <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol3.png" alt="" />
+        </div>
+        <div class="gallery-media">
+            <div class="gallery-layer">
+                <p></p>
+            </div>
+            <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol_GIF_RadialWheel.gif" alt="" />
+        </div>
+        <div class="gallery-media">
+            <div class="gallery-layer">
+                <p></p>
+            </div>
+            <img src="../SiteProjResources/PsychicProtocol/PsyProBoxPuzzle.gif" alt="" />
+        </div>
+        <div class="gallery-media">
+            <div class="gallery-layer">
+                <p></p>
+            </div>
+            <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol12.png" alt="" />
+        </div>
+        <div class="gallery-media">
+            <div class="gallery-layer">
+                <p></p>
+            </div>
+            <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol5.png" alt="" />
+        </div>
+        <div class="gallery-media">
+            <div class="gallery-layer">
+                <p></p>
+            </div>
+            <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol8.png" alt="" />
+        </div>
+        <div class="gallery-media">
+            <div class="gallery-layer">
+                <p></p>
+            </div>
+            <img src="../SiteProjResources/PsychicProtocol/PsyProTurretBoxPuzzle.gif" alt="" />
+        </div>
+        <div class="gallery-media">
+            <div class="gallery-layer">
+                <p></p>
+            </div>
+            <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol10.png" alt="" />
+        </div>
+        <div class="gallery-media">
+            <div class="gallery-layer">
+                <p></p>
+            </div>
+            <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol_GIF_StatBars.gif" alt="" />
+        </div>
+    </div>
+    <div>
+        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+    </div>
+    <div class="footer-connect clickable">
+        <h2">Connect with me:</h2">
+        <br />
+        <a href="https://www.linkedin.com/in/kevinwall-gamedev/" target="_blank">
+            <img src="../SiteImages/linkedin-logo.png">
+        </a>
+        <a href="https://github.com/swift-kevin" target="_blank">
+            <img src="../SiteImages/github-mark-white.png" />
+            <!-- Removes that annoying little line next to anchor tags. -->
+            <style>
+                a {
+                    text-decoration: none;
+                }
+            </style>
+        </a>
     </div>
 </body>
 </html>
