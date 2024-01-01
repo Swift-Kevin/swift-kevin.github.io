@@ -57,12 +57,15 @@ html {
 /* Menu Buttons must adhere to a 512x512 canvas size! */
 
 .menu-buttons {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
     width: 10%;
     font-family: "Custom-Consolas";
     color: white;
     border: ridge grey 5px;
     text-align: center;
-    font-size: 170%;
     position: relative;
     margin: 0.5% 1.5% 0.5% 1.5%;
 }
@@ -145,17 +148,27 @@ img.spacer-hori {
     src: url('../SiteFonts/Consolas.ttf');
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1023px) {
     html {
         scroll-padding-top: 10vh;
+    }
+
+    .header {
+        min-height: 10vh;
     }
     
     .header-title {
         font-size: 0;
     }
 
+    .header-buttons-container {
+        height: 10vh;
+    }
+
     .menu-buttons {
         border: solid grey 3px;
+        width: fit-content;
+        height: 80%;
     }
 
         .menu-buttons img {

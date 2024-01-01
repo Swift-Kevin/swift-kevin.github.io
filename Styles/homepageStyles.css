@@ -33,6 +33,7 @@
             font-size: 115%;
             transition: linear 0.1s;
             color: white;
+            text-shadow: 0 0 5px #fff;
         }
 
 .homepage-project-gif1 {
@@ -126,17 +127,17 @@
     }
 
 
-@media (max-width: 1080px) {
+@media (max-width: 1023px) {
 
     .aboutme {
         text-align: center;
-        font-size: 2.5vw;
+        font-size: 4vw;
         color: white;
         margin: 0 0 0 0;
         margin-left: auto;
         margin-right: auto;
         margin-top: 2vh;
-        width: 80%;
+        width: 90%;
     }
 
     .homepage-project {
@@ -147,9 +148,9 @@
             'hpEL homePrG3 hpER';
         grid-template-rows: 5% auto auto auto;
         grid-template-columns: 2.5% auto 2.5%;
-        padding: 0 0 5% 5%;
+        padding: 0 0 2.5% 2.5%;
         text-align: center;
-        width: 90%;
+        width: 95%;
     }
 
     .homepage-project-gif1 {
@@ -162,11 +163,12 @@
 
     .homepage-project-gif3 {
         padding: 2.5%;
+        border-bottom: solid #434343 3px;
     }
 
     .homepage-project-title {
         grid-area: homeTitle;
-        font-size: min(5vmin, 200%);
+        font-size: min(7vmin, 200%);
         font-family: "Custom-Consolas";
         text-align: center;
     }
