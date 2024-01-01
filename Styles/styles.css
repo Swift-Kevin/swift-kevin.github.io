@@ -2,6 +2,10 @@ a {
     display: block;
 }
 
+body {
+    font-family: Verdana;
+}
+
 span.ul {
     text-decoration: underline grey;
     font-size: 105%;
@@ -41,7 +45,7 @@ html {
 
 .header-title {
     /*Font Settings*/
-    font-family: "Custom-Garamond";
+    font-family: Garamond;
     font-size: 5.75vmin;
     color: white;
     /*Block Settings*/
@@ -62,7 +66,7 @@ html {
     align-content: center;
     justify-content: center;
     width: 10%;
-    font-family: "Custom-Consolas";
+    font-family: Custom-Consolas;
     color: white;
     border: ridge grey 5px;
     text-align: center;
@@ -126,6 +130,7 @@ img.spacer-hori {
     text-align: center;
     color: white;
     font-size: 2vw;
+    font-family: Consolas;
 }
 
     .footer-connect a {
@@ -138,10 +143,38 @@ img.spacer-hori {
         width: 5vw;
     }
 
-@font-face {
-    font-family: "Custom-Garamond";
-    src: url('../SiteFonts/EBGaramond-Regular.ttf');
+#topBtn {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 101;
+    border: solid #883800 5px;
+    background-color: #e67e22;
+    border-radius: 5%;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    height: 5vw;
+    width: 5vw;
+    font-family: Consolas;
+    transition: linear 0.1s;
 }
+
+    #topBtn:hover {
+        border: solid #b04900 5px;
+        background-color: #ff8a23;
+        transform: scale(1.1);
+        transition: linear 0.1s;
+    }
+
+.ytEmbed {
+    text-align: center;
+}
+
+    .ytEmbed iframe {
+        width: 50vw;
+        height: 50vh;
+    }
 
 @font-face {
     font-family: "Custom-Consolas";
@@ -156,7 +189,7 @@ img.spacer-hori {
     .header {
         min-height: 10vh;
     }
-    
+
     .header-title {
         font-size: 0;
     }
@@ -189,4 +222,10 @@ img.spacer-hori {
         .footer-connect img {
             width: 10vw;
         }
+
+    #topBtn {
+        font-size: 3em;
+        height: 12vw;
+        width: 12.5vw;
+    }
 }

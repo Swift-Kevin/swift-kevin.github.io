@@ -7,7 +7,7 @@ html {
 }
 
 .projtitle {
-    font-family: "Custom-Consolas";
+    font-family: Custom-Consolas;
     font-size: max(250%, 24px);
     text-align: center;
     color: white;
@@ -15,7 +15,54 @@ html {
     height: 10vh;
 }
 
+.projVidLink {
+    grid-area: linkV;
+    border: solid #883800 2px;
+    background-color: #e67e22;
+    transition: linear 0.1s;
+}
+
+    .projVidLink:hover {
+        transform: scale(1.1);
+        transition: linear 0.1s;
+    }
+
+.projGalleryLink {
+    grid-area: linkG;
+    border: solid #883800 2px;
+    background-color: #e67e22;
+    transition: linear 0.1s;
+}
+
+    .projGalleryLink:hover {
+        transform: scale(1.1);
+        transition: linear 0.1s;
+    }
+
+.projQLTitle {
+    grid-area: linkQL;
+}
+
+.projQL {
+    display: grid;
+    grid-template-areas:
+        'linkQL linkV linkG';
+    grid-template-rows: minmax(min-content, 1fr);
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 9%;
+    margin: 2vh 30% 2vh 30%;
+    color: white;
+    font-family: "Custom-Consolas";
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+    .projQL a {
+        color: #F5F5F5;
+    }
+
 .grid-roleTitle {
+    font-family: Consolas;
     font-size: 1.5vw;
     grid-area: roleTitle;
     margin-bottom: 1%;
@@ -40,6 +87,8 @@ html {
     font-size: 1.2vw;
     text-align: center;
     border-right: solid #434343 2px;
+    color: white;
+    font-family: Consolas;
 }
 
 .grid-teamsize {
@@ -49,6 +98,8 @@ html {
     text-align: center;
     border-left: solid #434343 2px;
     border-right: solid #434343 2px;
+    color: white;
+    font-family: Consolas;
 }
 
 .grid-timespan {
@@ -57,10 +108,12 @@ html {
     font-size: 1.2vw;
     text-align: center;
     border-left: solid #434343 2px;
+    color: white;
+    font-family: Consolas;
 }
 
 .grid-contributions {
-    margin: 0 auto 0 auto;
+    margin: 2.5% auto 0 auto;
     width: 75%;
     color: white;
     display: grid;
@@ -75,33 +128,39 @@ html {
 
     .grid-contributions p {
         padding: 0;
+        color: #dedede;
     }
 
     .grid-contributions span {
+        color: #dedede;
         display: block;
         line-height: 1.75;
+        font-family: Custom-Consolas;
     }
 
 
 /* Displaying Content Sections */
 .showcase-textTitle {
+    font-size: 2vw;
+    text-align: center;
+    color: #FDFDFD;
+    font-family: Custom-Consolas;
     border-bottom: solid #808080 2px;
     grid-area: scTT;
-    font-size: 2vw;
     margin-bottom: 2.5vh;
-    text-align: center;
     height: min-content;
 }
 
 .showcase-textBody {
     grid-area: scTB;
     font-size: 110%;
+    color: #E0E0E0;
 }
 
 .showcase-mainText {
     grid-area: showcaseText;
     color: white;
-    font-family: 'Custom-Consolas';
+    font-family: Custom-Consolas;
     display: grid;
     grid-template-areas: 'scTT' 'scTB';
     grid-template-columns: 1fr;
@@ -176,6 +235,7 @@ img.projMedia {
     height: 100%;
     background: #121212;
     color: #ffffff;
+    font-family: Consolas;
     transition: all 0.25s linear;
 }
 
@@ -197,7 +257,12 @@ p {
         transform: translateX(-100%);
     }
 }
-/* Media Queries */
+
+@font-face {
+    font-family: "Custom-Consolas";
+    src: url('../SiteFonts/Consolas.ttf');
+}
+
 
 @media (max-width: 1023px) {
     .projtitle {
@@ -297,5 +362,27 @@ p {
         max-height: auto;
         font-size: 125%;
         padding-bottom: 3%;
+    }
+
+    .projQL {
+        display: grid;
+        grid-template-areas:
+            'linkQL''linkV''linkG';
+        grid-template-columns: minmax(min-content, 1fr);
+        grid-template-rows: auto auto auto;
+        margin: 2vh 30% 2vh 30%;
+        color: white;
+        font-family: "Custom-Consolas";
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .projQLTitle {
+        border-bottom: solid #dedede 2px;
+        margin-bottom: 1vh;
+    }
+
+    .projVidLink {
+        margin-bottom: 1vh;
     }
 }

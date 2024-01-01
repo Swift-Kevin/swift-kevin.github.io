@@ -6,6 +6,7 @@
     /*Box Settings*/
     width: 50%;
     margin: 0 25% 0;
+    font-family: Consolas;
 }
 
 .welcome-message {
