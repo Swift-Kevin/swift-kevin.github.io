@@ -11,6 +11,16 @@
     <meta name="author" content="Kevin Wall">
 </head>
 <body class="bdy">
+    <!--Top of Page button-->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <script>
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="../SiteJava/Top.js"></script>
+    <!--End of Top Button-->
     <!--Main Header-->
     <div class="header">
         <div class="header-title">
@@ -35,6 +45,19 @@
     <!-- End Of Main Header-->
     <div class="projtitle">
         Psychic Protocol
+    </div>
+    <div class="projQL">
+        <div class="projQLTitle">Quick Links:</div>
+        <div class="projVidLink">
+            <a href="../SiteProj/PsychicProtocol.html#Video">
+                Video
+            </a>
+        </div>
+        <div class="projGalleryLink">
+            <a href="../SiteProj/PsychicProtocol.html#Gallery">
+                Gallery
+            </a>
+        </div>
     </div>
     <div class="grid-contributions">
         <div class="grid-roleTitle">
@@ -311,6 +334,17 @@
     <div>
         <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
     </div>
+    <!--End of Gallery Section-->
+    <!--Start of External Links-->
+    <section id="Video">
+        <div class="ytEmbed">
+            <iframe src="https://www.youtube.com/embed/YduLyepEffI" title="Psychic Protocol Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+    <div>
+        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+    </div>
+    <!--End of External Links-->
     <div class="footer-connect clickable">
         <h2">Connect with me:</h2">
         <br />

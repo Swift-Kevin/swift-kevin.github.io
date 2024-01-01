@@ -11,6 +11,16 @@
     <meta name="author" content="Kevin Wall">
 </head>
 <body class="bdy">
+    <!--Top of Page button-->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <script>
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="../SiteJava/Top.js"></script>
+    <!--End of Top Button-->
     <!--Main Header-->
     <div class="header">
         <div class="header-title">
@@ -35,6 +45,19 @@
     <!-- End Of Main Header-->
     <div class="projtitle">
         Invasion Of Liberty
+    </div>
+    <div class="projQL">
+        <div class="projQLTitle">Quick Links:</div>
+        <div class="projVidLink">
+            <a href="../SiteProj/InvasionOfLiberty.html#Video">
+                Video
+            </a>
+        </div>
+        <div class="projGalleryLink">
+            <a href="../SiteProj/InvasionOfLiberty.html#Gallery">
+                Gallery
+            </a>
+        </div>
     </div>
     <div class="grid-contributions">
         <div class="grid-roleTitle">
@@ -228,89 +251,102 @@
     </div>
     <!-- Contributions Section Ended -->
     <!-- Screenshots Area -->
-    <div class="gallery-wrapper">
-        <div class="gallery-media">
-            <div class="gallery-layer">
-                <p>A screenshot of the main menu, featuring a rotating planetary background and moving text!</p>
+    <section id="Gallery">
+        <div class="gallery-wrapper">
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>A screenshot of the main menu, featuring a rotating planetary background and moving text!</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery1.png" alt="" />
             </div>
-            <img src="../SiteProjResources/InvasionOfLiberty/Gallery1.png" alt="" />
-        </div>
-        <div class="gallery-media">
-            <div class="gallery-layer">
-                <p>When attempting to get the camera to follow the player, I managed to recreate a GTA V style cinematic camera which wasn't ideal but was cool nonetheless.</p>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>When attempting to get the camera to follow the player, I managed to recreate a GTA V style cinematic camera which wasn't ideal but was cool nonetheless.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery2.gif" alt="" />
             </div>
-            <img src="../SiteProjResources/InvasionOfLiberty/Gallery2.gif" alt="" />
-        </div>
-        <div class="gallery-media">
-            <div class="gallery-layer">
-                <p>This was a prototype of the game after week 2, models were being created and imported aswell as shooting from the player.</p>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>This was a prototype of the game after week 2, models were being created and imported aswell as shooting from the player.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery3.gif" alt="" />
             </div>
-            <img src="../SiteProjResources/InvasionOfLiberty/Gallery3.gif" alt="" />
-        </div>
-        <div class="gallery-media">
-            <div class="gallery-layer">
-                <p>Using the greyscale shader in action for a requirement on one of the assignments, though I didn't want to take it out cause it provided a nice retro look to the game.</p>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Using the greyscale shader in action for a requirement on one of the assignments, though I didn't want to take it out cause it provided a nice retro look to the game.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery4.png" alt="" />
             </div>
-            <img src="../SiteProjResources/InvasionOfLiberty/Gallery4.png" alt="" />
-        </div>
-        <div class="gallery-media">
-            <div class="gallery-layer">
-                <p>The fan favorite wireframe mode in action, showcasing the low-poly models I created during the month for the project.</p>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>The fan favorite wireframe mode in action, showcasing the low-poly models I created during the month for the project.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLWireframeAndLighting.gif" alt="" />
             </div>
-            <img src="../SiteProjResources/InvasionOfLiberty/IOLWireframeAndLighting.gif" alt="" />
-        </div>
-        <div class="gallery-media">
-            <div class="gallery-layer">
-                <p>Displaying that the game was paused was actually one of the last second additions, our team lead Jerry had already made pausing functional, it just needed the display that I added in.</p>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Displaying that the game was paused was actually one of the last second additions, our team lead Jerry had already made pausing functional, it just needed the display that I added in.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery7.png" alt="" />
             </div>
-            <img src="../SiteProjResources/InvasionOfLiberty/Gallery7.png" alt="" />
-        </div>
-        <div class="gallery-media">
-            <div class="gallery-layer">
-                <p>This was one of the times where model id's got mismatched during a build process. It was quite funny to see the player shooting out planes and bullets so I thought I would add it here.</p>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>This was one of the times where model id's got mismatched during a build process. It was quite funny to see the player shooting out planes and bullets so I thought I would add it here.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery9.gif" alt="" />
             </div>
-            <img src="../SiteProjResources/InvasionOfLiberty/Gallery9.gif" alt="" />
-        </div>
-        <div class="gallery-media">
-            <div class="gallery-layer">
-                <p>For the health display system, I decided on using custom 3D Heart models that rotated.</p>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>For the health display system, I decided on using custom 3D Heart models that rotated.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLHearts.gif" alt="" />
             </div>
-            <img src="../SiteProjResources/InvasionOfLiberty/IOLHearts.gif" alt="" />
-        </div>
-        <div class="gallery-media">
-            <div class="gallery-layer">
-                <p>One of the earlier implementations of the main menu that I managed to make, which results in incorrect model id's.</p>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>One of the earlier implementations of the main menu that I managed to make, which results in incorrect model id's.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery10.gif" alt="" />
             </div>
-            <img src="../SiteProjResources/InvasionOfLiberty/Gallery10.gif" alt="" />
-        </div>
-        <div class="gallery-media">
-            <div class="gallery-layer">
-                <p>Some gameplay of our game in Wave 1, where the player bravely fights off the oncoming enemies!</p>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Some gameplay of our game in Wave 1, where the player bravely fights off the oncoming enemies!</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLComplete.gif" alt="" />
             </div>
-            <img src="../SiteProjResources/InvasionOfLiberty/IOLComplete.gif" alt="" />
-        </div>
-        <div class="gallery-media">
-            <div class="gallery-layer">
-                <p>Every entity model has a unique destroyed model that displays when they are wiped out.</p>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Every entity model has a unique destroyed model that displays when they are wiped out.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLDestroyedModels.gif" alt="" />
             </div>
-            <img src="../SiteProjResources/InvasionOfLiberty/IOLDestroyedModels.gif" alt="" />
-        </div>
-        <div class="gallery-media">
-            <div class="gallery-layer">
-                <p>A close up of the minimap. The player is shown as a purple square and the enemies are red circles to contrast the planet below.</p>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>A close up of the minimap. The player is shown as a purple square and the enemies are red circles to contrast the planet below.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLMinimap.gif">
             </div>
-            <img src="../SiteProjResources/InvasionOfLiberty/IOLMinimap.gif">
-        </div>
-        <div class="gallery-media">
-            <div class="gallery-layer">
-                <p>Using 3D models for the text I was able to display the players score accurately each time it was updated.</p>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Using 3D models for the text I was able to display the players score accurately each time it was updated.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLScoreCounter.gif">
             </div>
-            <img src="../SiteProjResources/InvasionOfLiberty/IOLScoreCounter.gif">
         </div>
-    </div>
+    </section>
     <div>
         <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
     </div>
+    <!--End of Gallery Section-->
+    <!--Start of External Links-->
+    <section id="Video">
+        <div class="ytEmbed">
+            <iframe src="https://www.youtube.com/embed/JkJ6DnbuOqE?si=nsCJgrnSiSW4Fs6p" title="Invasion of Liberty Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+    <div>
+        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+    </div>
+    <!--End of External Links-->
     <div class="footer-connect clickable">
         <h2">Connect with me:</h2">
         <br />
