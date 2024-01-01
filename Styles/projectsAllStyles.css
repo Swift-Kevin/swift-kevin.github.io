@@ -1,19 +1,3 @@
-
-.h2 {
-    font-family: "Custom-Consolas";
-    font-size: 3.5vmin;
-    color: white;
-    text-decoration: underline;
-    text-decoration-color: grey;
-    text-align: center;
-}
-
-.p {
-    margin: 5vh 5vw 0% 5vw;
-    font-size: 1.2vw;
-    text-align: center;
-}
-
 .img {
     padding-top: 5%;
     padding-bottom: 5%;
@@ -24,7 +8,7 @@
 .project-title {
     /*Font Settings*/
     font-family: "Custom-Consolas";
-    font-size: 3.5vmin;
+    font-size: 2.5rem;
     color: white;
     text-decoration: none;
     /*Block Settings*/
@@ -41,7 +25,7 @@
 
         .project-title a:hover {
             color: white;
-            font-size: 3.6vmin;
+            font-size: 2.75rem;
             transition: linear 0.1s;
         }
 
@@ -80,7 +64,7 @@
 
 .project-description {
     margin: 2% 2% 2% 2%;
-    font-size: 2vmin;
+    font-size: 1.5rem;
     color: white;
     font-family: "Custom-Consolas";
 }
@@ -106,18 +90,29 @@ img.placement {
     width: 2vw;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1023px) {
 
     .video-right {
-       min-height: 30vh;
-    }
-     
-    .project-title {
-        font-size: 250%;
+        min-height: 30vh;
     }
 
+    .project-title {
+        font-size: 3.6rem;
+    }
+
+        .project-title a {
+            color: white;
+            transition: linear 0.1s;
+        }
+
+            .project-title a:hover {
+                color: white;
+                font-size: 4rem;
+                transition: linear 0.1s;
+            }
+
     .project-description {
-        font-size: 75%;
+        font-size: 1.5rem;
     }
 
     .project-holder {
@@ -127,5 +122,31 @@ img.placement {
             'projRight';
         grid-template-columns: 100%;
         grid-template-rows: fit-content(75%) fit-content(25%) !important;
+    }
+
+    .project-connections {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+
+        .project-connections img {
+            width: 75%;
+            height: auto;
+        }
+
+    img.placement {
+    }
+
+    .img {
+        padding-top: 0%;
+        padding-bottom: 0%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .spacer-width {
+        width: 0vw;
     }
 }
