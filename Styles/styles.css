@@ -153,7 +153,7 @@ img.spacer-hori {
     border-radius: 5%;
     text-align: center;
     color: white;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-family: Consolas;
     font-weight: bold;
     height: 5vw;
@@ -228,5 +228,30 @@ img.spacer-hori {
         font-size: 3em;
         height: 12vw;
         width: 12.5vw;
+    }
+
+    .ytEmbed {
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+
+        .ytEmbed iframe {
+            width: 75vw;
+            height: contain;
+        }
+}
+
+@media (max-width: 750px) {
+    #topBtn {
+        font-size: 2em;
+        padding: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    #topBtn {
+        font-size: 1em;
+        padding: 0;
     }
 }
