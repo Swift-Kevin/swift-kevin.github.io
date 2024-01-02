@@ -153,10 +153,11 @@ img.spacer-hori {
     border-radius: 5%;
     text-align: center;
     color: white;
-    font-size: 1em;
+    font-size: 1.25em;
+    font-family: Consolas;
+    font-weight: bold;
     height: 5vw;
     width: 5vw;
-    font-family: Consolas;
     transition: linear 0.1s;
 }
 
