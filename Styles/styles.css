@@ -43,6 +43,15 @@ html {
     z-index: 100;
 }
 
+.header-title a {
+    text-decoration: none;
+    color: white;
+}
+    .header-title a:hover {
+        transform: scale(1.1);
+        transition: linear 0.1s;
+    }
+
 .header-title {
     /*Font Settings*/
     font-family: Garamond;
