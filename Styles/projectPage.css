@@ -242,10 +242,16 @@ img.projMedia {
 
 p {
     text-align: center;
-    padding: 15%;
+    display: block;
 }
 
-.gallery-media:hover .gallery-layer {
+.gallery-layer {
+    width: inherit;
+    height: stretch;
+    height: -webkit-fill-available;
+}
+
+.gallery-layer:hover {
     opacity: 0.8;
 }
 
