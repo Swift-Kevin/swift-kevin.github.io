@@ -70,6 +70,24 @@
     font-family: Consolas;
 }
 
+.project-link {
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+    .project-link a {
+        text-decoration: none;
+        font-family: Consolas;
+        color: #e67e22;
+    }
+
+.project-link:hover a {
+    transform: scale(1.1);
+    transition: linear 0.1s;
+}
+
 .project-connections {
     display: flex;
     justify-content: center;
@@ -123,11 +141,18 @@ img.placement {
         grid-template-rows: fit-content(75%) fit-content(25%) !important;
     }
 
+    .project-link {
+        margin-bottom: 5%;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
     .project-connections {
         display: flex;
         flex-direction: row;
         align-content: center;
         justify-content: center;
+        text-align: center;
     }
 
         .project-connections img {

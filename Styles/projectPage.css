@@ -146,7 +146,7 @@ html {
     text-align: center;
     color: #FDFDFD;
     font-family: Custom-Consolas;
-    border-bottom: solid #808080 2px;
+    border-bottom: solid #e67e22 2px;
     grid-area: scTT;
     margin-bottom: 2.5vh;
     height: min-content;
