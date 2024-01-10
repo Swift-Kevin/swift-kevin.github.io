@@ -1,73 +1,42 @@
-
-.bdy {
-    background-color: #111111;
-    -ms-overflow-style: none;
-    height: 60vh;
-}
-
-    .bdy::-webkit-scrollbar {
-        display: none;
-    }
-
-html, body {
-    height: 75%;
-}
-
-/** {
-    border: solid white 1px;
-}*/
-
-.maingrid {
-    padding-top: 20vh;
-    padding-bottom: 19vh;
-    font-family: "Custom-Garamond";
-    font-size: 1000%;
-    color: white;
+body {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     margin: 0;
-    height: 100%;
-    display: grid;
-    grid-template-areas:
-        'K W'
-        'R R';
-    grid-column-gap: 5vw;
+    color: white;
+    font-family: Garamond;
     overflow: hidden;
 }
 
-.cellleft {
-    grid-area: K;
-    text-align: right;
-}
-
-.cellright {
-    grid-area: W;
-    text-align: left;
-}
-
-.redirectwording {
-    font-size: 50%;
-    grid-area: R;
-    color: white;
+.container {
     text-align: center;
+    border: solid white 2px;
+    padding: 5% 10%;
 }
 
-@font-face {
-    font-family: "Custom-Garamond";
-    src: url('../SiteFonts/EBGaramond-Regular.ttf');
+.big-text {
+    font-size: 10vw;
+    line-height: 1.5;
+    margin-bottom: 12px;
 }
 
-@media (max-width: 750px) {
-    .maingrid {
-        font-size: 500%; /* Adjust the font size for mobile devices */
-        grid-template-areas:
-            'K'
-            'W'
-            'R';
-        grid-row-gap: 5vh; /* Add some vertical space between the grid items */
+.small-text {
+    font-size: 2.5vw;
+    line-height: 1.5;
+}
+
+@media (max-width: 1023px) {
+    .big-text {
+        font-size: 15vw;
+        line-height: 1.5;
+        margin-bottom: 12px;
     }
 
-    .cellleft,
-    .cellright,
-    .redirectwording {
-        text-align: center; /* Center text for mobile devices */
+    .small-text {
+        font-size: 7.5vw;
+        line-height: 1.5;
     }
+
 }

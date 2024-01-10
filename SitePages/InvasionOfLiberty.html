@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!--This HTML website and the CSS styles used were created by Kevin W. This website is also one of my ongoing projects!-->
+<html>
+<head>
+    <link rel="stylesheet" href="../Styles/styles.css" />
+    <link rel="stylesheet" href="../Styles/projectPage.css" />
+    <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png">
+    <title>Kevin W.</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Welcome to my personal portfolio!">
+    <meta name="author" content="Kevin Wall">
+</head>
+<body class="bdy">
+    <!--Top of Page button-->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <script>
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="../SiteJava/Top.js"></script>
+    <!--End of Top Button-->
+    <!--Main Header-->
+    <div class="header">
+        <div class="header-title">
+            <header>
+                <a href="../SitePages/Homepage.html">
+                    Kevin Wall
+                </a>
+            </header>
+        </div>
+        <div class="header-buttons-container">
+            <a class="menu-buttons" href="../SitePages/Homepage.html">
+                <img src="../SiteImages/HomeIcon.png" title="Home" />
+                <span>Home</span>
+            </a>
+            <a class="menu-buttons" href="../SitePages/ProjectsPage.html">
+                <img src="../SiteImages/ProjectsIcon.png" title="Projects" />
+                <span>Projects</span>
+            </a>
+            <a class="menu-buttons" href="../SitePages/Homepage.html#Resume">
+                <img src="../SiteImages/ResumeIcon.png" title="Résumé" />
+                <span>Résumé</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- End Of Main Header-->
+    <div class="projtitle">
+        Invasion Of Liberty
+    </div>
+    <div class="projQL">
+        <div class="projQLTitle">Quick Links:</div>
+        <div class="projVidLink">
+            <a href="../SitePages/InvasionOfLiberty.html#Video">
+                Video
+            </a>
+        </div>
+        <div class="projGalleryLink">
+            <a href="../SitePages/InvasionOfLiberty.html#Gallery">
+                Gallery
+            </a>
+        </div>
+    </div>
+    <div class="grid-contributions">
+        <div class="grid-roleTitle">
+            <h3>Contributions</h3>
+        </div>
+        <div class="grid-contributedLeft">
+            <span> Utilizing the Vulkan API. </span>
+            <span> Managing HLSL Vertex/Fragment Shaders. </span>
+            <span> Debugging Tools. </span>
+            <span> Developer Lighting Toggle. </span>
+            <span> Game Pause State with Enemy/Bullet responsiveness. </span>
+        </div>
+        <div class="grid-contributedRight">
+            <span> Created and implemented assets. </span>
+            <span> Source Control Management with Github. </span>
+            <span> Clarified and Refactored Code during Code Freezes. </span>
+            <span> Managing multiple viewports for information (lives/minimap/score). </span>
+        </div>
+        <div class="grid-role">
+            <p> <span> Team Role: </span> Graphics Programmer / Secondary Lead </p>
+        </div>
+        <div class="grid-teamsize">
+            <p> <span> Team Size: </span> 4</p>
+        </div>
+        <div class="grid-timespan">
+            <p> <span> Development Time: </span> 1 month </p>
+        </div>
+    </div>
+    <div>
+        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+    </div>
+    <!-- Contributions Section Explained -->
+    <div class="showcase-leftFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Using Vulkan
+            </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li>
+                        Chose Vulkan due to my experience with it from the previous class.
+                    </li>
+                    &nbsp;
+                    <li>
+                        We reused my previous class's renderer which helped speed up production and testing.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Benefitted from having clarity in code structure from my previous renderer with debugging options.
+                    </li>
+                </ul>
+                <!--<p>
+                    The first problem we faced was what graphics API we wanted to use. Our team ended up picking Vulkan due to my familiarity with it from the previous class (3D Content Creation).
+                </p>
+                <p>
+                    By using my renderer, our team had a head start working on the project and seeing results. My renderer was built with a couple of debugging options that I expanded upon and we used throughout this month (Lighting/Wireframe). The renderer was setup to show my thought process with checking and abstracting functionality into respective headers/classes and how Vulkan's pipeline was laid out.
+                </p>-->
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/InvasionOfLiberty/3DCCRenderer.gif" />
+        </div>
+    </div>
+    <div class="showcase-rightFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Learning/Using Shaders
+            </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li>
+                        Using Vertex and Fragment shaders to manipulate data sent to the GPU instead of CPU based unparallel computations.
+                    </li>
+                    &nbsp;
+                    <li>
+                        By having the shaders already setup with descriptor sets, passing any extra needed data could be easily added. This is how I added in 3 additional viewports and toggling lighting in the fragment shader.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Due to time constraints I implemented the multiple viewports pragmatically. Prioritized quick and effective solutions over elaborate, time-consuming ones.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/InvasionOfLiberty/CodeSnippets/VertexShaderSnippet.png" />
+        </div>
+    </div>
+    <div class="showcase-leftFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Debugging Tools
+            </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li>
+                        Adding in tools like Wireframe mode or Lighting Toggle helped denote problems related to the shaders/rendering pipeline/model materials.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Cycling through colors in wireframe helped discern if objects were being obfuscated or improperly drawn.
+                    </li>
+                    &nbsp;
+                    <li>
+                        We also had console logging for anytime an action was performed. Entity hurt, shoot, death, sounds aswell as player location and score tracking in console.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/InvasionOfLiberty/IOLWireframeAndLighting.gif" />
+        </div>
+    </div>
+    <div class="showcase-rightFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Pausing Functionality
+            </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li>
+                        Defender (1981) didn't have a way to pause the game and we wanted to correct that.
+                    </li>
+                    &nbsp;
+                    <li>
+                        The pausing functionality was done, but we didn't have a way to show it to the user. We didn't even plan on adding it in since we were low on time.
+                    </li>
+                    &nbsp;
+                    <li>
+                        I spent a couple hours on the last night crunching away to display the model properly above the player wherever they are because I felt like it wouldn't be right without it.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/InvasionOfLiberty/IOLPausedGameFunctionality.gif" />
+        </div>
+    </div>
+    <div class="showcase-leftFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Github and Code Refactoring
+            </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li>
+                        We used Github as our main source control point and worked on separate branches to avoid conflicts.
+                    </li>
+                    &nbsp;
+                    <li>
+                        I was the most proficient at resolving Merge Conflicts so I was in charge of handleing them if they ever arose.
+                    </li>
+                    &nbsp;
+                    <li>
+                        When we were going to merge into the main branch we always did a merge request and had other people view the code and test it to avoid any errors or improper implementations.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/InvasionOfLiberty/CodeSnippets/IOLGithub.gif" />
+        </div>
+    </div>
+    <div class="showcase-rightFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Managing Multiple Viewports
+            </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li>
+                        I used a viewport for each section of the display I needed. Lives, Minimap, Score, Gameplay were in their own viewport.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Each viewport had their own drawing functionality since they each required something different to them. They all have their own objects needing to be drawn.
+                    </li>
+                    &nbsp;
+                    <li>
+                        I would need to update the pipeline each time to account for where the viewport would start and the dimensions, which meant I didn't need to recreate every aspect of the pipeline each frame.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/InvasionOfLiberty/CodeSnippets/DrawViewports.png" />
+        </div>
+    </div>
+    <div>
+        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+    </div>
+    <!-- Contributions Section Ended -->
+    <!-- Screenshots Area -->
+    <section id="Gallery">
+        <div class="gallery-wrapper">
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>A screenshot of the main menu, featuring a rotating planetary background and moving text!</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery1.png" alt="" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>When attempting to get the camera to follow the player, I managed to recreate a GTA V style cinematic camera which wasn't ideal but was cool nonetheless.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery2.gif" alt="" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>This was a prototype of the game after week 2, models were being created and imported aswell as shooting from the player.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery3.gif" alt="" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Using the greyscale shader in action for a requirement on one of the assignments, though I didn't want to take it out cause it provided a nice retro look to the game.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery4.png" alt="" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>The fan favorite wireframe mode in action, showcasing the low-poly models I created during the month for the project.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLWireframeAndLighting.gif" alt="" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>This was one of the times where model id's got mismatched during a build process. It was quite funny to see the player shooting out planes and bullets so I thought I would add it here.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery9.gif" alt="" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>For the health display system, I decided on using custom 3D Heart models that rotated.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLHearts.gif" alt="" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Displaying that the game was paused was actually one of the last second additions, our team lead Jerry had already made pausing functional, it just needed the display that I added in.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery7.png" alt="" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>One of the earlier implementations of the main menu that I managed to make, which results in incorrect model id's.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery10.gif" alt="" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Every entity model has a unique destroyed model that displays when they are wiped out.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLDestroyedModels.gif" alt="" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>A close up of the minimap. The player is shown as a purple square and the enemies are red circles to contrast the planet below.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLMinimap.gif">
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Using 3D models for the text I was able to display the players score accurately each time it was updated.</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLScoreCounter.gif">
+            </div>
+        </div>
+    </section>
+    <div>
+        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+    </div>
+    <!--End of Gallery Section-->
+    <!--Start of External Links-->
+    <section id="Video">
+        <div class="ytEmbed">
+            <iframe src="https://www.youtube.com/embed/JkJ6DnbuOqE?si=nsCJgrnSiSW4Fs6p" title="Invasion of Liberty Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+    <div>
+        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+    </div>
+    <!--End of External Links-->
+    <div class="footer-connect clickable">
+        <h2">Connect with me:</h2">
+        <br />
+        <a href="https://www.linkedin.com/in/kevinwall-gamedev/" target="_blank">
+            <img src="../SiteImages/linkedin-logo.png">
+        </a>
+        <a href="https://github.com/swift-kevin" target="_blank">
+            <img src="../SiteImages/github-mark-white.png" />
+            <!-- Removes that annoying little line next to anchor tags. -->
+            <style>
+                a {
+                    text-decoration: none;
+                }
+            </style>
+        </a>
+    </div>
+</body>
+</html>

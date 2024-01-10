@@ -6,6 +6,7 @@
     /*Box Settings*/
     width: 50%;
     margin: 0 25% 0;
+    font-family: Consolas;
 }
 
 .welcome-message {
@@ -27,61 +28,35 @@
         transition: linear 0.1s;
         color: white;
         text-decoration: underline;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 
         .homepage-project-title a:hover {
             font-size: 115%;
             transition: linear 0.1s;
             color: white;
+            text-shadow: 0 0 5px #fff;
         }
 
 .homepage-project-gif1 {
     grid-area: homePrG1;
-    display: flex;
-    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-
-    .homepage-project-gif1 img {
-        transform: scale(1);
-        transition: linear 0.1s;
-    }
-
-        .homepage-project-gif1 img:hover {
-            transform: scale(1.1);
-            transition: linear 0.1s;
-        }
 
 .homepage-project-gif2 {
     grid-area: homePrG2;
-    display: flex;
-    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-
-    .homepage-project-gif2 img {
-        transform: scale(1);
-        transition: linear 0.1s;
-    }
-
-        .homepage-project-gif2 img:hover {
-            transform: scale(1.1);
-            transition: linear 0.1s;
-        }
 
 .homepage-project-gif3 {
     grid-area: homePrG3;
-    display: flex;
-    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-
-    .homepage-project-gif3 img {
-        transform: scale(1);
-        transition: linear 0.1s;
-    }
-
-        .homepage-project-gif3 img:hover {
-            transform: scale(1.1);
-            transition: linear 0.1s;
-        }
 
 .homepage-project-emptyleft {
     grid-area: hpEL;
@@ -94,29 +69,58 @@
 .homepage-project {
     display: grid;
     color: white;
-    justify-content: center;
     grid-template-areas:
         'hpEL homeTitle homeTitle homeTitle hpER'
         'hpEL homePrG1 homePrG2 homePrG3 hpER';
     grid-template-rows: 1fr 3fr;
     grid-template-columns: 5fr 30fr 30fr 30fr 5fr;
     grid-column-gap: 2.5%;
+    text-align: center;
     padding: 0 0 5% 0;
 }
 
     .homepage-project img {
         width: 90%;
-        /*margin: 5% 5% 5% 5%;*/
+        opacity: 1;
     }
 
-.homepage-connect img {
-    width: max(5vw, 25%);
+.viewMoreText {
+    display: inline-block;
+    font-size: 1vw;
+    transform: scale(1);
+    font-weight: bold;
+    transition: 0.2s linear;
 }
 
-.homepage-connect a {
-    display: inline-block;
-    width: 25%;
-}
+    .viewMoreText img {
+        width: 100%;
+        height: auto;
+    }
+
+    .viewMoreText span {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: 0.2s linear;
+    }
+
+    .viewMoreText:hover {
+        transform: scale(1.1);
+        transition: 0.2s linear;
+        animation-play-state: paused;
+    }
+
+        .viewMoreText:hover img {
+            opacity: 0.25;
+            transition: 0.2s linear;
+        }
+
+        .viewMoreText:hover span {
+            opacity: 1;
+        }
 
 .homepage-resume {
     text-align: center;
@@ -126,9 +130,62 @@
         width: min(55vw, 125%);
     }
 
-.homepage-connect {
-    /*padding-top: 5vh;*/
-    text-align: center;
-    color: white;
-    font-size: 2vw;
+
+@media (max-width: 1023px) {
+
+    .aboutme {
+        text-align: center;
+        font-size: 4vw;
+        color: white;
+        margin: 0 0 0 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vh;
+        width: 90%;
+    }
+
+    .homepage-project {
+        grid-template-areas:
+            'hpEL homeTitle hpER'
+            'hpEL homePrG1 hpER'
+            'hpEL homePrG2 hpER'
+            'hpEL homePrG3 hpER';
+        grid-template-rows: 5% auto auto auto;
+        grid-template-columns: 2.5% auto 2.5%;
+        padding: 0 0 2.5% 2.5%;
+        text-align: center;
+        width: 95%;
+    }
+
+    .homepage-project-gif1 {
+        padding: 2.5%;
+    }
+
+    .homepage-project-gif2 {
+        padding: 2.5%;
+    }
+
+    .homepage-project-gif3 {
+        padding: 2.5%;
+        border-bottom: solid #434343 3px;
+    }
+
+    .homepage-project-title {
+        grid-area: homeTitle;
+        font-size: min(7vmin, 200%);
+        font-family: "Custom-Consolas";
+        text-align: center;
+    }
+
+    .homepage-resume {
+        text-align: center;
+    }
+
+        .homepage-resume img {
+            width: 95%;
+        }
+
+    .viewMoreText span {
+        font-size: 250%;
+    }
 }
