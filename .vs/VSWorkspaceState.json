@@ -1,9 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\SiteJava",
     "\\SiteMisc",
-    "\\SitePages"
+    "\\SitePages",
+    "\\SiteProjResources",
+    "\\SiteProjResources\\InvasionOfLiberty",
+    "\\Styles"
   ],
-  "SelectedNode": "\\SiteMisc",
+  "SelectedNode": "\\SitePages\\InvasionOfLiberty.html",
   "PreviewInSolutionExplorer": false
 }

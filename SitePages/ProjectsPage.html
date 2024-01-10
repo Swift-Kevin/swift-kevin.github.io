@@ -3,19 +3,33 @@
 <html>
 <head>
     <link rel="stylesheet" href="../Styles/styles.css" />
-    <link rel="stylesheet" href="../Styles/projectsPageStyles.css" />
+    <link rel="stylesheet" href="../Styles/projectsAllStyles.css" />
     <script source="../SiteJava/CustomElement.js"></script>
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png" />
     <title>Kevin W.</title>
     <meta charset="utf-8">
-    <meta name="description" content="My personal portfolio of work that I have had the pleasure of being apart of!">
+    <meta name="description" content="Welcome to my personal portfolio!">
     <meta name="author" content="Kevin Wall">
 </head>
 <body class="bdy">
+    <!--Top of Page button-->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <script>
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="../SiteJava/Top.js"></script>
+    <!--End of Top Button-->
     <!--Main Header-->
-    <div class="header">
+    <div class="header" id="myHeader">
         <div class="header-title">
-            <header>Kevin Wall</header>
+            <header>
+                <a href="../SitePages/Homepage.html">
+                    Kevin Wall
+                </a>
+            </header>
         </div>
         <div class="header-buttons-container">
             <a class="menu-buttons" href="../SitePages/Homepage.html">
@@ -32,13 +46,12 @@
             </a>
         </div>
     </div>
-
     <!--Content-->
     <div>
         <div class="project-holder">
             <div class="project-left">
                 <div class="project-title">
-                    <a href="../SiteProj/InvasionOfLiberty.html"> Invasion of Liberty </a>
+                    <a href="../SitePages/InvasionOfLiberty.html"> Invasion of Liberty </a>
                 </div>
                 <div class="project-description">
                     <p>&nbsp&nbspA 2.5D inspired remake of the arcade classic, Defender (1981). Fight endless waves of enemies as you protect the Planet of Liberty below. Dodge oncoming UFOs and projectiles in space and gain more points by taking down enemies. Try to gain the highest possible score!</p>
@@ -47,20 +60,27 @@
                     <p><span class="ul">Development Time:</span> 1 month.</p>
                     <p><span class="ul">Team Size:</span> 4.</p>
                 </div>
+                <div class="project-link">
+                    <a href="../SitePages/InvasionOfLiberty.html">
+                        > Visit Project! < 
+                    </a>
+                </div>
                 <div class="project-connections">
                     <a href="https://swift-kevin.itch.io/invasion-of-liberty" target="_blank" title="External Link > Itch.io">
                         <img class="placement" src="../SiteImages/itchio-textless-white.svg" />
                     </a>
                 </div>
             </div>
-            <div class="video-right">
-                <iframe src="https://www.youtube.com/embed/JkJ6DnbuOqE?si=nsCJgrnSiSW4Fs6p" title="Invasion of Liberty Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <style>
-                    iframe {
-                        width: 100%;
-                        min-height: 100%;
-                    }
-                </style>
+            <div class="project-right">
+                <div class="video-right">
+                    <iframe src="https://www.youtube.com/embed/JkJ6DnbuOqE?si=nsCJgrnSiSW4Fs6p" title="Invasion of Liberty Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <style>
+                        iframe {
+                            width: 100%;
+                            min-height: 100%;
+                        }
+                    </style>
+                </div>
             </div>
         </div>
         <br />
@@ -70,7 +90,7 @@
         <div class="project-holder">
             <div class="project-left">
                 <div class="project-title">
-                    <a href="../SiteProj/PsychicProtocol.html">Psychic Protocol</a>
+                    <a href="../SitePages/PsychicProtocol.html">Psychic Protocol</a>
                 </div>
                 <div class="project-description">
                     <p>&nbsp&nbspEscape an underground research facility. Fight your way through different encounter types, from puzzle rooms to enchanced enemies. Unlock different abilities as you progress through 5 unqiue levels to test your skills.</p>
@@ -79,6 +99,11 @@
                     <p><span class="ul">Development Time:</span> 2 months.</p>
                     <p><span class="ul">Team Size:</span> 6.</p>
                 </div>
+                <div class="project-link">
+                    <a href="../SitePages/PsychicProtocol.html">
+                        > Visit Project! <
+                    </a>
+                </div>
                 <div class="project-connections">
                     <div>
                         <a href="https://github.com/tomOrourke1/Midterm_FPS_Project" target="_blank" title="External Link > Github Repository">
@@ -86,19 +111,21 @@
                         </a>
                     </div>
                     <div class="spacer-width"> </div>
-                        <a href="https://mrcowface.itch.io/psychic-protocol" target="_blank" title="External Link > Itch.io">
-                            <img class="placement" src="../SiteImages/itchio-textless-white.svg" />
-                        </a>
+                    <a href="https://mrcowface.itch.io/psychic-protocol" target="_blank" title="External Link > Itch.io">
+                        <img class="placement" src="../SiteImages/itchio-textless-white.svg" />
+                    </a>
                 </div>
             </div>
-            <div class="video-right">
-                <iframe src="https://www.youtube.com/embed/YduLyepEffI" title="Psychic Protocol Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <style>
-                    iframe {
-                        width: 100%;
-                        min-height: 100%;
-                    }
-                </style>
+            <div class="project-right">
+                <div class="video-right">
+                    <iframe src="https://www.youtube.com/embed/YduLyepEffI" title="Psychic Protocol Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <style>
+                        iframe {
+                            width: 100%;
+                            min-height: 100%;
+                        }
+                    </style>
+                </div>
             </div>
         </div>
         <br />
@@ -115,7 +142,7 @@
                     <p><span class="ul">Development Time:</span> 3 weeks.</p>
                     <p><span class="ul">Team Size:</span> 1.</p>
                     <br />
-                    <p>This was a student project in which wanted to expand the options available using wxWidgets and becoming more familiar with documentation/research. I added my own random generation seeding system and cell customizations for users to have a personalized experience.</p>
+                    <p>This was a student project in which I wanted to expand the options available using wxWidgets and becoming more familiar with documentation/research. I added my own random generation seeding system and cell customizations for users to have a personalized experience.</p>
                 </div>
             </div>
             <div class="project-right">
@@ -127,6 +154,16 @@
         <div>
             <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
         </div>
+    </div>
+    <div class="footer-connect clickable">
+        <h2">Connect with me:</h2">
+        <br />
+        <a href="https://www.linkedin.com/in/kevinwall-gamedev/" target="_blank">
+            <img src="../SiteImages/linkedin-logo.png">
+        </a>
+        <a href="https://github.com/swift-kevin" target="_blank">
+            <img src="../SiteImages/github-mark-white.png" />
+        </a>
     </div>
 </body>
 

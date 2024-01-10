@@ -4,19 +4,33 @@
 <head>
     <link rel="stylesheet" href="../Styles/styles.css" />
     <link rel="stylesheet" href="../Styles/homepageStyles.css" />
-    <script source="../SiteJava/Dropdown.js"></script>
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png" />
     <title>Kevin W.</title>
     <meta charset="utf-8">
     <meta name="description" content="Kevin Wall - Game Development | Personal Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Kevin Wall">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 </head>
 <body class="bdy">
+    <!--Top of Page button-->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <script>
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="../SiteJava/Top.js"></script>
+    <!--End of Top Button-->
     <!--Main Header-->
     <div class="header">
         <div class="header-title">
-            <header>Kevin Wall</header>
+            <header>
+                <a href="../SitePages/Homepage.html">
+                    Kevin Wall
+                </a>
+            </header>
         </div>
         <div class="header-buttons-container">
             <a class="menu-buttons" href="../SitePages/Homepage.html">
@@ -48,61 +62,68 @@
 
     <!-- End of About Me -->
     <!-- Start of Projects Section -->
-
     <div class="homepage-project">
         <div class="homepage-project-title">
-            <a href="../SiteProj/PsychicProtocol.html">Psychic Protocol</a>
+            <a href="../SitePages/InvasionOfLiberty.html">Invasion of Liberty</a>
         </div>
         <div class="homepage-project-gif1">
-            <a href="../SiteProj/PsychicProtocol.html">
-                <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol_GIF_HitIndication.gif" title="Hit Indications on screen.">
+            <a class="showhover" href="../SitePages/InvasionOfLiberty.html">
+                <div class="viewMoreText">
+                    <img src="../SiteProjResources/InvasionOfLiberty/IOLMilestone.gif" title="First Milestone progress.">
+                    <span>Explore Invasion of Liberty</span>
+                </div>
             </a>
         </div>
         <div class="homepage-project-gif2">
-            <a href="../SiteProj/PsychicProtocol.html">
-                <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocolSwappingInputs.gif" title="PC vs Controller Inputs in the Tutorial.">
+            <a class="showhover" href="../SitePages/InvasionOfLiberty.html">
+                <div class="viewMoreText">
+                    <img src="../SiteProjResources/InvasionOfLiberty/Gallery4.png" title="Using custom shaders in the game!">
+                    <span>Explore Invasion of Liberty</span>
+                </div>
             </a>
         </div>
         <div class="homepage-project-gif3">
-            <a href="../SiteProj/PsychicProtocol.html">
-                <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocolUIInputChange.gif" title="Dynamic UI systems and changing input devices.">
+            <a class="showhover" href="../SitePages/InvasionOfLiberty.html">
+                <div class="viewMoreText">
+                    <img src="../SiteProjResources/InvasionOfLiberty/Gallery6.png" title="Finished result of the game!">
+                    <span>Explore Invasion of Liberty</span>
+                </div>
             </a>
         </div>
         <div class="homepage-project-emptyleft"></div>
         <div class="homepage-project-emptyright"></div>
     </div>
-    <!-- Project Seperator -->
-    <!--<div>
-        <img class="spacer-hori2" src="../SiteImages/seperatorline.png" />
-    </div>-->
-    <!-- Project Seperator -->
     <div class="homepage-project">
         <div class="homepage-project-title">
-            <a href="../SiteProj/InvasionOfLiberty.html">Invasion of Liberty</a>
+            <a href="../SitePages/PsychicProtocol.html">Psychic Protocol</a>
         </div>
         <div class="homepage-project-gif1">
-            <a href="../SiteProj/InvasionOfLiberty.html">
-                <img src="../SiteProjMisc/InvasionOfLiberty/IOLMilestone.gif" title="First Milestone progress.">
+            <a href="../SitePages/PsychicProtocol.html">
+                <div class="viewMoreText">
+                    <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol9.png" title="Hit Indications on screen.">
+                    <span>Explore Psychic Protocol</span>
+                </div>
             </a>
         </div>
         <div class="homepage-project-gif2">
-            <a href="../SiteProj/InvasionOfLiberty.html">
-                <img src="../SiteProjMisc/InvasionOfLiberty/IOLGreyscaleShader.gif" title="Using custom shaders in the game!">
+            <a href="../SitePages/PsychicProtocol.html">
+                <div class="viewMoreText">
+                    <img src="../SiteProjResources/PsychicProtocol/PsychicProtocolSwappingInputs.gif" title="PC vs Controller Inputs in the Tutorial.">
+                    <span>Explore Psychic Protocol</span>
+                </div>
             </a>
         </div>
         <div class="homepage-project-gif3">
-            <a href="../SiteProj/InvasionOfLiberty.html">
-                <img src="../SiteProjMisc/InvasionOfLiberty/IOLComplete.gif" title="Finished result of the game!">
+            <a href="../SitePages/PsychicProtocol.html">
+                <div class="viewMoreText">
+                    <img src="../SiteProjResources/PsychicProtocol/PsychicProtocolUIInputChange.gif" title="Dynamic UI systems and changing input devices." />
+                    <span>Explore Psychic Protocol</span>
+                </div>
             </a>
         </div>
         <div class="homepage-project-emptyleft"></div>
         <div class="homepage-project-emptyright"></div>
     </div>
-    <!-- Project Seperator -->
-    <!--<div>
-        <img class="spacer-hori2" src="../SiteImages/seperatorline.png" />
-    </div>-->
-    <!-- Project Seperator -->
     <div>
         <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
     </div>
@@ -112,7 +133,7 @@
 
     <div class="homepage-resume">
         <section id="Resume">
-            <img src="../SiteMisc/Wall_Resume_Revamped.png" title="My up-to-date resume.">
+            <img src="../SiteMisc/Wall_Resume_Revamped.svg" title="My up-to-date resume.">
         </section>
     </div>
     <div>
@@ -122,7 +143,7 @@
     <!-- End of Projects Section -->
     <!-- Start of Homepage Footer -->
 
-    <div class="homepage-connect clickable">
+    <div class="footer-connect clickable">
         <h2">Connect with me:</h2">
         <br />
         <a href="https://www.linkedin.com/in/kevinwall-gamedev/" target="_blank">
@@ -138,55 +159,6 @@
             </style>
         </a>
     </div>
-    <!-- Start of Homepage Footer -->
-    <!--<div class="grid-container">
-        <div class="grid-gif">
-            <div class="grid-projimg0"> <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol1.png"> </div>
-            <div class="grid-projimg1"> <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol5.png"> </div>
-            <div class="grid-projimg2"> <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol_GIF_HitIndication.gif"> </div>-->
-    <!--<div class="grid-projimg3"> <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol4.png"> </div>-->
-    <!--<div class="grid-projimg4"> <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol2.png"> </div>
-    <div class="grid-projimg5"> <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol6.png"> </div>
-    <div class="grid-projimg6"> <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol3.png"> </div>-->
-    <!--<div class="grid-projimg7"> <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol7.png"> </div>-->
-    <!--<div class="grid-projimg8"> <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol9.png"> </div>
-    <div class="grid-projimg9"> <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol8.png"> </div>-->
-    <!--<div class="grid-projimg10"> <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol11.png"> </div>-->
-    <!--<div class="grid-projimg11"> <img src="../SiteProjMisc/PsychicProtocol/PsychicProtocol12.png"> </div>-->
-    <!--</div>
-    <div class="grid-proj1">
-        <a href="../SitePages/ProjectsPage.html">
-            <img src="../SiteImages/psychic-protocol-game-title.png">
-        </a>
-    </div>
-    <div class="grid-proj2"></div>
-    <div class="grid-proj3"></div>
-    <div class="grid-resume">
-        <section id="Resume">
-        <img src="../SiteMisc/Wall_Resume_Revamped.png">
-        </section>
-    </div>
-    <div class="grid-connect">
-        <h2">Connect with me:</h2">
-        <div class="connections clickable">
-            <a href="https://www.linkedin.com/in/kevinwall-gamedev/" target="_blank">
-                <img class="cnct-left" src="../SiteImages/linkedin-logo.png">
-            </a>
-            <a href="https://github.com/swift-kevin" target="_blank">
-                <img class="cnct-right" src="../SiteImages/github-mark-white.png" />-->
-    <!-- Removes that annoying little line next to anchor tags. -->
-    <!--<style>
-                        a {
-                            text-decoration: none;
-                        }
-                    </style>
-                </a>
-            </div>
-        </div>
-        <div class="grid-empty"></div>
-        <div class="grid-empty2"></div>
-    </div>-->
-
 </body>
 </html>
 
