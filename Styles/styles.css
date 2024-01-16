@@ -213,10 +213,14 @@ img.spacer-hori {
         border: solid grey 3px;
         width: fit-content;
         height: 80%;
+        margin: auto 5% auto 5%;
     }
 
         .menu-buttons img {
-            width: 90%;
+            width: 100%;
+        }
+        .menu-buttons span {
+            font-size: 2em;
         }
 
     .footer-connect {
