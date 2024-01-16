@@ -86,7 +86,7 @@
 
 .viewMoreText {
     display: inline-block;
-    font-size: 1vw;
+    font-size: 1em;
     transform: scale(1);
     font-weight: bold;
     transition: 0.2s linear;
@@ -104,12 +104,12 @@
         left: 50%;
         transform: translate(-50%, -50%);
         opacity: 0;
-        transition: 0.2s linear;
+        transition: 0.15s linear;
     }
 
     .viewMoreText:hover {
-        transform: scale(1.1);
-        transition: 0.2s linear;
+        transform: scale(1.05);
+        transition: 0.15s linear;
         animation-play-state: paused;
     }
 
@@ -122,14 +122,124 @@
             opacity: 1;
         }
 
+.homepage-resume-download {
+    margin-bottom: 2%;
+    color: white;
+    text-decoration: underline;
+}
+
+    .homepage-resume-download a {
+        color: white;
+        font-family: Consolas;
+        font-size: 1.5em;
+        margin: 1%;
+    }
+
 .homepage-resume {
     text-align: center;
+    color: white;
 }
 
     .homepage-resume img {
         width: min(55vw, 125%);
     }
 
+
+.homepage-dualProject-title {
+    grid-area: dpTitle;
+    font-size: min(5vmin, 150%);
+    margin-bottom: 2%;
+}
+
+    .homepage-dualProject-title a {
+        transition: linear 0.1s;
+        color: white;
+        text-decoration: underline;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .homepage-dualProject-title a:hover {
+            transform: scale(1.1);
+            transition: linear 0.1s;
+            color: white;
+            text-shadow: 0 0 5px #fff;
+        }
+
+.homepage-dualProject-link {
+    text-align: center;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    font-size: 1em;
+    font-weight: bold;
+    grid-area: dpLink;
+}
+
+    .homepage-dualProject-link a {
+        text-decoration: none;
+        font-family: Consolas;
+        color: #e67e22;
+    }
+
+    .homepage-dualProject-link:hover a {
+        transform: scale(1.1);
+        transition: linear 0.1s;
+    }
+
+.homepage-dualProject-media {
+    grid-area: dpMedia;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 80%;
+    opacity: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: solid #434343 2px;
+}
+
+.homepage-dualProject-body {
+    grid-area: dpBody;
+    padding-top: 1%;
+}
+
+.homepage-dualProject-main {
+    grid-area: dpMain;
+    color: white;
+    font-family: Consolas;
+    font-size: 1.5em;
+    grid-template-areas: 'dpTitle' 'dpMedia' 'dpBody' 'dpLink';
+}
+
+
+.homepage-dualProject-left {
+    grid-area: dpLeft;
+    grid-template-areas: 'dpMain';
+    width: 100%;
+    border: solid white 2px;
+    padding: 2%;
+}
+
+.homepage-dualProject-right {
+    grid-area: dpRight;
+    grid-template-areas: 'dpMain';
+    width: 100%;
+    border: solid white 2px;
+    padding: 2%;
+}
+
+
+.homepage-dualProject {
+    display: grid;
+    grid-template-areas: 'dpLeft dpRight';
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5%;
+    color: white;
+    padding: 0 5% 5% 5%;
+    text-align: center;
+}
 
 @media (max-width: 1023px) {
 
@@ -186,6 +296,41 @@
         }
 
     .viewMoreText span {
-        font-size: 250%;
+        font-size: 0.8em;
+    }
+
+    .homepage-dualProject-body {
+        font-size: 0.8em;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .homepage-dualProject-title {
+        font-size: 1.1em;
+        padding-top: 2%;
+    }
+
+    .homepage-dualProject-left {
+        width: 100%;
+        border: solid white 2px;
+        padding: 0%;
+    }
+
+    .homepage-dualProject-right {
+        width: 100%;
+        border: solid white 2px;
+        padding: 0%;
+    }
+
+    .homepage-dualProject {
+        display: grid;
+        grid-template-areas: 'dpLeft' 'dpRight';
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+        grid-row-gap: 2.5%;
+        color: white;
+        text-align: center;
     }
 }
