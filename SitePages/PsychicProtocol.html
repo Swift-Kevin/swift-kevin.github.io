@@ -99,11 +99,11 @@
             <div class="showcase-textTitle"> User Interface (UI) </div>
             <div class="showcase-textBody">
                 <ul>
-                    <li> UI was one of the many responsibilities I held during this project where I communicated with other teammates to ensure consistent functionality. </li>
+                    <li> Implemented a State Machine for consistent transitioning between menus. </li>
                     &nbsp;
-                    <li> Inspiration for the player status bars came from Dishonored. Similar to how inspiration for the main menu came from Portal. </li>
+                    <li> Gamepad support for all in-game menus (which proved more tedious than initially thought).</li>
                     &nbsp;
-                    <li> All game menus are controller supported which when reflecting on the project turns out to be more tedious than initially thought. </li>
+                    <li> Player stats design was inspired by Dishonored. </li>
                 </ul>
             </div>
         </div>
@@ -116,18 +116,18 @@
             <div class="showcase-textTitle"> Radial Wheel </div>
             <div class="showcase-textBody">
                 <ul>
-                    <li> One of my proudest parts of the project, a large majority of my work was spent on the Radial Wheel.</li>
+                    <li> Working on the Radial Wheel was one of my proudest moments during the project.</li>
                     &nbsp;
-                    <li> The radial wheel works by calculating the distance and angle of the mouse's position from the center of the screen and then highlights and updates the corresponding ability.</li>
+                    <li> Calculates the proper ability by using the angle between the mouse's position and the center of the screen.</li>
                     &nbsp;
                     <li> When an ability is selected it sends a update to the players current ability and updates the UI accordingly.</li>
                     &nbsp;
-                    <li> While I was working on the Radial Wheel, a lot of lessons were learned. One of which was overcomplicating a simple feature by going outside of the requirements of said feature. This fell under "What would you do differently" during our post-mortem.</li>
+                    <li> Working on the Radial Wheel taught me a lot of things, proper organization, clear descriptions, and especially trying not to over complicate something.</li>
                 </ul>
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProRadialWheel.gif" />
+            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsychicProtocol_GIF_RadialWheel.gif" />
         </div>
     </div>
     <div class="showcase-leftFaced">
@@ -135,11 +135,11 @@
             <div class="showcase-textTitle"> Displaying Credits </div>
             <div class="showcase-textBody">
                 <ul>
-                    <li> I wanted to give proper credit to all the people whos assets we used in our game, this was unfortunately uncommon within similar student projects and that was one thing I wanted to address.</li>
+                    <li> The credits menu behaves similarly to movie credits with the fading on the top/bottom.</li>
                     &nbsp;
-                    <li> One of the major inspirations for the games credits was movie theater credits, typically the ones scrolling from bottom to top with a fade-in and fade-out.</li>
+                    <li> A modular implementation of credits where you can keep adding sections if need be.</li>
                     &nbsp;
-                    <li> In my implementation of the credits menu, I wanted to make it modular so I could keep adding to the list of assets and proper. That and also putting our Git Commit history (skippable) at the very end to show our progress throughout the project.</li>
+                    <li> Giving proper credit to all the assets/components we used was important to our team.</li>
                 </ul>
             </div>
         </div>
@@ -152,9 +152,9 @@
             <div class="showcase-textTitle"> The Main Menu </div>
             <div class="showcase-textBody">
                 <ul>
-                    <li> When creating the Main Menu, the idea given was a "simple live scene". I took that and thought of adding randomly switching rotating security cameras that zoomed in and out as a cool gimick of the scene.</li>
+                    <li> "A simple live scene" similar to Portal with randomly switching security cameras.</li>
                     &nbsp;
-                    <li> During our Beta Sprint (2nd Month, 3rd week) I felt like the Main Menu was empty. I asked the Team Lead about it and after some discussions on approaching it, we agreed to have a randomly rotating enemy in the middle.</li>
+                    <li> During our Beta Sprint (2nd Month, 3rd week) I added the suspended entity and some particle effects to help make the scene feel filled.</li>
                     &nbsp;
                     <li> Fun Fact: The mysterious being (floating rotating enemy model) soon became known within our game universe's God that was spinning perpetually in place in the main menu, potentially providing the powers given to the player.</li>
                 </ul>
@@ -169,9 +169,9 @@
             <div class="showcase-textTitle"> Checkpoint Notifications </div>
             <div class="showcase-textBody">
                 <ul>
-                    <li> A radial-filled notification displays in the bottom right of the screen to let the player know about a checkpoint being reached.</li>
+                    <li> Displayed in the bottom left of the screen and lets the player know they cleared a room.</li>
                     &nbsp;
-                    <li> When a checkpoint is reached the next room is loaded and the previous is unloaded, similar to object pooling which is a design method used to increase a games performance.</li>
+                    <li> Checkpoints help the Room Management System know when to load/unload rooms. Similar to implementing an object pooling system.</li>
                 </ul>
             </div>
         </div>
@@ -184,11 +184,11 @@
             <div class="showcase-textTitle"> Player Settings </div>
             <div class="showcase-textBody">
                 <ul>
-                    <li> I used scriptable objects to help quickly access data for the player settings within menus aswell as across scenes.</li>
+                    <li> Use of scriptable objects to quickly access data across scenes.</li>
                     &nbsp;
-                    <li> When changing a setting the player must 'Apply' the changes as to confirm them or they can back out of the menu or press cancel, both resulting in reverting the saved data.</li>
+                    <li> To apply user settings the user must apply changes within the menu, otherwise they are reverted to prior values.</li>
                     &nbsp;
-                    <li> Since more than just player settings were stored in the scriptable object, getters and setters were commonly used within the functionality associated with the object as to retrieve stored data and update it.</li>
+                    <li> The use of proper protection levels on variables helped improve access to variables when needed.</li>
                 </ul>
             </div>
         </div>
@@ -201,11 +201,11 @@
             <div class="showcase-textTitle"> Audio Implementation </div>
             <div class="showcase-textBody">
                 <ul>
-                    <li> Almost all entities in the game have an attached audio source customized to its own purpose, an example being the death sound effect of enemies is setup in 3D space.</li>
+                    <li> A majority of entities are customized with 3D spatial audio, helping the players awareness to their surroundings.</li>
                     &nbsp;
-                    <li> The team wanted to have spatial audio due to it avoiding the "flatness" of non-spatial audio. Awareness was important to the player and their decision making.</li>
+                    <li> Within in-game menus the audio muffles/unmuffles with lowpass filters to provide a stylized effect.</li>
                     &nbsp;
-                    <li> A neat effect I learned about when implementing audio was the use of a lowpass filter to create a muffled effect on music when inside of game menus.</li>
+                    <li> Fun Fact: Enemy sound effects were primarily created via our team members.</li>
                 </ul>
             </div>
         </div>
@@ -218,7 +218,7 @@
             <div class="showcase-textTitle"> Reticle </div>
             <div class="showcase-textBody">
                 <ul>
-                    <li> The color swaps depending on what you are looking at. Red for enemies, Green for telekinetic objects, white for non-tagged objects.</li>
+                    <li> The color of the reticle changes depending on the entity/object you are looking at.</li>
                     &nbsp;
                     <li> Priority of color is assigned by distance, whichever object is hit by the reticles raycast is shown.</li>
                     &nbsp;
@@ -237,9 +237,9 @@
                 <ul>
                     <li> Calculated by taking the angle between an incoming projectile and the players forward.</li>
                     &nbsp;
-                    <li> There are 5 hit-indication images in an array that are cycled through and displayed on a pivot around the reticle.</li>
+                    <li> Hit indications images are cycled last-in first-out for fading out.</li>
                     &nbsp;
-                    <li> When the player is hit, the screen borders also have a vignette effect colored the type of resource being consumed (health is red, shield is blue).</li>
+                    <li> Player hit results in screen-wide overlay vignette.</li>
                 </ul>
             </div>
         </div>
@@ -252,9 +252,9 @@
             <div class="showcase-textTitle"> Elevators and Scene Transitions </div>
             <div class="showcase-textBody">
                 <ul>
-                    <li> In order to progress within the game, the player must get to the elevator at the end of the level and then activate the elevator proceeding to the next level.</li>
+                    <li> Elevators are a transitional point for the player to climb further ahead within the game.</li>
                     &nbsp;
-                    <li> One challenge that I faced was getting the elevators button to disappear after not hovering over it. After hours of me and a friend attempting to solve it, my friend Tom (Team Lead) walked by and suggested to store the variable. (It worked).</li>
+                    <li> A challenge I had with elevators was with the inside button, which was resolved via storing the last interfacable button.</li>
                     &nbsp;
                     <li> Timers were used frequently within the elevators as fading the scene in and out to provide a seamless transition between scenes.</li>
                 </ul>
