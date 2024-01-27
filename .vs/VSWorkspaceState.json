@@ -1,12 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\SiteImages",
     "\\SiteJava",
     "\\SiteMisc",
     "\\SitePages",
     "\\SiteProjResources",
     "\\Styles"
   ],
-  "SelectedNode": "\\Styles\\styles.css",
+  "SelectedNode": "\\SiteImages\\DownloadButtonColor.png",
   "PreviewInSolutionExplorer": false
 }

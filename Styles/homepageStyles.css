@@ -348,4 +348,9 @@
         color: white;
         text-align: center;
     }
+
+    .download-image {
+        width: 30%;
+        padding: 5%;
+    }
 }
