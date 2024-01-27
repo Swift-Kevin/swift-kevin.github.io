@@ -126,13 +126,17 @@
     margin-bottom: 2%;
     color: white;
     text-decoration: underline;
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
     .homepage-resume-download a {
         color: white;
         font-family: Consolas;
-        font-size: 1.5em;
+        font-size: 0;
         margin: 1%;
+        display: inline;
     }
 
 .homepage-resume {
@@ -239,6 +243,17 @@
     color: white;
     padding: 0 5% 5% 5%;
     text-align: center;
+}
+
+.download-image {
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-thickness: 0;
+}
+
+.download-image img {
+    display: block;
 }
 
 @media (max-width: 1023px) {
