@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
     "",
+    "\\SiteDownloads",
+    "\\SiteFonts",
     "\\SiteImages",
     "\\SiteJava",
     "\\SiteMisc",
@@ -8,6 +10,6 @@
     "\\SiteProjResources",
     "\\Styles"
   ],
-  "SelectedNode": "\\SiteImages\\DownloadButtonColor.png",
+  "SelectedNode": "\\SitePages\\ProjectsPage.html",
   "PreviewInSolutionExplorer": false
 }
