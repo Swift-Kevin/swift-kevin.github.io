@@ -133,15 +133,15 @@
             <div class="showcase-textBody">
                 <ul>
                     <li>
-                        Using Vertex and Fragment shaders to manipulate data sent to the GPU instead of CPU based unparallel computations.
+                        Used Vertex/Fragment shaders to help draw models and apply filters (greyscale).
                     </li>
                     &nbsp;
                     <li>
-                        By having the shaders already setup with descriptor sets, passing any extra needed data could be easily added. This is how I added in 3 additional viewports and toggling lighting in the fragment shader.
+                        Setting up additional viewports and passing info to the shaders was easy since the team reused my previous rendering pipeline.
                     </li>
                     &nbsp;
                     <li>
-                        Due to time constraints I implemented the multiple viewports pragmatically. Prioritized quick and effective solutions over elaborate, time-consuming ones.
+                        Used Descriptor Sets and Constant buffers to pass along viewport information.
                     </li>
                 </ul>
             </div>
@@ -158,15 +158,15 @@
             <div class="showcase-textBody">
                 <ul>
                     <li>
-                        Adding in tools like Wireframe mode or Lighting Toggle helped denote problems related to the shaders/rendering pipeline/model materials.
+                        Wireframe or Lighting Toggles helped find problems related to the pipeline and models.
                     </li>
                     &nbsp;
                     <li>
-                        Cycling through colors in wireframe helped discern if objects were being obfuscated or improperly drawn.
+                        Material color cycling helped find if objects were being improperly drawn or hard to see.
                     </li>
                     &nbsp;
                     <li>
-                        We also had console logging for anytime an action was performed. Entity hurt, shoot, death, sounds aswell as player location and score tracking in console.
+                        Console logging for anytime an action was performed (entity hurt/shoot/death/sounds).
                     </li>
                 </ul>
             </div>
@@ -183,15 +183,15 @@
             <div class="showcase-textBody">
                 <ul>
                     <li>
-                        Defender (1981) didn't have a way to pause the game and we wanted to correct that.
+                        Implementing a pause menu helped players when they need a break or found it stressful.
                     </li>
                     &nbsp;
                     <li>
-                        The pausing functionality was done, but we didn't have a way to show it to the user. We didn't even plan on adding it in since we were low on time.
+                        The players attention is primarily on the ship, which is where the 'Game Paused' notification is located.
                     </li>
                     &nbsp;
                     <li>
-                        I spent a couple hours on the last night crunching away to display the model properly above the player wherever they are because I felt like it wouldn't be right without it.
+                        Implementing pausing functionality was much more of a challenge than initially thought.
                     </li>
                 </ul>
             </div>
@@ -208,15 +208,15 @@
             <div class="showcase-textBody">
                 <ul>
                     <li>
-                        We used Github as our main source control point and worked on separate branches to avoid conflicts.
+                        Using Github helped manage source control, manage workflow, and resolve conflicts.
                     </li>
                     &nbsp;
                     <li>
-                        I was the most proficient at resolving Merge Conflicts so I was in charge of handleing them if they ever arose.
+                        Being the most proficient with Github led me to being in charge of resolving merge conflicts.
                     </li>
                     &nbsp;
                     <li>
-                        When we were going to merge into the main branch we always did a merge request and had other people view the code and test it to avoid any errors or improper implementations.
+                        Merge Requests were always peer reviewed in order to help prevent errors or conflicts.
                     </li>
                 </ul>
             </div>
@@ -233,15 +233,15 @@
             <div class="showcase-textBody">
                 <ul>
                     <li>
-                        I used a viewport for each section of the display I needed. Lives, Minimap, Score, Gameplay were in their own viewport.
+                        Viewports helped display player lives/score, the minimap, and gameplay.
                     </li>
                     &nbsp;
                     <li>
-                        Each viewport had their own drawing functionality since they each required something different to them. They all have their own objects needing to be drawn.
+                        Each viewport had an associated function to help manage drawing functionality.
                     </li>
                     &nbsp;
                     <li>
-                        I would need to update the pipeline each time to account for where the viewport would start and the dimensions, which meant I didn't need to recreate every aspect of the pipeline each frame.
+                        Using multiple viewports helped avoid having to create multiple pipelines just to draw specific models.
                     </li>
                 </ul>
             </div>
