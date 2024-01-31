@@ -3,13 +3,13 @@
     "",
     "\\SiteDownloads",
     "\\SiteFonts",
-    "\\SiteImages",
     "\\SiteJava",
     "\\SiteMisc",
     "\\SitePages",
     "\\SiteProjResources",
+    "\\SiteProjResources\\PsychicProtocol",
     "\\Styles"
   ],
-  "SelectedNode": "\\SitePages\\ProjectsPage.html",
+  "SelectedNode": "\\SiteProjResources\\PsychicProtocol\\PsychicProtocol_ReticleHover.png",
   "PreviewInSolutionExplorer": false
 }

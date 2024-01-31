@@ -148,11 +148,12 @@ html {
     font-family: Custom-Consolas;
     border-bottom: solid #e67e22 2px;
     grid-area: scTT;
-    margin-bottom: 2.5vh;
+    margin-bottom: 2vh;
     height: min-content;
 }
 
 .showcase-textBody {
+    vertical-align: top;
     grid-area: scTB;
     font-size: 110%;
     color: #E0E0E0;
@@ -165,7 +166,7 @@ html {
     display: grid;
     grid-template-areas: 'scTT' 'scTB';
     grid-template-columns: 1fr;
-    grid-auto-rows: auto auto;
+    grid-auto-rows: min-content;
     padding: 5%;
 }
 
