@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--This HTML website and the CSS styles used were created by Kevin W. This website is also one of my ongoing projects!-->
+<html>
+<head>
+    <link rel="stylesheet" href="../Styles/styles.css" />
+    <link rel="stylesheet" href="../Styles/projectPage.css" />
+    <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png">
+    <title>Kevin W.</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Welcome to my personal portfolio!">
+    <meta name="author" content="Kevin Wall">
+</head>
+<body class="bdy">
+    <!--Top of Page button-->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <script>
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="../SiteJava/Top.js"></script>
+    <!--End of Top Button-->
+    <!--Main Header-->
+    <div class="header">
+        <div class="header-title">
+            <header>
+                <a href="../SitePages/Homepage.html">
+                    Kevin Wall
+                </a>
+            </header>
+        </div>
+        <div class="header-buttons-container">
+            <a class="menu-buttons" href="../SitePages/Homepage.html">
+                <img src="../SiteImages/HomeIcon.png" title="Home" />
+                <span>Home</span>
+            </a>
+            <a class="menu-buttons" href="../SitePages/Homepage.html#Projects">
+                <img src="../SiteImages/ProjectsIcon.png" title="Projects" />
+                <span>Projects</span>
+            </a>
+            <a class="menu-buttons" href="../SitePages/Homepage.html#Resume">
+                <img src="../SiteImages/ResumeIcon.png" title="Résumé" />
+                <span>Résumé</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- End Of Main Header-->
+    <div class="projtitle">
+        VR Dungeon Crawler (W.I.P.)
+    </div>
+    <div class="projQL">
+        <div class="projQLTitle">Quick Links:</div>
+        <div class="projVidLink">
+            <a href="../SitePages/CapstoneProject.html#Video">
+                Video
+            </a>
+        </div>
+        <div class="projGalleryLink">
+            <a href="../SitePages/CapstoneProject.html#Gallery">
+                Gallery
+            </a>
+        </div>
+    </div>
+    <div class="grid-contributions">
+        <div class="grid-roleTitle">
+            <h3>Contributions</h3>
+        </div>
+        <div class="grid-contributedLeft">
+            <span> Multiplayer Connectivity </span>
+            <span> Main Menu Scene </span>
+            <span> VR UI Sliders </span>
+            <span> Enemy UI </span>
+        </div>
+        <div class="grid-contributedRight">
+            <span> World Space UI </span>
+            <span> Sandbox Lobby Scene </span>
+            <span> In-Game Debugging Console </span>
+        </div>
+        <div class="grid-role">
+            <p> <span> Team Role: </span> UI / Networking / Generalist Programmer </p>
+        </div>
+        <div class="grid-teamsize">
+            <p> <span> Team Size: </span> 4</p>
+        </div>
+        <div class="grid-timespan">
+            <p> <span> Development Time: </span> 4 month </p>
+        </div>
+    </div>
+    <div>
+        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+    </div>
+    <!-- Contributions Section Explained -->
+    <div class="showcase-leftFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Multiplayer Connectivity
+            </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li>
+                        Hosting lobbies and connecting clients with Unity's Netcode for Game Objects, Unity Lobby, and Unity Relay services.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Ability for players to reconnect to previously joined lobby.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Implemented logic for Local Area Network (LAN) or Wireless Area Network (WAN) connections between players.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/CapstoneProject/LANConnectionVR.gif" />
+        </div>
+    </div>
+    <div class="showcase-rightFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                World Space UI
+            </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li>
+                        Created many world space menus like our Multiplayer Connections, Options Menu, and Dungeon Generator.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Working with World Space UI to make it feel like it belongs in the scene has been a challenge.
+                    </li>
+                    &nbsp;
+                    <li>
+                        The players raycaster collides with box colliders of any world space UI within our game showing what they are currently pointing at.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/CapstoneProject/WorldSpaceUI.gif" />
+        </div>
+    </div>
+    <div class="showcase-leftFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Main Menu
+            </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li>
+                        The main point for players to choose Singleplayer or Multiplayer.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Players will spawn in here whenever they get disconnected from a session or start up the game.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Fun Fact: This scene was where I started playing around with post processing effects.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/CapstoneProject/MainMenuScene.gif" />
+        </div>
+    </div>
+    <div class="showcase-rightFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Sandbox Lobby
+            </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li>
+                        The main area where players can join/host lobbies, start their dungeon runs, and find a tutorial area to help introduce them to the game.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Created testing enemies that players can test weapons and resistance values against.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Created interactive controls menu that players can see where they are located on a 3D model.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/CapstoneProject/SandboxLobbyV1.gif" />
+        </div>
+    </div>
+    <div class="showcase-leftFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Custom UI Prefabs
+            </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li>
+                        Created a VR UI "Slider" that can be implemented for any values we need players to increase or decrease (ex. volume settings, resistance values).
+                    </li>
+                    &nbsp;
+                    <li>
+                        I started using <code>event System.Action</code> variables to help give additional usage and functionality with the slider.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Other prefabs consist of the Pause Menu, Player UI, and Damage Indicator (Flyoffs) Scripts.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/CapstoneProject/UIVRSlider.png" />
+        </div>
+    </div>
+    <div class="showcase-rightFaced">
+        <div class="showcase-mainText">
+            <div class="showcase-textTitle">
+                Target Enemy UI
+            </div>
+            <div class="showcase-textBody">
+                <ul>
+                    <li>
+                        Sliders for changing resistance values using my UI VR Sliders.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Damage indication fly offs for players to know how much damage they dealt to enemies.
+                    </li>
+                    &nbsp;
+                    <li>
+                        Accounts for floating point error when displaying the damage indicator particles.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcase-media">
+            <img class="projMedia" src="../SiteProjResources/CapstoneProject/TargetDummy.gif" />
+        </div>
+    </div>
+    <div>
+        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+    </div>
+    <!-- Contributions Section Ended -->
+    <!-- Screenshots Area -->
+    <section id="Gallery">
+        <div class="gallery-wrapper">
+            <div class="not-available">
+                Gallery not available yet.
+            </div>
+            <!--<div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>text</p>
+                </div>
+                <img src="../SiteProjResources/CapstoneProject/" alt="" />
+            </div>-->
+        </div>
+    </section>
+    <div>
+        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+    </div>
+    <!--End of Gallery Section-->
+    <!--Start of External Links-->
+    <section id="Video">
+        <div class="not-available">
+            Video not available yet.
+        </div>
+        <!--<div class="ytEmbed">
+            <iframe src="" title="VR Capstone Project Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>-->
+    </section>
+    <div>
+        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+    </div>
+    <!--End of External Links-->
+    <div class="footer-connect clickable">
+        <h2">Connect with me:</h2">
+        <br />
+        <a href="https://www.linkedin.com/in/kevinwall-gamedev/" target="_blank">
+            <img src="../SiteImages/linkedin-logo.png">
+        </a>
+        <a href="https://github.com/swift-kevin" target="_blank">
+            <img src="../SiteImages/github-mark-white.png" />
+            <!-- Removes that annoying little line next to anchor tags. -->
+            <style>
+                a {
+                    text-decoration: none;
+                }
+            </style>
+        </a>
+    </div>
+</body>
+</html>
