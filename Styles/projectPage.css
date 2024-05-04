@@ -247,14 +247,13 @@ p {
 }
 
 .gallery-layer {
-    width: inherit;
     height: stretch;
     height: -webkit-fill-available;
 }
 
-.gallery-layer:hover {
-    opacity: 0.8;
-}
+    .gallery-layer:hover {
+        opacity: 0.8;
+    }
 
 .not-available {
     color: white;
