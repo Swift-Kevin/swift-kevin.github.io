@@ -1,3 +1,13 @@
+/* ROOT VARIABLES*/
+
+:root {
+    --accentOrange: #e67e22;
+    --backgroundCol: #1a1a1a;
+    --offsetTransform: translate(-50%, -50%);
+}
+
+
+
 a {
     display: block;
 }
@@ -21,8 +31,7 @@ span.ul {
 /* =========== */
 
 .bdy {
-/*    background-color: #050505;
-*/    background-color: #0a0a0a;
+    background-color: var(--backgroundCol);
     -ms-overflow-style: none;
 }
 
@@ -35,19 +44,22 @@ html {
 }
 
 .header {
-    background-color: #1d1d1d;
+    background-color: var(--backgroundCol);
     /*border:;*/
     overflow: hidden;
     text-decoration: none;
     position: sticky;
     top: 0;
     z-index: 100;
+    padding: 1vh 0;
+    border: solid var(--accentOrange) 2px;
 }
 
 .header-title a {
     text-decoration: none;
     color: white;
 }
+
     .header-title a:hover {
         transform: scale(1.1);
         transition: linear 0.1s;
@@ -102,8 +114,8 @@ html {
         position: absolute;
         top: 50%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: var(--offsetTransform);
+        -ms-transform: var(--offsetTransform);
         transform: translate(-50%, -50%);
         text-align: center;
     }
@@ -219,6 +231,7 @@ img.spacer-hori {
         .menu-buttons img {
             width: 100%;
         }
+
         .menu-buttons span {
             font-size: 2em;
         }
