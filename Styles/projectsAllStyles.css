@@ -70,6 +70,10 @@
     font-family: Consolas;
 }
 
+.project-desc-colored {
+    color: #e67e22;
+}
+
 .project-link {
     text-align: center;
     margin-bottom: 5%;
@@ -129,7 +133,8 @@ img.placement {
                 transition: linear 0.1s;
             }
 
-    .project-description {
+    .
+    {
         font-size: 1rem;
     }
 
