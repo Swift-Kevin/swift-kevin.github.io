@@ -48,17 +48,17 @@
 
     <!-- End Of Main Header-->
     <div class="projtitle">
-        Undead Paradise
+        Untitled Space Shooter
     </div>
     <div class="projQL">
         <div class="projQLTitle">Quick Links:</div>
         <div class="projVidLink">
-            <a href="../SitePages/UndeadParadise.html#Video">
+            <a href="../SitePages/UntitledSpaceShooter.html#Video">
                 Video
             </a>
         </div>
         <div class="projGalleryLink">
-            <a href="../SitePages/UndeadParadise.html#Gallery">
+            <a href="../SitePages/UntitledSpaceShooter.html#Gallery">
                 Gallery
             </a>
         </div>
@@ -68,24 +68,23 @@
             <h3>Contributions</h3>
         </div>
         <div class="grid-contributedLeft">
-            <span> Performance/Object Pooling </span>
-            <span> Generic Resource/Timers </span>
-            <span> Post Processing </span>
-            <span> Weapon Inheritence </span>
+            <span> Ship User Interfaces </span>
+            <span> Player Interactivity </span>
+            <span> Enemy Animations </span>
         </div>
         <div class="grid-contributedRight">
-            <span> Editor Scripts </span>
-            <span> Blockades </span>
-            <span> Powerups/Perks </span>
+            <span> Custom Enemy Models </span>
+            <span> Options </span>
+            <span> Ship Frontal HUD </span>
         </div>
         <div class="grid-role">
-            <p> <span> Team Role: </span> Team Lead / General Programmer </p>
+            <p> <span> Team Role: </span> Generalist Programmer / Designer </p>
         </div>
         <div class="grid-teamsize">
             <p> <span> Team Size: </span> 2 </p>
         </div>
         <div class="grid-timespan">
-            <p> <span> Development Time: </span> 2 months </p>
+            <p> <span> Development Time: </span> 1+ Year</p>
         </div>
     </div>
     <div>
@@ -93,119 +92,102 @@
     </div>
     <div class="showcase-leftFaced">
         <div class="showcase-mainText">
-            <div class="showcase-textTitle"> Performance / Object Pooling </div>
+            <div class="showcase-textTitle"> Ship User Interfaces (Screens) </div>
             <div class="showcase-textBody">
                 <ul>
-                    <li> Used Static Batching to reduce Batch Count for GPU rendering. </li>
+                    <li> Designed to immerise players into flying a space ship in a futuristic setting. </li>
                     &nbsp;
-                    <li> Enemies follow a object-pool like design to reduce created/destroyed memory. </li>
+                    <li> Implementing additional menus made easier due to a list of "points" to look at and lerping between screens. </li>
                     &nbsp;
-                    <li> Reduced calls to GetComponent, Start, and Update related functions (known for performance drops). </li>
+                    <li> Features necessary elements such as heads up display and options screen. </li>
                 </ul>
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/UndeadParadise/PerformanceUpgrade.png" />
+            <img class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/ShipUI.gif" />
         </div>
     </div>
     <div class="showcase-rightFaced">
         <div class="showcase-mainText">
-            <div class="showcase-textTitle"> Generic Resources/Timers </div>
+            <div class="showcase-textTitle"> Player Interactivity </div>
             <div class="showcase-textBody">
                 <ul>
-                    <li> Provided easy callbacks to when resources/timers are manipulated. </li>
+                    <li> Implemented and designed ways to keep the player immersed with action elements in the HUD (lives/bombs) and providing feedback during gameplay (controller vibration for specific events, sparks, lights flickering). </li>
                     &nbsp;
-                    <li> Helps reuse functionality for common resource pools. </li>
-                    &nbsp;
-                    <li> Custom timer avoids the use of update when not needed and simplifies logic in main scripts. </li>
+                    <li> Player Asteroid Shield provides realism to space combat experience helping protect the players from space debris.</li>
                 </ul>
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/UndeadParadise/GenericResourcePool.png" />
+            <img class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/PlayerAsteroidShieldEffect_FirstTry.gif" />
         </div>
     </div>
     <div class="showcase-leftFaced">
         <div class="showcase-mainText">
-            <div class="showcase-textTitle"> Weapon Inheritence </div>
+            <div class="showcase-textTitle"> Enemy Animations </div>
             <div class="showcase-textBody">
                 <ul>
-                    <li> All weapons inherit from BaseWeapon, a script containing all related weapon logic. </li>
+                    <li> Programmatically created most enemy animations to provide better flexibility for designs due to Unreal Engines animation system requiring skeletons. </li>
                     &nbsp;
-                    <li> Used in the four weapon classes; AutoFire, Singlefire, Projectile, and Shotgun. </li>
+                    <li> Simple geometrical enemies meant the benefit of needing only simple geometrical almost puzzle like rotations and movements for their animations. </li>
                     &nbsp;
-                    <li> Helped reuse similar logic for reload, shooting, and storing weapon stats among all related weapons. </li>
+                    <li> Ideas of transforming and rotating a Rubik's Cube was used for some enemies whereas Hoberman Spheres were also thought of.</li>
                 </ul>
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/UndeadParadise/WeaponInheritance.png" />
+            <img class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/EnemyAnimation.gif" />
         </div>
     </div>
     <div class="showcase-rightFaced">
         <div class="showcase-mainText">
-            <div class="showcase-textTitle"> Editor Scripts </div>
+            <div class="showcase-textTitle"> Title </div>
             <div class="showcase-textBody">
                 <ul>
-                    <li> Rotating Tree editor script to uniquely rotate each tree in the maps. </li>
+                    <li> </li>
                     &nbsp;
-                    <li> Seperator Attribute to help organize information within the inspector tab(s). </li>
+                    <li> </li>
                     &nbsp;
-                    <li> Inspired to create more editor tools in later projects. </li>
+                    <li> </li>
                 </ul>
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/UndeadParadise/EditorScripts.png" />
+            <img class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/.gif" />
         </div>
     </div>
     <div class="showcase-leftFaced">
         <div class="showcase-mainText">
-            <div class="showcase-textTitle"> Post Processing </div>
+            <div class="showcase-textTitle"> Title </div>
             <div class="showcase-textBody">
                 <ul>
-                    <li> Helped create a unique look within the game with Bloom and Vignette Effects. </li>
+                    <li>  </li>
                     &nbsp;
-                    <li> Used a separate vignette to display health loss, increasing intensity the lower the player's health. </li>
+                    <li>  </li>
                     &nbsp;
-                    <li> Toggle for enable/disabling to help with performance on older machines. </li>
+                    <li>  </li>
                 </ul>
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/UndeadParadise/PostProcessing.gif" />
+            <img class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/.gif" />
         </div>
     </div>
     <div class="showcase-rightFaced">
         <div class="showcase-mainText">
-            <div class="showcase-textTitle"> Powerups / Perks </div>
+            <div class="showcase-textTitle"> Title </div>
             <div class="showcase-textBody">
                 <ul>
-                    <li> Powerups are simple collidable objects that grant specific abilities such as double points or refill ammo/reserves. </li>
+                    <li> </li>
                     &nbsp;
-                    <li> Perks provide a player boost until they lose all their health, after a players death perks are sent back to their stand to be rebought.</li>
+                    <li> </li>
+                    &nbsp;
+                    <li> </li>
                 </ul>
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/UndeadParadise/Powerups.gif" />
-        </div>
-    </div>
-    <div class="showcase-leftFaced">
-        <div class="showcase-mainText">
-            <div class="showcase-textTitle"> Blockades </div>
-            <div class="showcase-textBody">
-                <ul>
-                    <li> Unlocks more playing area, turns on enemy spawners, and reveals available weapons. </li>
-                    &nbsp;
-                    <li> Linked Blockades help allow for either end of a pathway to be purchased once and not multiple times. </li>
-                    &nbsp;
-                    <li> Customizeable buy amount using a resource pool for points. </li>
-                </ul>
-            </div>
-        </div>
-        <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/UndeadParadise/BlockadeBuying.gif" />
+            <img class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/.gif" />
         </div>
     </div>
     <div>
@@ -217,7 +199,7 @@
                 <div class="gallery-layer">
                     <p></p>
                 </div>
-                <img src="../SiteProjResources/UndeadParadise/UndeadParadiseSwappingInputs.gif" alt="" />
+                <img src="../SiteProjResources/UntitledSpaceShooter/" alt="" />
             </div>
         </div>
     </section>
@@ -228,7 +210,7 @@
     <!--Start of External Links-->
     <section id="Video">
         <div class="ytEmbed">
-            <iframe src="https://www.youtube.com/embed/-tIWm2hDUjs?si=AX0OuA5bjthSVwqE" title="Undead Paradise Trailer Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="" title="Untitled Space Shooter Trailer Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </section>
     <div>
