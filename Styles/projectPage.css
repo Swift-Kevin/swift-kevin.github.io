@@ -279,7 +279,7 @@ p {
 
 @media (max-width: 1023px) {
     .projtitle {
-        font-size: 5vw;
+        font-size: 3.5rem;
         margin-top: 2vh;
         height: 5vh;
     }

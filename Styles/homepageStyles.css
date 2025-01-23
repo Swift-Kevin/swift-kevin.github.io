@@ -261,7 +261,7 @@
 
     .aboutme {
         text-align: center;
-        font-size: 4vw;
+        font-size: 1.5rem;
         color: white;
         margin: 0 0 0 0;
         margin-left: auto;
@@ -312,7 +312,7 @@
         }
 
     .viewMoreText span {
-        font-size: 0.8em;
+        font-size: 1.5em;
     }
 
     .homepage-dualProject-body {

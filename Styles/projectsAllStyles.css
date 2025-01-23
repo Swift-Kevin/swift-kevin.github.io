@@ -125,11 +125,12 @@ img.placement {
         .project-title a {
             color: white;
             transition: linear 0.1s;
+            font-size: 2rem;
         }
 
             .project-title a:hover {
                 color: white;
-                font-size: 3.25rem;
+                font-size: 2.25rem;
                 transition: linear 0.1s;
             }
 
@@ -154,6 +155,11 @@ img.placement {
         font-weight: bold;
     }
 
+        .project-link a {
+            width: max-content;
+            display: inline-flex;
+        }
+
     .project-connections {
         display: flex;
         flex-direction: row;
@@ -163,7 +169,7 @@ img.placement {
     }
 
         .project-connections img {
-            width: 50%;
+            width: 25vw;
             height: auto;
         }
 
@@ -178,6 +184,6 @@ img.placement {
     }
 
     .spacer-width {
-        width: 0vw;
+        width: 20vw;
     }
 }
