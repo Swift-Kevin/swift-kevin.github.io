@@ -64,7 +64,6 @@ html {
 
 .grid-roleTitle {
     font-family: Consolas;
-    font-size: 1.5vw;
     grid-area: roleTitle;
     margin-bottom: 1%;
     border-bottom: solid #434343 4px;
@@ -72,20 +71,17 @@ html {
 
 .grid-contributedLeft {
     grid-area: roleSec1;
-    font-size: 1.2vw;
     margin-bottom: 2vh;
 }
 
 .grid-contributedRight {
     grid-area: roleSec2;
-    font-size: 1.2vw;
     margin-bottom: 2vh;
 }
 
 .grid-role {
     grid-area: projRole;
     padding-top: 1vh;
-    font-size: 1.2vw;
     text-align: center;
     border-right: solid #434343 2px;
     color: white;
@@ -95,7 +91,6 @@ html {
 .grid-teamsize {
     grid-area: projSize;
     padding-top: 1vh;
-    font-size: 1.2vw;
     text-align: center;
     border-left: solid #434343 2px;
     border-right: solid #434343 2px;
@@ -106,7 +101,6 @@ html {
 .grid-timespan {
     grid-area: projTime;
     padding-top: 1vh;
-    font-size: 1.2vw;
     text-align: center;
     border-left: solid #434343 2px;
     color: white;
@@ -116,6 +110,7 @@ html {
 .grid-contributions {
     margin: 2.5% auto 0 auto;
     width: 75%;
+    font-size: 1.25rem;
     color: white;
     display: grid;
     text-align: center;
@@ -284,17 +279,11 @@ p {
         height: 5vh;
     }
 
-    .grid-roleTitle {
-        font-size: 3vw;
-    }
-
     .grid-contributedLeft {
-        font-size: min(2vw, 125%);
         border-right: none;
     }
 
     .grid-contributedRight {
-        font-size: min(2vw, 125%);
         border-left: none;
     }
 
@@ -308,6 +297,7 @@ p {
             'projTime';
         grid-template-rows: 1fr auto auto auto auto auto;
         grid-template-columns: 1fr;
+        font-size: 2.5rem;
     }
 
         .grid-contributions span {
@@ -315,7 +305,6 @@ p {
         }
 
     .grid-role {
-        font-size: min(2vw, 125%);
         line-height: 0;
         border-right: none;
         border-left: none;
@@ -323,14 +312,12 @@ p {
     }
 
     .grid-teamsize {
-        font-size: min(2vw, 125%);
         line-height: 0;
         border-right: none;
         border-left: none;
     }
 
     .grid-timespan {
-        font-size: min(2vw, 125%);
         line-height: 0;
         border-right: none;
         border-left: none;
@@ -344,6 +331,7 @@ p {
         grid-template-rows: auto auto;
         padding-left: 0%;
         margin-bottom: 0%;
+        text-align: center;
     }
 
     .showcase-rightFaced {
@@ -354,15 +342,15 @@ p {
         grid-template-rows: auto auto;
         padding-right: 0%;
         margin-bottom: 0%;
+        text-align: center;
     }
 
     .showcase-textTitle {
-        font-size: 3vw;
+        font-size: 3rem;
     }
 
     .showcase-textBody {
         font-size: 2vw;
-        text-align: center;
     }
 
     .showcase-media {
@@ -397,5 +385,9 @@ p {
 
     .projVidLink {
         margin-bottom: 1vh;
+    }
+
+    .gallery-layer {
+        font-size: 2.5rem;
     }
 }
