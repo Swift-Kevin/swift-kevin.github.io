@@ -1,0 +1,5 @@
+{
+	"projectName": "Unreal Fest",
+	"degreeProgram": "Emerging Tech",
+	"boothID": 1
+}

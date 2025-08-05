@@ -1,0 +1,6 @@
+{
+	"projectName": "Horizons Hack-n-Jam",
+	"degreeProgram": "Computer Science",
+	"boothID": 3,
+  ]
+}

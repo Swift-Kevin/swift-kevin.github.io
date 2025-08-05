@@ -1,0 +1,5 @@
+{
+	"projectName": "Hall of Fame - Game Jam",
+	"degreeProgram": "ET Events",
+	"boothID": 2
+}
