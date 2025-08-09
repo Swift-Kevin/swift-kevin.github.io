@@ -1,0 +1,25 @@
+{
+	"projectName": "Psychic Protocol",
+	"degreeProgram": "Game Development",
+	"projectLink": "https://mrcowface.itch.io/psychic-protocol",
+	"feedbackLink": "https://www.fullsail.edu",
+	"boothID": 6,
+	"teamMembers": [
+		{
+			"name": "Thomas O'Rourke",
+			"portfolio": "https://tomorourke1.github.io/SitePages/Homepage.html"
+		},
+		{
+			"name": "Jerry Banaag",
+			"portfolio": "https://jerrybanaag3.wixsite.com/portfolio"
+		},
+		{
+			"name": "Zachary Baritell",
+			"portfolio": "https://zacharybaritell.wixsite.com/portfolio"
+		},
+		{
+			"name": "Kevin Wall",
+			"portfolio": "https://swift-kevin.github.io"
+		}
+	]
+}
