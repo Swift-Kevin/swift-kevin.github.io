@@ -1,5 +1,8 @@
 {
-	"projectName": "Hall of Fame - Game Jam",
-	"degreeProgram": "ET Events",
-	"boothID": 2
+  "projectName": "Hall of Fame - Game Jam",
+  "degreeProgram": "Emerging Tech Events",
+  "projectLink": "https://natanfj.itch.io/space-mal",
+  "feedbackLink": "https://www.fullsail.edu",
+  "teamName": "ET Admins",
+  "boothID": 2
 }

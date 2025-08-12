@@ -1,0 +1,18 @@
+{
+	"projectName": "TEMP Project Name",
+	"degreeProgram": "TEMP Degree Program",
+	"projectLink": "https://www.fullsail.edu/",
+	"feedbackLink": "https://www.fullsail.edu/",
+	"boothID": 0,
+	"teamName": "TEMP Team Name",
+	"teamMembers": [
+		{
+			"name": "TEMP Person 1",
+			"portfolio": "https://www.fullsail.edu/"
+		},
+		{
+			"name": "TEMP Person 2",
+			"portfolio": "https://www.fullsail.edu/"
+		}
+	]
+}
