@@ -1284,10 +1284,10 @@ function dbg(text) {
 // === Body ===
 
 var ASM_CONSTS = {
-  8234304: () => { Module['emscripten_get_now_backup'] = performance.now; },  
- 8234359: ($0) => { performance.now = function() { return $0; }; },  
- 8234407: ($0) => { performance.now = function() { return $0; }; },  
- 8234455: () => { performance.now = Module['emscripten_get_now_backup']; }
+  8234784: () => { Module['emscripten_get_now_backup'] = performance.now; },  
+ 8234839: ($0) => { performance.now = function() { return $0; }; },  
+ 8234887: ($0) => { performance.now = function() { return $0; }; },  
+ 8234935: () => { performance.now = Module['emscripten_get_now_backup']; }
 };
 
 
@@ -1645,6 +1645,12 @@ var ASM_CONSTS = {
       }
     }
 
+  function _GetBrowserInfo() {
+          var info = navigator.userAgent;
+          var buffer = allocate(intArrayFromString(info), 'i8', ALLOC_STACK);
+          return buffer;
+      }
+
   function _GetJSLoadTimeInfo(loadTimePtr) {
     loadTimePtr = (loadTimePtr >> 2);
     HEAPU32[loadTimePtr] = Module.pageStartupTime || 0;
@@ -1663,6 +1669,17 @@ var ASM_CONSTS = {
         HEAPF64[usedJSptr] = NaN;
       }
     }
+
+  function _IsMobilePlatform() {
+          var userAgent = navigator.userAgent;
+          var isMobile = (
+              /\b(BlackBerry|webOS|iPhone|IEMobile)\b/i.test(userAgent) ||
+              /\b(Android|Windows Phone|iPad|iPod)\b/i.test(userAgent) ||
+              // iPad on iOS 13 detection
+              (userAgent.includes("Mac") && 'ontouchend' in document)
+          );
+          return isMobile ? 1 : 0;
+      }
 
   var JS_Accelerometer = null;
   
@@ -7473,6 +7490,15 @@ var ASM_CONSTS = {
   		if (buffer)
   			stringToUTF8(browser, buffer, bufferSize);
   		return lengthBytesUTF8(browser);
+  	}
+
+  
+  function _JS_SystemInfo_GetBrowserVersionString(buffer, bufferSize)
+  	{
+  		var browserVer = Module.SystemInfo.browserVersion;
+  		if (buffer)
+  			stringToUTF8(browserVer, buffer, bufferSize);
+  		return lengthBytesUTF8(browserVer);
   	}
 
   
@@ -18033,8 +18059,10 @@ function checkIncomingModuleAPI() {
   ignoredModuleProp('fetchSettings');
 }
 var wasmImports = {
+  "GetBrowserInfo": _GetBrowserInfo,
   "GetJSLoadTimeInfo": _GetJSLoadTimeInfo,
   "GetJSMemoryInfo": _GetJSMemoryInfo,
+  "IsMobilePlatform": _IsMobilePlatform,
   "JS_Accelerometer_IsRunning": _JS_Accelerometer_IsRunning,
   "JS_Accelerometer_Start": _JS_Accelerometer_Start,
   "JS_Accelerometer_Stop": _JS_Accelerometer_Stop,
@@ -18106,6 +18134,7 @@ var wasmImports = {
   "JS_Sound_SetVolume": _JS_Sound_SetVolume,
   "JS_Sound_Stop": _JS_Sound_Stop,
   "JS_SystemInfo_GetBrowserName": _JS_SystemInfo_GetBrowserName,
+  "JS_SystemInfo_GetBrowserVersionString": _JS_SystemInfo_GetBrowserVersionString,
   "JS_SystemInfo_GetCanvasClientSize": _JS_SystemInfo_GetCanvasClientSize,
   "JS_SystemInfo_GetDocumentURL": _JS_SystemInfo_GetDocumentURL,
   "JS_SystemInfo_GetGPUInfo": _JS_SystemInfo_GetGPUInfo,
