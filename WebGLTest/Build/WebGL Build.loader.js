@@ -1,3 +1,9 @@
+if (typeof allocate === "undefined") {
+    function allocate() {
+        console.warn("Unity tried to call allocate(), but diagnostics are disabled.");
+        return 0;
+    }
+}
 function createUnityInstance(canvas, config, onProgress) {
   onProgress = onProgress || function () {};
 
