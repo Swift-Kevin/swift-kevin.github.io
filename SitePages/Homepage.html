@@ -6,59 +6,17 @@
     <link rel="stylesheet" href="../Styles/homepageStyles.css" />
     <link rel="stylesheet" href="../Styles/projectsAllStyles.css" />
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png" />
-    <title>Kevin W.</title>
+    <title>Kevin Wall — Game Developer</title>
     <meta charset="utf-8">
     <meta name="description" content="Kevin Wall - Game Development | Personal Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Kevin Wall">
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <script src="../SiteJava/site.js" defer></script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L1BE83PB09"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-L1BE83PB09');
-</script>
 <body class="bdy">
-    <!--Top of Page button-->
-    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
-    <script>
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <script src="../SiteJava/Top.js"></script>
-    <!--End of Top Button-->
-    <!--Main Header-->
-    <div class="header">
-        <div class="header-title">
-            <header>
-                <a href="../SitePages/Homepage.html">
-                    Kevin Wall
-                </a>
-            </header>
-        </div>
-        <div class="header-buttons-container">
-            <a class="menu-buttons" href="../SitePages/Homepage.html">
-                <img src="../SiteImages/HomeIcon.png" title="Home" />
-                <span>Home</span>
-            </a>
-            <a class="menu-buttons" href="../SitePages/Homepage.html#Projects">
-                <img src="../SiteImages/ProjectsIcon.png" title="Projects" />
-                <span>Projects</span>
-            </a>
-            <a class="menu-buttons" href="../SitePages/Homepage.html#Resume">
-                <img src="../SiteImages/ResumeIcon.png" title="Résumé" />
-                <span>Résumé</span>
-            </a>
-        </div>
-    </div>
+    <div id="site-header"></div>
 
-    <!-- End Of Main Header-->
     <!-- Start of About Me -->
 
     <div class="aboutme">
@@ -66,253 +24,221 @@
         <p> Connect with me:</p>
         <div class="footer-connect clickable">
             <a href="https://www.linkedin.com/in/kevinwall-gamedev/" target="_blank">
-                <img src="../SiteImages/linkedin-logo.png">
+                <img src="../SiteImages/linkedin-logo.png" alt="LinkedIn" />
             </a>
             <a href="https://github.com/swift-kevin" target="_blank">
-                <img src="../SiteImages/github-mark-white.png" />
-                <!-- Removes that annoying little line next to anchor tags. -->
-                <style>
-                    a {
-                        text-decoration: none;
-                    }
-                </style>
+                <img src="../SiteImages/github-mark-white.png" alt="GitHub" />
             </a>
         </div>
         <p> See some of the projects I have worked on below... </p>
     </div>
 
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
 
     <!-- End of About Me -->
     <!-- Start of Projects Section -->
     <div>
         <section id="Projects">
-            <div class="project-holder">
-                <div class="project-left">
-                    <div class="project-title">
-                        <a href="../SitePages/UntitledSpaceShooter.html">Untitled Space Shooter</a>
-                    </div>
-                    <div class="project-description">
-                        <p> &nbsp&nbspFight your way through endless waves of geometrical enemies, climb the ranks of the galactic leaderboard, and show your flying prowess in this unique take on an arcade classic.</p>
-                        <p><span class="project-desc-colored">Contributions:</span> User Interfaces, Custom Enemy Models, Evolving Player Interactivity</p>
-                        <p><span class="project-desc-colored">Role:</span> Generalist Programmer / Designer</p>
-                        <p><span class="project-desc-colored">Development Time:</span> 1+ Year</p>
-                        <p><span class="project-desc-colored">Team Size:</span> 2</p>
-                    </div>
-                    <div class="project-link">
-                        <a href="../SitePages/UntitledSpaceShooter.html">
-                            > Visit Project! <
-                        </a>
-                    </div>
-                </div>
-                <div class="project-right">
-                    <div class="homepage-dualProject-media">
-                        <a href="../SitePages/UntitledSpaceShooter.html">
-                            <div class="viewMoreText">
-                                <img src="../SiteProjResources/UntitledSpaceShooter/Overview.gif" title="Untitled Space Shooter">
-                                <span>Explore: <br />Untitled Space Shooter</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+            <div class="featured-head">
+                <h1>Top 3 Projects</h1>
             </div>
-            <br />
-            <div>
-                <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
-            </div>
-            <div class="project-holder">
-                <div class="project-left">
-                    <div class="project-title">
-                        <a href="../SitePages/UndeadParadise.html">Undead Paradise</a>
+
+            <div class="featured-grid">
+                <article class="pcard">
+                    <a class="pcard-media" href="../SitePages/UntitledSpaceShooter.html">
+                        <img src="../SiteProjResources/UntitledSpaceShooter/Overview.webp" alt="Untitled Space Shooter gameplay" loading="lazy" />
+                    </a>
+                    <div class="pcard-body">
+                        <h3 class="pcard-title"><a href="../SitePages/UntitledSpaceShooter.html">Untitled Space Shooter</a></h3>
+                        <p class="pcard-blurb">Fight your way through endless waves of geometrical enemies, climb the ranks of the galactic leaderboard, and show your flying prowess in this unique take on an arcade classic.</p>
+                        <p class="pcard-contrib"><span class="project-desc-colored">Contributions:</span> User Interfaces, Custom Enemy Models, Evolving Player Interactivity</p>
+                        <div class="pcard-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Unreal Engine</span>
+                            <span class="tag">Blender</span>
+                            <span class="tag">Generalist Programmer / Designer</span>
+                            <span class="tag">1+ year</span>
+                            <span class="tag">Team of 2</span>
+                        </div>
+                        <a class="pcard-link" href="../SitePages/UntitledSpaceShooter.html">Visit project</a>
                     </div>
-                    <div class="project-description">
-                        <p> &nbsp&nbspSurvive against the undead in a tropical hell. Unlock weapons and perks while upgrading your arsenal to fend off the undead.</p>
-                        <p><span class="project-desc-colored">Contributions:</span> Weapon Inheritance, Object Pooling, Generic Resource/Timers, Editor Scripts. </p>
-                        <p><span class="project-desc-colored">Role:</span> Team Lead/Generalist Programmer</p>
-                        <p><span class="project-desc-colored">Development Time:</span> 2 months</p>
-                        <p><span class="project-desc-colored">Team Size:</span> 2</p>
-                    </div>
-                    <div class="project-link">
-                        <a href="../SitePages/UndeadParadise.html">
-                            > Visit Project! <
-                        </a>
-                    </div>
-                    <div class="project-connections">
-                        <div>
-                            <a href="https://store.steampowered.com/app/2958680/Undead_Paradise/" target="_blank" title="External Link > Steam Page">
-                                <img class="placement" src="../SiteImages/SteamIcon.png" />
+                </article>
+
+                <article class="pcard">
+                    <a class="pcard-media" href="../SitePages/UndeadParadise.html">
+                        <img src="../SiteProjResources/UndeadParadise/UndeadParadiseTrailer.webp" alt="Undead Paradise gameplay" loading="lazy" />
+                    </a>
+                    <div class="pcard-body">
+                        <h3 class="pcard-title"><a href="../SitePages/UndeadParadise.html">Undead Paradise</a></h3>
+                        <p class="pcard-blurb">Survive against the undead in a tropical hell. Unlock weapons and perks while upgrading your arsenal to fend off the undead.</p>
+                        <p class="pcard-contrib"><span class="project-desc-colored">Contributions:</span> Weapon Inheritance, Object Pooling, Generic Resource/Timers, Editor Scripts</p>
+                        <div class="pcard-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">Unity</span>
+                            <span class="tag">Team Lead / Generalist</span>
+                            <span class="tag">2 months</span>
+                            <span class="tag">Team of 2</span>
+                        </div>
+                        <div class="project-connections">
+                            <a href="https://store.steampowered.com/app/2958680/Undead_Paradise/" target="_blank" rel="noopener" title="External Link &gt; Steam Page">
+                                <img class="placement" src="../SiteImages/SteamIcon.png" alt="Steam" />
+                            </a>
+                            <a href="https://swift-kevin.itch.io/undead-paradise" target="_blank" rel="noopener" title="External Link &gt; Itch.io">
+                                <img class="placement" src="../SiteImages/itchio-textless-white.svg" alt="itch.io" />
                             </a>
                         </div>
-                        <div class="spacer-width"> </div>
-                        <a href="https://swift-kevin.itch.io/undead-paradise" target="_blank" title="External Link > Itch.io">
-                            <img class="placement" src="../SiteImages/itchio-textless-white.svg" />
-                        </a>
+                        <a class="pcard-link" href="../SitePages/UndeadParadise.html">Visit project</a>
                     </div>
-                </div>
-                <div class="project-right">
-                    <div class="homepage-dualProject-media">
-                        <a href="../SitePages/UndeadParadise.html">
-                            <div class="viewMoreText">
-                                <img src="../SiteProjResources/UndeadParadise/UndeadParadiseTrailer.gif" title="UndeadParadise">
-                                <span>Explore: <br />Undead Paradise</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div>
-                <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
-            </div>
-            <div class="project-holder">
-                <div class="project-left">
-                    <div class="project-title">
-                        <a href="../SitePages/VRCapstone.html">VR Capstone (Proof Of Concept)</a>
-                    </div>
-                    <div class="project-description">
-                        <p>&nbsp&nbspExplore a randomly generated dungeon where you will encounter different weird and wacky enemies. Equipped with various physics-based weapons to fight enemies, and obtain currency to purchase consumables, weapons, and more loot. Bonky Bonk, Swishy Slash, and Pointy Pierce your way through enemies along with up to three other players.</p>
-                        <p><span class="project-desc-colored">Contributions:</span> Networking Connectivity, World Space UI, Scene Setup, Visual Indicators.</p>
-                        <p><span class="project-desc-colored">Role:</span> UI/Networking/Generalist Programmer</p>
-                        <p><span class="project-desc-colored">Development Time:</span> 4 months</p>
-                        <p><span class="project-desc-colored">Team Size:</span> 4</p>
-                    </div>
-                    <div class="project-link">
-                        <a href="../SitePages/VRCapstone.html">
-                            > Visit Project! <
-                        </a>
-                    </div>
-                </div>
-                <div class="project-right">
-                    <div class="homepage-dualProject-media">
-                        <a href="../SitePages/VRCapstone.html">
-                            <div class="viewMoreText">
-                                <img src="../SiteProjResources/CapstoneProject/SandboxLobbyV1.gif" title="Sandbox Lobby V1">
-                                <span>Explore: <br />VR Dungeon Crawler</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div>
-                <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
-            </div>
-            <div class="project-holder">
-                <div class="project-left">
-                    <div class="project-title">
-                        <a href="../SitePages/PsychicProtocol.html">Psychic Protocol</a>
-                    </div>
-                    <div class="project-description">
-                        <p>&nbsp&nbspEscape an underground research facility. Fight your way through different encounter types, from puzzle rooms to enhanced enemies. Unlock different abilities as you progress through 5 unique levels to test your skills.</p>
-                        <p><span class="project-desc-colored">Contributions:</span> Dynamic User Interfaces (Hit Indications/Resource manipulation), Custom Radial Wheel, Spatial Audio implementations, PC/Controller UI Support</p>
-                        <p><span class="project-desc-colored">Role:</span> UI/UX (Generalist) Programmer</p>
-                        <p><span class="project-desc-colored">Development Time:</span> 2 months</p>
-                        <p><span class="project-desc-colored">Team Size:</span> 6</p>
-                    </div>
-                    <div class="project-link">
-                        <a href="../SitePages/PsychicProtocol.html">
-                            > Visit Project! <
-                        </a>
-                    </div>
-                    <div class="project-connections">
-                        <div>
-                            <a href="https://github.com/tomOrourke1/Midterm_FPS_Project" target="_blank" title="External Link > Github Repository">
-                                <img class="placement" src="../SiteImages/github-mark-white.png" />
-                            </a>
+                </article>
+
+                <article class="pcard">
+                    <a class="pcard-media" href="../SitePages/VRCapstone.html">
+                        <img src="../SiteProjResources/CapstoneProject/SandboxLobbyV1.webp" alt="VR Dungeon Crawler gameplay" loading="lazy" />
+                    </a>
+                    <div class="pcard-body">
+                        <h3 class="pcard-title"><a href="../SitePages/VRCapstone.html">VR Capstone (Proof Of Concept)</a></h3>
+                        <p class="pcard-blurb">Explore a randomly generated dungeon of weird and wacky enemies. Physics-based weapons, purchasable loot, and up to four players together.</p>
+                        <p class="pcard-contrib"><span class="project-desc-colored">Contributions:</span> Networking Connectivity, World Space UI, Scene Setup, Visual Indicators</p>
+                        <div class="pcard-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">Unity</span>
+                            <span class="tag">Netcode for GameObjects</span>
+                            <span class="tag">UI / Networking / Generalist</span>
+                            <span class="tag">4 months</span>
+                            <span class="tag">Team of 4</span>
                         </div>
-                        <div class="spacer-width"> </div>
-                        <a href="https://mrcowface.itch.io/psychic-protocol" target="_blank" title="External Link > Itch.io">
-                            <img class="placement" src="../SiteImages/itchio-textless-white.svg" />
-                        </a>
+                        <a class="pcard-link" href="../SitePages/VRCapstone.html">Visit project</a>
                     </div>
-                </div>
-                <div class="project-right">
-                    <div class="homepage-dualProject-media">
-                        <a href="../SitePages/PsychicProtocol.html">
-                            <div class="viewMoreText">
-                                <img src="../SiteProjResources/PsychicProtocol/PsyProTurretBoxPuzzle.gif" title="Hit Indications on screen.">
-                                <span>Explore: <br />Psychic Protocol</span>
+                </article>
+            </div>
+
+            <div class="more-projects-head">
+                <h1>More Projects</h1>
+                <p>Earlier team projects, jams and tools</p>
+            </div>
+
+            <div class="project-split">
+                <nav class="project-index" aria-label="More projects">
+                    <a href="#psychic-protocol">Psychic Protocol</a>
+                    <a href="#invasion-of-liberty">Invasion of Liberty</a>
+                    <a href="#cubic-quarantine">Cubic Quarantine</a>
+                    <a href="#racing-game">Racing Game</a>
+                    <a href="#conways-game-of-life">Conway's Game of Life</a>
+                    <a href="#custom-portfolio-site">Custom Portfolio Site</a>
+                </nav>
+
+                <div class="project-rows">
+                    <article class="prow" id="psychic-protocol">
+                        <div class="prow-main">
+                            <h3 class="prow-title"><a href="../SitePages/PsychicProtocol.html">Psychic Protocol</a></h3>
+                            <p class="prow-blurb">Escape an underground research facility. Fight through different encounter types, from puzzle rooms to enhanced enemies, unlocking abilities across 5 unique levels.</p>
+                            <div class="pcard-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">Unity</span>
+                                <span class="tag">UI/UX Generalist</span>
+                                <span class="tag">Radial Wheel</span>
+                                <span class="tag">Spatial Audio</span>
                             </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div>
-                <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
-            </div>
-            <div class="project-holder">
-                <div class="project-left">
-                    <div class="project-title">
-                        <a href="../SitePages/InvasionOfLiberty.html"> Invasion of Liberty </a>
-                    </div>
-                    <div class="project-description">
-                        <p>&nbsp&nbspA 2.5D inspired remake of the arcade classic, Defender (1981). Fight endless waves of enemies as you protect the Planet of Liberty below. Dodge oncoming UFOs and projectiles in space and gain more points by taking down enemies. Try to gain the highest possible score!</p>
-                        <p><span class="project-desc-colored">Contributions:</span> Vulkan Rendering Pipeline, Importing Custom Data, Source Control Merging, User Interfaces using 3D models</p>
-                        <p><span class="project-desc-colored">Role:</span> Graphics Programmer / Secondary Lead</p>
-                        <p><span class="project-desc-colored">Development Time:</span> 1 month</p>
-                        <p><span class="project-desc-colored">Team Size:</span> 4</p>
-                    </div>
-                    <div class="project-link">
-                        <a href="../SitePages/InvasionOfLiberty.html">
-                            > Visit Project! <
-                        </a>
-                    </div>
-                    <div class="project-connections">
-                        <a href="https://swift-kevin.itch.io/invasion-of-liberty" target="_blank" title="External Link > Itch.io">
-                            <img class="placement" src="../SiteImages/itchio-textless-white.svg" />
-                        </a>
-                    </div>
-                </div>
-                <div class="project-right">
-                    <div class="homepage-dualProject-media">
-                        <a class="showhover" href="../SitePages/InvasionOfLiberty.html">
-                            <div class="viewMoreText">
-                                <img src="../SiteProjResources/InvasionOfLiberty/IOLComplete.gif" title="Invasion of Liberty GIF.">
-                                <span>Explore: <br />Invasion of Liberty</span>
+                            <div class="project-connections">
+                                <a href="https://github.com/tomOrourke1/Midterm_FPS_Project" target="_blank" rel="noopener" title="External Link &gt; Github Repository">
+                                    <img class="placement" src="../SiteImages/github-mark-white.png" alt="GitHub" />
+                                </a>
+                                <a href="https://mrcowface.itch.io/psychic-protocol" target="_blank" rel="noopener" title="External Link &gt; Itch.io">
+                                    <img class="placement" src="../SiteImages/itchio-textless-white.svg" alt="itch.io" />
+                                </a>
                             </div>
+                        </div>
+                        <a class="prow-peek" href="../SitePages/PsychicProtocol.html">
+                            <img src="../SiteProjResources/PsychicProtocol/PsyProTurretBoxPuzzle.webp" alt="" loading="lazy" />
                         </a>
-                    </div>
-                </div>
-            </div>
-            <br />
-            <div>
-                <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
-            </div>
-            <div class="project-holder">
-                <div class="project-left">
-                    <div class="project-title">
-                        <a href="../SitePages/SideProjects.html"> Small Side Projects </a>
-                    </div>
-                    <div class="project-description">
-                        <p>&nbsp&nbspA collection of small projects I have worked on. These projects range from game jams to applications I develop on and off throughout a couple of months.</p>
-                        <p><span class="project-desc-colored"> Cubic Quarantine </span> </p>
-                        <p><span class="project-desc-colored"> Racing Game with Friends </span> </p>
-                        <p><span class="project-desc-colored"> Custom Portfolio Site </span> </p>
-                        <p><span class="project-desc-colored"> Conways Game of Life </span> </p>
-                    </div>
-                    <div class="project-link">
-                        <a href="../SitePages/SideProjects.html">
-                            > Visit Side Projects! <
-                        </a>
-                    </div>
-                </div>
-                <div class="project-right">
-                    <div class="homepage-dualProject-media">
-                        <a class="showhover" href="../SitePages/SideProjects.html">
-                            <div class="viewMoreText">
-                                <img src="../SiteProjResources/SideProjects/SideProjectsOverview.gif" title="Side Projects.">
-                                <span>Explore: <br />Side Projects</span>
+                    </article>
+
+                    <article class="prow" id="invasion-of-liberty">
+                        <div class="prow-main">
+                            <h3 class="prow-title"><a href="../SitePages/InvasionOfLiberty.html">Invasion of Liberty</a></h3>
+                            <p class="prow-blurb">A 2.5D remake of the arcade classic Defender (1981), built on a custom Vulkan rendering pipeline. Protect the Planet of Liberty and chase the high score.</p>
+                            <div class="pcard-tags">
+                                <span class="tag">C++</span>
+                                <span class="tag">Vulkan</span>
+                                <span class="tag">Graphics / Secondary Lead</span>
                             </div>
+                            <div class="project-connections">
+                                <a href="https://swift-kevin.itch.io/invasion-of-liberty" target="_blank" rel="noopener" title="External Link &gt; Itch.io">
+                                    <img class="placement" src="../SiteImages/itchio-textless-white.svg" alt="itch.io" />
+                                </a>
+                            </div>
+                        </div>
+                        <a class="prow-peek" href="../SitePages/InvasionOfLiberty.html">
+                            <img src="../SiteProjResources/InvasionOfLiberty/IOLComplete.webp" alt="" loading="lazy" />
                         </a>
-                    </div>
+                    </article>
+
+                    <article class="prow" id="cubic-quarantine">
+                        <div class="prow-main">
+                            <h3 class="prow-title"><a href="../SitePages/CubicQuarantine.html">Cubic Quarantine</a></h3>
+                            <p class="prow-blurb">Play as a spaceship fighting infected swarms of geometric enemies, clear every swarm before time runs out.</p>
+                            <div class="pcard-tags">
+                                <span class="tag">Side Project</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">Unity</span>
+                                <span class="tag">Flocking AI</span>
+                            </div>
+                        </div>
+                        <a class="prow-peek" href="../SitePages/CubicQuarantine.html">
+                            <img src="../SiteProjResources/SideProjects/CubicQuarantine.webp" alt="" loading="lazy" />
+                        </a>
+                    </article>
+
+                    <article class="prow" id="racing-game">
+                        <div class="prow-main">
+                            <h3 class="prow-title"><a href="../SitePages/RacingGame.html">Racing Game</a></h3>
+                            <p class="prow-blurb">A networked racing prototype with WAN and LAN play, colour sync across clients, and rocket boosting.</p>
+                            <div class="pcard-tags">
+                                <span class="tag">Side Project</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">Unity</span>
+                                <span class="tag">Networking</span>
+                            </div>
+                        </div>
+                        <a class="prow-peek" href="../SitePages/RacingGame.html">
+                            <img src="../SiteProjResources/SideProjects/RacingGame.webp" alt="" loading="lazy" />
+                        </a>
+                    </article>
+
+                    <article class="prow" id="conways-game-of-life">
+                        <div class="prow-main">
+                            <h3 class="prow-title"><a href="../SitePages/ConwaysGameOfLife.html">Conway's Game of Life</a></h3>
+                            <p class="prow-blurb">The classic cellular automata simulation, rendered with wxWidgets and backed by file I/O for saving boards.</p>
+                            <div class="pcard-tags">
+                                <span class="tag">Side Project</span>
+                                <span class="tag">C++</span>
+                                <span class="tag">wxWidgets</span>
+                                <span class="tag">File I/O</span>
+                            </div>
+                        </div>
+                        <a class="prow-peek" href="../SitePages/ConwaysGameOfLife.html">
+                            <img src="../SiteProjResources/SideProjects/GameOfLife.webp" alt="" loading="lazy" />
+                        </a>
+                    </article>
+
+                    <article class="prow" id="custom-portfolio-site">
+                        <div class="prow-main">
+                            <h3 class="prow-title"><a href="../SitePages/CustomPortfolioSite.html">Custom Portfolio Site</a></h3>
+                            <p class="prow-blurb">This site, hand-written without a framework, to learn web development before the tooling era.</p>
+                            <div class="pcard-tags">
+                                <span class="tag">Side Project</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <a class="prow-peek" href="../SitePages/CustomPortfolioSite.html">
+                            <img src="../SiteProjResources/SideProjects/CustomSite.webp" alt="" loading="lazy" />
+                        </a>
+                    </article>
                 </div>
-            </div>
-            <br />
-            <div>
-                <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
             </div>
         </section>
     </div>
@@ -320,38 +246,28 @@
     <!-- Start of Homepage Footer -->
 
     <div class="homepage-resume-download">
-        <a href="../SiteMisc/Wall_Resume.pdf" download="Wall_Resume.pdf">
-            <img class="download-image" src="../SiteImages/DownloadButtonResume.png" />
+        <a class="resume-btn" href="../SiteMisc/Wall_Resume.pdf" download="Wall_Resume.pdf">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 3v11m0 0 4-4m-4 4-4-4" />
+                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
+            </svg>
+            Download Résumé
+            <span class="resume-btn-ext">PDF</span>
         </a>
     </div>
     <div class="homepage-resume">
         <section id="Resume">
-            <img src="../SiteMisc/Wall_Resume.svg" title="My up-to-date resume.">
+            <img src="../SiteMisc/Wall_Resume.svg" alt="Résumé" title="My up-to-date resume." />
         </section>
     </div>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
 
     <!-- End of Projects Section -->
     <!-- Start of Homepage Footer -->
 
-    <div class="footer-connect clickable">
-        <h2">Connect with me:</h2">
-        <br />
-        <a href="https://www.linkedin.com/in/kevinwall-gamedev/" target="_blank">
-            <img src="../SiteImages/linkedin-logo.png">
-        </a>
-        <a href="https://github.com/swift-kevin" target="_blank">
-            <img src="../SiteImages/github-mark-white.png" />
-            <!-- Removes that annoying little line next to anchor tags. -->
-            <style>
-                a {
-                    text-decoration: none;
-                }
-            </style>
-        </a>
-    </div>
+    <div id="site-footer"></div>
 </body>
 </html>
 

@@ -12,14 +12,14 @@ body {
 
 .container {
     text-align: center;
-    border: solid white 2px;
+    border: solid white 0.125rem;
     padding: 5% 10%;
 }
 
 .big-text {
     font-size: 10vw;
     line-height: 1.5;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .small-text {
@@ -31,7 +31,7 @@ body {
     .big-text {
         font-size: 15vw;
         line-height: 1.5;
-        margin-bottom: 12px;
+        margin-bottom: 0.75rem;
     }
 
     .small-text {

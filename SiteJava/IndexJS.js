@@ -1,7 +1,7 @@
 // Some JS to run the loading dots on the index page when redirecting the site
 let dotCount = 1;
 
-function updateDots()
+function UpdateDots()
 {
     const dotsElement = document.getElementById("loadingDots");
     const currentDots = dotsElement.textContent;
@@ -18,4 +18,4 @@ function updateDots()
     }
 }
 
-setInterval(updateDots, 500);
+setInterval(UpdateDots, 500);

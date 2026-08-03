@@ -5,71 +5,35 @@
     <link rel="stylesheet" href="../Styles/styles.css" />
     <link rel="stylesheet" href="../Styles/projectPage.css" />
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png">
-    <title>Kevin W.</title>
+    <title>Kevin Wall — Untitled Space Shooter</title>
     <meta charset="utf-8">
     <meta name="description" content="Welcome to my personal portfolio!">
     <meta name="author" content="Kevin Wall">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../SiteJava/site.js" defer></script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L1BE83PB09"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-L1BE83PB09');
-</script>
 <body class="bdy">
-    <!--Top of Page button-->
-    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
-    <script>
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <script src="../SiteJava/Top.js"></script>
-    <!--End of Top Button-->
-    <!--Main Header-->
-    <div class="header">
-        <div class="header-title">
-            <header>
-                <a href="../SitePages/Homepage.html">
-                    Kevin Wall
-                </a>
-            </header>
-        </div>
-        <div class="header-buttons-container">
-            <a class="menu-buttons" href="../SitePages/Homepage.html">
-                <img src="../SiteImages/HomeIcon.png" title="Home" />
-                <span>Home</span>
-            </a>
-            <a class="menu-buttons" href="../SitePages/Homepage.html#Projects">
-                <img src="../SiteImages/ProjectsIcon.png" title="Projects" />
-                <span>Projects</span>
-            </a>
-            <a class="menu-buttons" href="../SitePages/Homepage.html#Resume">
-                <img src="../SiteImages/ResumeIcon.png" title="Résumé" />
-                <span>Résumé</span>
-            </a>
-        </div>
-    </div>
+    <div id="site-header"></div>
 
-    <!-- End Of Main Header-->
-    <div class="projtitle">
-        Untitled Space Shooter
-    </div>
-    <div class="projQL">
-        <div class="projQLTitle">Quick Links:</div>
-        <div class="projVidLink">
-            <a href="../SitePages/UntitledSpaceShooter.html#Video">
-                Video
-            </a>
+    <div class="proj-header">
+        <div class="proj-header-text">
+            <h1 class="projtitle">Untitled Space Shooter</h1>
+            <div class="projQL">
+            <div class="projQLTitle">Quick Links:</div>
+            <div class="projVidLink">
+                <a href="../SitePages/UntitledSpaceShooter.html#Video">
+                    Video
+                </a>
+            </div>
+            <div class="projGalleryLink">
+                <a href="../SitePages/UntitledSpaceShooter.html#Gallery">
+                    Gallery
+                </a>
+            </div>
+            </div>
         </div>
-        <div class="projGalleryLink">
-            <a href="../SitePages/UntitledSpaceShooter.html#Gallery">
-                Gallery
-            </a>
+        <div class="proj-header-media">
+                <img src="../SiteProjResources/UntitledSpaceShooter/Overview.webp" alt="Untitled Space Shooter gameplay" />
         </div>
     </div>
     <div class="grid-contributions">
@@ -98,7 +62,7 @@
         </div>
     </div>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
     <div class="showcase-leftFaced">
         <div class="showcase-mainText">
@@ -114,7 +78,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/ShipUI.gif" />
+            <img alt="Ship User Interfaces (Screens)" class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/ShipUI.webp" />
         </div>
     </div>
     <div class="showcase-rightFaced">
@@ -131,7 +95,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/PlayerAsteroidShieldEffect_FirstTry.gif" />
+            <img alt="Player Interactivity" class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/PlayerAsteroidShieldEffect_FirstTry.webp" />
         </div>
     </div>
     <div class="showcase-leftFaced">
@@ -148,7 +112,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/EnemyAnimation.gif" />
+            <img alt="Enemy Animations" class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/EnemyAnimation.webp" />
         </div>
     </div>
     <div class="showcase-rightFaced">
@@ -165,7 +129,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/DodgerCustomModel.png" />
+            <img alt="Custom Enemy Models" class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/DodgerCustomModel.png" />
         </div>
     </div>
     <div class="showcase-leftFaced">
@@ -182,7 +146,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/OptionsMenuVisuals.gif" />
+            <img alt="Options" class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/OptionsMenuVisuals.webp" />
         </div>
     </div>
     <div class="showcase-rightFaced">
@@ -199,7 +163,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/PlayerHUD.gif" />
+            <img alt="Ship Frontal HUD" class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/PlayerHUD.webp" />
         </div>
     </div>
     <div class="showcase-leftFaced">
@@ -216,11 +180,11 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/PlanetCombatZone.png" />
+            <img alt="Environmental Design" class="projMedia" src="../SiteProjResources/UntitledSpaceShooter/PlanetCombatZone.png" />
         </div>
     </div>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
     <section id="Gallery">
         <div class="gallery-wrapper">
@@ -228,48 +192,54 @@
                 <div class="gallery-layer">
                     <p>Designed implementation of the Spinner enemy.</p>
                 </div>
-                <img src="../SiteProjResources/UntitledSpaceShooter/SpinnerCustomModel.png" alt="" />
+                <img src="../SiteProjResources/UntitledSpaceShooter/SpinnerCustomModel.png" alt="Designed implementation of the Spinner enemy." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p> Comically exploding ship when the player dies in game. </p>
                 </div>
-                <img src="../SiteProjResources/UntitledSpaceShooter/ShipExploding.gif" alt="" />
+                <img src="../SiteProjResources/UntitledSpaceShooter/ShipExploding.webp" alt="Comically exploding ship when the player dies in game." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>Blackhole Enemy that players will encounter within the game.</p>
                 </div>
-                <img src="../SiteProjResources/UntitledSpaceShooter/StaticWormhole.png" alt="" />
+                <img src="../SiteProjResources/UntitledSpaceShooter/StaticWormhole.png" alt="Blackhole Enemy that players will encounter within the game." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>Asteroid Field that players will fly through</p>
                 </div>
-                <img src="../SiteProjResources/UntitledSpaceShooter/AsteroidsField.gif" alt="" />
+                <img src="../SiteProjResources/UntitledSpaceShooter/AsteroidsField.webp" alt="Asteroid Field that players will fly through" />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>The first iteration of the asteroid field where the asteroids would jiggle.</p>
                 </div>
-                <img src="../SiteProjResources/UntitledSpaceShooter/AsteroidsFirstIteration.gif" alt="" />
+                <img src="../SiteProjResources/UntitledSpaceShooter/AsteroidsFirstIteration.webp" alt="The first iteration of the asteroid field where the asteroids would jiggle." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>Planetary rings animating across.</p>
                 </div>
-                <img src="../SiteProjResources/UntitledSpaceShooter/PlanetaryRingsAnimating.gif" alt="" />
+                <img src="../SiteProjResources/UntitledSpaceShooter/PlanetaryRingsAnimating.webp" alt="Planetary rings animating across." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>One of the screens which introduces the player to the game.</p>
                 </div>
-                <img src="../SiteProjResources/UntitledSpaceShooter/ShipHowToPlayMenu.gif" alt="" />
+                <img src="../SiteProjResources/UntitledSpaceShooter/ShipHowToPlayMenu.webp" alt="One of the screens which introduces the player to the game." />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Black hole effect</p>
+                </div>
+                <img src="../SiteProjResources/UntitledSpaceShooter/BlackHoleWorking.webp" alt="Black hole effect" loading="lazy" />
             </div>
         </div>
     </section>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
     <!--End of Gallery Section-->
     <!--Start of External Links-->
@@ -279,24 +249,9 @@
         </div>
     </section>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>-->
     <!--End of External Links-->
-    <div class="footer-connect clickable">
-        <h2">Connect with me:</h2">
-        <br />
-        <a href="https://www.linkedin.com/in/kevinwall-gamedev/" target="_blank">
-            <img src="../SiteImages/linkedin-logo.png">
-        </a>
-        <a href="https://github.com/swift-kevin" target="_blank">
-            <img src="../SiteImages/github-mark-white.png" />
-            <!-- Removes that annoying little line next to anchor tags. -->
-            <style>
-                a {
-                    text-decoration: none;
-                }
-            </style>
-        </a>
-    </div>
+    <div id="site-footer"></div>
 </body>
 </html>

@@ -1,292 +1,332 @@
-
-/* For all the project in-depth pages */
-
-html {
-    max-width: 100%;
-    overflow-x: hidden;
+.proj-header {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: center;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: var(--gap) var(--pad);
 }
 
 .projtitle {
-    font-family: Custom-Consolas;
-    font-size: max(250%, 24px);
-    text-align: center;
-    color: white;
-    margin-top: 5vh;
-    height: 10vh;
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: var(--title-weight);
+    letter-spacing: var(--title-spacing);
+    line-height: 1.05;
+    color: var(--text);
+    text-align: left;
 }
 
-.projVidLink {
-    grid-area: linkV;
-    border: solid #883800 2px;
-    background-color: #c16818;
-    transition: linear 0.1s;
+.proj-tag {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    padding: 0.15rem 0.5rem;
+    font-family: var(--font-ui);
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accentSoft);
+    background: var(--surface2);
+    border: var(--border-w) solid var(--accentSoft);
+    border-radius: var(--radius);
 }
 
-    .projVidLink:hover {
-        transform: scale(1.1);
-        transition: linear 0.1s;
-    }
-
-.projGalleryLink {
-    grid-area: linkG;
-    border: solid #883800 2px;
-    background-color: #c16818;
-    transition: linear 0.1s;
+.proj-body {
+    max-width: var(--maxw);
+    margin: 0 auto var(--gap);
+    padding: 0 var(--pad);
 }
 
-    .projGalleryLink:hover {
-        transform: scale(1.1);
-        transition: linear 0.1s;
-    }
-
-.projQLTitle {
-    grid-area: linkQL;
+.proj-header-media img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border: var(--border-w) solid var(--line);
+    border-radius: var(--radius);
 }
 
 .projQL {
-    display: grid;
-    grid-template-areas:
-        'linkQL linkV linkG';
-    grid-template-rows: minmax(min-content, 1fr);
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 9%;
-    margin: 2vh 30% 2vh 30%;
-    color: white;
-    font-family: "Custom-Consolas";
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.5rem;
+    margin: 1.4rem 0 0;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    font-family: var(--font-ui);
+    font-size: 1.05rem;
 }
 
-    .projQL a {
-        color: #F5F5F5;
+.projQLTitle {
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+.projVidLink a,
+.projGalleryLink a {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    color: var(--accent2);
+    border: var(--border-w) solid var(--line);
+    border-radius: var(--radius);
+    transition: background 0.15s, border-color 0.15s;
+}
+
+    .projVidLink a:hover,
+    .projGalleryLink a:hover {
+        background: var(--surface2);
+        border-color: var(--accent);
     }
 
-.grid-roleTitle {
-    font-family: Consolas;
-    grid-area: roleTitle;
-    margin-bottom: 1%;
-    border-bottom: solid #434343 4px;
-}
-
-.grid-contributedLeft {
-    grid-area: roleSec1;
-    margin-bottom: 2vh;
-}
-
-.grid-contributedRight {
-    grid-area: roleSec2;
-    margin-bottom: 2vh;
-}
-
-.grid-role {
-    grid-area: projRole;
-    padding-top: 1vh;
-    text-align: center;
-    border-right: solid #434343 2px;
-    color: white;
-    font-family: Consolas;
-}
-
-.grid-teamsize {
-    grid-area: projSize;
-    padding-top: 1vh;
-    text-align: center;
-    border-left: solid #434343 2px;
-    border-right: solid #434343 2px;
-    color: white;
-    font-family: Consolas;
-}
-
-.grid-timespan {
-    grid-area: projTime;
-    padding-top: 1vh;
-    text-align: center;
-    border-left: solid #434343 2px;
-    color: white;
-    font-family: Consolas;
-}
-
 .grid-contributions {
-    margin: 2.5% auto 0 auto;
-    width: 75%;
-    font-size: 1.25rem;
-    color: white;
+    max-width: var(--maxw);
+    margin: 0 auto var(--gap);
+    padding: 0 var(--pad);
     display: grid;
-    text-align: center;
     grid-template-areas:
         'roleTitle roleTitle roleTitle roleTitle roleTitle roleTitle'
         'roleSec1 roleSec1 roleSec1 roleSec2 roleSec2 roleSec2'
         'projRole projRole projSize projSize projTime projTime';
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-template-columns: 2fr 2fr 1fr 1fr 2fr 2fr;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.25rem 2rem;
+    color: var(--text);
 }
 
     .grid-contributions p {
-        padding: 0;
-        color: #dedede;
+        margin: 0;
     }
 
     .grid-contributions span {
-        color: #dedede;
         display: block;
-        line-height: 1.75;
-        font-family: Custom-Consolas;
+        color: var(--muted);
+        font-size: 0.93rem;
+        line-height: 1.7;
     }
 
-
-/* Displaying Content Sections */
-.showcase-textTitle {
-    font-size: 2vw;
-    text-align: center;
-    color: #FDFDFD;
-    font-family: Custom-Consolas;
-    border-bottom: solid #e67e22 2px;
-    grid-area: scTT;
-    margin-bottom: 2vh;
-    height: min-content;
+.grid-roleTitle {
+    grid-area: roleTitle;
+    border-bottom: var(--border-w) solid var(--accent);
+    padding-bottom: 0.5rem;
 }
 
-.showcase-textBody {
-    vertical-align: top;
-    grid-area: scTB;
-    font-size: 110%;
-    color: #E0E0E0;
+    .grid-roleTitle h3 {
+        font-family: var(--font-display);
+        font-size: clamp(1.2rem, 2.4vw, 1.7rem);
+        font-weight: var(--title-weight);
+        letter-spacing: var(--title-spacing);
+        margin: 0;
+        color: var(--text);
+    }
+
+.grid-contributedLeft {
+    grid-area: roleSec1;
+    text-align: center;
+}
+
+.grid-contributedRight {
+    grid-area: roleSec2;
+    text-align: center;
+}
+
+.grid-role {
+    grid-area: projRole;
+}
+
+.grid-teamsize {
+    grid-area: projSize;
+}
+
+.grid-timespan {
+    grid-area: projTime;
+}
+
+.grid-role,
+.grid-teamsize,
+.grid-timespan {
+    font-family: var(--font-ui);
+    font-size: 0.85rem;
+    color: var(--muted);
+    border-top: var(--border-w) solid var(--line);
+    padding-top: 0.9rem;
+    text-align: center;
+}
+
+    .grid-role span,
+    .grid-teamsize span,
+    .grid-timespan span {
+        display: block;
+        color: var(--accent);
+        font-size: 0.72rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        margin-bottom: 0.2rem;
+    }
+
+.showcase-leftFaced,
+.showcase-rightFaced {
+    max-width: var(--maxw);
+    margin: 0 auto var(--gap);
+    padding: 0 var(--pad);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(1.5rem, 4vw, 3.5rem);
+    align-items: center;
+}
+
+.showcase-leftFaced {
+    grid-template-areas: 'showcaseText showcaseMedia';
+}
+
+.showcase-rightFaced {
+    grid-template-areas: 'showcaseMedia showcaseText';
 }
 
 .showcase-mainText {
     grid-area: showcaseText;
-    color: white;
-    font-family: Custom-Consolas;
-    display: grid;
-    grid-template-areas: 'scTT' 'scTB';
-    grid-template-columns: 1fr;
-    grid-auto-rows: min-content;
-    padding: 5%;
 }
+
+.showcase-textTitle {
+    font-family: var(--font-display);
+    font-size: clamp(1.3rem, 2.6vw, 2rem);
+    font-weight: var(--title-weight);
+    letter-spacing: var(--title-spacing);
+    color: var(--text);
+    padding-bottom: 0.6rem;
+    margin-bottom: 1rem;
+    border-bottom: var(--border-w) solid var(--accent);
+}
+
+.showcase-textBody {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+    .showcase-textBody ul {
+        margin: 0;
+        padding-left: 1.1rem;
+        display: grid;
+        gap: 0.6rem;
+    }
+
+    .showcase-textBody li::marker {
+        color: var(--accent);
+    }
 
 .showcase-media {
     grid-area: showcaseMedia;
     text-align: center;
-    display: block;
-    align-self: center;
-}
-
-.showcase-leftFaced {
-    display: grid;
-    grid-template-areas: 'showcaseText showcaseMedia';
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
-    padding-left: 5%;
-    margin-bottom: 5%;
-    margin-bottom: 5%;
-}
-
-.showcase-rightFaced {
-    display: grid;
-    grid-template-areas: 'showcaseMedia showcaseText';
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
-    padding-right: 5%;
-    margin-bottom: 5%;
-    margin-bottom: 5%;
 }
 
 img.projMedia {
-    width: 75%;
-    height: 75%;
+    width: 85%;
+    height: auto;
+    border: var(--border-w) solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
 }
 
 .gallery-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 1%;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 var(--pad);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
 }
 
 .gallery-media {
-    max-width: 25%;
-    max-height: auto;
-    overflow: hidden;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5%;
+    overflow: hidden;
+    border: var(--border-w) solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    max-width: none;
+    transition: border-color 0.18s;
 }
 
+    .gallery-media:hover {
+        border-color: var(--accent);
+    }
+
     .gallery-media img {
-        max-width: 100%;
-        height: auto;
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
     }
 
 .gallery-layer {
-    opacity: 0;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background: #121212;
-    color: #ffffff;
-    font-family: Consolas;
-    transition: all 0.25s linear;
-}
-
-p {
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
     text-align: center;
-    display: block;
-}
-
-.gallery-layer {
-    height: stretch;
-    height: -webkit-fill-available;
+    background: var(--surface);
+    color: var(--text);
+    font-family: var(--font-ui);
+    font-size: 0.82rem;
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity 0.2s;
 }
 
     .gallery-layer:hover {
-        opacity: 0.8;
+        opacity: 0.94;
     }
 
-.not-available {
-    color: white;
-    font-family: Consolas;
-    text-align: center;
-}
-
-@keyframes bannermove {
-    0% {
-        transform: translateX(0);
+    .gallery-layer p {
+        margin: 0;
     }
 
-    100% {
-        transform: translateX(-100%);
+@media (max-width: 860px) {
+    .proj-header {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
     }
-}
 
-@font-face {
-    font-family: "Custom-Consolas";
-    src: url('../SiteFonts/Consolas.ttf');
-}
-
-
-@media (max-width: 1023px) {
     .projtitle {
-        font-size: 3.5rem;
-        margin-top: 2vh;
-        height: 5vh;
+        text-align: center;
     }
 
-    .grid-contributedLeft {
-        border-right: none;
+    .grid-contributions {
+        grid-template-areas:
+            'roleTitle roleTitle'
+            'roleSec1 roleSec2'
+            'projRole projSize'
+            'projTime projTime';
+        grid-template-columns: 1fr 1fr;
     }
 
-    .grid-contributedRight {
-        border-left: none;
+    .showcase-leftFaced,
+    .showcase-rightFaced {
+        grid-template-areas:
+            'scTT'
+            'showcaseMedia'
+            'scTB';
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
+    .showcase-mainText {
+        display: contents;
+    }
+
+    .showcase-textTitle {
+        grid-area: scTT;
+        margin-bottom: 0;
+    }
+
+    .showcase-textBody {
+        grid-area: scTB;
+    }
+}
+
+@media (max-width: 560px) {
     .grid-contributions {
         grid-template-areas:
             'roleTitle'
@@ -295,99 +335,6 @@ p {
             'projRole'
             'projSize'
             'projTime';
-        grid-template-rows: 1fr auto auto auto auto auto;
         grid-template-columns: 1fr;
-        font-size: 2.5rem;
-    }
-
-        .grid-contributions span {
-            line-height: 1.75;
-        }
-
-    .grid-role {
-        line-height: 0;
-        border-right: none;
-        border-left: none;
-        border-top: solid #434343 1px;
-    }
-
-    .grid-teamsize {
-        line-height: 0;
-        border-right: none;
-        border-left: none;
-    }
-
-    .grid-timespan {
-        line-height: 0;
-        border-right: none;
-        border-left: none;
-    }
-
-    .showcase-leftFaced {
-        grid-template-areas:
-            'showcaseText'
-            'showcaseMedia';
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto;
-        padding-left: 0%;
-        margin-bottom: 0%;
-        text-align: center;
-    }
-
-    .showcase-rightFaced {
-        grid-template-areas:
-            'showcaseText'
-            'showcaseMedia';
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto;
-        padding-right: 0%;
-        margin-bottom: 0%;
-        text-align: center;
-    }
-
-    .showcase-textTitle {
-        font-size: 3rem;
-    }
-
-    .showcase-textBody {
-        font-size: 2vw;
-    }
-
-    .showcase-media {
-        border-bottom: solid #434343 2px;
-        padding-bottom: 1.5%;
-    }
-
-    .gallery-media {
-        max-width: 75%;
-        max-height: auto;
-        font-size: 125%;
-        padding-bottom: 3%;
-    }
-
-    .projQL {
-        display: grid;
-        grid-template-areas:
-            'linkQL''linkV''linkG';
-        grid-template-columns: minmax(min-content, 1fr);
-        grid-template-rows: auto auto auto;
-        margin: 2vh 30% 2vh 30%;
-        color: white;
-        font-family: "Custom-Consolas";
-        text-align: center;
-        font-size: 2rem;
-    }
-
-    .projQLTitle {
-        border-bottom: solid #dedede 2px;
-        margin-bottom: 1vh;
-    }
-
-    .projVidLink {
-        margin-bottom: 1vh;
-    }
-
-    .gallery-layer {
-        font-size: 2.5rem;
     }
 }

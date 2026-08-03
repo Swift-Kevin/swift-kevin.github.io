@@ -5,71 +5,35 @@
     <link rel="stylesheet" href="../Styles/styles.css" />
     <link rel="stylesheet" href="../Styles/projectPage.css" />
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png">
-    <title>Kevin W.</title>
+    <title>Kevin Wall — Invasion of Liberty</title>
     <meta charset="utf-8">
     <meta name="description" content="Welcome to my personal portfolio!">
     <meta name="author" content="Kevin Wall">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../SiteJava/site.js" defer></script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L1BE83PB09"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-L1BE83PB09');
-</script>
 <body class="bdy">
-    <!--Top of Page button-->
-    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
-    <script>
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <script src="../SiteJava/Top.js"></script>
-    <!--End of Top Button-->
-    <!--Main Header-->
-    <div class="header">
-        <div class="header-title">
-            <header>
-                <a href="../SitePages/Homepage.html">
-                    Kevin Wall
-                </a>
-            </header>
-        </div>
-        <div class="header-buttons-container">
-            <a class="menu-buttons" href="../SitePages/Homepage.html">
-                <img src="../SiteImages/HomeIcon.png" title="Home" />
-                <span>Home</span>
-            </a>
-            <a class="menu-buttons" href="../SitePages/Homepage.html#Projects">
-                <img src="../SiteImages/ProjectsIcon.png" title="Projects" />
-                <span>Projects</span>
-            </a>
-            <a class="menu-buttons" href="../SitePages/Homepage.html#Resume">
-                <img src="../SiteImages/ResumeIcon.png" title="Résumé" />
-                <span>Résumé</span>
-            </a>
-        </div>
-    </div>
+    <div id="site-header"></div>
 
-    <!-- End Of Main Header-->
-    <div class="projtitle">
-        Invasion Of Liberty
-    </div>
-    <div class="projQL">
-        <div class="projQLTitle">Quick Links:</div>
-        <div class="projVidLink">
-            <a href="../SitePages/InvasionOfLiberty.html#Video">
-                Video
-            </a>
+    <div class="proj-header">
+        <div class="proj-header-text">
+            <h1 class="projtitle">Invasion Of Liberty</h1>
+            <div class="projQL">
+            <div class="projQLTitle">Quick Links:</div>
+            <div class="projVidLink">
+                <a href="../SitePages/InvasionOfLiberty.html#Video">
+                    Video
+                </a>
+            </div>
+            <div class="projGalleryLink">
+                <a href="../SitePages/InvasionOfLiberty.html#Gallery">
+                    Gallery
+                </a>
+            </div>
+            </div>
         </div>
-        <div class="projGalleryLink">
-            <a href="../SitePages/InvasionOfLiberty.html#Gallery">
-                Gallery
-            </a>
+        <div class="proj-header-media">
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLComplete.webp" alt="Invasion of Liberty gameplay" />
         </div>
     </div>
     <div class="grid-contributions">
@@ -100,7 +64,7 @@
         </div>
     </div>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
     <!-- Contributions Section Explained -->
     <div class="showcase-leftFaced">
@@ -125,7 +89,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/InvasionOfLiberty/3DCCRenderer.gif" />
+            <img alt="Using Vulkan" class="projMedia" src="../SiteProjResources/InvasionOfLiberty/3DCCRenderer.webp" />
         </div>
     </div>
     <div class="showcase-rightFaced">
@@ -150,7 +114,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/InvasionOfLiberty/CodeSnippets/VertexShaderSnippet.png" />
+            <img alt="Learning/Using Shaders" class="projMedia" src="../SiteProjResources/InvasionOfLiberty/CodeSnippets/VertexShaderSnippet.png" />
         </div>
     </div>
     <div class="showcase-leftFaced">
@@ -175,7 +139,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/InvasionOfLiberty/IOLWireframeAndLighting.gif" />
+            <img alt="Debugging Tools" class="projMedia" src="../SiteProjResources/InvasionOfLiberty/IOLWireframeAndLighting.webp" />
         </div>
     </div>
     <div class="showcase-rightFaced">
@@ -200,7 +164,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/InvasionOfLiberty/IOLPausedGameFunctionality.gif" />
+            <img alt="Pausing Functionality" class="projMedia" src="../SiteProjResources/InvasionOfLiberty/IOLPausedGameFunctionality.webp" />
         </div>
     </div>
     <div class="showcase-leftFaced">
@@ -225,7 +189,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/InvasionOfLiberty/CodeSnippets/IOLGithub.gif" />
+            <img alt="Github and Code Refactoring" class="projMedia" src="../SiteProjResources/InvasionOfLiberty/CodeSnippets/IOLGithub.webp" />
         </div>
     </div>
     <div class="showcase-rightFaced">
@@ -250,11 +214,11 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/InvasionOfLiberty/CodeSnippets/DrawViewports.png" />
+            <img alt="Managing Multiple Viewports" class="projMedia" src="../SiteProjResources/InvasionOfLiberty/CodeSnippets/DrawViewports.png" />
         </div>
     </div>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
     <!-- Contributions Section Ended -->
     <!-- Screenshots Area -->
@@ -264,84 +228,135 @@
                 <div class="gallery-layer">
                     <p>A screenshot of the main menu, featuring a rotating planetary background and moving text!</p>
                 </div>
-                <img src="../SiteProjResources/InvasionOfLiberty/Gallery1.png" alt="" />
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery1.png" alt="A screenshot of the main menu, featuring a rotating planetary background and moving text!" />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>When attempting to get the camera to follow the player, I managed to recreate a GTA V style cinematic camera which wasn't ideal but was cool nonetheless.</p>
                 </div>
-                <img src="../SiteProjResources/InvasionOfLiberty/Gallery2.gif" alt="" />
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery2.webp" alt="When attempting to get the camera to follow the player, I managed to recreate a GTA V style cinematic camera which wasn't ideal but was cool nonetheless." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>This was a prototype of the game after week 2, models were being created and imported as well as shooting from the player.</p>
                 </div>
-                <img src="../SiteProjResources/InvasionOfLiberty/Gallery3.gif" alt="" />
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery3.webp" alt="This was a prototype of the game after week 2, models were being created and imported as well as shooting from the player." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>Using the greyscale shader in action for a requirement on one of the assignments, though I didn't want to take it out cause it provided a nice retro look to the game.</p>
                 </div>
-                <img src="../SiteProjResources/InvasionOfLiberty/Gallery4.png" alt="" />
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery4.png" alt="Using the greyscale shader in action for a requirement on one of the assignments, though I didn't want to take it out cause it provided a nice retro look to the game." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>The fan favorite wireframe mode in action, showcasing the low-poly models I created during the month for the project.</p>
                 </div>
-                <img src="../SiteProjResources/InvasionOfLiberty/IOLWireframeAndLighting.gif" alt="" />
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLWireframeAndLighting.webp" alt="The fan favorite wireframe mode in action, showcasing the low-poly models I created during the month for the project." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>Displaying that the game was paused was actually one of the last-second additions, our team lead Jerry had already made pausing functional, it just needed the display that I added in.</p>
                 </div>
-                <img src="../SiteProjResources/InvasionOfLiberty/Gallery7.png" alt="" />
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery7.png" alt="Displaying that the game was paused was actually one of the last-second additions, our team lead Jerry had already made pausing functional, it just needed the display that I added in." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>This was one of the times when model IDs got mismatched during a build process. It was quite funny to see the player shooting out planes and bullets so I thought I would add it here.</p>
                 </div>
-                <img src="../SiteProjResources/InvasionOfLiberty/Gallery9.gif" alt="" />
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery9.webp" alt="This was one of the times when model IDs got mismatched during a build process. It was quite funny to see the player shooting out planes and bullets so I thought I would add it here." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>For the health display system, I decided to use custom 3D Heart models that rotated.</p>
                 </div>
-                <img src="../SiteProjResources/InvasionOfLiberty/IOLHearts.gif" alt="" />
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLHearts.webp" alt="For the health display system, I decided to use custom 3D Heart models that rotated." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>One of the earlier implementations of the main menu that I managed to make, which resulted in incorrect model IDs.</p>
                 </div>
-                <img src="../SiteProjResources/InvasionOfLiberty/Gallery10.gif" alt="" />
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery10.webp" alt="One of the earlier implementations of the main menu that I managed to make, which resulted in incorrect model IDs." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>Some gameplay of our game in Wave 1, where the player bravely fights off the oncoming enemies!</p>
                 </div>
-                <img src="../SiteProjResources/InvasionOfLiberty/IOLComplete.gif" alt="" />
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLComplete.webp" alt="Some gameplay of our game in Wave 1, where the player bravely fights off the oncoming enemies!" />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>Every entity model has a unique destroyed model that displays when wiped out.</p>
                 </div>
-                <img src="../SiteProjResources/InvasionOfLiberty/IOLDestroyedModels.gif" alt="" />
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLDestroyedModels.webp" alt="Every entity model has a unique destroyed model that displays when wiped out." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>A close-up of the minimap. The player is shown as a purple square and the enemies are red circles to contrast the planet below.</p>
                 </div>
-                <img src="../SiteProjResources/InvasionOfLiberty/IOLMinimap.gif">
+                <img alt="A close-up of the minimap. The player is shown as a purple square and the enemies are red circles to contrast the planet below." src="../SiteProjResources/InvasionOfLiberty/IOLMinimap.webp">
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>Using 3D models for the text I was able to display the player's score accurately each time it was updated.</p>
                 </div>
-                <img src="../SiteProjResources/InvasionOfLiberty/IOLScoreCounter.gif">
+                <img alt="Using 3D models for the text I was able to display the player's score accurately each time it was updated." src="../SiteProjResources/InvasionOfLiberty/IOLScoreCounter.webp">
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Main menu</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLMainMenu.webp" alt="Main menu" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Fullscreen view</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLFullScreen.webp" alt="Fullscreen view" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Greyscale shader</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLGreyscaleShader.webp" alt="Greyscale shader" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Greyscale effect applied</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLGreyscaled.webp" alt="Greyscale effect applied" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Score display with greyscale effect</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLScoreGreyscaledLongVers.webp" alt="Score display with greyscale effect" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Cheat mode</p>
+                </div>
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLCheatMode.webp" alt="Cheat mode" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLCompletedShowcased.webp" alt="" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <img src="../SiteProjResources/InvasionOfLiberty/IOLMilestone.webp" alt="" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery5.png" alt="" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery6.png" alt="" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <img src="../SiteProjResources/InvasionOfLiberty/Gallery8.png" alt="" loading="lazy" />
             </div>
         </div>
     </section>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
     <!--End of Gallery Section-->
     <!--Start of External Links-->
@@ -351,24 +366,9 @@
         </div>
     </section>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
     <!--End of External Links-->
-    <div class="footer-connect clickable">
-        <h2">Connect with me:</h2">
-        <br />
-        <a href="https://www.linkedin.com/in/kevinwall-gamedev/" target="_blank">
-            <img src="../SiteImages/linkedin-logo.png">
-        </a>
-        <a href="https://github.com/swift-kevin" target="_blank">
-            <img src="../SiteImages/github-mark-white.png" />
-            <!-- Removes that annoying little line next to anchor tags. -->
-            <style>
-                a {
-                    text-decoration: none;
-                }
-            </style>
-        </a>
-    </div>
+    <div id="site-footer"></div>
 </body>
 </html>

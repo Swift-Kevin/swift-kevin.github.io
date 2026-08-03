@@ -5,71 +5,35 @@
     <link rel="stylesheet" href="../Styles/styles.css" />
     <link rel="stylesheet" href="../Styles/projectPage.css" />
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png">
-    <title>Kevin W.</title>
+    <title>Kevin Wall — VR Capstone</title>
     <meta charset="utf-8">
     <meta name="description" content="Welcome to my personal portfolio!">
     <meta name="author" content="Kevin Wall">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../SiteJava/site.js" defer></script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L1BE83PB09"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-L1BE83PB09');
-</script>
 <body class="bdy">
-    <!--Top of Page button-->
-    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
-    <script>
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <script src="../SiteJava/Top.js"></script>
-    <!--End of Top Button-->
-    <!--Main Header-->
-    <div class="header">
-        <div class="header-title">
-            <header>
-                <a href="../SitePages/Homepage.html">
-                    Kevin Wall
-                </a>
-            </header>
-        </div>
-        <div class="header-buttons-container">
-            <a class="menu-buttons" href="../SitePages/Homepage.html">
-                <img src="../SiteImages/HomeIcon.png" title="Home" />
-                <span>Home</span>
-            </a>
-            <a class="menu-buttons" href="../SitePages/Homepage.html#Projects">
-                <img src="../SiteImages/ProjectsIcon.png" title="Projects" />
-                <span>Projects</span>
-            </a>
-            <a class="menu-buttons" href="../SitePages/Homepage.html#Resume">
-                <img src="../SiteImages/ResumeIcon.png" title="Résumé" />
-                <span>Résumé</span>
-            </a>
-        </div>
-    </div>
+    <div id="site-header"></div>
 
-    <!-- End Of Main Header-->
-    <div class="projtitle">
-        VR Capstone (Proof Of Concept)
-    </div>
-    <div class="projQL">
-        <div class="projQLTitle">Quick Links:</div>
-        <div class="projVidLink">
-            <a href="../SitePages/VRCapstone.html#Video">
-                Video
-            </a>
+    <div class="proj-header">
+        <div class="proj-header-text">
+            <h1 class="projtitle">VR Capstone (Proof Of Concept)</h1>
+            <div class="projQL">
+            <div class="projQLTitle">Quick Links:</div>
+            <div class="projVidLink">
+                <a href="../SitePages/VRCapstone.html#Video">
+                    Video
+                </a>
+            </div>
+            <div class="projGalleryLink">
+                <a href="../SitePages/VRCapstone.html#Gallery">
+                    Gallery
+                </a>
+            </div>
+            </div>
         </div>
-        <div class="projGalleryLink">
-            <a href="../SitePages/VRCapstone.html#Gallery">
-                Gallery
-            </a>
+        <div class="proj-header-media">
+                <img src="../SiteProjResources/CapstoneProject/SandboxLobbyV1.webp" alt="VR Dungeon Crawler gameplay" />
         </div>
     </div>
     <div class="grid-contributions">
@@ -98,7 +62,7 @@
         </div>
     </div>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
     <!-- Contributions Section Explained -->
     <div class="showcase-leftFaced">
@@ -117,7 +81,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/CapstoneProject/LANConnectionVR.gif" />
+            <img alt="Multiplayer Connectivity" class="projMedia" src="../SiteProjResources/CapstoneProject/LANConnectionVR.webp" />
         </div>
     </div>
     <div class="showcase-rightFaced">
@@ -136,7 +100,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/CapstoneProject/WorldSpaceUI.gif" />
+            <img alt="World Space UI" class="projMedia" src="../SiteProjResources/CapstoneProject/WorldSpaceUI.webp" />
         </div>
     </div>
     <div class="showcase-leftFaced">
@@ -155,7 +119,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/CapstoneProject/MainMenuScene.gif" />
+            <img alt="Main Menu" class="projMedia" src="../SiteProjResources/CapstoneProject/MainMenuScene.webp" />
         </div>
     </div>
     <div class="showcase-rightFaced">
@@ -174,7 +138,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/CapstoneProject/SandboxLobbyV1.gif" />
+            <img alt="Sandbox Lobby" class="projMedia" src="../SiteProjResources/CapstoneProject/SandboxLobbyV1.webp" />
         </div>
     </div>
     <div class="showcase-leftFaced">
@@ -193,7 +157,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/CapstoneProject/UIVRSlider.png" />
+            <img alt="Custom UI Prefabs" class="projMedia" src="../SiteProjResources/CapstoneProject/UIVRSlider.png" />
         </div>
     </div>
     <div class="showcase-rightFaced">
@@ -212,11 +176,11 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/CapstoneProject/TargetDummy.gif" />
+            <img alt="Target Enemy UI" class="projMedia" src="../SiteProjResources/CapstoneProject/TargetDummy.webp" />
         </div>
     </div>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
     <!-- Contributions Section Ended -->
     <!-- Screenshots Area -->
@@ -226,49 +190,67 @@
                 <div class="gallery-layer">
                     <p>Tom's Collide and Slide Code in action!</p>
                 </div>
-                <img src="../SiteProjResources/CapstoneProject/Gallery_Tom_CollideAndSlide.gif">
+                <img alt="Tom's Collide and Slide Code in action!" src="../SiteProjResources/CapstoneProject/Gallery_Tom_CollideAndSlide.webp">
             </div>
 
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>Tom's player model starting out with VR!</p>
                 </div>
-                <img src="../SiteProjResources/CapstoneProject/Gallery_Tom_InitialPlayerModel.png">
+                <img alt="Tom's player model starting out with VR!" src="../SiteProjResources/CapstoneProject/Gallery_Tom_InitialPlayerModel.png">
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>Zach's initial Procedural Generation for the dungeon!</p>
                 </div>
-                <img src="../SiteProjResources/CapstoneProject/Gallery_Zach_ProceduralGeneration.gif">
+                <img alt="Zach's initial Procedural Generation for the dungeon!" src="../SiteProjResources/CapstoneProject/Gallery_Zach_ProceduralGeneration.webp">
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>Tom fixing arm rotations! - Fig. A</p>
                 </div>
-                <img src="../SiteProjResources/CapstoneProject/Gallery_Tom_FixedArmsRotationsA.png">
+                <img alt="Tom fixing arm rotations! - Fig. A" src="../SiteProjResources/CapstoneProject/Gallery_Tom_FixedArmsRotationsA.png">
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>Zach's Procedural Generation update - room connections!</p>
                 </div>
-                <img src="../SiteProjResources/CapstoneProject/Gallery_Zach_ProcGenRoomMeshing.png">
+                <img alt="Zach's Procedural Generation update - room connections!" src="../SiteProjResources/CapstoneProject/Gallery_Zach_ProcGenRoomMeshing.png">
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>Tom fixing arm rotations! - Fig. B</p>
                 </div>
-                <img src="../SiteProjResources/CapstoneProject/Gallery_Tom_FixedArmsRotationsB.png">
+                <img alt="Tom fixing arm rotations! - Fig. B" src="../SiteProjResources/CapstoneProject/Gallery_Tom_FixedArmsRotationsB.png">
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>Zach's Procedural Generation update - room meshing!</p>
                 </div>
-                <img src="../SiteProjResources/CapstoneProject/Gallery_Zach_ProceduralGenerationRoomMeshing.gif">
+                <img alt="Zach's Procedural Generation update - room meshing!" src="../SiteProjResources/CapstoneProject/Gallery_Zach_ProceduralGenerationRoomMeshing.webp">
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Player UI</p>
+                </div>
+                <img src="../SiteProjResources/CapstoneProject/PlayerUI.webp" alt="Player UI" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Modular options menu UI</p>
+                </div>
+                <img src="../SiteProjResources/CapstoneProject/OptionsMenuModularUI.webp" alt="Modular options menu UI" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Whiteboard planning example</p>
+                </div>
+                <img src="../SiteProjResources/CapstoneProject/Gallery_Tom_WhiteboardExample.jpg" alt="Whiteboard planning example" loading="lazy" />
             </div>
         </div>
     </section>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
     <!--End of Gallery Section-->
     <!--Start of External Links-->
@@ -280,24 +262,9 @@
         </div>
     </section>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
     <!--End of External Links-->
-    <div class="footer-connect clickable">
-        <h2">Connect with me:</h2">
-        <br />
-        <a href="https://www.linkedin.com/in/kevinwall-gamedev/" target="_blank">
-            <img src="../SiteImages/linkedin-logo.png">
-        </a>
-        <a href="https://github.com/swift-kevin" target="_blank">
-            <img src="../SiteImages/github-mark-white.png" />
-            <!-- Removes that annoying little line next to anchor tags. -->
-            <style>
-                a {
-                    text-decoration: none;
-                }
-            </style>
-        </a>
-    </div>
+    <div id="site-footer"></div>
 </body>
 </html>

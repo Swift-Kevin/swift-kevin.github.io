@@ -5,71 +5,35 @@
     <link rel="stylesheet" href="../Styles/styles.css" />
     <link rel="stylesheet" href="../Styles/projectPage.css" />
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png">
-    <title>Kevin W.</title>
+    <title>Kevin Wall — Psychic Protocol</title>
     <meta charset="utf-8">
     <meta name="description" content="Welcome to my personal portfolio!">
     <meta name="author" content="Kevin Wall">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../SiteJava/site.js" defer></script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L1BE83PB09"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-L1BE83PB09');
-</script>
 <body class="bdy">
-    <!--Top of Page button-->
-    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
-    <script>
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <script src="../SiteJava/Top.js"></script>
-    <!--End of Top Button-->
-    <!--Main Header-->
-    <div class="header">
-        <div class="header-title">
-            <header>
-                <a href="../SitePages/Homepage.html">
-                    Kevin Wall
-                </a>
-            </header>
-        </div>
-        <div class="header-buttons-container">
-            <a class="menu-buttons" href="../SitePages/Homepage.html">
-                <img src="../SiteImages/HomeIcon.png" title="Home" />
-                <span>Home</span>
-            </a>
-            <a class="menu-buttons" href="../SitePages/Homepage.html#Projects">
-                <img src="../SiteImages/ProjectsIcon.png" title="Projects" />
-                <span>Projects</span>
-            </a>
-            <a class="menu-buttons" href="../SitePages/Homepage.html#Resume">
-                <img src="../SiteImages/ResumeIcon.png" title="Résumé" />
-                <span>Résumé</span>
-            </a>
-        </div>
-    </div>
+    <div id="site-header"></div>
 
-    <!-- End Of Main Header-->
-    <div class="projtitle">
-        Psychic Protocol
-    </div>
-    <div class="projQL">
-        <div class="projQLTitle">Quick Links:</div>
-        <div class="projVidLink">
-            <a href="../SitePages/PsychicProtocol.html#Video">
-                Video
-            </a>
+    <div class="proj-header">
+        <div class="proj-header-text">
+            <h1 class="projtitle">Psychic Protocol</h1>
+            <div class="projQL">
+            <div class="projQLTitle">Quick Links:</div>
+            <div class="projVidLink">
+                <a href="../SitePages/PsychicProtocol.html#Video">
+                    Video
+                </a>
+            </div>
+            <div class="projGalleryLink">
+                <a href="../SitePages/PsychicProtocol.html#Gallery">
+                    Gallery
+                </a>
+            </div>
+            </div>
         </div>
-        <div class="projGalleryLink">
-            <a href="../SitePages/PsychicProtocol.html#Gallery">
-                Gallery
-            </a>
+        <div class="proj-header-media">
+                <img src="../SiteProjResources/PsychicProtocol/PsyProTurretBoxPuzzle.webp" alt="Psychic Protocol gameplay" />
         </div>
     </div>
     <div class="grid-contributions">
@@ -101,7 +65,7 @@
         </div>
     </div>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
     <div class="showcase-leftFaced">
         <div class="showcase-mainText">
@@ -117,7 +81,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsychicProtocolUIInputChange.gif" />
+            <img alt="User Interface (UI)" class="projMedia" src="../SiteProjResources/PsychicProtocol/PsychicProtocolUIInputChange.webp" />
         </div>
     </div>
     <div class="showcase-rightFaced">
@@ -136,7 +100,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsychicProtocol_GIF_RadialWheel.gif" />
+            <img alt="Radial Wheel" class="projMedia" src="../SiteProjResources/PsychicProtocol/PsychicProtocol_GIF_RadialWheel.webp" />
         </div>
     </div>
     <div class="showcase-leftFaced">
@@ -153,7 +117,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProCredits.gif" />
+            <img alt="Displaying Credits" class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProCredits.webp" />
         </div>
     </div>
     <div class="showcase-rightFaced">
@@ -170,7 +134,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProMainMenu.gif" />
+            <img alt="The Main Menu" class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProMainMenu.webp" />
         </div>
     </div>
     <div class="showcase-leftFaced">
@@ -185,7 +149,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProCheckpoint.gif" />
+            <img alt="Checkpoint Notifications" class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProCheckpoint.webp" />
         </div>
     </div>
     <div class="showcase-rightFaced">
@@ -202,7 +166,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProScriptableObject.png" />
+            <img alt="Player Settings" class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProScriptableObject.png" />
         </div>
     </div>
     <div class="showcase-leftFaced">
@@ -219,7 +183,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProMuffling.png" />
+            <img alt="Audio Implementation" class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProMuffling.png" />
         </div>
     </div>
     <div class="showcase-rightFaced">
@@ -236,7 +200,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsychicProtocol_ReticleHover.png" />
+            <img alt="Reticle" class="projMedia" src="../SiteProjResources/PsychicProtocol/PsychicProtocol_ReticleHover.png" />
         </div>
     </div>
     <div class="showcase-leftFaced">
@@ -253,7 +217,7 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsychicProtocol_GIF_HitIndication.gif" />
+            <img alt="Directional Hit Indications" class="projMedia" src="../SiteProjResources/PsychicProtocol/PsychicProtocol_GIF_HitIndication.webp" />
         </div>
     </div>
     <div class="showcase-rightFaced">
@@ -270,11 +234,11 @@
             </div>
         </div>
         <div class="showcase-media">
-            <img class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProFadeOut.png" />
+            <img alt="Elevators and Scene Transitions" class="projMedia" src="../SiteProjResources/PsychicProtocol/PsyProFadeOut.png" />
         </div>
     </div>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
     <section id="Gallery">
         <div class="gallery-wrapper">
@@ -282,72 +246,132 @@
                 <div class="gallery-layer">
                     <p>Controller support being shown in active world space UI.</p>
                 </div>
-                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocolSwappingInputs.gif" alt="" />
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocolSwappingInputs.webp" alt="Controller support being shown in active world space UI." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>The main menu of our game! I loved working on this part of the project.</p>
                 </div>
-                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol1.png" alt="" />
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol1.png" alt="The main menu of our game! I loved working on this part of the project." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>The player's death screen that they encounter when they die. The animations show a loading in effect.</p>
                 </div>
-                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol11.png" alt="" />
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol11.png" alt="The player's death screen that they encounter when they die. The animations show a loading in effect." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>The settings menu in Psychic Protocol where players can customize their game settings.</p>
                 </div>
-                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol3.png" alt="" />
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol3.png" alt="The settings menu in Psychic Protocol where players can customize their game settings." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>The fully custom radial wheel in action! Each ability is unlocked after obtaining the orb for it.</p>
                 </div>
-                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol_GIF_RadialWheel.gif" alt="" />
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol_GIF_RadialWheel.webp" alt="The fully custom radial wheel in action! Each ability is unlocked after obtaining the orb for it." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>One of the puzzles that a player can encounter, this puzzle is found near the start where they are getting used to telekinesis and it's applications.</p>
                 </div>
-                <img src="../SiteProjResources/PsychicProtocol/PsyProBoxPuzzle.gif" alt="" />
+                <img src="../SiteProjResources/PsychicProtocol/PsyProBoxPuzzle.webp" alt="One of the puzzles that a player can encounter, this puzzle is found near the start where they are getting used to telekinesis and it's applications." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>The player unlocking the Telekinesis ability and the UI accompanying it letting the player know the abilities name.</p>
                 </div>
-                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol5.png" alt="" />
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol5.png" alt="The player unlocking the Telekinesis ability and the UI accompanying it letting the player know the abilities name." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>A key terminal found within Psychic Protocol. The player can find keys to progress further with these terminals.</p>
                 </div>
-                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol8.png" alt="" />
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol8.png" alt="A key terminal found within Psychic Protocol. The player can find keys to progress further with these terminals." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>Another type of room where the player needs to place boxes on pressure plates using Telekinesis in order to progress.</p>
                 </div>
-                <img src="../SiteProjResources/PsychicProtocol/PsyProTurretBoxPuzzle.gif" alt="" />
+                <img src="../SiteProjResources/PsychicProtocol/PsyProTurretBoxPuzzle.webp" alt="Another type of room where the player needs to place boxes on pressure plates using Telekinesis in order to progress." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>The status bars that help indicate player health, shield, mana, and current ability. When the player gets hit they see how the hit affected them with the deteoration bar.</p>
                 </div>
-                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol_GIF_StatBars.gif" alt="" />
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol_GIF_StatBars.webp" alt="The status bars that help indicate player health, shield, mana, and current ability. When the player gets hit they see how the hit affected them with the deteoration bar." />
             </div>
             <div class="gallery-media">
                 <div class="gallery-layer">
                     <p>The hit indications on the UI can provide information to the player if they are out of shields and about incoming attacks.</p>
                 </div>
-                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol10.png" alt="" />
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol10.png" alt="The hit indications on the UI can provide information to the player if they are out of shields and about incoming attacks." />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Radial wheel</p>
+                </div>
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol_RadialWheel.png" alt="Radial wheel" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Radial wheel in use</p>
+                </div>
+                <img src="../SiteProjResources/PsychicProtocol/PsyProRadialWheel.webp" alt="Radial wheel in use" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Reticle</p>
+                </div>
+                <img src="../SiteProjResources/PsychicProtocol/PsyProReticle.webp" alt="Reticle" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>UI states</p>
+                </div>
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol_UIStates.png" alt="UI states" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Damage fade indicator</p>
+                </div>
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol_DamageFadeIndicator.png" alt="Damage fade indicator" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Flash damage effect</p>
+                </div>
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol_FlashDamage.png" alt="Flash damage effect" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <div class="gallery-layer">
+                    <p>Music tracks</p>
+                </div>
+                <img src="../SiteProjResources/PsychicProtocol/PsyProMusicTracks.png" alt="Music tracks" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol2.png" alt="" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol4.png" alt="" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol6.png" alt="" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol7.png" alt="" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol9.png" alt="" loading="lazy" />
+            </div>
+            <div class="gallery-media">
+                <img src="../SiteProjResources/PsychicProtocol/PsychicProtocol12.png" alt="" loading="lazy" />
             </div>
         </div>
     </section>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
     <!--End of Gallery Section-->
     <!--Start of External Links-->
@@ -357,24 +381,9 @@
         </div>
     </section>
     <div>
-        <img class="spacer-hori" src="../SiteImages/seperatorline.png" />
+        <hr class="spacer-hori" />
     </div>
     <!--End of External Links-->
-    <div class="footer-connect clickable">
-        <h2">Connect with me:</h2">
-        <br />
-        <a href="https://www.linkedin.com/in/kevinwall-gamedev/" target="_blank">
-            <img src="../SiteImages/linkedin-logo.png">
-        </a>
-        <a href="https://github.com/swift-kevin" target="_blank">
-            <img src="../SiteImages/github-mark-white.png" />
-            <!-- Removes that annoying little line next to anchor tags. -->
-            <style>
-                a {
-                    text-decoration: none;
-                }
-            </style>
-        </a>
-    </div>
+    <div id="site-footer"></div>
 </body>
 </html>
