@@ -5,72 +5,68 @@
     <link rel="stylesheet" href="../Styles/styles.css" />
     <link rel="stylesheet" href="../Styles/projectPage.css" />
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png">
-    <title>Kevin Wall — VR Capstone</title>
+    <title>Kevin Wall</title>
     <meta charset="utf-8">
     <meta name="description" content="Welcome to my personal portfolio!">
     <meta name="author" content="Kevin Wall">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="../SiteJava/site.js" defer></script>
 </head>
-<body class="bdy">
-    <div id="site-header"></div>
+<body class="pageBody">
+    <div id="siteHeaderSlot"></div>
 
-    <div class="proj-header">
-        <div class="proj-header-text">
-            <h1 class="projtitle">VR Capstone (Proof Of Concept)</h1>
-            <div class="projQL">
-            <div class="projQLTitle">Quick Links:</div>
-            <div class="projVidLink">
-                <a href="../SitePages/VRCapstone.html#Video">
+    <div class="projectHeader">
+        <div class="projectHeaderText">
+            <h1 class="projectTitle">VR Capstone (Proof Of Concept)</h1>
+            <div class="projectQuickLinks">
+            <div class="projectQuickLinksLabel">Quick Links:</div>
+            <div class="projectVideoLink">
+                <a href="../SitePages/VRCapstone.html#videoSection">
                     Video
                 </a>
             </div>
-            <div class="projGalleryLink">
-                <a href="../SitePages/VRCapstone.html#Gallery">
+            <div class="projectGalleryLink">
+                <a href="../SitePages/VRCapstone.html#gallerySection">
                     Gallery
                 </a>
             </div>
             </div>
+            <div class="projectMetaList">
+                <div><span>Role</span>UI / Networking / Generalist Programmer</div>
+                <div><span>Team Size</span>4</div>
+                <div><span>Development Time</span>4 month</div>
+            </div>
         </div>
-        <div class="proj-header-media">
+        <div class="projectHeaderMedia">
                 <img src="../SiteProjResources/CapstoneProject/SandboxLobbyV1.webp" alt="VR Dungeon Crawler gameplay" />
         </div>
     </div>
-    <div class="grid-contributions">
-        <div class="grid-roleTitle">
+    <div class="contributionsGrid">
+        <div class="contributionsHeading">
             <h3>Contributions</h3>
         </div>
-        <div class="grid-contributedLeft">
+        <div class="contributionsColumnLeft">
             <span> Multiplayer Connectivity </span>
             <span> Main Menu Scene </span>
             <span> VR UI Sliders </span>
             <span> Enemy UI </span>
         </div>
-        <div class="grid-contributedRight">
+        <div class="contributionsColumnRight">
             <span> World Space UI </span>
             <span> Sandbox Lobby Scene </span>
             <span> In-Game Debugging Console </span>
         </div>
-        <div class="grid-role">
-            <p> <span> Team Role: </span> UI / Networking / Generalist Programmer </p>
-        </div>
-        <div class="grid-teamsize">
-            <p> <span> Team Size: </span> 4</p>
-        </div>
-        <div class="grid-timespan">
-            <p> <span> Development Time: </span> 4 month </p>
-        </div>
     </div>
     <div>
-        <hr class="spacer-hori" />
+        <hr class="sectionDivider" />
     </div>
     <!-- Contributions Section Explained -->
-    <div class="showcase-leftFaced">
-        <div class="showcase-mainText">
-            <div class="showcase-textTitle">
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading">
                 Multiplayer Connectivity
             </div>
-            <div class="showcase-textBody">
+            <div class="showcaseBody">
                 <ul>
                     <li> Hosting lobbies and connecting clients with Unity's Netcode for Game Objects, Unity Lobby, and Unity Relay services. </li>
                     &nbsp;
@@ -80,16 +76,16 @@
                 </ul>
             </div>
         </div>
-        <div class="showcase-media">
-            <img alt="Multiplayer Connectivity" class="projMedia" src="../SiteProjResources/CapstoneProject/LANConnectionVR.webp" />
+        <div class="showcaseMediaColumn">
+            <img alt="Multiplayer Connectivity" class="projectMedia" src="../SiteProjResources/CapstoneProject/LANConnectionVR.webp" />
         </div>
     </div>
-    <div class="showcase-rightFaced">
-        <div class="showcase-mainText">
-            <div class="showcase-textTitle">
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading">
                 World Space UI
             </div>
-            <div class="showcase-textBody">
+            <div class="showcaseBody">
                 <ul>
                     <li> Created many world space menus like our Multiplayer Connections, Options Menu, and Dungeon Generator. </li>
                     &nbsp;
@@ -99,16 +95,16 @@
                 </ul>
             </div>
         </div>
-        <div class="showcase-media">
-            <img alt="World Space UI" class="projMedia" src="../SiteProjResources/CapstoneProject/WorldSpaceUI.webp" />
+        <div class="showcaseMediaColumn">
+            <img alt="World Space UI" class="projectMedia" src="../SiteProjResources/CapstoneProject/WorldSpaceUI.webp" />
         </div>
     </div>
-    <div class="showcase-leftFaced">
-        <div class="showcase-mainText">
-            <div class="showcase-textTitle">
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading">
                 Main Menu
             </div>
-            <div class="showcase-textBody">
+            <div class="showcaseBody">
                 <ul>
                     <li> The main point for players to choose Singleplayer or Multiplayer. </li>
                     &nbsp;
@@ -118,16 +114,16 @@
                 </ul>
             </div>
         </div>
-        <div class="showcase-media">
-            <img alt="Main Menu" class="projMedia" src="../SiteProjResources/CapstoneProject/MainMenuScene.webp" />
+        <div class="showcaseMediaColumn">
+            <img alt="Main Menu" class="projectMedia" src="../SiteProjResources/CapstoneProject/MainMenuScene.webp" />
         </div>
     </div>
-    <div class="showcase-rightFaced">
-        <div class="showcase-mainText">
-            <div class="showcase-textTitle">
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading">
                 Sandbox Lobby
             </div>
-            <div class="showcase-textBody">
+            <div class="showcaseBody">
                 <ul>
                     <li> The main area where players can join/host lobbies, start their dungeon runs, and find a tutorial area to help introduce them to the game. </li>
                     &nbsp;
@@ -137,16 +133,16 @@
                 </ul>
             </div>
         </div>
-        <div class="showcase-media">
-            <img alt="Sandbox Lobby" class="projMedia" src="../SiteProjResources/CapstoneProject/SandboxLobbyV1.webp" />
+        <div class="showcaseMediaColumn">
+            <img alt="Sandbox Lobby" class="projectMedia" src="../SiteProjResources/CapstoneProject/SandboxLobbyV1.webp" />
         </div>
     </div>
-    <div class="showcase-leftFaced">
-        <div class="showcase-mainText">
-            <div class="showcase-textTitle">
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading">
                 Custom UI Prefabs
             </div>
-            <div class="showcase-textBody">
+            <div class="showcaseBody">
                 <ul>
                     <li> Created a VR UI "Slider" that can be implemented for any values we need players to increase or decrease (ex. volume settings, resistance values). </li>
                     &nbsp;
@@ -156,16 +152,16 @@
                 </ul>
             </div>
         </div>
-        <div class="showcase-media">
-            <img alt="Custom UI Prefabs" class="projMedia" src="../SiteProjResources/CapstoneProject/UIVRSlider.png" />
+        <div class="showcaseMediaColumn">
+            <img alt="Custom UI Prefabs" class="projectMedia" src="../SiteProjResources/CapstoneProject/UIVRSlider.png" />
         </div>
     </div>
-    <div class="showcase-rightFaced">
-        <div class="showcase-mainText">
-            <div class="showcase-textTitle">
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading">
                 Target Enemy UI
             </div>
-            <div class="showcase-textBody">
+            <div class="showcaseBody">
                 <ul>
                     <li> Sliders for changing resistance values using my UI VR Sliders. </li>
                     &nbsp;
@@ -175,74 +171,74 @@
                 </ul>
             </div>
         </div>
-        <div class="showcase-media">
-            <img alt="Target Enemy UI" class="projMedia" src="../SiteProjResources/CapstoneProject/TargetDummy.webp" />
+        <div class="showcaseMediaColumn">
+            <img alt="Target Enemy UI" class="projectMedia" src="../SiteProjResources/CapstoneProject/TargetDummy.webp" />
         </div>
     </div>
     <div>
-        <hr class="spacer-hori" />
+        <hr class="sectionDivider" />
     </div>
     <!-- Contributions Section Ended -->
     <!-- Screenshots Area -->
-    <section id="Gallery">
-        <div class="gallery-wrapper">
-            <div class="gallery-media">
-                <div class="gallery-layer">
+    <section id="gallerySection">
+        <div class="galleryGrid">
+            <div class="galleryItem">
+                <div class="galleryCaption">
                     <p>Tom's Collide and Slide Code in action!</p>
                 </div>
                 <img alt="Tom's Collide and Slide Code in action!" src="../SiteProjResources/CapstoneProject/Gallery_Tom_CollideAndSlide.webp">
             </div>
 
-            <div class="gallery-media">
-                <div class="gallery-layer">
+            <div class="galleryItem">
+                <div class="galleryCaption">
                     <p>Tom's player model starting out with VR!</p>
                 </div>
                 <img alt="Tom's player model starting out with VR!" src="../SiteProjResources/CapstoneProject/Gallery_Tom_InitialPlayerModel.png">
             </div>
-            <div class="gallery-media">
-                <div class="gallery-layer">
+            <div class="galleryItem">
+                <div class="galleryCaption">
                     <p>Zach's initial Procedural Generation for the dungeon!</p>
                 </div>
                 <img alt="Zach's initial Procedural Generation for the dungeon!" src="../SiteProjResources/CapstoneProject/Gallery_Zach_ProceduralGeneration.webp">
             </div>
-            <div class="gallery-media">
-                <div class="gallery-layer">
+            <div class="galleryItem">
+                <div class="galleryCaption">
                     <p>Tom fixing arm rotations! - Fig. A</p>
                 </div>
                 <img alt="Tom fixing arm rotations! - Fig. A" src="../SiteProjResources/CapstoneProject/Gallery_Tom_FixedArmsRotationsA.png">
             </div>
-            <div class="gallery-media">
-                <div class="gallery-layer">
+            <div class="galleryItem">
+                <div class="galleryCaption">
                     <p>Zach's Procedural Generation update - room connections!</p>
                 </div>
                 <img alt="Zach's Procedural Generation update - room connections!" src="../SiteProjResources/CapstoneProject/Gallery_Zach_ProcGenRoomMeshing.png">
             </div>
-            <div class="gallery-media">
-                <div class="gallery-layer">
+            <div class="galleryItem">
+                <div class="galleryCaption">
                     <p>Tom fixing arm rotations! - Fig. B</p>
                 </div>
                 <img alt="Tom fixing arm rotations! - Fig. B" src="../SiteProjResources/CapstoneProject/Gallery_Tom_FixedArmsRotationsB.png">
             </div>
-            <div class="gallery-media">
-                <div class="gallery-layer">
+            <div class="galleryItem">
+                <div class="galleryCaption">
                     <p>Zach's Procedural Generation update - room meshing!</p>
                 </div>
                 <img alt="Zach's Procedural Generation update - room meshing!" src="../SiteProjResources/CapstoneProject/Gallery_Zach_ProceduralGenerationRoomMeshing.webp">
             </div>
-            <div class="gallery-media">
-                <div class="gallery-layer">
+            <div class="galleryItem">
+                <div class="galleryCaption">
                     <p>Player UI</p>
                 </div>
                 <img src="../SiteProjResources/CapstoneProject/PlayerUI.webp" alt="Player UI" loading="lazy" />
             </div>
-            <div class="gallery-media">
-                <div class="gallery-layer">
+            <div class="galleryItem">
+                <div class="galleryCaption">
                     <p>Modular options menu UI</p>
                 </div>
                 <img src="../SiteProjResources/CapstoneProject/OptionsMenuModularUI.webp" alt="Modular options menu UI" loading="lazy" />
             </div>
-            <div class="gallery-media">
-                <div class="gallery-layer">
+            <div class="galleryItem">
+                <div class="galleryCaption">
                     <p>Whiteboard planning example</p>
                 </div>
                 <img src="../SiteProjResources/CapstoneProject/Gallery_Tom_WhiteboardExample.jpg" alt="Whiteboard planning example" loading="lazy" />
@@ -250,21 +246,18 @@
         </div>
     </section>
     <div>
-        <hr class="spacer-hori" />
+        <hr class="sectionDivider" />
     </div>
     <!--End of Gallery Section-->
     <!--Start of External Links-->
-    <section id="Video">
-        <div class="ytEmbed">
+    <section id="videoSection">
+        <div class="videoEmbed">
             <video controls>
                 <source src="../SiteProjResources/CapstoneProject/EndOfProjectVideo.mp4" type="video/mp4">
             </video>
         </div>
     </section>
-    <div>
-        <hr class="spacer-hori" />
-    </div>
     <!--End of External Links-->
-    <div id="site-footer"></div>
+    <div id="siteFooterSlot"></div>
 </body>
 </html>

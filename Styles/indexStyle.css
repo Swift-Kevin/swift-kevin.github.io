@@ -1,42 +1,91 @@
+:root {
+    --splashBg: #0f0f10;
+    --splashText: #f5f5f4;
+    --splashLine: #2c2c31;
+    --splashAccent: #e67e22;
+    --splashMono: Consolas, ui-monospace, monospace;
+    --splashHold: 0.55s;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #111;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
     margin: 0;
-    color: white;
-    font-family: Garamond;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--splashBg);
+    color: var(--splashText);
+    font-family: var(--splashMono);
     overflow: hidden;
 }
 
-.container {
-    text-align: center;
-    border: solid white 0.125rem;
-    padding: 5% 10%;
+.splashPanel {
+    display: grid;
+    justify-items: center;
+    gap: clamp(0.9rem, 2vw, 1.4rem);
+    animation: splashRise 0.22s ease-out both;
 }
 
-.big-text {
-    font-size: 10vw;
-    line-height: 1.5;
-    margin-bottom: 0.75rem;
+.splashInitials {
+    font-size: clamp(3.5rem, 13vw, 8rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.18em;
+    text-indent: 0.18em;
 }
 
-.small-text {
-    font-size: 2.5vw;
-    line-height: 1.5;
+.splashProgress {
+    width: clamp(7rem, 24vw, 13rem);
+    height: 0.125rem;
+    background: var(--splashLine);
+    overflow: hidden;
 }
 
-@media (max-width: 1023px) {
-    .big-text {
-        font-size: 15vw;
-        line-height: 1.5;
-        margin-bottom: 0.75rem;
+    .splashProgress::after {
+        content: "";
+        display: block;
+        height: 100%;
+        background: var(--splashAccent);
+        animation: splashWipe var(--splashHold) linear both;
     }
 
-    .small-text {
-        font-size: 7.5vw;
-        line-height: 1.5;
+.splashFallback {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 0.85rem;
+}
+
+@keyframes splashRise {
+    from {
+        opacity: 0;
+        transform: translateY(0.5rem);
     }
 
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes splashWipe {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .splashPanel {
+        animation: none;
+    }
+
+    .splashProgress::after {
+        animation-duration: 0.01s;
+    }
 }

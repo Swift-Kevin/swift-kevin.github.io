@@ -4,19 +4,21 @@
     <link rel="stylesheet" href="Styles/indexStyle.css" />
     <link rel="icon" type="image/png" href="SiteImages/tabicon.png" />
     <script src="./SiteJava/IndexJS.js" defer></script>
-    <title>Kevin Wall — Game Developer</title>
+    <title>Kevin Wall</title>
     <meta charset="utf-8">
-    <meta name="description" content="My personal portfolio of work that I have had the pleasure of being apart of!">
+    <meta name="description" content="My personal portfolio of different projects and jobs I have been on!">
     <meta name="author" content="Kevin Wall">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Relative so it works locally and when deployed. Uncomment to re-enable the redirect. -->
-    <!-- <meta http-equiv="refresh" content="0.5; url=SitePages/Homepage.html"> -->
+    <link rel="prefetch" href="SitePages/Homepage.html" />
+    <link rel="prefetch" href="Styles/styles.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="big-text">K W</div>
-        <div class="small-text">Loading Creativity</div>
-        <div class="small-text" id="loadingDots">. </div>
+    <div class="splashPanel">
+        <div class="splashInitials">KW</div>
+        <div class="splashProgress"></div>
     </div>
+    <noscript>
+        <p class="splashFallback"><a href="SitePages/Homepage.html">Continue to the portfolio</a></p>
+    </noscript>
 </body>
 </html>

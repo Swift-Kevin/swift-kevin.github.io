@@ -1,4 +1,4 @@
-.proj-header {
+.projectHeader {
     display: grid;
     grid-template-columns: 1.7fr 1fr;
     gap: clamp(1.5rem, 4vw, 3rem);
@@ -8,10 +8,10 @@
     padding: var(--gap) var(--pad);
 }
 
-.projtitle {
+.projectTitle {
     margin: 0;
     font-family: var(--font-display);
-    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-size: var(--fs-hero);
     font-weight: var(--title-weight);
     letter-spacing: var(--title-spacing);
     line-height: 1.05;
@@ -19,27 +19,16 @@
     text-align: left;
 }
 
-.proj-tag {
-    display: inline-block;
-    margin-bottom: 0.8rem;
-    padding: 0.15rem 0.5rem;
-    font-family: var(--font-ui);
-    font-size: 0.68rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--accentSoft);
-    background: var(--surface2);
-    border: var(--border-w) solid var(--accentSoft);
-    border-radius: var(--radius);
+.projectHeader.noMedia {
+    grid-template-columns: 1fr;
 }
 
-.proj-body {
-    max-width: var(--maxw);
-    margin: 0 auto var(--gap);
-    padding: 0 var(--pad);
-}
+    .projectHeaderText .projectTagList {
+        margin-top: 1.4rem;
+    }
 
-.proj-header-media img {
+
+.projectHeaderMedia img {
     display: block;
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -48,126 +37,115 @@
     border-radius: var(--radius);
 }
 
-.projQL {
+.projectQuickLinks {
     margin: 1.4rem 0 0;
     display: flex;
     align-items: center;
     gap: 0.6rem;
     flex-wrap: wrap;
     font-family: var(--font-ui);
-    font-size: 1.05rem;
+    font-size: var(--fs-base);
 }
 
-.projQLTitle {
+.projectQuickLinksLabel {
     color: var(--muted);
     text-transform: uppercase;
     letter-spacing: 0.14em;
-    font-size: 0.9rem;
+    font-size: var(--fs-sm);
     margin-right: 0.5rem;
 }
 
-.projVidLink a,
-.projGalleryLink a {
+.projectVideoLink a,
+.projectGalleryLink a,
+.projectRepoLink a {
     display: inline-block;
     padding: 0.7rem 1.5rem;
-    color: var(--accent2);
+    color: var(--accent);
     border: var(--border-w) solid var(--line);
     border-radius: var(--radius);
     transition: background 0.15s, border-color 0.15s;
 }
 
-    .projVidLink a:hover,
-    .projGalleryLink a:hover {
+    .projectVideoLink a:hover,
+    .projectGalleryLink a:hover,
+    .projectRepoLink a:hover {
         background: var(--surface2);
         border-color: var(--accent);
     }
 
-.grid-contributions {
-    max-width: var(--maxw);
-    margin: 0 auto var(--gap);
-    padding: 0 var(--pad);
+.projectMetaList {
     display: grid;
-    grid-template-areas:
-        'roleTitle roleTitle roleTitle roleTitle roleTitle roleTitle'
-        'roleSec1 roleSec1 roleSec1 roleSec2 roleSec2 roleSec2'
-        'projRole projRole projSize projSize projTime projTime';
-    grid-template-columns: repeat(6, 1fr);
-    gap: 1.25rem 2rem;
+    gap: 0.3rem;
+    margin-top: 1.5rem;
+    font-family: var(--font-ui);
+    font-size: var(--fs-base);
     color: var(--text);
 }
 
-    .grid-contributions p {
+    .projectMetaList span {
+        margin-right: 0.5rem;
+        color: var(--muted);
+    }
+
+        .projectMetaList span::after {
+            content: ":";
+        }
+
+.contributionsGrid {
+    max-width: var(--maxw);
+    margin: 0 0 var(--gap);
+    padding: 0 var(--pad);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2rem;
+    color: var(--text);
+}
+
+    .contributionsGrid p {
         margin: 0;
     }
 
-    .grid-contributions span {
+    .contributionsGrid span {
         display: block;
+        position: relative;
+        padding: 0.45rem 0 0.45rem 1.3rem;
         color: var(--muted);
-        font-size: 0.93rem;
-        line-height: 1.7;
+        font-size: var(--fs-base);
+        line-height: 1.6;
+        text-align: left;
     }
 
-.grid-roleTitle {
-    grid-area: roleTitle;
+        .contributionsGrid span::before {
+            content: "\25B8";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+.contributionsHeading {
+    grid-column: 1 / -1;
+    margin-bottom: 0.6rem;
     border-bottom: var(--border-w) solid var(--accent);
     padding-bottom: 0.5rem;
 }
 
-    .grid-roleTitle h3 {
+    .contributionsHeading h3 {
+        margin: 0;
         font-family: var(--font-display);
-        font-size: clamp(1.2rem, 2.4vw, 1.7rem);
+        font-size: var(--fs-title);
         font-weight: var(--title-weight);
         letter-spacing: var(--title-spacing);
-        margin: 0;
         color: var(--text);
     }
 
-.grid-contributedLeft {
-    grid-area: roleSec1;
-    text-align: center;
+.contributionsColumnLeft,
+.contributionsColumnRight {
+    display: contents;
 }
 
-.grid-contributedRight {
-    grid-area: roleSec2;
-    text-align: center;
-}
-
-.grid-role {
-    grid-area: projRole;
-}
-
-.grid-teamsize {
-    grid-area: projSize;
-}
-
-.grid-timespan {
-    grid-area: projTime;
-}
-
-.grid-role,
-.grid-teamsize,
-.grid-timespan {
-    font-family: var(--font-ui);
-    font-size: 0.85rem;
-    color: var(--muted);
-    border-top: var(--border-w) solid var(--line);
-    padding-top: 0.9rem;
-    text-align: center;
-}
-
-    .grid-role span,
-    .grid-teamsize span,
-    .grid-timespan span {
-        display: block;
-        color: var(--accent);
-        font-size: 0.72rem;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        margin-bottom: 0.2rem;
-    }
-
-.showcase-leftFaced,
-.showcase-rightFaced {
+.showcaseFullWidth,
+.showcaseTextLeft,
+.showcaseTextRight {
     max-width: var(--maxw);
     margin: 0 auto var(--gap);
     padding: 0 var(--pad);
@@ -177,21 +155,32 @@
     align-items: center;
 }
 
-.showcase-leftFaced {
-    grid-template-areas: 'showcaseText showcaseMedia';
+.showcaseTextLeft.noMedia,
+.showcaseTextRight.noMedia {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'showcaseTextArea';
 }
 
-.showcase-rightFaced {
-    grid-template-areas: 'showcaseMedia showcaseText';
+.showcaseFullWidth {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'showcaseTextArea';
 }
 
-.showcase-mainText {
-    grid-area: showcaseText;
+.showcaseTextLeft {
+    grid-template-areas: 'showcaseTextArea showcaseMediaArea';
 }
 
-.showcase-textTitle {
+.showcaseTextRight {
+    grid-template-areas: 'showcaseMediaArea showcaseTextArea';
+}
+
+.showcaseTextColumn {
+    grid-area: showcaseTextArea;
+}
+
+.showcaseHeading {
     font-family: var(--font-display);
-    font-size: clamp(1.3rem, 2.6vw, 2rem);
+    font-size: var(--fs-title);
     font-weight: var(--title-weight);
     letter-spacing: var(--title-spacing);
     color: var(--text);
@@ -200,28 +189,28 @@
     border-bottom: var(--border-w) solid var(--accent);
 }
 
-.showcase-textBody {
+.showcaseBody {
     color: var(--muted);
-    font-size: 0.95rem;
+    font-size: var(--fs-base);
 }
 
-    .showcase-textBody ul {
+    .showcaseBody ul {
         margin: 0;
         padding-left: 1.1rem;
         display: grid;
         gap: 0.6rem;
     }
 
-    .showcase-textBody li::marker {
+    .showcaseBody li::marker {
         color: var(--accent);
     }
 
-.showcase-media {
-    grid-area: showcaseMedia;
+.showcaseMediaColumn {
+    grid-area: showcaseMediaArea;
     text-align: center;
 }
 
-img.projMedia {
+.projectMedia {
     width: 85%;
     height: auto;
     border: var(--border-w) solid var(--line);
@@ -229,7 +218,13 @@ img.projMedia {
     box-shadow: var(--shadow);
 }
 
-.gallery-wrapper {
+.projectMediaTall {
+    width: auto;
+    max-width: 100%;
+    max-height: 30rem;
+}
+
+.galleryGrid {
     max-width: var(--maxw);
     margin: 0 auto;
     padding: 0 var(--pad);
@@ -238,7 +233,7 @@ img.projMedia {
     gap: 1rem;
 }
 
-.gallery-media {
+.galleryItem {
     position: relative;
     overflow: hidden;
     border: var(--border-w) solid var(--line);
@@ -248,18 +243,19 @@ img.projMedia {
     transition: border-color 0.18s;
 }
 
-    .gallery-media:hover {
+    .galleryItem:hover {
         border-color: var(--accent);
     }
 
-    .gallery-media img {
+    .galleryItem img,
+    .galleryItem video {
         display: block;
         width: 100%;
         aspect-ratio: 4 / 3;
         object-fit: cover;
     }
 
-.gallery-layer {
+.galleryCaption {
     position: absolute;
     inset: 0;
     display: grid;
@@ -269,72 +265,73 @@ img.projMedia {
     background: var(--surface);
     color: var(--text);
     font-family: var(--font-ui);
-    font-size: 0.82rem;
+    font-size: var(--fs-sm);
     line-height: 1.5;
     opacity: 0;
     transition: opacity 0.2s;
 }
 
-    .gallery-layer:hover {
+    .galleryCaption:hover {
         opacity: 0.94;
     }
 
-    .gallery-layer p {
+    .galleryCaption p {
         margin: 0;
     }
 
 @media (max-width: 860px) {
-    .proj-header {
+    .projectHeader {
         grid-template-columns: 1fr;
         gap: 1.2rem;
     }
 
-    .projtitle {
+    .projectTitle {
         text-align: center;
     }
 
-    .grid-contributions {
-        grid-template-areas:
-            'roleTitle roleTitle'
-            'roleSec1 roleSec2'
-            'projRole projSize'
-            'projTime projTime';
-        grid-template-columns: 1fr 1fr;
+    .contributionsGrid {
+        grid-template-columns: 1fr;
     }
 
-    .showcase-leftFaced,
-    .showcase-rightFaced {
+    .projectMetaList {
+        gap: 1.1rem;
+        justify-content: start;
+    }
+
+    .showcaseTextLeft,
+    .showcaseTextRight {
         grid-template-areas:
-            'scTT'
-            'showcaseMedia'
-            'scTB';
+            'showcaseHeadingArea'
+            'showcaseMediaArea'
+            'showcaseBodyArea';
         grid-template-columns: 1fr;
         gap: 1rem;
     }
 
-    .showcase-mainText {
+    .showcaseFullWidth {
+        grid-template-areas:
+            'showcaseHeadingArea'
+            'showcaseBodyArea';
+        gap: 1rem;
+    }
+
+    .showcaseTextColumn {
         display: contents;
     }
 
-    .showcase-textTitle {
-        grid-area: scTT;
+    .showcaseHeading {
+        grid-area: showcaseHeadingArea;
         margin-bottom: 0;
     }
 
-    .showcase-textBody {
-        grid-area: scTB;
+    .showcaseBody {
+        grid-area: showcaseBodyArea;
     }
 }
 
+
 @media (max-width: 560px) {
-    .grid-contributions {
-        grid-template-areas:
-            'roleTitle'
-            'roleSec1'
-            'roleSec2'
-            'projRole'
-            'projSize'
-            'projTime';
+    .contributionsGrid {
         grid-template-columns: 1fr;
     }
 }

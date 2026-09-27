@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../Styles/homepageStyles.css" />
     <link rel="stylesheet" href="../Styles/projectsAllStyles.css" />
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png" />
-    <title>Kevin Wall — Game Developer</title>
+    <title>Kevin Wall</title>
     <meta charset="utf-8">
     <meta name="description" content="Kevin Wall - Game Development | Personal Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,260 +14,472 @@
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <script src="../SiteJava/site.js" defer></script>
 </head>
-<body class="bdy">
-    <div id="site-header"></div>
+<body class="pageBody">
+    <div id="siteHeaderSlot"></div>
 
     <!-- Start of About Me -->
 
-    <div class="aboutme">
-        <p> Hey! I'm Kevin, a Game Developer based in Winter Park, Florida. Reinventing the gaming experience, one update at a time. I am experienced with C++, C#, Unity, and Unreal Engine.</p>
-        <p> Connect with me:</p>
-        <div class="footer-connect clickable">
-            <a href="https://www.linkedin.com/in/kevinwall-gamedev/" target="_blank">
-                <img src="../SiteImages/linkedin-logo.png" alt="LinkedIn" />
-            </a>
-            <a href="https://github.com/swift-kevin" target="_blank">
-                <img src="../SiteImages/github-mark-white.png" alt="GitHub" />
-            </a>
+    <div class="aboutSection">
+        <div class="aboutIntro">
+            <p> Hey! I'm Kevin, a Game Developer based in Winter Park, Florida. Reinventing the gaming experience, one update at a time.</p>
+            <div class="socialLinksBar">
+                <a href="https://www.linkedin.com/in/kevinwall-gamedev/" target="_blank" rel="noopener" title="LinkedIn">
+                    <img src="../SiteImages/linkedin-logo.png" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/swift-kevin" target="_blank" rel="noopener" title="GitHub">
+                    <img src="../SiteImages/github-mark-white.png" alt="GitHub" />
+                </a>
+            </div>
         </div>
-        <p> See some of the projects I have worked on below... </p>
-    </div>
 
+        <div class="aboutSkillGroups">
+            <div class="skillGroup">
+                <div class="skillGroupLabel">Languages</div>
+                <div class="projectTagList">
+                    <span class="projectTag">C++</span>
+                    <span class="projectTag">C#</span>
+                </div>
+            </div>
+            <div class="skillGroup">
+                <div class="skillGroupLabel">APIs</div>
+                <div class="projectTagList">
+                    <span class="projectTag">Vulkan</span>
+                    <span class="projectTag">EnTT</span>
+                    <span class="projectTag">ImGui</span>
+                    <span class="projectTag">Gateware</span>
+                </div>
+            </div>
+            <div class="skillGroup">
+                <div class="skillGroupLabel">Other / Misc</div>
+                <div class="projectTagList">
+                    <span class="projectTag">Unity</span>
+                    <span class="projectTag">Unreal Engine</span>
+                    <span class="projectTag">ECS Custom Engines</span>
+                    <span class="projectTag">ECS</span>
+                    <span class="projectTag">CMake</span>
+                    <span class="projectTag">Visual Studio</span>
+                    <span class="projectTag">Git CLI</span>
+                    <span class="projectTag">Perforce</span>
+                    <span class="projectTag">Microsoft TFS</span>
+                    <span class="projectTag">Jira / Trello</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        
     <div>
-        <hr class="spacer-hori" />
+        <hr class="sectionDivider" />
     </div>
 
     <!-- End of About Me -->
+
     <!-- Start of Projects Section -->
+
     <div>
-        <section id="Projects">
-            <div class="featured-head">
+        <section id="projectsSection">
+            <div class="featuredProjectHeading">
                 <h1>Top 3 Projects</h1>
             </div>
 
-            <div class="featured-grid">
-                <article class="pcard">
-                    <a class="pcard-media" href="../SitePages/UntitledSpaceShooter.html">
+            <div class="featuredProjectGrid">
+                <article class="projectCard">
+                    <a class="projectCardThumbnail" href="../SitePages/UntitledSpaceShooter.html">
                         <img src="../SiteProjResources/UntitledSpaceShooter/Overview.webp" alt="Untitled Space Shooter gameplay" loading="lazy" />
                     </a>
-                    <div class="pcard-body">
-                        <h3 class="pcard-title"><a href="../SitePages/UntitledSpaceShooter.html">Untitled Space Shooter</a></h3>
-                        <p class="pcard-blurb">Fight your way through endless waves of geometrical enemies, climb the ranks of the galactic leaderboard, and show your flying prowess in this unique take on an arcade classic.</p>
-                        <p class="pcard-contrib"><span class="project-desc-colored">Contributions:</span> User Interfaces, Custom Enemy Models, Evolving Player Interactivity</p>
-                        <div class="pcard-tags">
-                            <span class="tag">C++</span>
-                            <span class="tag">Unreal Engine</span>
-                            <span class="tag">Blender</span>
-                            <span class="tag">Generalist Programmer / Designer</span>
-                            <span class="tag">1+ year</span>
-                            <span class="tag">Team of 2</span>
+                    <div class="projectCardBody">
+                        <h3 class="projectCardTitle"><a href="../SitePages/UntitledSpaceShooter.html">Untitled Space Shooter</a></h3>
+                        <p class="projectCardDescription">Fight your way through endless waves of geometrical enemies, climb the ranks of the galactic leaderboard, and show your flying prowess in this unique take on an arcade classic.</p>
+                        <p class="projectCardContributions"><span class="projectFieldLabel">Contributions:</span> User Interfaces, Custom Enemy Models, Evolving Player Interactivity</p>
+                        <div class="projectTagList">
+                            <span class="projectTag">C++</span>
+                            <span class="projectTag">Unreal Engine</span>
+                            <span class="projectTag">Indie Project</span>
+                            <span class="projectTag">VFX</span>
                         </div>
-                        <a class="pcard-link" href="../SitePages/UntitledSpaceShooter.html">Visit project</a>
+                        <a class="projectCardLink" href="../SitePages/UntitledSpaceShooter.html">Visit project</a>
                     </div>
                 </article>
 
-                <article class="pcard">
-                    <a class="pcard-media" href="../SitePages/UndeadParadise.html">
+                <article class="projectCard">
+                    <a class="projectCardThumbnail" href="../SitePages/UndeadParadise.html">
                         <img src="../SiteProjResources/UndeadParadise/UndeadParadiseTrailer.webp" alt="Undead Paradise gameplay" loading="lazy" />
                     </a>
-                    <div class="pcard-body">
-                        <h3 class="pcard-title"><a href="../SitePages/UndeadParadise.html">Undead Paradise</a></h3>
-                        <p class="pcard-blurb">Survive against the undead in a tropical hell. Unlock weapons and perks while upgrading your arsenal to fend off the undead.</p>
-                        <p class="pcard-contrib"><span class="project-desc-colored">Contributions:</span> Weapon Inheritance, Object Pooling, Generic Resource/Timers, Editor Scripts</p>
-                        <div class="pcard-tags">
-                            <span class="tag">C#</span>
-                            <span class="tag">Unity</span>
-                            <span class="tag">Team Lead / Generalist</span>
-                            <span class="tag">2 months</span>
-                            <span class="tag">Team of 2</span>
+                    <div class="projectCardBody">
+                        <h3 class="projectCardTitle"><a href="../SitePages/UndeadParadise.html">Undead Paradise</a></h3>
+                        <p class="projectCardDescription">Survive against the undead in a tropical hell. Unlock weapons and perks while upgrading your arsenal to fend off the undead.</p>
+                        <p class="projectCardContributions"><span class="projectFieldLabel">Contributions:</span> Weapon Inheritance, Object Pooling, Generic Resource/Timers, Editor Scripts</p>
+                        <div class="projectTagList">
+                            <span class="projectTag">C#</span>
+                            <span class="projectTag">Unity</span>
+                            <span class="projectTag">Indie Project</span>
+                            <span class="projectTag">Developer</span>
                         </div>
-                        <div class="project-connections">
+                        <div class="externalLinkRow">
                             <a href="https://store.steampowered.com/app/2958680/Undead_Paradise/" target="_blank" rel="noopener" title="External Link &gt; Steam Page">
-                                <img class="placement" src="../SiteImages/SteamIcon.png" alt="Steam" />
+                                <img class="externalLinkIcon" src="../SiteImages/SteamIcon.png" alt="Steam" />
                             </a>
                             <a href="https://swift-kevin.itch.io/undead-paradise" target="_blank" rel="noopener" title="External Link &gt; Itch.io">
-                                <img class="placement" src="../SiteImages/itchio-textless-white.svg" alt="itch.io" />
+                                <img class="externalLinkIcon" src="../SiteImages/itchio-textless-white.svg" alt="itch.io" />
                             </a>
                         </div>
-                        <a class="pcard-link" href="../SitePages/UndeadParadise.html">Visit project</a>
+                        <a class="projectCardLink" href="../SitePages/UndeadParadise.html">Visit project</a>
                     </div>
                 </article>
 
-                <article class="pcard">
-                    <a class="pcard-media" href="../SitePages/VRCapstone.html">
+                <article class="projectCard">
+                    <a class="projectCardThumbnail" href="../SitePages/VRCapstone.html">
                         <img src="../SiteProjResources/CapstoneProject/SandboxLobbyV1.webp" alt="VR Dungeon Crawler gameplay" loading="lazy" />
                     </a>
-                    <div class="pcard-body">
-                        <h3 class="pcard-title"><a href="../SitePages/VRCapstone.html">VR Capstone (Proof Of Concept)</a></h3>
-                        <p class="pcard-blurb">Explore a randomly generated dungeon of weird and wacky enemies. Physics-based weapons, purchasable loot, and up to four players together.</p>
-                        <p class="pcard-contrib"><span class="project-desc-colored">Contributions:</span> Networking Connectivity, World Space UI, Scene Setup, Visual Indicators</p>
-                        <div class="pcard-tags">
-                            <span class="tag">C#</span>
-                            <span class="tag">Unity</span>
-                            <span class="tag">Netcode for GameObjects</span>
-                            <span class="tag">UI / Networking / Generalist</span>
-                            <span class="tag">4 months</span>
-                            <span class="tag">Team of 4</span>
+                    <div class="projectCardBody">
+                        <h3 class="projectCardTitle"><a href="../SitePages/VRCapstone.html">VR Capstone (Proof Of Concept)</a></h3>
+                        <p class="projectCardDescription">Explore a randomly generated dungeon of weird and wacky enemies. Physics-based weapons, purchasable loot, and up to four players together.</p>
+                        <p class="projectCardContributions"><span class="projectFieldLabel">Contributions:</span> Networking Connectivity, World Space UI, Scene Setup, Visual Indicators</p>
+                        <div class="projectTagList">
+                            <span class="projectTag">C#</span>
+                            <span class="projectTag">Unity</span>
+                            <span class="projectTag">Capstone Project</span>
+                            <span class="projectTag">UI / Networking / Generalist</span>
                         </div>
-                        <a class="pcard-link" href="../SitePages/VRCapstone.html">Visit project</a>
+                        <a class="projectCardLink" href="../SitePages/VRCapstone.html">Visit project</a>
                     </div>
                 </article>
             </div>
 
-            <div class="more-projects-head">
+            <div class="moreProjectsHeading">
                 <h1>More Projects</h1>
-                <p>Earlier team projects, jams and tools</p>
+                <p>Tools, prototypes and applications I have built or contributed to.</p>
             </div>
 
-            <div class="project-split">
-                <nav class="project-index" aria-label="More projects">
-                    <a href="#psychic-protocol">Psychic Protocol</a>
-                    <a href="#invasion-of-liberty">Invasion of Liberty</a>
-                    <a href="#cubic-quarantine">Cubic Quarantine</a>
-                    <a href="#racing-game">Racing Game</a>
-                    <a href="#conways-game-of-life">Conway's Game of Life</a>
-                    <a href="#custom-portfolio-site">Custom Portfolio Site</a>
+            <div class="projectListLayout">
+                <nav class="projectIndexNav" aria-label="More projects">
+                    <a href="#psychicProtocolRow">Psychic Protocol</a>
+                    <a href="#invasionOfLibertyRow">Invasion of Liberty</a>
+                    <a href="#cubicQuarantineRow">Cubic Quarantine</a>
+                    <a href="#racingGameRow">Racing Game</a>
+                    <a href="#conwaysGameOfLifeRow">Conway's Game of Life</a>
+                    <a href="#customPortfolioSiteRow">Custom Portfolio Site</a>
+                    <a href="#ecsToolRow">ECS Tool</a>
+                    <a href="#gNodeFactoryRow">GNodeFactory</a>
+                    <a href="#gSamplesRow">GSamples</a>
+                    <a href="#compilingMasksRow">Compiling Masks</a>
+                    <a href="#interactiveProjectShowcaseRow">Interactive Project Showcase</a>
+                    <a href="#dronePathingRow">Drone Pathing Project</a>
+                    <a href="#calculatorProjectRow">Calculator Project</a>
+                    <a href="#agePredictionImageDetectionRow">Age Prediction and Image Detection</a>
                 </nav>
 
-                <div class="project-rows">
-                    <article class="prow" id="psychic-protocol">
-                        <div class="prow-main">
-                            <h3 class="prow-title"><a href="../SitePages/PsychicProtocol.html">Psychic Protocol</a></h3>
-                            <p class="prow-blurb">Escape an underground research facility. Fight through different encounter types, from puzzle rooms to enhanced enemies, unlocking abilities across 5 unique levels.</p>
-                            <div class="pcard-tags">
-                                <span class="tag">C#</span>
-                                <span class="tag">Unity</span>
-                                <span class="tag">UI/UX Generalist</span>
-                                <span class="tag">Radial Wheel</span>
-                                <span class="tag">Spatial Audio</span>
+                <div class="projectRowList">
+                    <article class="projectRow" id="psychicProtocolRow">
+                        <div class="projectRowBody">
+                            <h3 class="projectRowTitle"><a href="../SitePages/PsychicProtocol.html">Psychic Protocol</a></h3>
+                            <p class="projectDescription">Escape an underground research facility. Fight through different encounter types, from puzzle rooms to enhanced enemies, unlocking abilities across 5 unique levels.</p>
+                            <div class="projectTagList">
+                                <span class="projectTag">C#</span>
+                                <span class="projectTag">Unity</span>
+                                <span class="projectTag">Midterm Project</span>
                             </div>
-                            <div class="project-connections">
+                            <div class="externalLinkRow">
                                 <a href="https://github.com/tomOrourke1/Midterm_FPS_Project" target="_blank" rel="noopener" title="External Link &gt; Github Repository">
-                                    <img class="placement" src="../SiteImages/github-mark-white.png" alt="GitHub" />
+                                    <img class="externalLinkIcon" src="../SiteImages/github-mark-white.png" alt="GitHub" />
                                 </a>
                                 <a href="https://mrcowface.itch.io/psychic-protocol" target="_blank" rel="noopener" title="External Link &gt; Itch.io">
-                                    <img class="placement" src="../SiteImages/itchio-textless-white.svg" alt="itch.io" />
+                                    <img class="externalLinkIcon" src="../SiteImages/itchio-textless-white.svg" alt="itch.io" />
                                 </a>
                             </div>
                         </div>
-                        <a class="prow-peek" href="../SitePages/PsychicProtocol.html">
+                        <a class="projectRowThumbnail" href="../SitePages/PsychicProtocol.html">
                             <img src="../SiteProjResources/PsychicProtocol/PsyProTurretBoxPuzzle.webp" alt="" loading="lazy" />
                         </a>
                     </article>
 
-                    <article class="prow" id="invasion-of-liberty">
-                        <div class="prow-main">
-                            <h3 class="prow-title"><a href="../SitePages/InvasionOfLiberty.html">Invasion of Liberty</a></h3>
-                            <p class="prow-blurb">A 2.5D remake of the arcade classic Defender (1981), built on a custom Vulkan rendering pipeline. Protect the Planet of Liberty and chase the high score.</p>
-                            <div class="pcard-tags">
-                                <span class="tag">C++</span>
-                                <span class="tag">Vulkan</span>
-                                <span class="tag">Graphics / Secondary Lead</span>
+                    <article class="projectRow" id="invasionOfLibertyRow">
+                        <div class="projectRowBody">
+                            <h3 class="projectRowTitle"><a href="../SitePages/InvasionOfLiberty.html">Invasion of Liberty</a></h3>
+                            <p class="projectDescription">A 2.5D remake of the arcade classic Defender (1981), built on a custom Vulkan rendering pipeline. Protect the Planet of Liberty and chase the high score.</p>
+                            <div class="projectTagList">
+                                <span class="projectTag">C++</span>
+                                <span class="projectTag">Vulkan</span>
+                                <span class="projectTag">Student Project</span>
+                                <span class="projectTag">ECS</span>
+                                <span class="projectTag">Custom Engine</span>
                             </div>
-                            <div class="project-connections">
+                            <div class="externalLinkRow">
                                 <a href="https://swift-kevin.itch.io/invasion-of-liberty" target="_blank" rel="noopener" title="External Link &gt; Itch.io">
-                                    <img class="placement" src="../SiteImages/itchio-textless-white.svg" alt="itch.io" />
+                                    <img class="externalLinkIcon" src="../SiteImages/itchio-textless-white.svg" alt="itch.io" />
                                 </a>
                             </div>
                         </div>
-                        <a class="prow-peek" href="../SitePages/InvasionOfLiberty.html">
+                        <a class="projectRowThumbnail" href="../SitePages/InvasionOfLiberty.html">
                             <img src="../SiteProjResources/InvasionOfLiberty/IOLComplete.webp" alt="" loading="lazy" />
                         </a>
                     </article>
 
-                    <article class="prow" id="cubic-quarantine">
-                        <div class="prow-main">
-                            <h3 class="prow-title"><a href="../SitePages/CubicQuarantine.html">Cubic Quarantine</a></h3>
-                            <p class="prow-blurb">Play as a spaceship fighting infected swarms of geometric enemies, clear every swarm before time runs out.</p>
-                            <div class="pcard-tags">
-                                <span class="tag">Side Project</span>
-                                <span class="tag">C#</span>
-                                <span class="tag">Unity</span>
-                                <span class="tag">Flocking AI</span>
+                    <article class="projectRow" id="cubicQuarantineRow">
+                        <div class="projectRowBody">
+                            <h3 class="projectRowTitle"><a href="../SitePages/CubicQuarantine.html">Cubic Quarantine</a></h3>
+                            <p class="projectDescription">Play as a spaceship fighting infected swarms of geometric enemies, clear every swarm before time runs out.</p>
+                            <div class="projectTagList">
+                                <span class="projectTag">C#</span>
+                                <span class="projectTag">Unity</span>
+                                <span class="projectTag">Game Jam Project</span>
+                                <span class="projectTag">Flocking Algorithm</span>
+                            </div>
+                            <div class="externalLinkRow">
+                                <a href="https://github.com/Swift-Kevin/Spaceship-HOFJam" target="_blank" rel="noopener" title="External Link &gt; Github Repository">
+                                    <img class="externalLinkIcon" src="../SiteImages/github-mark-white.png" alt="GitHub" />
+                                </a>
                             </div>
                         </div>
-                        <a class="prow-peek" href="../SitePages/CubicQuarantine.html">
+                        <a class="projectRowThumbnail" href="../SitePages/CubicQuarantine.html">
                             <img src="../SiteProjResources/SideProjects/CubicQuarantine.webp" alt="" loading="lazy" />
                         </a>
                     </article>
 
-                    <article class="prow" id="racing-game">
-                        <div class="prow-main">
-                            <h3 class="prow-title"><a href="../SitePages/RacingGame.html">Racing Game</a></h3>
-                            <p class="prow-blurb">A networked racing prototype with WAN and LAN play, colour sync across clients, and rocket boosting.</p>
-                            <div class="pcard-tags">
-                                <span class="tag">Side Project</span>
-                                <span class="tag">C#</span>
-                                <span class="tag">Unity</span>
-                                <span class="tag">Networking</span>
+                    <article class="projectRow" id="racingGameRow">
+                        <div class="projectRowBody">
+                            <h3 class="projectRowTitle"><a href="../SitePages/RacingGame.html">Racing Game</a></h3>
+                            <p class="projectDescription">A networked racing prototype with WAN and LAN play, colour sync across clients, and rocket boosting.</p>
+                            <div class="projectTagList">
+                                <span class="projectTag">C#</span>
+                                <span class="projectTag">Unity</span>
+                                <span class="projectTag">Research Project</span>
+                                <span class="projectTag">Multiplayer</span>
+                            </div>
+                            <div class="externalLinkRow">
+                                <a href="https://github.com/Swift-Kevin/RacingGame" target="_blank" rel="noopener" title="External Link &gt; Github Repository">
+                                    <img class="externalLinkIcon" src="../SiteImages/github-mark-white.png" alt="GitHub" />
+                                </a>
                             </div>
                         </div>
-                        <a class="prow-peek" href="../SitePages/RacingGame.html">
+                        <a class="projectRowThumbnail" href="../SitePages/RacingGame.html">
                             <img src="../SiteProjResources/SideProjects/RacingGame.webp" alt="" loading="lazy" />
                         </a>
                     </article>
 
-                    <article class="prow" id="conways-game-of-life">
-                        <div class="prow-main">
-                            <h3 class="prow-title"><a href="../SitePages/ConwaysGameOfLife.html">Conway's Game of Life</a></h3>
-                            <p class="prow-blurb">The classic cellular automata simulation, rendered with wxWidgets and backed by file I/O for saving boards.</p>
-                            <div class="pcard-tags">
-                                <span class="tag">Side Project</span>
-                                <span class="tag">C++</span>
-                                <span class="tag">wxWidgets</span>
-                                <span class="tag">File I/O</span>
+                    <article class="projectRow" id="conwaysGameOfLifeRow">
+                        <div class="projectRowBody">
+                            <h3 class="projectRowTitle"><a href="../SitePages/ConwaysGameOfLife.html">Conway's Game of Life</a></h3>
+                            <p class="projectDescription">The classic cellular automata simulation, rendered with wxWidgets and backed by file I/O for saving boards.</p>
+                            <div class="projectTagList">
+                                <span class="projectTag">C++</span>
+                                <span class="projectTag">wxWidgets</span>
+                                <span class="projectTag">Hello_ImGui</span>
+                                <span class="projectTag">Student Project</span>
                             </div>
                         </div>
-                        <a class="prow-peek" href="../SitePages/ConwaysGameOfLife.html">
-                            <img src="../SiteProjResources/SideProjects/GameOfLife.webp" alt="" loading="lazy" />
+                        <a class="projectRowThumbnail" href="../SitePages/ConwaysGameOfLife.html">
+                            <img src="../SiteProjResources/GameOfLife/GameOfLife.webp" alt="" loading="lazy" />
                         </a>
                     </article>
 
-                    <article class="prow" id="custom-portfolio-site">
-                        <div class="prow-main">
-                            <h3 class="prow-title"><a href="../SitePages/CustomPortfolioSite.html">Custom Portfolio Site</a></h3>
-                            <p class="prow-blurb">This site, hand-written without a framework, to learn web development before the tooling era.</p>
-                            <div class="pcard-tags">
-                                <span class="tag">Side Project</span>
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">JavaScript</span>
+                    <article class="projectRow" id="customPortfolioSiteRow">
+                        <div class="projectRowBody">
+                            <h3 class="projectRowTitle"><a href="../SitePages/CustomPortfolioSite.html">Custom Portfolio Site</a></h3>
+                            <p class="projectDescription">This site, hand-written without a framework, to learn web development before API wrappers.</p>
+                            <div class="projectTagList">
+                                <span class="projectTag">HTML</span>
+                                <span class="projectTag">CSS</span>
+                                <span class="projectTag">JavaScript</span>
+                                <span class="projectTag">Research Project</span>
+                            </div>
+                            <div class="externalLinkRow">
+                                <a href="https://github.com/Swift-Kevin/swift-kevin.github.io" target="_blank" rel="noopener" title="External Link &gt; Github Repository">
+                                    <img class="externalLinkIcon" src="../SiteImages/github-mark-white.png" alt="GitHub" />
+                                </a>
                             </div>
                         </div>
-                        <a class="prow-peek" href="../SitePages/CustomPortfolioSite.html">
+                        <a class="projectRowThumbnail" href="../SitePages/CustomPortfolioSite.html">
                             <img src="../SiteProjResources/SideProjects/CustomSite.webp" alt="" loading="lazy" />
                         </a>
                     </article>
+
+                    <article class="projectRow" id="ecsToolRow">
+                        <div class="projectRowBody">
+                            <h3 class="projectRowTitle"><a href="../SitePages/ECSTool.html">ECS Tool</a></h3>
+                            <p class="projectCardDescription">A tool designed to showcase how ECS Systems manipulate data in a solar system simulation. ImGui and a custom component reflection macro are used to identify data.</p>
+                            <div class="projectTagList">
+                                <span class="projectTag">C++</span>
+                                <span class="projectTag">EnTT</span>
+                                <span class="projectTag">ImGui</span>
+                                <span class="projectTag">Student Project</span>
+                            </div>
+                            <div class="externalLinkRow">
+                                <a href="https://github.com/Swift-Kevin/ECSTool" target="_blank" rel="noopener" title="External Link &gt; Github Repository">
+                                    <img class="externalLinkIcon" src="../SiteImages/github-mark-white.png" alt="GitHub" />
+                                </a>
+                            </div>
+                        </div>
+                        <a class="projectRowThumbnail" href="../SitePages/ECSTool.html">
+                            <img src="../SiteProjResources/ECSTool/InitialLaunch.png" alt="" loading="lazy" />
+                        </a>
+                    </article>
+
+                    <article class="projectRow" id="gNodeFactoryRow">
+                        <div class="projectRowBody">
+                            <h3 class="projectRowTitle"><a href="../SitePages/GNodeFactory.html">GNodeFactory</a></h3>
+                            <p class="projectCardDescription">Need to manage large amounts of 3D spatial transforms efficiently? GNodeFactory helps achieve this through a factory and pooling design similar to ECS.</p>
+                            <div class="projectTagList">
+                                <span class="projectTag">C++</span>
+                                <span class="projectTag">Gateware</span>
+                                <span class="projectTag">Research Project</span>
+                                <span class="projectTag">Open Source</span>
+                            </div>
+                            <div class="externalLinkRow">
+                                <a href="https://gitlab.com/gateware-development/gsource/-/tree/master/Source/Math/GNodeFactory?ref_type=heads" target="_blank" rel="noopener" title="External Link &gt; GitLab Repository">
+                                    <img class="externalLinkIcon" src="../SiteImages/gitlab-logo-700-rgb.png" alt="GitLab" />
+                                </a>
+                            </div>
+                        </div>
+                        <a class="projectRowThumbnail" href="../SitePages/GNodeFactory.html">
+                            <img src="../SiteProjResources/GNodeFactory/GNodeFactoryWorking.png" alt="" loading="lazy" />
+                        </a>
+                    </article>
+
+                    <article class="projectRow" id="gSamplesRow">
+                        <div class="projectRowBody">
+                            <h3 class="projectRowTitle"><a href="../SitePages/GSamples.html">GSamples</a></h3>
+                            <p class="projectCardDescription">Samples for the many ongoing Gateware libraries. Helps developers understand how to integrate and utilize Gateware's many systems and libraries.</p>
+                            <div class="projectTagList">
+                                <span class="projectTag">C++</span>
+                                <span class="projectTag">Gateware</span>
+                                <span class="projectTag">Research Project</span>
+                                <span class="projectTag">Open Source</span>
+                            </div>
+                            <div class="externalLinkRow">
+                                <a href="https://gitlab.com/gateware-development/gsamples" target="_blank" rel="noopener" title="External Link &gt; GitLab Repository">
+                                    <img class="externalLinkIcon" src="../SiteImages/gitlab-logo-700-rgb.png" alt="GitLab" />
+                                </a>
+                            </div>
+                        </div>
+                        <a class="projectRowThumbnail" href="../SitePages/GSamples.html">
+                            <img src="../SiteProjResources/GSamples/Slime.webp" alt="" loading="lazy" />
+                        </a>
+                    </article>
+
+                    <article class="projectRow" id="compilingMasksRow">
+                        <div class="projectRowBody">
+                            <h3 class="projectRowTitle"><a href="../SitePages/CompilingMasks.html">Compiling Masks</a></h3>
+                            <p class="projectCardDescription">Global Game Jam 2026 entry completed in 2 days. A simple idle simulation where Masks are "compiled" and loaded as currency.</p>                            
+                            <div class="projectTagList">
+                                <span class="projectTag">C#</span>
+                                <span class="projectTag">Unity</span>
+                                <span class="projectTag">Indie Project</span>
+                                <span class="projectTag">Game Jam</span>
+                            </div>
+                            <div class="externalLinkRow">
+                                <a href="https://github.com/Swift-Kevin/CompilingMasks" target="_blank" rel="noopener" title="External Link &gt; Github Repository">
+                                    <img class="externalLinkIcon" src="../SiteImages/github-mark-white.png" alt="GitHub" />
+                                </a>
+                            </div>
+                        </div>
+                        <a class="projectRowThumbnail" href="../SitePages/CompilingMasks.html">
+                            <img src="../SiteProjResources/CompilingMasks/GameRunning.png" alt="" loading="lazy" />
+                        </a>
+                    </article>
+
+                    <article class="projectRow" id="interactiveProjectShowcaseRow">
+                        <div class="projectRowBody">
+                            <h3 class="projectRowTitle"><a href="../SitePages/InteractiveProjectShowcase.html">Interactive Project Showcase</a></h3>
+                            <p class="projectCardDescription">An online asynchronous meeting place which was tested to showcase student projects loading dynamically from a repository.</p>                            
+                            <div class="projectTagList">
+                                <span class="projectTag">C#</span>
+                                <span class="projectTag">Unity</span>
+                                <span class="projectTag">WebGL</span>
+                                <span class="projectTag">Multiplayer</span>
+                            </div>
+                        </div>
+                        <a class="projectRowThumbnail" href="../SitePages/InteractiveProjectShowcase.html">
+                            <img src="../SiteProjResources/InteractiveProjectShowcase/ShowcaseMainMenu.png" alt="" loading="lazy" />
+                        </a>
+                    </article>
+
+                    <article class="projectRow" id="dronePathingRow">
+                        <div class="projectRowBody">
+                            <h3 class="projectRowTitle"><a href="../SitePages/DronePathing.html">Drone Pathing Project</a></h3>
+                            <p class="projectCardDescription">Simple drone simulation in Python using a A* pathfinding using a dynamic terrain system. </p>                            
+                            <div class="projectTagList">
+                                <span class="projectTag">Python</span>
+                                <span class="projectTag">A* Pathfinding</span>
+                            </div>
+                            <div class="externalLinkRow">
+                                <a href="https://github.com/Swift-Kevin/AAFI/tree/main/DronePathfinding" target="_blank" rel="noopener" title="External Link &gt; Github Repository">
+                                    <img class="externalLinkIcon" src="../SiteImages/github-mark-white.png" alt="GitHub" />
+                                </a>
+                            </div>
+                        </div>
+                        <a class="projectRowThumbnail" href="../SitePages/DronePathing.html">
+                            <img src="../SiteProjResources/DronePathPlanner/DronePathfinding.png" alt="" loading="lazy" />
+                        </a>
+                    </article>
+
+                    <article class="projectRow" id="calculatorProjectRow">
+                        <div class="projectRowBody">
+                            <h3 class="projectRowTitle"><a href="../SitePages/CalculatorProject.html">Calculator Project</a></h3>
+                            <p class="projectCardDescription"> A simple calculator application using the Shunting Yard Algorithm, wxWidgets, and C++. </p>                            
+                            <div class="projectTagList">
+                                <span class="projectTag">C++</span>
+                                <span class="projectTag">wxWidgets</span>
+                            </div>
+                            <div class="externalLinkRow">
+                                <a href="https://github.com/Swift-Kevin/CalculatorProject_wxWidgets" target="_blank" rel="noopener" title="External Link &gt; Github Repository">
+                                    <img class="externalLinkIcon" src="../SiteImages/github-mark-white.png" alt="GitHub" />
+                                </a>
+                            </div>
+                        </div>
+                        <a class="projectRowThumbnail" href="../SitePages/CalculatorProject.html">
+                            <img src="../SiteProjResources/Calculator/CalculatorThumbnail.png" alt="" loading="lazy" />
+                        </a>
+                    </article>
+
+                    <article class="projectRow" id="agePredictionImageDetectionRow">
+                        <div class="projectRowBody">
+                            <h3 class="projectRowTitle"><a href="../SitePages/AgePredictionImageDetection.html">Age Prediction and Image Detection</a></h3>
+                            <p class="projectCardDescription"> Detects faces, age ranges, and a predefined list of objects. </p>                            
+                            <div class="projectTagList">
+                                <span class="projectTag">Python</span>
+                                <span class="projectTag">CV2</span>
+                                <span class="projectTag">Cascade Classifier</span>
+                            </div>
+                            <div class="externalLinkRow">
+                                <a href="https://github.com/Swift-Kevin/AAFI/tree/main/AgePrediction" target="_blank" rel="noopener" title="External Link &gt; Github Repository &gt; Age Prediction">
+                                    <img class="externalLinkIcon" src="../SiteImages/github-mark-white.png" alt="GitHub" />
+                                </a>
+                                <a href="https://github.com/Swift-Kevin/AAFI/tree/main/ImageRecognition" target="_blank" rel="noopener" title="External Link &gt; Github Repository &gt; Image Recognition">
+                                    <img class="externalLinkIcon" src="../SiteImages/github-mark-white.png" alt="GitHub" />
+                                </a>
+                            </div>
+                        </div>
+                        <a class="projectRowThumbnail" href="../SitePages/AgePredictionImageDetection.html">
+                            <img src="../SiteProjResources/AgeObjectDetector/OlympicsTeamAgeDetection.png" alt="" loading="lazy" />
+                        </a>
+                    </article>
+
                 </div>
             </div>
         </section>
     </div>
+
     <!-- End of Projects Section -->
+    
     <!-- Start of Homepage Footer -->
 
-    <div class="homepage-resume-download">
-        <a class="resume-btn" href="../SiteMisc/Wall_Resume.pdf" download="Wall_Resume.pdf">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path d="M12 3v11m0 0 4-4m-4 4-4-4" />
-                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
-            </svg>
+    <div class="resumeDownloadBar">
+        <a class="resumeDownloadButton" href="../SiteMisc/Wall_Resume.pdf" download="Wall_Resume.pdf">
             Download Résumé
-            <span class="resume-btn-ext">PDF</span>
+            <span class="resumeDownloadFormat">PDF</span>
         </a>
     </div>
-    <div class="homepage-resume">
-        <section id="Resume">
+    <div class="resumePreview">
+        <section id="resumeSection">
             <img src="../SiteMisc/Wall_Resume.svg" alt="Résumé" title="My up-to-date resume." />
         </section>
     </div>
-    <div>
-        <hr class="spacer-hori" />
-    </div>
 
     <!-- End of Projects Section -->
+     
     <!-- Start of Homepage Footer -->
 
-    <div id="site-footer"></div>
+    <div id="siteFooterSlot"></div>
 </body>
 </html>
 

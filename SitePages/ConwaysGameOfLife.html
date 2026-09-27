@@ -5,67 +5,177 @@
     <link rel="stylesheet" href="../Styles/styles.css" />
     <link rel="stylesheet" href="../Styles/projectPage.css" />
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png">
-    <title>Kevin Wall — Conway's Game of Life</title>
+    <title>Kevin Wall</title>
     <meta charset="utf-8">
     <meta name="description" content="Conway's Game of Life - Kevin Wall">
     <meta name="author" content="Kevin Wall">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="../SiteJava/site.js" defer></script>
 </head>
-<body class="bdy">
-    <div id="site-header"></div>
+<body class="pageBody">
+    <div id="siteHeaderSlot"></div>
 
-    <div class="proj-header">
-        <div class="proj-header-text">
-            <div class="proj-tag">Side Project</div>
-            <h1 class="projtitle">Conway's Game of Life</h1>
+    <div class="projectHeader">
+        <div class="projectHeaderText">
+            <h1 class="projectTitle">Conway's Game of Life</h1>
+            <div class="projectQuickLinks">
+            <div class="projectQuickLinksLabel">Quick Links:</div>
+            <div class="projectGalleryLink">
+                <a href="../SitePages/ConwaysGameOfLife.html#gallerySection">
+                    Gallery
+                </a>
+            </div>
+            </div>
+            <div class="projectMetaList">
+                <div><span>Role</span>Main Programmer</div>
+                <div><span>Team Size</span>1</div>
+                <div><span>Development Time</span>~3 weeks</div>
+            </div>
         </div>
-        <div class="proj-header-media">
-            <img src="../SiteProjResources/SideProjects/GameOfLife.webp" alt="Conway's Game of Life simulation" />
+        <div class="projectHeaderMedia">
+            <img src="../SiteProjResources/GameOfLife/GameOfLife.webp" alt="Conway's Game of Life simulation" />
         </div>
     </div>
 
-    <div class="grid-contributions">
-        <div class="grid-roleTitle">
+    <div class="contributionsGrid">
+        <div class="contributionsHeading">
             <h3>Contributions</h3>
         </div>
-        <div class="grid-contributedLeft">
+        <div class="contributionsColumnLeft">
             <span> Cellular automata rules </span>
-            <span> wxWidgets rendering backend </span>
+            <span> wxWidgets rendering backend (Windows) </span>
+            <span> Dear ImGui variant (Mac) </span>
         </div>
-        <div class="grid-contributedRight">
+        <div class="contributionsColumnRight">
             <span> File I/O for saved boards </span>
             <span> Customisable grid + colours </span>
         </div>
-        <div class="grid-role">
-            <p> <span> Team Role: </span> Main Programmer </p>
-        </div>
-        <div class="grid-teamsize">
-            <p> <span> Team Size: </span> 1 </p>
-        </div>
-        <div class="grid-timespan">
-            <p> <span> Development Time: </span> ~3 weeks </p>
-        </div>
     </div>
 
     <div>
-        <hr class="spacer-hori" />
+        <hr class="sectionDivider" />
     </div>
 
-    <div class="proj-body">
-        <div class="showcase-textTitle">About</div>
-        <div class="showcase-textBody">
-            <ul>
-                <li> Remake of the classical cellular automata simulation using wxWidgets as the rendering API backend. </li>
-                <li> Features file I/O for saving game boards, options for cell state colour, customisable grid size, and more. </li>
-                <li> Completed in roughly 3 weeks during my first Project and Portfolio class at Full Sail University. </li>
-            </ul>
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> About </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li>Remake of John Conway's Game of Life, a cellular automata simulation. Using wxWidgets for rendering.</li>
+                    &nbsp;
+                    <li>Features file I/O for saving game boards, options for cell state colour, customisable grid size, and more.</li>
+                    &nbsp;
+                    <li>Completed in roughly 3 weeks during my first Project and Portfolio class at Full Sail University.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="Conway's Game of Life running" class="projectMedia" src="../SiteProjResources/GameOfLife/GameOfLife.webp" />
         </div>
     </div>
 
-    <div>
-        <hr class="spacer-hori" />
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Editing the Board </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li>Click on cells to toggle their state either alive or dead.</li>
+                    &nbsp;
+                    <li>Cells use the Conway's Game of Life cellular automata rules.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <video class="projectMedia" autoplay loop muted playsinline preload="metadata" aria-label="Toggling individual cells on the grid">
+                <source src="../SiteProjResources/GameOfLife/GOL_ClickingCells.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
-    <div id="site-footer"></div>
+
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Seeding </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li>Option to randomize cell states based on either a seed or the current time since epoch.</li>
+                    &nbsp;
+                    <li>Useful for watching how different densities settle down, since most random fills stabilise or die out.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <video class="projectMedia" autoplay loop muted playsinline preload="metadata" aria-label="Randomly seeding the board">
+                <source src="../SiteProjResources/GameOfLife/GOL_Seeding.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Grid and Window </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li>Grid dimensions are adjustable by width and height, so the same rules can run on a small board or a large one.</li>
+                    &nbsp;
+                    <li>Cells dynamically resize to match the window if adjusted.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <video class="projectMedia" autoplay loop muted playsinline preload="metadata" aria-label="Adjusting the grid dimensions">
+                <source src="../SiteProjResources/GameOfLife/GOL_GridAdjustment.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> View Options </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li>Display settings are exposed through a menu rather than hard-coded.</li>
+                    &nbsp;
+                    <li>Options for torodial and fixed wrapping can allow gliders to work.</li>
+                    &nbsp;
+                    <li>Cell colours and grid appearance are customisable, which is what makes different rule sets readable at a glance.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <video class="projectMedia" autoplay loop muted playsinline preload="metadata" aria-label="The view options menu">
+                <source src="../SiteProjResources/GameOfLife/GOL_ViewMenu.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div>
+        <hr class="sectionDivider" />
+    </div>
+    <section id="gallerySection">
+        <div class="galleryGrid">
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>The simulation running.</p>
+                </div>
+                <img src="../SiteProjResources/GameOfLife/GameOfLife.webp" alt="Conway's Game of Life running" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>The window and grid resizing together.</p>
+                </div>
+                <video autoplay loop muted playsinline preload="none" aria-label="Resizing the window">
+                    <source src="../SiteProjResources/GameOfLife/GOL_Resizing.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>Drawing cells straight onto the grid.</p>
+                </div>
+                <video autoplay loop muted playsinline preload="none" aria-label="Toggling cells">
+                    <source src="../SiteProjResources/GameOfLife/GOL_ClickingCells.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+    <div id="siteFooterSlot"></div>
 </body>
 </html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--This HTML website and the CSS styles used were created by Kevin W. This website is also one of my ongoing projects!-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Styles/styles.css" />
+    <link rel="stylesheet" href="../Styles/projectPage.css" />
+    <link rel="stylesheet" href="../Styles/projectsAllStyles.css" />
+    <link rel="icon" type="image/png" href="../SiteImages/tabicon.png">
+    <title>Kevin Wall</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Interactive Project Showcase - a browser-based virtual expo hall built in Unity. Kevin Wall">
+    <meta name="author" content="Kevin Wall">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../SiteJava/site.js" defer></script>
+</head>
+<body class="pageBody">
+    <div id="siteHeaderSlot"></div>
+
+    <div class="projectHeader">
+        <div class="projectHeaderText">
+            <h1 class="projectTitle">Interactive Project Showcase</h1>
+            <div class="projectQuickLinks">
+            <div class="projectQuickLinksLabel">Quick Links:</div>
+            <div class="projectGalleryLink">
+                <a href="../SitePages/InteractiveProjectShowcase.html#gallerySection">
+                    Gallery
+                </a>
+            </div>
+            </div>
+            <div class="projectTagList">
+                <span class="projectTag">C#</span>
+                <span class="projectTag">Unity</span>
+                <span class="projectTag">WebGL</span>
+                <span class="projectTag">Data Driven</span>
+                <span class="projectTag">Multiplayer</span>
+            </div>
+            <div class="projectMetaList">
+                <div><span>Platform</span>Browser (Unity WebGL)</div>
+            </div>
+        </div>
+        <div class="projectHeaderMedia">
+                <img src="../SiteProjResources/InteractiveProjectShowcase/ShowcaseMainMenu.png" alt="The showcase hall on load, asking the visitor for a name" />
+        </div>
+    </div>
+    <div class="contributionsGrid">
+        <div class="contributionsHeading">
+            <h3>Contributions</h3>
+        </div>
+        <div class="contributionsColumnLeft">
+            <span> Data driven booth population </span>
+            <span> Networked players with nametags </span>
+            <span> In-world project displays </span>
+        </div>
+        <div class="contributionsColumnRight">
+            <span> Name entry on join </span>
+            <span> First person navigation </span>
+            <span> Performance and browser diagnostics </span>
+        </div>
+    </div>
+    <div>
+        <hr class="sectionDivider" />
+    </div>
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Data Driven Booths </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> A virtual expo hall where each booth is described by its own data &mdash; project name, team, degree program and links. </li>
+                    &nbsp;
+                    <li> The hall fills itself from that data rather than from hand-placed scenes, so adding a project to the show does not mean editing the level. </li>
+                    &nbsp;
+                    <li> Booth signage and screen content both come from the same entry, which keeps them from drifting apart. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="A booth screen playing the Space Mal project" class="projectMedia" src="../SiteProjResources/InteractiveProjectShowcase/ProjectCycling.webp" />
+        </div>
+    </div>
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Multiplayer </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> Visitors share the hall, each with an avatar and a floating nametag taken from the name they entered on join. </li>
+                    &nbsp;
+                    <li> Ping sits in the HUD next to the other diagnostics, so connection quality is visible while walking around. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="Two browser clients in the same hall, each seeing the other's avatar and nametag" class="projectMedia" src="../SiteProjResources/InteractiveProjectShowcase/IPSMultiplayerFunctionality.webp" />
+        </div>
+    </div>
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Running in the Browser </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> Booth screens play each project's own media in place, so visitors see the work without leaving the hall. </li>
+                    &nbsp;
+                    <li> The HUD reports frame rate, operating system and browser, which matters for a build people open in whatever browser they already have. </li>
+                    &nbsp;
+                    <li> Ships as a Unity WebGL build, so it opens from a link with nothing to install. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="A booth loading the Psychic Protocol project onto its display" class="projectMedia" src="../SiteProjResources/InteractiveProjectShowcase/PortfolioLoadingFromShowcase.webp" />
+        </div>
+    </div>
+    <div>
+        <hr class="sectionDivider" />
+    </div>
+    <section id="gallerySection">
+        <div class="galleryGrid">
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>The hall on load, asking the visitor for a name before joining.</p>
+                </div>
+                <img src="../SiteProjResources/InteractiveProjectShowcase/ShowcaseMainMenu.png" alt="Name entry screen" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>Two clients in the same hall, each seeing the other's nametag.</p>
+                </div>
+                <img src="../SiteProjResources/InteractiveProjectShowcase/IPSMultiplayerFunctionality.webp" alt="Multiplayer, side by side clients" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>A booth screen playing its project in place.</p>
+                </div>
+                <img src="../SiteProjResources/InteractiveProjectShowcase/ProjectCycling.webp" alt="Booth screen playing a project" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>Project media loading onto a booth display.</p>
+                </div>
+                <img src="../SiteProjResources/InteractiveProjectShowcase/PortfolioLoadingFromShowcase.webp" alt="Project media loading on a booth" loading="lazy" />
+            </div>
+        </div>
+    </section>
+    <div id="siteFooterSlot"></div>
+</body>
+</html>

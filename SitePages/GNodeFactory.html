@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--This HTML website and the CSS styles used were created by Kevin W. This website is also one of my ongoing projects!-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Styles/styles.css" />
+    <link rel="stylesheet" href="../Styles/projectPage.css" />
+    <link rel="stylesheet" href="../Styles/projectsAllStyles.css" />
+    <link rel="icon" type="image/png" href="../SiteImages/tabicon.png">
+    <title>Kevin Wall</title>
+    <meta charset="utf-8">
+    <meta name="description" content="GNodeFactory - a Gateware interface for managing large 3D transform hierarchies. Kevin Wall">
+    <meta name="author" content="Kevin Wall">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../SiteJava/site.js" defer></script>
+</head>
+<body class="pageBody">
+    <div id="siteHeaderSlot"></div>
+
+    <div class="projectHeader">
+        <div class="projectHeaderText">
+            <h1 class="projectTitle">GNodeFactory</h1>
+            <div class="projectQuickLinks">
+            <div class="projectQuickLinksLabel">Quick Links:</div>
+            <div class="projectRepoLink">
+                <a href="https://gitlab.com/gateware-development/gsource/-/tree/master/Source/Math/GNodeFactory?ref_type=heads" target="_blank" rel="noopener" title="External Link &gt; GitLab repository">
+                    Repository
+                </a>
+            </div>
+            <div class="projectGalleryLink">
+                <a href="../SitePages/GNodeFactory.html#gallerySection">
+                    Gallery
+                </a>
+            </div>
+            </div>
+            <div class="projectMetaList">
+                <div><span>Role</span>Author</div>
+                <div><span>License</span>MIT</div>
+            </div>
+        </div>
+        <div class="projectHeaderMedia">
+                <img src="../SiteProjResources/GNodeFactory/GNodeFactoryWorking.png" alt="GNodeFactory running the Solar System Demo at 123 FPS" />
+        </div>
+    </div>
+    <div class="contributionsGrid">
+        <div class="contributionsHeading">
+            <h3>Contributions</h3>
+        </div>
+        <div class="contributionsColumnLeft">
+            <span> Handle-based node allocation and recycling </span>
+            <span> Pooled, data-oriented node storage </span>
+            <span> Parent, child and sibling hierarchy linking </span>
+            <span> Bulk and partial hierarchy resolution </span>
+        </div>
+        <div class="contributionsColumnRight">
+            <span> Optional sphere BVH generation </span>
+            <span> Metadata-masked hierarchy searches </span>
+            <span> Frustum, sphere, AABB, OBB and capsule queries </span>
+            <span> Thread-shared locking and parallel traversal </span>
+        </div>
+    </div>
+    <div>
+        <hr class="sectionDivider" />
+    </div>
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Pooled Node Storage </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> Transforms, states and metadata each get their own pool instead of one struct per node. </li>
+                    &nbsp;
+                    <li> Every node is referenced by a single 64-bit handle, with the pool index and slot index packed into it. </li>
+                    &nbsp;
+                    <li> Deleted slots get reused rather than freed. The factory also tracks how many nodes it has handed out and taken back. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="GPool and GNodeHandle struct definitions" class="projectMedia" src="../SiteProjResources/GNodeFactory/PoolingVisualized.png" />
+        </div>
+    </div>
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Hierarchy Resolution </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> Parenting, unparenting and connecting all take arrays, so an entire scene can be relinked in one call. </li>
+                    &nbsp;
+                    <li> Resolving runs over the whole tree, or just the branches that actually moved. </li>
+                    &nbsp;
+                    <li> Sphere bounds can be rebuilt during the same pass. Without that, the spatial queries go stale the moment a transform changes. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="Code combining a child's local transform with its parent's world matrix" class="projectMedia" src="../SiteProjResources/GNodeFactory/HierarchySolving.png" />
+        </div>
+    </div>
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Spatial and Metadata Queries </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> Nodes can be searched against a frustum, sphere, AABB, OBB or capsule. </li>
+                    &nbsp;
+                    <li> Each search takes a metadata mask, so you only get back the nodes you actually asked for. </li>
+                    &nbsp;
+                    <li> Parent, child and sibling searches walk the full hierarchy and return every match, not just the immediate one. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="Solar System Demo with every node matching the query highlighted in green" class="projectMedia" src="../SiteProjResources/GNodeFactory/SpatialQueries.png" />
+        </div>
+    </div>
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Threading </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> Pool access goes through a shared lock. Readers run together, writers get the pool to themselves. </li>
+                    &nbsp;
+                    <li> The tree walk keeps its scratch buffers thread-local, so workers aren't fighting over the same memory. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="Child-walking lambda copying its results under a shared write lock" class="projectMedia" src="../SiteProjResources/GNodeFactory/Threading.png" />
+        </div>
+    </div>
+    <div>
+        <hr class="sectionDivider" />
+    </div>
+    <section id="gallerySection">
+        <div class="galleryGrid">
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>The Solar System Demo driven entirely by GNodeFactory, running at 123 FPS.</p>
+                </div>
+                <img src="../SiteProjResources/GNodeFactory/GNodeFactoryWorking.png" alt="Solar System Demo running at 123 FPS" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>Every node returned by a spatial query, highlighted in green.</p>
+                </div>
+                <img src="../SiteProjResources/GNodeFactory/SpatialQueries.png" alt="Query results highlighted in green" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>The node pools and the packed 64-bit handle used to address them.</p>
+                </div>
+                <img src="../SiteProjResources/GNodeFactory/PoolingMethod.png" alt="GPool and GNodeHandle struct definitions" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>Resolving a child's world transform from its parent.</p>
+                </div>
+                <img src="../SiteProjResources/GNodeFactory/HierarchySolving.png" alt="Hierarchy resolution code" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>Writing search results back under a shared write lock.</p>
+                </div>
+                <img src="../SiteProjResources/GNodeFactory/Threading.png" alt="Threaded child walk code" loading="lazy" />
+            </div>
+        </div>
+    </section>
+    <div id="siteFooterSlot"></div>
+</body>
+</html>

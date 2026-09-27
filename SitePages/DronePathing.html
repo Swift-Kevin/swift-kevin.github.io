@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--This HTML website and the CSS styles used were created by Kevin W. This website is also one of my ongoing projects!-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Styles/styles.css" />
+    <link rel="stylesheet" href="../Styles/projectPage.css" />
+    <link rel="stylesheet" href="../Styles/projectsAllStyles.css" />
+    <link rel="icon" type="image/png" href="../SiteImages/tabicon.png">
+    <title>Kevin Wall</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Drone Pathing Project - A* pathfinding across procedurally generated terrain. Kevin Wall">
+    <meta name="author" content="Kevin Wall">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../SiteJava/site.js" defer></script>
+</head>
+<body class="pageBody">
+    <div id="siteHeaderSlot"></div>
+
+    <div class="projectHeader">
+        <div class="projectHeaderText">
+            <h1 class="projectTitle">Drone Pathing Project</h1>
+            <div class="projectQuickLinks">
+            <div class="projectQuickLinksLabel">Quick Links:</div>
+            <div class="projectRepoLink">
+                <a href="https://github.com/Swift-Kevin/AAFI/tree/main/DronePathfinding" target="_blank" rel="noopener" title="External Link &gt; GitHub repository">
+                    Repository
+                </a>
+            </div>
+            <div class="projectGalleryLink">
+                <a href="../SitePages/DronePathing.html#gallerySection">
+                    Gallery
+                </a>
+            </div>
+            </div>
+            <div class="projectTagList">
+                <span class="projectTag">Python</span>
+                <span class="projectTag">tkinter</span>
+                <span class="projectTag">A* Pathfinding</span>
+            </div>
+            <div class="projectMetaList">
+                <div><span>Role</span>Solo Developer</div>
+                <div><span>Team Size</span>1</div>
+                <div><span>Development Time</span>1 week</div>
+            </div>
+        </div>
+        <div class="projectHeaderMedia">
+                <img src="../SiteProjResources/DronePathPlanner/DronePathfinding.png" alt="A drone following a solved path across generated terrain" />
+        </div>
+    </div>
+    <div class="contributionsGrid">
+        <div class="contributionsHeading">
+            <h3>Contributions</h3>
+        </div>
+        <div class="contributionsColumnLeft">
+            <span> A* pathfinding across a terrain grid </span>
+            <span> Procedurally generated worlds </span>
+            <span> Randomised start and destination </span>
+        </div>
+        <div class="contributionsColumnRight">
+            <span> Impassable water and obstacles </span>
+            <span> Path length and state readout </span>
+            <span> Scales to large maps </span>
+        </div>
+    </div>
+    <div>
+        <hr class="sectionDivider" />
+    </div>
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Solving a Route </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> A drone routes itself across generated terrain, with the solved path traced in cyan. </li>
+                    &nbsp;
+                    <li> Water and rock are impassable, so the route bends around lakes rather than crossing them. </li>
+                    &nbsp;
+                    <li> The status bar reports the start and end cells, the resulting path length, and whether the drone is moving or stopped. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="A solved path bending around water on a generated map" class="projectMedia" src="../SiteProjResources/DronePathPlanner/Pathfinding.gif" />
+        </div>
+    </div>
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Larger Worlds </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> The same solver runs on much bigger maps &mdash; coordinates past 390 by 314, against roughly 130 on the smaller ones. </li>
+                    &nbsp;
+                    <li> Longer routes cost more to search, and the readout makes that visible: 352 steps against 103. </li>
+                    &nbsp;
+                    <li> Terrain and destinations are regenerated per run, so no two searches face the same map twice. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="A 352 step route solved across a much larger generated world" class="projectMedia" src="../SiteProjResources/DronePathPlanner/LargeWorld.webp" />
+        </div>
+    </div>
+    <div>
+        <hr class="sectionDivider" />
+    </div>
+    <section id="gallerySection">
+        <div class="galleryGrid">
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>A drone part way along its solved route.</p>
+                </div>
+                <img src="../SiteProjResources/DronePathPlanner/DronePathfinding.png" alt="Drone following a solved path" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>A 103 step route, bending around water on the way.</p>
+                </div>
+                <img src="../SiteProjResources/DronePathPlanner/Pathfinding.gif" alt="Solved path avoiding water" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>The same solver on a far larger map, 352 steps end to end.</p>
+                </div>
+                <img src="../SiteProjResources/DronePathPlanner/LargeWorld.webp" alt="Route solved across a large world" loading="lazy" />
+            </div>
+        </div>
+    </section>
+    <div id="siteFooterSlot"></div>
+</body>
+</html>

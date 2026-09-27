@@ -5,67 +5,88 @@
     <link rel="stylesheet" href="../Styles/styles.css" />
     <link rel="stylesheet" href="../Styles/projectPage.css" />
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png">
-    <title>Kevin Wall — Custom Portfolio Site</title>
+    <title>Kevin Wall</title>
     <meta charset="utf-8">
     <meta name="description" content="Custom Portfolio Site - Kevin Wall">
     <meta name="author" content="Kevin Wall">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="../SiteJava/site.js" defer></script>
 </head>
-<body class="bdy">
-    <div id="site-header"></div>
+<body class="pageBody">
+    <div id="siteHeaderSlot"></div>
 
-    <div class="proj-header">
-        <div class="proj-header-text">
-            <div class="proj-tag">Side Project</div>
-            <h1 class="projtitle">Custom Portfolio Site</h1>
-        </div>
-        <div class="proj-header-media">
-            <img src="../SiteProjResources/SideProjects/CustomSite.webp" alt="Custom portfolio site" />
+    <div class="projectHeader noMedia">
+        <div class="projectHeaderText">
+            <h1 class="projectTitle">Custom Portfolio Site</h1>
+            <div class="projectQuickLinks">
+            <div class="projectQuickLinksLabel">Quick Links:</div>
+            <div class="projectRepoLink">
+                <a href="https://github.com/Swift-Kevin/swift-kevin.github.io" target="_blank" rel="noopener" title="External Link &gt; GitHub repository">
+                    Repository
+                </a>
+            </div>
+            </div>
+            <div class="projectMetaList">
+                <div><span>Role</span>Solo Developer</div>
+                <div><span>Team Size</span>1</div>
+                <div><span>Development Time</span>Ongoing</div>
+            </div>
         </div>
     </div>
 
-    <div class="grid-contributions">
-        <div class="grid-roleTitle">
+    <div class="contributionsGrid">
+        <div class="contributionsHeading">
             <h3>Contributions</h3>
         </div>
-        <div class="grid-contributedLeft">
+        <div class="contributionsColumnLeft">
             <span> Hand-written HTML / CSS </span>
             <span> Responsive layout work </span>
+            <span> Over 30 user tests on navigation </span>
         </div>
-        <div class="grid-contributedRight">
-            <span> No framework or build step </span>
-            <span> Ongoing iteration </span>
-        </div>
-        <div class="grid-role">
-            <p> <span> Team Role: </span> Solo Developer </p>
-        </div>
-        <div class="grid-teamsize">
-            <p> <span> Team Size: </span> 1 </p>
-        </div>
-        <div class="grid-timespan">
-            <p> <span> Development Time: </span> Ongoing </p>
+        <div class="contributionsColumnRight">
+            <span> Setup on Github.io Pages </span>
+            <span> Periodic Updates and iteration </span>
+            <span> User accessibility tests conducted for improvement </span>
         </div>
     </div>
 
     <div>
-        <hr class="spacer-hori" />
+        <hr class="sectionDivider" />
     </div>
 
-    <div class="proj-body">
-        <div class="showcase-textTitle">About</div>
-        <div class="showcase-textBody">
-            <ul>
-                <li> Created to challenge myself to learn a new style of programming, and to appreciate where websites came from before frameworks. </li>
-                <li> This portfolio site is an ongoing project which shows off most of the projects I have made across varying engines, libraries and languages. </li>
-                <li> I plan on keeping this site running with updates from time to time, showing recent projects and providing updates on older ones. </li>
-            </ul>
+    <div class="showcaseFullWidth">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> About </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li>Created to challenge myself to learn a new style of programming, and to appreciate where websites came from before frameworks.</li>
+                    &nbsp;
+                    <li>This portfolio site is an ongoing project which shows off most of the projects I have made across varying engines, libraries and languages.</li>
+                    &nbsp;
+                    <li>I plan on keeping this site running with updates from time to time, showing recent projects and providing updates on older ones.</li>
+                </ul>
+            </div>
         </div>
     </div>
 
-    <div>
-        <hr class="spacer-hori" />
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Old Layout </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> The first public version of the site, built while I was a student. </li>
+                    &nbsp;
+                    <li> Ran over 30 unique user tests to check accessibility and how well visitors understood the navigation. </li>
+                    &nbsp;
+                    <li> Leaned on less being more, cutting anything that didn't help someone find the work. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="The first public version of the portfolio site" class="projectMedia" src="../SiteProjResources/SideProjects/CustomSite.webp" />
+        </div>
     </div>
-    <div id="site-footer"></div>
+
+    <div id="siteFooterSlot"></div>
 </body>
 </html>

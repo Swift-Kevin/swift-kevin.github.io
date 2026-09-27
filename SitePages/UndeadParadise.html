@@ -5,69 +5,65 @@
     <link rel="stylesheet" href="../Styles/styles.css" />
     <link rel="stylesheet" href="../Styles/projectPage.css" />
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png">
-    <title>Kevin Wall — Undead Paradise</title>
+    <title>Kevin Wall</title>
     <meta charset="utf-8">
     <meta name="description" content="Welcome to my personal portfolio!">
     <meta name="author" content="Kevin Wall">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="../SiteJava/site.js" defer></script>
 </head>
-<body class="bdy">
-    <div id="site-header"></div>
+<body class="pageBody">
+    <div id="siteHeaderSlot"></div>
 
-    <div class="proj-header">
-        <div class="proj-header-text">
-            <h1 class="projtitle">Undead Paradise</h1>
-            <div class="projQL">
-            <div class="projQLTitle">Quick Links:</div>
-            <div class="projVidLink">
-                <a href="../SitePages/UndeadParadise.html#Video">
+    <div class="projectHeader">
+        <div class="projectHeaderText">
+            <h1 class="projectTitle">Undead Paradise</h1>
+            <div class="projectQuickLinks">
+            <div class="projectQuickLinksLabel">Quick Links:</div>
+            <div class="projectVideoLink">
+                <a href="../SitePages/UndeadParadise.html#videoSection">
                     Video
                 </a>
             </div>
-            <div class="projGalleryLink">
-                <a href="../SitePages/UndeadParadise.html#Gallery">
+            <div class="projectGalleryLink">
+                <a href="../SitePages/UndeadParadise.html#gallerySection">
                     Gallery
                 </a>
             </div>
             </div>
+            <div class="projectMetaList">
+                <div><span>Role</span>Team Lead / General Programmer</div>
+                <div><span>Team Size</span>2</div>
+                <div><span>Development Time</span>2 months</div>
+            </div>
         </div>
-        <div class="proj-header-media">
+        <div class="projectHeaderMedia">
                 <img src="../SiteProjResources/UndeadParadise/UndeadParadiseTrailer.webp" alt="Undead Paradise gameplay" />
         </div>
     </div>
-    <div class="grid-contributions">
-        <div class="grid-roleTitle">
+    <div class="contributionsGrid">
+        <div class="contributionsHeading">
             <h3>Contributions</h3>
         </div>
-        <div class="grid-contributedLeft">
+        <div class="contributionsColumnLeft">
             <span> Performance/Object Pooling </span>
             <span> Generic Resource/Timers </span>
             <span> Post Processing </span>
             <span> Weapon Inheritence </span>
         </div>
-        <div class="grid-contributedRight">
+        <div class="contributionsColumnRight">
             <span> Editor Scripts </span>
             <span> Blockades </span>
             <span> Powerups/Perks </span>
         </div>
-        <div class="grid-role">
-            <p> <span> Team Role: </span> Team Lead / General Programmer </p>
-        </div>
-        <div class="grid-teamsize">
-            <p> <span> Team Size: </span> 2 </p>
-        </div>
-        <div class="grid-timespan">
-            <p> <span> Development Time: </span> 2 months </p>
-        </div>
     </div>
     <div>
-        <hr class="spacer-hori" />
+        <hr class="sectionDivider" />
     </div>
-    <div class="showcase-leftFaced">
-        <div class="showcase-mainText">
-            <div class="showcase-textTitle"> Performance / Object Pooling </div>
-            <div class="showcase-textBody">
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Performance / Object Pooling </div>
+            <div class="showcaseBody">
                 <ul>
                     <li> Used Static Batching to reduce Batch Count for GPU rendering. </li>
                     &nbsp;
@@ -77,14 +73,14 @@
                 </ul>
             </div>
         </div>
-        <div class="showcase-media">
-            <img alt="Performance / Object Pooling" class="projMedia" src="../SiteProjResources/UndeadParadise/PerformanceUpgrade.png" />
+        <div class="showcaseMediaColumn">
+            <img alt="Performance / Object Pooling" class="projectMedia" src="../SiteProjResources/UndeadParadise/PerformanceUpgrade.png" />
         </div>
     </div>
-    <div class="showcase-rightFaced">
-        <div class="showcase-mainText">
-            <div class="showcase-textTitle"> Generic Resources/Timers </div>
-            <div class="showcase-textBody">
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Generic Resources/Timers </div>
+            <div class="showcaseBody">
                 <ul>
                     <li> Provided easy callbacks to when resources/timers are manipulated. </li>
                     &nbsp;
@@ -94,14 +90,14 @@
                 </ul>
             </div>
         </div>
-        <div class="showcase-media">
-            <img alt="Generic Resources/Timers" class="projMedia" src="../SiteProjResources/UndeadParadise/GenericResourcePool.png" />
+        <div class="showcaseMediaColumn">
+            <img alt="Generic Resources/Timers" class="projectMedia" src="../SiteProjResources/UndeadParadise/GenericResourcePool.png" />
         </div>
     </div>
-    <div class="showcase-leftFaced">
-        <div class="showcase-mainText">
-            <div class="showcase-textTitle"> Weapon Inheritence </div>
-            <div class="showcase-textBody">
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Weapon Inheritence </div>
+            <div class="showcaseBody">
                 <ul>
                     <li> All weapons inherit from BaseWeapon, a script containing all related weapon logic. </li>
                     &nbsp;
@@ -111,14 +107,14 @@
                 </ul>
             </div>
         </div>
-        <div class="showcase-media">
-            <img alt="Weapon Inheritence" class="projMedia" src="../SiteProjResources/UndeadParadise/WeaponInheritance.png" />
+        <div class="showcaseMediaColumn">
+            <img alt="Weapon Inheritence" class="projectMedia" src="../SiteProjResources/UndeadParadise/WeaponInheritance.png" />
         </div>
     </div>
-    <div class="showcase-rightFaced">
-        <div class="showcase-mainText">
-            <div class="showcase-textTitle"> Editor Scripts </div>
-            <div class="showcase-textBody">
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Editor Scripts </div>
+            <div class="showcaseBody">
                 <ul>
                     <li> Rotating Tree editor script to uniquely rotate each tree in the maps. </li>
                     &nbsp;
@@ -128,14 +124,14 @@
                 </ul>
             </div>
         </div>
-        <div class="showcase-media">
-            <img alt="Editor Scripts" class="projMedia" src="../SiteProjResources/UndeadParadise/EditorScripts.png" />
+        <div class="showcaseMediaColumn">
+            <img alt="Editor Scripts" class="projectMedia" src="../SiteProjResources/UndeadParadise/EditorScripts.png" />
         </div>
     </div>
-    <div class="showcase-leftFaced">
-        <div class="showcase-mainText">
-            <div class="showcase-textTitle"> Post Processing </div>
-            <div class="showcase-textBody">
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Post Processing </div>
+            <div class="showcaseBody">
                 <ul>
                     <li> Helped create a unique look within the game with Bloom and Vignette Effects. </li>
                     &nbsp;
@@ -145,14 +141,14 @@
                 </ul>
             </div>
         </div>
-        <div class="showcase-media">
-            <img alt="Post Processing" class="projMedia" src="../SiteProjResources/UndeadParadise/PostProcessing.webp" />
+        <div class="showcaseMediaColumn">
+            <img alt="Post Processing" class="projectMedia" src="../SiteProjResources/UndeadParadise/PostProcessing.webp" />
         </div>
     </div>
-    <div class="showcase-rightFaced">
-        <div class="showcase-mainText">
-            <div class="showcase-textTitle"> Powerups / Perks </div>
-            <div class="showcase-textBody">
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Powerups / Perks </div>
+            <div class="showcaseBody">
                 <ul>
                     <li> Powerups are simple collidable objects that grant specific abilities such as double points or refill ammo/reserves. </li>
                     &nbsp;
@@ -160,14 +156,14 @@
                 </ul>
             </div>
         </div>
-        <div class="showcase-media">
-            <img alt="Powerups / Perks" class="projMedia" src="../SiteProjResources/UndeadParadise/Powerups.webp" />
+        <div class="showcaseMediaColumn">
+            <img alt="Powerups / Perks" class="projectMedia" src="../SiteProjResources/UndeadParadise/Powerups.webp" />
         </div>
     </div>
-    <div class="showcase-leftFaced">
-        <div class="showcase-mainText">
-            <div class="showcase-textTitle"> Blockades </div>
-            <div class="showcase-textBody">
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Blockades </div>
+            <div class="showcaseBody">
                 <ul>
                     <li> Unlocks more playing area, turns on enemy spawners, and reveals available weapons. </li>
                     &nbsp;
@@ -177,19 +173,19 @@
                 </ul>
             </div>
         </div>
-        <div class="showcase-media">
-            <img alt="Blockades" class="projMedia" src="../SiteProjResources/UndeadParadise/BlockadeBuying.webp" />
+        <div class="showcaseMediaColumn">
+            <img alt="Blockades" class="projectMedia" src="../SiteProjResources/UndeadParadise/BlockadeBuying.webp" />
         </div>
     </div>
     <!-- 
     <div>
-        <hr class="spacer-hori" />
+        <hr class="sectionDivider" />
     </div> 
     -->
-    <section id="Gallery">
-        <div class="gallery-wrapper">
-            <div class="gallery-media">
-                <div class="gallery-layer">
+    <section id="gallerySection">
+        <div class="galleryGrid">
+            <div class="galleryItem">
+                <div class="galleryCaption">
                     <p>Custom timer implementation</p>
                 </div>
                 <img src="../SiteProjResources/UndeadParadise/CustomTimerImplementation.png" alt="Custom timer implementation" loading="lazy" />
@@ -197,19 +193,16 @@
         </div>
     </section>
     <div>
-        <hr class="spacer-hori" />
+        <hr class="sectionDivider" />
     </div>
     <!--End of Gallery Section-->
     <!--Start of External Links-->
-    <section id="Video">
-        <div class="ytEmbed">
+    <section id="videoSection">
+        <div class="videoEmbed">
             <iframe src="https://www.youtube.com/embed/-tIWm2hDUjs?si=AX0OuA5bjthSVwqE" title="Undead Paradise Trailer Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </section>
-    <div>
-        <hr class="spacer-hori" />
-    </div>
     <!--End of External Links-->
-    <div id="site-footer"></div>
+    <div id="siteFooterSlot"></div>
 </body>
 </html>

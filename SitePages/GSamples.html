@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--This HTML website and the CSS styles used were created by Kevin W. This website is also one of my ongoing projects!-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Styles/styles.css" />
+    <link rel="stylesheet" href="../Styles/projectPage.css" />
+    <link rel="stylesheet" href="../Styles/projectsAllStyles.css" />
+    <link rel="icon" type="image/png" href="../SiteImages/tabicon.png">
+    <title>Kevin Wall</title>
+    <meta charset="utf-8">
+    <meta name="description" content="GSamples - example programs teaching developers how to use the Gateware libraries. Kevin Wall">
+    <meta name="author" content="Kevin Wall">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../SiteJava/site.js" defer></script>
+</head>
+<body class="pageBody">
+    <div id="siteHeaderSlot"></div>
+
+    <div class="projectHeader">
+        <div class="projectHeaderText">
+            <h1 class="projectTitle">GSamples</h1>
+            <div class="projectQuickLinks">
+            <div class="projectQuickLinksLabel">Quick Links:</div>
+            <div class="projectRepoLink">
+                <a href="https://gitlab.com/gateware-development/gsamples" target="_blank" rel="noopener" title="External Link &gt; GitLab repository">
+                    Repository
+                </a>
+            </div>
+            <div class="projectVideoLink">
+                <a href="https://fsgateware.blogspot.com/search/label/GSamples" target="_blank" rel="noopener" title="External Link &gt; Development blog">
+                    Dev Blog
+                </a>
+            </div>
+            </div>
+            <div class="projectTagList">
+                <span class="projectTag">C++</span>
+                <span class="projectTag">Gateware</span>
+                <span class="projectTag">CMake</span>
+                <span class="projectTag">CI/CD</span>
+                <span class="projectTag">Open Source</span>
+            </div>
+            <div class="projectMetaList">
+                <div><span>Platforms</span>Windows, Mac, Linux</div>
+                <div><span>License</span>Unlicense (public domain)</div>
+            </div>
+        </div>
+        <div class="projectHeaderMedia">
+                <img src="../SiteProjResources/GSamples/Slime.webp" alt="The GBlitter sample, a slime sprite spinning over grass tiles" />
+        </div>
+    </div>
+
+    <div class="contributionsGrid">
+        <div class="contributionsHeading">
+            <h3>Contributions</h3>
+        </div>
+        <div class="contributionsColumnLeft">
+            <span> Audio &mdash; GSound and GMusic </span>
+            <span> Input &mdash; GInput, GBufferedInput and GController </span>
+            <span> Math &mdash; GMatrix, GVector and GQuaternion </span>
+            <span> System &mdash; GConcurrent, GDaemon, GFile and GLog </span>
+        </div>
+        <div class="contributionsColumnRight">
+            <span> Core &mdash; GLogic and GThreadShared </span>
+            <span> Graphics &mdash; GBlitter </span>
+            <span> Cross-platform validation on Windows, Mac and Linux </span>
+            <span> An offset bit read fix in the GMusic library </span>
+        </div>
+    </div>
+    <div>
+        <hr class="sectionDivider" />
+    </div>
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Purpose </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> Small, self-contained programs showing how each Gateware interface is meant to be used. Only the code needed for that library, nothing else. </li>
+                    &nbsp;
+                    <li> Grouped by level: Audio, Core, Graphics, Input, Math and System. Each builds with CMake, with Gateware as a submodule. </li>
+                    &nbsp;
+                    <li> Two surface samples already existed. I wrote the rest, one interface at a time. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="The GInput sample polling key states and mouse position" class="projectMedia" src="../SiteProjResources/GSamples/GInputSample.png" />
+        </div>
+    </div>
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Audio, and a Bug </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> GSound and GMusic need a running app to keep playing, and there was no way to ask whether a track had finished. The samples idle with sleep and yield instead. </li>
+                    &nbsp;
+                    <li> The audio file I picked exposed an offset bit read in GMusic. That fix went into the library, not just the sample. </li>
+                    &nbsp;
+                    <li> Testing on all three platforms is what caught it. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="The GMusic sample, keeping the program alive while a track plays" class="projectMedia" src="../SiteProjResources/GSamples/GMusicSample.png" />
+        </div>
+    </div>
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Threading Samples </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> GDaemon, GThreadShared and GConcurrent taught me the most. </li>
+                    &nbsp;
+                    <li> My first GDaemon sample hung event responders off a daemon, which isn't what daemons are for. </li>
+                    &nbsp;
+                    <li> The rewrite runs Fibonacci on one daemon while a second toggles it on and off, both reporting status on an interval. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="Two daemons, one iterating Fibonacci and one toggling it" class="projectMedia" src="../SiteProjResources/GSamples/GDaemonSample.png" />
+        </div>
+    </div>
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Rendering and Tooling </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> GBlitter draws a slime sprite spinning over grass tiles, loaded from TGA files. </li>
+                    &nbsp;
+                    <li> GFile and GLogic double as groundwork for automated stress-test analysis. </li>
+                    &nbsp;
+                    <li> Three platforms meant a lot of CMake. Every sample ships through the same CI/CD pipeline as the rest of Gateware. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="The GBlitter sample, a slime sprite spinning over grass tiles" class="projectMedia" src="../SiteProjResources/GSamples/Slime.webp" />
+        </div>
+    </div>
+    <div>
+        <hr class="sectionDivider" />
+    </div>
+    <section id="gallerySection">
+        <div class="galleryGrid">
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>The GBlitter sample, blitting a slime sprite over TGA grass tiles.</p>
+                </div>
+                <img src="../SiteProjResources/GSamples/Slime.webp" alt="Slime sprite spinning over grass tiles" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>GInput polling key states, mouse position and delta each frame.</p>
+                </div>
+                <img src="../SiteProjResources/GSamples/GInputSample.png" alt="GInput sample source" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>GMusic holding the program open so a track can finish playing.</p>
+                </div>
+                <img src="../SiteProjResources/GSamples/GMusicSample.png" alt="GMusic sample source" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>One daemon iterating Fibonacci while a second toggles it on and off.</p>
+                </div>
+                <img src="../SiteProjResources/GSamples/GDaemonSample.png" alt="GDaemon sample source" loading="lazy" />
+            </div>
+        </div>
+    </section>
+    <div id="siteFooterSlot"></div>
+</body>
+</html>

@@ -5,67 +5,74 @@
     <link rel="stylesheet" href="../Styles/styles.css" />
     <link rel="stylesheet" href="../Styles/projectPage.css" />
     <link rel="icon" type="image/svg" href="../SiteImages/tabicon.png">
-    <title>Kevin Wall — Racing Game</title>
+    <title>Kevin Wall</title>
     <meta charset="utf-8">
     <meta name="description" content="Racing Game - Kevin Wall">
     <meta name="author" content="Kevin Wall">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="../SiteJava/site.js" defer></script>
 </head>
-<body class="bdy">
-    <div id="site-header"></div>
+<body class="pageBody">
+    <div id="siteHeaderSlot"></div>
 
-    <div class="proj-header">
-        <div class="proj-header-text">
-            <div class="proj-tag">Side Project</div>
-            <h1 class="projtitle">Racing Game</h1>
+    <div class="projectHeader">
+        <div class="projectHeaderText">
+            <h1 class="projectTitle">Racing Game</h1>
+            <div class="projectQuickLinks">
+            <div class="projectQuickLinksLabel">Quick Links:</div>
+            <div class="projectRepoLink">
+                <a href="https://github.com/Swift-Kevin/RacingGame" target="_blank" rel="noopener" title="External Link &gt; GitHub repository">
+                    Repository
+                </a>
+            </div>
+            </div>
+            <div class="projectMetaList">
+                <div><span>Role</span>Main Programmer</div>
+                <div><span>Team Size</span>1</div>
+                <div><span>Development Time</span>1 week</div>
+            </div>
         </div>
-        <div class="proj-header-media">
+        <div class="projectHeaderMedia">
             <img src="../SiteProjResources/SideProjects/RacingGame.webp" alt="Networked racing game prototype" />
         </div>
     </div>
 
-    <div class="grid-contributions">
-        <div class="grid-roleTitle">
+    <div class="contributionsGrid">
+        <div class="contributionsHeading">
             <h3>Contributions</h3>
         </div>
-        <div class="grid-contributedLeft">
+        <div class="contributionsColumnLeft">
             <span> WAN / LAN connectivity </span>
             <span> State sync across clients </span>
         </div>
-        <div class="grid-contributedRight">
+        <div class="contributionsColumnRight">
             <span> Player colour customisation </span>
             <span> Rocket boost mechanic </span>
         </div>
-        <div class="grid-role">
-            <p> <span> Team Role: </span> Main Programmer </p>
-        </div>
-        <div class="grid-teamsize">
-            <p> <span> Team Size: </span> 1 </p>
-        </div>
-        <div class="grid-timespan">
-            <p> <span> Development Time: </span> 1 week </p>
-        </div>
     </div>
 
     <div>
-        <hr class="spacer-hori" />
+        <hr class="sectionDivider" />
     </div>
 
-    <div class="proj-body">
-        <div class="showcase-textTitle">About</div>
-        <div class="showcase-textBody">
-            <ul>
-                <li> The prototype's goal was to create a networked connection with cars as the players, currently having WAN and LAN capabilities. </li>
-                <li> Features changing player colors that update across the network, and rocket boosting. </li>
-                <li> Created in a week and has potential for future mechanics to be added, aiming to become a great time-passing game for friends. </li>
-            </ul>
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> About </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li>The prototype's goal was to create a networked connection with cars as the players, currently having WAN and LAN capabilities.</li>
+                    &nbsp;
+                    <li>Features changing player colors that update across the network, and rocket boosting.</li>
+                    &nbsp;
+                    <li>Created in a week and has potential for future mechanics to be added, aiming to become a great time-passing game for friends.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="The networked racing prototype" class="projectMedia" src="../SiteProjResources/SideProjects/RacingGame.webp" />
         </div>
     </div>
 
-    <div>
-        <hr class="spacer-hori" />
-    </div>
-    <div id="site-footer"></div>
+    <div id="siteFooterSlot"></div>
 </body>
 </html>

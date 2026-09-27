@@ -24,6 +24,13 @@
     --shadow: none;
     --title-weight: 700;
     --title-spacing: -0.01em;
+    --fs-xs: 0.72rem;
+    --fs-sm: 0.85rem;
+    --fs-base: 1rem;
+    --fs-md: 1.15rem;
+    --fs-lg: 1.35rem;
+    --fs-title: clamp(1.2rem, 2.4vw, 1.7rem);
+    --fs-hero: clamp(1.5rem, 3vw, 2rem);
     --bg: #0f0f10;
     --surface: #17171a;
     --surface2: #1f1f23;
@@ -31,17 +38,16 @@
     --text: #f5f5f4;
     --muted: #a2a2ab;
     --accent: #e67e22;
-    --accent2: #f0a55e;
-    --accentSoft: #d6905a;
+    --tag: #80A4ED;
 }
 
 html {
-    scroll-padding-top: 7rem;
+    scroll-padding-top: 8rem;
     max-width: 100%;
     overflow-x: hidden;
 }
 
-body, .bdy {
+body, .pageBody {
     margin: 0;
     background: var(--bg);
     color: var(--text);
@@ -50,105 +56,100 @@ body, .bdy {
     -ms-overflow-style: none;
 }
 
-    .bdy::-webkit-scrollbar {
+    .pageBody::-webkit-scrollbar {
         display: none;
     }
 
 a {
-    color: var(--accent2);
+    color: var(--accent);
     text-decoration: underline;
     text-underline-offset: 0.2em;
+    text-decoration-thickness: 0.0625em;
 }
 
     a:hover {
-        color: var(--accent);
+        text-decoration-thickness: 0.15em;
     }
 
-.header-title a,
-.menu-buttons,
-.footer-connect a,
-.project-connections a,
-.pcard-media,
-.prow-peek,
-.homepage-resume-download a {
+.siteHeaderTitle a,
+.siteHeaderNavLink,
+.socialLinksBar a,
+.externalLinkRow a,
+.projectCardThumbnail,
+.projectRowThumbnail,
+.resumeDownloadBar a {
     text-decoration: none;
 }
 
 :focus-visible {
-    outline: 0.125rem solid var(--accent2);
+    outline: 0.125rem solid var(--accent);
     outline-offset: 0.125rem;
 }
 
-span.ul {
-    color: var(--accent);
-    font-family: var(--font-ui);
-    text-decoration: none;
-}
-
-.header {
+.siteHeader {
     position: sticky;
     top: 0;
     z-index: 100;
     background: var(--surface);
-    border-bottom: var(--border-w) solid var(--line);
+    border-bottom: var(--divider-w) solid var(--accent);
     display: flex;
     align-items: center;
     gap: 1.25rem;
     flex-wrap: wrap;
     max-width: var(--maxw);
     margin: 0 auto;
-    padding: 1.1rem var(--pad);
+    padding: 1.45rem var(--pad);
 }
 
-.header-title {
+.siteHeaderTitle {
     margin-right: auto;
 }
 
-    .header-title a {
+    .siteHeaderTitle a {
         font-family: var(--font-display);
-        font-size: clamp(1.35rem, 2.7vw, 1.9rem);
+        font-size: var(--fs-title);
         font-weight: var(--title-weight);
         letter-spacing: var(--title-spacing);
         color: var(--text);
     }
 
-.header-buttons-container {
+.siteHeaderNav {
     display: flex;
     gap: 0.35rem;
     flex-wrap: wrap;
 }
 
-.menu-buttons {
+.siteHeaderNavLink {
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
     font-family: var(--font-ui);
-    font-size: 0.95rem;
+    font-size: var(--fs-md);
     color: var(--muted);
-    padding: 0.55rem 0.9rem;
+    padding: 0.6rem 1rem;
     border: var(--border-w) solid transparent;
     border-radius: var(--radius) var(--radius) 0 0;
     transition: color 0.15s, border-color 0.15s, background 0.15s;
 }
 
-    .menu-buttons:hover {
+    .siteHeaderNavLink:hover {
         color: var(--text);
         background: var(--surface2);
         border-color: var(--line);
         border-bottom-color: var(--accent);
     }
 
-    .menu-buttons img {
+    .siteHeaderNavLink img {
         width: 1.5em;
         height: 1.5em;
         opacity: 0.75;
     }
 
-    .menu-buttons:hover img {
+    .siteHeaderNavLink:hover img {
         opacity: 1;
     }
 
-hr.spacer-hori {
+hr.sectionDivider {
     width: 60%;
     height: 0;
     margin: var(--gap) auto;
@@ -156,14 +157,14 @@ hr.spacer-hori {
     border-top: var(--divider-w) solid var(--line);
 }
 
-.ytEmbed {
+.videoEmbed {
     max-width: var(--maxw);
     margin: 0 auto;
     padding: 0 var(--pad);
 }
 
-    .ytEmbed iframe,
-    .ytEmbed video {
+    .videoEmbed iframe,
+    .videoEmbed video {
         display: block;
         width: min(100%, 60rem);
         margin-inline: auto;
@@ -174,7 +175,7 @@ hr.spacer-hori {
         box-shadow: var(--shadow);
     }
 
-.footer-connect {
+.socialLinksBar {
     border-top: var(--border-w) solid var(--line);
     margin-top: var(--gap);
     padding: var(--gap) var(--pad);
@@ -183,20 +184,20 @@ hr.spacer-hori {
     font-family: var(--font-ui);
 }
 
-    .footer-connect h2 {
+    .socialLinksBar h2 {
         font-family: var(--font-display);
-        font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+        font-size: var(--fs-title);
         font-weight: var(--title-weight);
         letter-spacing: var(--title-spacing);
         color: var(--text);
         margin: 0 0 1rem;
     }
 
-    .footer-connect br {
+    .socialLinksBar br {
         display: none;
     }
 
-    .footer-connect a {
+    .socialLinksBar a {
         display: inline-grid;
         place-items: center;
         width: var(--hit);
@@ -207,17 +208,17 @@ hr.spacer-hori {
         transition: background 0.15s;
     }
 
-        .footer-connect a:hover {
+        .socialLinksBar a:hover {
             background: var(--surface2);
         }
 
-    .footer-connect img {
+    .socialLinksBar img {
         width: var(--icon);
         height: var(--icon);
         object-fit: contain;
     }
 
-#topBtn {
+#backToTopButton {
     position: fixed;
     bottom: 1.25rem;
     right: 1.25rem;
@@ -226,7 +227,7 @@ hr.spacer-hori {
     width: var(--hit);
     height: var(--hit);
     font-family: var(--font-ui);
-    font-size: 0.75rem;
+    font-size: var(--fs-xs);
     font-weight: 700;
     color: var(--bg);
     background: var(--accent);
@@ -236,34 +237,34 @@ hr.spacer-hori {
     transition: filter 0.12s;
 }
 
-    #topBtn:hover {
+    #backToTopButton:hover {
         filter: brightness(1.12);
     }
 
 @media (max-width: 760px) {
-    .header {
+    .siteHeader {
         gap: 0.4rem;
         flex-wrap: nowrap;
     }
 
-    .header-title a {
-        font-size: 1.2rem;
+    .siteHeaderTitle a {
+        font-size: var(--fs-md);
         white-space: nowrap;
     }
 
-    .header-buttons-container {
+    .siteHeaderNav {
         flex-wrap: nowrap;
     }
 
-    .menu-buttons {
+    .siteHeaderNavLink {
         padding: 0.4rem 0.55rem;
     }
 
-        .menu-buttons span {
+        .siteHeaderNavLink span {
             display: none;
         }
 
-        .menu-buttons img {
+        .siteHeaderNavLink img {
             width: var(--icon);
             height: var(--icon);
         }

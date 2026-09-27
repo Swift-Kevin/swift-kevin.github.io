@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--This HTML website and the CSS styles used were created by Kevin W. This website is also one of my ongoing projects!-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Styles/styles.css" />
+    <link rel="stylesheet" href="../Styles/projectPage.css" />
+    <link rel="stylesheet" href="../Styles/projectsAllStyles.css" />
+    <link rel="icon" type="image/png" href="../SiteImages/tabicon.png">
+    <title>Kevin Wall</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Calculator Project - Kevin Wall">
+    <meta name="author" content="Kevin Wall">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../SiteJava/site.js" defer></script>
+</head>
+<body class="pageBody">
+    <div id="siteHeaderSlot"></div>
+
+    <div class="projectHeader noMedia">
+        <div class="projectHeaderText">
+            <h1 class="projectTitle">Calculator Project</h1>
+            <div class="projectQuickLinks">
+            <div class="projectQuickLinksLabel">Quick Links:</div>
+            <div class="projectRepoLink">
+                <a href="https://github.com/Swift-Kevin/CalculatorProject_wxWidgets" target="_blank" rel="noopener" title="External Link &gt; GitHub repository">
+                    Repository
+                </a>
+            </div>
+            </div>
+            <div class="projectTagList">
+                <span class="projectTag">C++</span>
+                <span class="projectTag">wxWidgets</span>
+            </div>
+            <div class="projectMetaList">
+                <div><span>Role</span>Solo Developer</div>
+                <div><span>Team Size</span>1</div>
+                <div><span>Development Time</span>1 month</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contributionsGrid">
+        <div class="contributionsHeading">
+            <h3>Contributions</h3>
+        </div>
+        <div class="contributionsColumnLeft">
+            <span> Shunting yard expression parser </span>
+            <span> Postfix solver and tokeniser </span>
+            <span> Trig and modulo support </span>
+            <span> Error handling for bad input </span>
+        </div>
+        <div class="contributionsColumnRight">
+            <span> wxWidgets interface and sizers </span>
+            <span> Table driven button factory </span>
+            <span> Keyboard input and font scaling </span>
+            <span> 20 unit tests </span>
+        </div>
+    </div>
+
+    <div>
+        <hr class="sectionDivider" />
+    </div>
+
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> About </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li>A desktop calculator written in C++ with wxWidgets for a software engineering course.</li>
+                    &nbsp;
+                    <li>The full expression is entered first and then solved, rather than one operation at a time.</li>
+                    &nbsp;
+                    <li>Button and keyboard events link to functionality to only operate when requested.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="The calculator at rest, with a keypad of numbers, orange operator keys and sin, cos and tan along the top" class="projectMedia projectMediaTall" src="../SiteProjResources/Calculator/BaseCalculator.png" />
+        </div>
+    </div>
+
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Order of Operations </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li>Expressions follow PEMDAS instead of solving left to right as they are typed.</li>
+                    &nbsp;
+                    <li>Long equations can be solved and displayed.</li>
+                    &nbsp;
+                    <li>The history line shows the previous expression before being solved.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="A long chained expression solved to 26.333334, with the original expression shown above the result" class="projectMedia projectMediaTall" src="../SiteProjResources/Calculator/ComplexMath.png" />
+        </div>
+    </div>
+
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Shunting Yard </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li>ConvertToPostfix reads each token in order and uses an operator stack to convert the expression into postfix.</li>
+                    &nbsp;
+                    <li>Parsing and solving are separate steps. SolvePostfix reads the finished queue and returns a single value.</li>
+                    &nbsp;
+                    <li>Unrecognised tokens return undef, which is displayed instead of an answer.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="Source code of the ConvertToPostfix function, showing the operator stack and precedence loop" class="projectMedia" src="../SiteProjResources/Calculator/ShuntingYardAlgo.png" />
+        </div>
+    </div>
+
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Trig Functions </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li>Sine, Cosine and Tangent use radians and are entered as s, c and t in front of a number.</li>
+                    &nbsp;
+                    <li>s3.1415 + c3.1415 returns ~0.999907. The tilde is the negative sign, inserted by the plus minus button.</li>
+                    &nbsp;
+                    <li>Trig terms are solved before the expression is converted to postfix.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="Sine and cosine of 3.1415 added together, returning a negative result written with a tilde" class="projectMedia projectMediaTall" src="../SiteProjResources/Calculator/TrigFunctionalityInRadians.png" />
+        </div>
+    </div>
+
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Buttons and Resizing </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li>Each button is defined in a single table. An entry holds the id, label, symbol, keyboard keys and button type, and the type sets the colour.</li>
+                    &nbsp;
+                    <li>The window can be resized. Fonts scale with it and stop at a minimum size so labels stay inside their buttons.</li>
+                    &nbsp;
+                    <li>Divide and mod by zero are checked before solving. Malformed input, such as a trailing operator, returns undef.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="The calculator at a larger window size, showing the display text scaled up with it" class="projectMedia projectMediaTall" src="../SiteProjResources/Calculator/PemdasEquations.png" />
+        </div>
+    </div>
+
+    <div id="siteFooterSlot"></div>
+</body>
+</html>

@@ -1,50 +1,71 @@
-.aboutme {
+.aboutSection {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: clamp(1.5rem, 4vw, 3.5rem);
+    align-items: start;
     max-width: var(--maxw);
     margin: 0 auto;
     padding: var(--gap) var(--pad) calc(var(--gap) * 0.6);
-    font-size: clamp(1rem, 1.6vw, 1.2rem);
+    font-size: var(--fs-md);
     color: var(--muted);
     text-align: left;
-    width: auto;
 }
 
-    .aboutme p {
-        max-width: none;
-        margin: 0 0 1.4rem;
+    .aboutIntro p {
+        font-family: var(--font-display);
+        font-size: var(--fs-hero);
+        font-weight: var(--title-weight);
+        letter-spacing: var(--title-spacing);
+        line-height: 1.1;
+        color: var(--text);
+        margin: 0 0 1.6rem;
     }
 
-        .aboutme p:first-child {
-            font-family: var(--font-display);
-            font-size: clamp(1rem, 3vw, 2rem);
-            font-weight: var(--title-weight);
-            letter-spacing: var(--title-spacing);
-            line-height: 1.1;
-            color: var(--text);
-            max-width: none;
-            margin-bottom: 1.6rem;
-        }
-
-    .aboutme .footer-connect {
+    .aboutSection .socialLinksBar {
         border: 0;
-        margin: 0 0 1.4rem;
+        margin: 0;
         padding: 0;
         text-align: left;
     }
 
-.homepage-resume-download {
+.aboutSkillGroups {
+    display: grid;
+    gap: 1.2rem;
+}
+
+    .skillGroupLabel {
+        margin: 0 0 0.55rem;
+        padding-bottom: 0.4rem;
+        font-family: var(--font-ui);
+        font-size: var(--fs-xs);
+        font-weight: 400;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted);
+        border-bottom: var(--border-w) solid var(--line);
+    }
+
+@media (max-width: 860px) {
+    .aboutSection {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.resumeDownloadBar {
     max-width: var(--maxw);
     margin: calc(var(--gap) * 1.75) auto 0;
     padding: 0 var(--pad);
     text-align: center;
 }
 
-.resume-btn {
+.resumeDownloadButton {
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
     padding: 0.7rem 1.4rem;
     font-family: var(--font-ui);
-    font-size: 0.95rem;
+    font-size: var(--fs-base);
     font-weight: 700;
     color: var(--bg);
     background: var(--accent);
@@ -54,12 +75,12 @@
     transition: background 0.15s, color 0.15s;
 }
 
-    .resume-btn:hover {
+    .resumeDownloadButton:hover {
         color: var(--accent);
         background: transparent;
     }
 
-    .resume-btn svg {
+    .resumeDownloadButton svg {
         width: 1.15em;
         height: 1.15em;
         fill: none;
@@ -69,8 +90,8 @@
         stroke-linejoin: round;
     }
 
-.resume-btn-ext {
-    font-size: 0.72rem;
+.resumeDownloadFormat {
+    font-size: var(--fs-xs);
     letter-spacing: 0.08em;
     padding: 0.1rem 0.4rem;
     border: var(--border-w) solid currentColor;
@@ -78,14 +99,14 @@
     opacity: 0.7;
 }
 
-.homepage-resume {
+.resumePreview {
     max-width: var(--maxw);
     margin: 1.5rem auto 0;
     padding: 0 var(--pad);
     text-align: center;
 }
 
-    .homepage-resume img {
+    .resumePreview img {
         width: 62%;
         max-width: none;
         height: auto;

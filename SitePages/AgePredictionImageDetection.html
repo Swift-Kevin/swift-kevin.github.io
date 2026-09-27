@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--This HTML website and the CSS styles used were created by Kevin W. This website is also one of my ongoing projects!-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Styles/styles.css" />
+    <link rel="stylesheet" href="../Styles/projectPage.css" />
+    <link rel="stylesheet" href="../Styles/projectsAllStyles.css" />
+    <link rel="icon" type="image/png" href="../SiteImages/tabicon.png">
+    <title>Kevin Wall</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Age Prediction and Image Detection - a Python computer vision tool for face age brackets and object detection. Kevin Wall">
+    <meta name="author" content="Kevin Wall">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../SiteJava/site.js" defer></script>
+</head>
+<body class="pageBody">
+    <div id="siteHeaderSlot"></div>
+
+    <div class="projectHeader">
+        <div class="projectHeaderText">
+            <h1 class="projectTitle">Age Prediction and Image Detection</h1>
+            <div class="projectQuickLinks">
+            <div class="projectQuickLinksLabel">Quick Links:</div>
+            <div class="projectRepoLink">
+                <a href="https://github.com/Swift-Kevin/AAFI/tree/main/AgePrediction" target="_blank" rel="noopener" title="External Link &gt; GitHub repository">
+                    Age Prediction
+                </a>
+            </div>
+            <div class="projectRepoLink">
+                <a href="https://github.com/Swift-Kevin/AAFI/tree/main/ImageRecognition" target="_blank" rel="noopener" title="External Link &gt; GitHub repository">
+                    Image Recognition
+                </a>
+            </div>
+            <div class="projectGalleryLink">
+                <a href="../SitePages/AgePredictionImageDetection.html#gallerySection">
+                    Gallery
+                </a>
+            </div>
+            </div>
+            <div class="projectTagList">
+                <span class="projectTag">Python</span>
+                <span class="projectTag">CV2</span>
+                <span class="projectTag">tkinter</span>
+                <span class="projectTag">Cascade Classifier</span>
+            </div>
+            <div class="projectMetaList">
+                <div><span>Role</span>Solo Developer</div>
+                <div><span>Team Size</span>1</div>
+                <div><span>Development Time</span>1 week</div>
+            </div>
+        </div>
+        <div class="projectHeaderMedia">
+                <img src="../SiteProjResources/AgeObjectDetector/OlympicsTeamAgeDetection.png" alt="Seven faces detected in a selected region, each boxed and labelled with an age bracket" />
+        </div>
+    </div>
+    <div class="contributionsGrid">
+        <div class="contributionsHeading">
+            <h3>Contributions</h3>
+        </div>
+        <div class="contributionsColumnLeft">
+            <span> Face detection with age bracket prediction </span>
+            <span> Object detection with confidence scores </span>
+            <span> Screen and region capture modes </span>
+        </div>
+        <div class="contributionsColumnRight">
+            <span> Live webcam and image file input </span>
+            <span> Colour coding per detected class </span>
+            <span> Running count of what was found </span>
+        </div>
+    </div>
+    <div>
+        <hr class="sectionDivider" />
+    </div>
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Age Detection </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> Faces get boxed and labelled with an age bracket rather than a single number, since that is what the model actually predicts. </li>
+                    &nbsp;
+                    <li> A status line reports how many faces were found, which makes it obvious when the detector misses someone. </li>
+                    &nbsp;
+                    <li> Four ways in: an image file, a live webcam feed, the whole screen, or a region dragged out by hand. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="Eight faces detected on a captured screen, each labelled with an age bracket" class="projectMedia" src="../SiteProjResources/AgeObjectDetector/HollywoodAgeDetection.png" />
+        </div>
+    </div>
+    <div class="showcaseTextRight">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Object Detection </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> A separate image mode labels objects with a class name and a confidence score. </li>
+                    &nbsp;
+                    <li> Detection is limited to a defined list of classes, so anything outside it is ignored rather than guessed at. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="A motorbike detected at full confidence" class="projectMedia" src="../SiteProjResources/AgeObjectDetector/ImageDetectionMotorbike.png" />
+        </div>
+    </div>
+    <div class="showcaseTextLeft">
+        <div class="showcaseTextColumn">
+            <div class="showcaseHeading"> Crowded Scenes </div>
+            <div class="showcaseBody">
+                <ul>
+                    <li> Each class draws in its own colour, so people and vehicles stay separable when boxes overlap. </li>
+                    &nbsp;
+                    <li> Busy frames are where the confidence score earns its place, since it shows which detections to trust. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="showcaseMediaColumn">
+            <img alt="An airport scene with people and taxis detected in separate colours" class="projectMedia" src="../SiteProjResources/AgeObjectDetector/ImageDetectionAirportMultipleObjects.png" />
+        </div>
+    </div>
+    <div>
+        <hr class="sectionDivider" />
+    </div>
+    <section id="gallerySection">
+        <div class="galleryGrid">
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>Seven faces found inside a hand-drawn region.</p>
+                </div>
+                <img src="../SiteProjResources/AgeObjectDetector/OlympicsTeamAgeDetection.png" alt="Faces detected in a selected region" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>Eight faces found by capturing the screen directly.</p>
+                </div>
+                <img src="../SiteProjResources/AgeObjectDetector/HollywoodAgeDetection.png" alt="Faces detected from a screen capture" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>A single object, matched at full confidence.</p>
+                </div>
+                <img src="../SiteProjResources/AgeObjectDetector/ImageDetectionMotorbike.png" alt="Motorbike detected" loading="lazy" />
+            </div>
+            <div class="galleryItem">
+                <div class="galleryCaption">
+                    <p>People and vehicles picked out of a busy airport frame.</p>
+                </div>
+                <img src="../SiteProjResources/AgeObjectDetector/ImageDetectionAirportMultipleObjects.png" alt="Multiple objects detected in an airport scene" loading="lazy" />
+            </div>
+        </div>
+    </section>
+    <div id="siteFooterSlot"></div>
+</body>
+</html>
