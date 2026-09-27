@@ -89,6 +89,21 @@
     padding: 0.15rem 0.5rem;
 }
 
+.projectTagLanguage {
+    color: var(--tag-languages);
+    border-color: var(--tag-languages);
+}
+
+.projectTagToolset {
+    color: var(--tag-toolset);
+    border-color: var(--tag-toolset);
+}
+
+.projectTagMisc {
+    color: var(--tag-misc);
+    border-color: var(--tag-misc);
+}
+
 .projectCardLink {
     margin-top: auto;
     padding-top: 0.9rem;

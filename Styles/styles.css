@@ -39,6 +39,9 @@
     --muted: #a2a2ab;
     --accent: #e67e22;
     --tag: #80A4ED;
+    --tag-languages: #80A4ED;
+    --tag-toolset: #6DCCE3;
+    --tag-misc: #B197ED;
 }
 
 html {
